@@ -1,0 +1,76 @@
+{
+  "users": {
+    "8b10bZJWEjRQEDTf74mB4nPhyJG2": {
+      "name": "Roy Williams",
+      "username": "roy123",
+      "email" : "prazgaitis+1@gmail.com",
+      "friends": {
+        "n6dCCIOaJXc7HyFcnUkRLMnYlTE3": "true",
+        "IHTjIHUOx8RqtgxJ6Vi7cEX0ku32": "true",
+        "5WPAj4To3thiFPTgqtWilhGDnyT2": "true",
+        "PQ70b9PqYiUq6n0r47pSfOslHIl2": "true",
+        "SJdkrrEW8OQAbtjC2bX7ZjQLzFo1": "true"
+      }
+    },
+    "n6dCCIOaJXc7HyFcnUkRLMnYlTE3": {
+      "name": "Mike Krzyzewski",
+      "username": "coachk123",
+      "email" : "prazgaitis+2@gmail.com",
+      "friends": {
+        "8b10bZJWEjRQEDTf74mB4nPhyJG2": "true",
+        "IHTjIHUOx8RqtgxJ6Vi7cEX0ku32": "true",
+        "5WPAj4To3thiFPTgqtWilhGDnyT2": "true",
+        "PQ70b9PqYiUq6n0r47pSfOslHIl2": "true",
+        "SJdkrrEW8OQAbtjC2bX7ZjQLzFo1": "true"
+      }
+    },
+    "IHTjIHUOx8RqtgxJ6Vi7cEX0ku32": {
+      "name": "Tom Izzo",
+      "username": "izzy123",
+      "email" : "prazgaitis+3@gmail.com",
+      "friends": {
+        "n6dCCIOaJXc7HyFcnUkRLMnYlTE3": "true",
+        "IHTjIHUOx8RqtgxJ6Vi7cEX0ku32": "true",
+        "5WPAj4To3thiFPTgqtWilhGDnyT2": "true",
+        "PQ70b9PqYiUq6n0r47pSfOslHIl2": "true",
+        "SJdkrrEW8OQAbtjC2bX7ZjQLzFo1": "true"
+      }
+    },
+    "5WPAj4To3thiFPTgqtWilhGDnyT2": {
+      "name": "John Calipari",
+      "username": "jcal12",
+      "email": "prazgaitis+4@gmail.com",
+      "friends": {
+        "n6dCCIOaJXc7HyFcnUkRLMnYlTE3": "true",
+        "IHTjIHUOx8RqtgxJ6Vi7cEX0ku32": "true",
+        "8b10bZJWEjRQEDTf74mB4nPhyJG2": "true",
+        "PQ70b9PqYiUq6n0r47pSfOslHIl2": "true",
+        "SJdkrrEW8OQAbtjC2bX7ZjQLzFo1": "true"
+      }
+    },
+    "PQ70b9PqYiUq6n0r47pSfOslHIl2": {
+      "name": "Bill Self",
+      "username": "selfie_stick_123",
+      "email": "prazgaitis+5@gmail.com",
+      "friends": {
+        "n6dCCIOaJXc7HyFcnUkRLMnYlTE3": "true",
+        "IHTjIHUOx8RqtgxJ6Vi7cEX0ku32": "true",
+        "5WPAj4To3thiFPTgqtWilhGDnyT2": "true",
+        "8b10bZJWEjRQEDTf74mB4nPhyJG2": "true",
+        "SJdkrrEW8OQAbtjC2bX7ZjQLzFo1": "true"
+      }
+    },
+    "SJdkrrEW8OQAbtjC2bX7ZjQLzFo1": {
+      "name": "Jim Boeheim",
+      "username": "jimmy_b_123",
+      "email": "prazgaitis+6@gmail.com",
+      "friends": {
+        "n6dCCIOaJXc7HyFcnUkRLMnYlTE3": "true",
+        "IHTjIHUOx8RqtgxJ6Vi7cEX0ku32": "true",
+        "5WPAj4To3thiFPTgqtWilhGDnyT2": "true",
+        "PQ70b9PqYiUq6n0r47pSfOslHIl2": "true",
+        "8b10bZJWEjRQEDTf74mB4nPhyJG2": "true"
+      }
+    }
+  }
+}

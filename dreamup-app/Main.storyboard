@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="btt-J8-0YJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Voice Memos-->
+        <scene sceneID="ekB-A3-QMP">
+            <objects>
+                <tableViewController id="H2g-Yd-rNB" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="x37-Tq-zZT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="neL-qk-tqX">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="neL-qk-tqX" id="IM1-Ks-qD0">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="H2g-Yd-rNB" id="Jga-9Y-Thr"/>
+                            <outlet property="delegate" destination="H2g-Yd-rNB" id="f0s-XP-O6s"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Voice Memos" id="WTm-UL-mvx"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b1J-TD-Zbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="401" y="-4"/>
+        </scene>
+        <!--Send Audio Table View Controller-->
+        <scene sceneID="Cor-28-bUX">
+            <objects>
+                <tableViewController id="9ff-xR-kfT" customClass="SendAudioTableViewController" customModule="dreamup_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="dOD-uL-yVB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Friend Cell" rowHeight="60" id="oea-e2-ySy" customClass="FriendCell" customModule="dreamup_app" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oea-e2-ySy" id="4fH-Qy-aLI">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXO-UF-Uv1">
+                                            <rect key="frame" x="8" y="17" width="278" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="278" id="zI4-7F-bkw"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ut-MV-Doo" customClass="SelectedIndicator">
+                                            <rect key="frame" x="342" y="17" width="25" height="25"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ZXO-UF-Uv1" firstAttribute="bottom" secondItem="3Ut-MV-Doo" secondAttribute="bottom" id="93P-ej-QZ2"/>
+                                        <constraint firstItem="3Ut-MV-Doo" firstAttribute="leading" secondItem="ZXO-UF-Uv1" secondAttribute="trailing" constant="56" id="Kji-DK-hAy"/>
+                                        <constraint firstItem="ZXO-UF-Uv1" firstAttribute="centerY" secondItem="4fH-Qy-aLI" secondAttribute="centerY" id="TsS-Uc-pRn"/>
+                                        <constraint firstItem="ZXO-UF-Uv1" firstAttribute="leading" secondItem="4fH-Qy-aLI" secondAttribute="leadingMargin" id="XLq-b0-W6d"/>
+                                        <constraint firstItem="ZXO-UF-Uv1" firstAttribute="top" secondItem="4fH-Qy-aLI" secondAttribute="topMargin" constant="9" id="jAi-mH-aYn"/>
+                                        <constraint firstItem="3Ut-MV-Doo" firstAttribute="trailing" secondItem="4fH-Qy-aLI" secondAttribute="trailingMargin" id="jFh-lW-iXX"/>
+                                        <constraint firstItem="ZXO-UF-Uv1" firstAttribute="top" secondItem="3Ut-MV-Doo" secondAttribute="top" id="sBr-OI-Ivj"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="indicator" destination="3Ut-MV-Doo" id="clk-oT-fCi"/>
+                                    <outlet property="name" destination="ZXO-UF-Uv1" id="EwV-jC-pzH"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9ff-xR-kfT" id="gDq-2W-jns"/>
+                            <outlet property="delegate" destination="9ff-xR-kfT" id="ePK-4x-atA"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LFN-Lt-gIR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="400.80000000000001" y="666.11694152923542"/>
+        </scene>
+        <!--Audio RecorderVC-->
+        <scene sceneID="MVu-Cj-cUn">
+            <objects>
+                <navigationController id="btt-J8-0YJ" customClass="AudioRecorderVC" customModule="dreamup_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vWq-M2-k8o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="H2g-Yd-rNB" kind="relationship" relationship="rootViewController" id="4bQ-Zb-DcY"/>
+                        <segue destination="9ff-xR-kfT" kind="show" identifier="sendAudio" id="IPZ-Mw-sYO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bsm-HH-CvU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-622" y="328"/>
+        </scene>
+    </scenes>
+</document>

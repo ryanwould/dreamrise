@@ -1,0 +1,6 @@
+framework module Pods_dreamup_appUITests {
+  umbrella header "Pods-dreamup-appUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

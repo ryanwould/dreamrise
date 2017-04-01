@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		110873ED1E836A310067C225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110873EC1E836A310067C225 /* AppDelegate.swift */; };
+		110873EF1E836A310067C225 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110873EE1E836A310067C225 /* ViewController.swift */; };
+		110873F41E836A310067C225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 110873F31E836A310067C225 /* Assets.xcassets */; };
+		110873F71E836A310067C225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110873F51E836A310067C225 /* LaunchScreen.storyboard */; };
+		110874021E836A310067C225 /* dreamup_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110874011E836A310067C225 /* dreamup_appTests.swift */; };
+		1108740D1E836A310067C225 /* dreamup_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1108740C1E836A310067C225 /* dreamup_appUITests.swift */; };
+		118F5F991E881AB900E36F90 /* AudioRecorderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118F5F981E881AB900E36F90 /* AudioRecorderVC.swift */; };
+		118F5FA11E884E0200E36F90 /* SendAudioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118F5FA01E884E0200E36F90 /* SendAudioTableViewController.swift */; };
+		118F5FA31E88511C00E36F90 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 118F5FA21E88511C00E36F90 /* GoogleService-Info.plist */; };
+		118F5FA51E88538C00E36F90 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118F5FA41E88538C00E36F90 /* AudioToolbox.framework */; };
+		118F5FA81E8856BE00E36F90 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118F5FA71E8856BE00E36F90 /* ExternalAccessory.framework */; };
+		119B5B171E8987710020A567 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B5B161E8987710020A567 /* FriendCell.swift */; };
+		119B5B191E8987C00020A567 /* SelectedIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B5B181E8987C00020A567 /* SelectedIndicator.swift */; };
+		11B640ED1E89555600971DF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11B640EC1E89555600971DF0 /* Main.storyboard */; };
+		11B640EF1E897F9C00971DF0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640EE1E897F9C00971DF0 /* User.swift */; };
+		392D741B9E27E35B0A6C69C4 /* Pods_dreamup_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C8F6A13933D0527C6A9D89 /* Pods_dreamup_appTests.framework */; };
+		680F2E042070A024DCE5AF25 /* Pods_dreamup_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3A17D21D4D982EC8BA4ACE /* Pods_dreamup_appUITests.framework */; };
+		C5CAA5D666591335EE466BB6 /* Pods_dreamup_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C87F990453838CD948451443 /* Pods_dreamup_app.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		110873FE1E836A310067C225 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 110873E11E836A310067C225 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 110873E81E836A310067C225;
+			remoteInfo = "dreamup-app";
+		};
+		110874091E836A310067C225 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 110873E11E836A310067C225 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 110873E81E836A310067C225;
+			remoteInfo = "dreamup-app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		110873E91E836A310067C225 /* dreamup-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dreamup-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		110873EC1E836A310067C225 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		110873EE1E836A310067C225 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		110873F31E836A310067C225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		110873F61E836A310067C225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		110873F81E836A310067C225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		110873FD1E836A310067C225 /* dreamup-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dreamup-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		110874011E836A310067C225 /* dreamup_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dreamup_appTests.swift; sourceTree = "<group>"; };
+		110874031E836A310067C225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		110874081E836A310067C225 /* dreamup-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dreamup-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1108740C1E836A310067C225 /* dreamup_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dreamup_appUITests.swift; sourceTree = "<group>"; };
+		1108740E1E836A310067C225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		118F5F981E881AB900E36F90 /* AudioRecorderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioRecorderVC.swift; sourceTree = "<group>"; };
+		118F5FA01E884E0200E36F90 /* SendAudioTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendAudioTableViewController.swift; sourceTree = "<group>"; };
+		118F5FA21E88511C00E36F90 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		118F5FA41E88538C00E36F90 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		118F5FA61E88538C00E36F90 /* dreamup-app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "dreamup-app.entitlements"; sourceTree = "<group>"; };
+		118F5FA71E8856BE00E36F90 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		119B5B161E8987710020A567 /* FriendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
+		119B5B181E8987C00020A567 /* SelectedIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedIndicator.swift; sourceTree = "<group>"; };
+		11B640EC1E89555600971DF0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		11B640EE1E897F9C00971DF0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		34870BFC215893E711FCDBA3 /* Pods-dreamup-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dreamup-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dreamup-app/Pods-dreamup-app.debug.xcconfig"; sourceTree = "<group>"; };
+		37518DB0B0B1205AE8ED9AC2 /* Pods-dreamup-appUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dreamup-appUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dreamup-appUITests/Pods-dreamup-appUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		796BFE40210D4F6ACF6957A8 /* Pods-dreamup-appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dreamup-appTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dreamup-appTests/Pods-dreamup-appTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D3A17D21D4D982EC8BA4ACE /* Pods_dreamup_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dreamup_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB8B83F7F75D8A7B4F83EF09 /* Pods-dreamup-appUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dreamup-appUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-dreamup-appUITests/Pods-dreamup-appUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B3E4090C7D26F036E6EDF699 /* Pods-dreamup-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dreamup-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-dreamup-app/Pods-dreamup-app.release.xcconfig"; sourceTree = "<group>"; };
+		C66488E3367999B5EC4709D1 /* Pods-dreamup-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dreamup-appTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-dreamup-appTests/Pods-dreamup-appTests.release.xcconfig"; sourceTree = "<group>"; };
+		C87F990453838CD948451443 /* Pods_dreamup_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dreamup_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1C8F6A13933D0527C6A9D89 /* Pods_dreamup_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dreamup_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		110873E61E836A310067C225 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				118F5FA81E8856BE00E36F90 /* ExternalAccessory.framework in Frameworks */,
+				C5CAA5D666591335EE466BB6 /* Pods_dreamup_app.framework in Frameworks */,
+				118F5FA51E88538C00E36F90 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		110873FA1E836A310067C225 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				392D741B9E27E35B0A6C69C4 /* Pods_dreamup_appTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		110874051E836A310067C225 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680F2E042070A024DCE5AF25 /* Pods_dreamup_appUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		110873E01E836A310067C225 = {
+			isa = PBXGroup;
+			children = (
+				110873EB1E836A310067C225 /* dreamup-app */,
+				110874001E836A310067C225 /* dreamup-appTests */,
+				1108740B1E836A310067C225 /* dreamup-appUITests */,
+				110873EA1E836A310067C225 /* Products */,
+				280C4B0D2324519AD6B858F2 /* Pods */,
+				37E92974A3AF60ECD23BD86D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		110873EA1E836A310067C225 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				110873E91E836A310067C225 /* dreamup-app.app */,
+				110873FD1E836A310067C225 /* dreamup-appTests.xctest */,
+				110874081E836A310067C225 /* dreamup-appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		110873EB1E836A310067C225 /* dreamup-app */ = {
+			isa = PBXGroup;
+			children = (
+				119B5B181E8987C00020A567 /* SelectedIndicator.swift */,
+				118F5FA61E88538C00E36F90 /* dreamup-app.entitlements */,
+				11B640EC1E89555600971DF0 /* Main.storyboard */,
+				118F5FA01E884E0200E36F90 /* SendAudioTableViewController.swift */,
+				119B5B161E8987710020A567 /* FriendCell.swift */,
+				11B640EE1E897F9C00971DF0 /* User.swift */,
+				118F5FA21E88511C00E36F90 /* GoogleService-Info.plist */,
+				110873EC1E836A310067C225 /* AppDelegate.swift */,
+				110873EE1E836A310067C225 /* ViewController.swift */,
+				118F5F981E881AB900E36F90 /* AudioRecorderVC.swift */,
+				110873F31E836A310067C225 /* Assets.xcassets */,
+				110873F51E836A310067C225 /* LaunchScreen.storyboard */,
+				110873F81E836A310067C225 /* Info.plist */,
+			);
+			path = "dreamup-app";
+			sourceTree = "<group>";
+		};
+		110874001E836A310067C225 /* dreamup-appTests */ = {
+			isa = PBXGroup;
+			children = (
+				110874011E836A310067C225 /* dreamup_appTests.swift */,
+				110874031E836A310067C225 /* Info.plist */,
+			);
+			path = "dreamup-appTests";
+			sourceTree = "<group>";
+		};
+		1108740B1E836A310067C225 /* dreamup-appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1108740C1E836A310067C225 /* dreamup_appUITests.swift */,
+				1108740E1E836A310067C225 /* Info.plist */,
+			);
+			path = "dreamup-appUITests";
+			sourceTree = "<group>";
+		};
+		280C4B0D2324519AD6B858F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34870BFC215893E711FCDBA3 /* Pods-dreamup-app.debug.xcconfig */,
+				B3E4090C7D26F036E6EDF699 /* Pods-dreamup-app.release.xcconfig */,
+				796BFE40210D4F6ACF6957A8 /* Pods-dreamup-appTests.debug.xcconfig */,
+				C66488E3367999B5EC4709D1 /* Pods-dreamup-appTests.release.xcconfig */,
+				37518DB0B0B1205AE8ED9AC2 /* Pods-dreamup-appUITests.debug.xcconfig */,
+				AB8B83F7F75D8A7B4F83EF09 /* Pods-dreamup-appUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		37E92974A3AF60ECD23BD86D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				118F5FA71E8856BE00E36F90 /* ExternalAccessory.framework */,
+				118F5FA41E88538C00E36F90 /* AudioToolbox.framework */,
+				C87F990453838CD948451443 /* Pods_dreamup_app.framework */,
+				F1C8F6A13933D0527C6A9D89 /* Pods_dreamup_appTests.framework */,
+				9D3A17D21D4D982EC8BA4ACE /* Pods_dreamup_appUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		110873E81E836A310067C225 /* dreamup-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 110874111E836A310067C225 /* Build configuration list for PBXNativeTarget "dreamup-app" */;
+			buildPhases = (
+				40E28AD74ADD1ABA955C2D1B /* [CP] Check Pods Manifest.lock */,
+				110873E51E836A310067C225 /* Sources */,
+				110873E61E836A310067C225 /* Frameworks */,
+				110873E71E836A310067C225 /* Resources */,
+				AC3509EA8186AC7B33E60EAD /* [CP] Embed Pods Frameworks */,
+				CD1A8D902E28D9702F9EB2BE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "dreamup-app";
+			productName = "dreamup-app";
+			productReference = 110873E91E836A310067C225 /* dreamup-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		110873FC1E836A310067C225 /* dreamup-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 110874141E836A310067C225 /* Build configuration list for PBXNativeTarget "dreamup-appTests" */;
+			buildPhases = (
+				E71A1660A2FE24EDB15ADD6E /* [CP] Check Pods Manifest.lock */,
+				110873F91E836A310067C225 /* Sources */,
+				110873FA1E836A310067C225 /* Frameworks */,
+				110873FB1E836A310067C225 /* Resources */,
+				5043877FB3881F178669199C /* [CP] Embed Pods Frameworks */,
+				00E8AB0A7D9E6DD2CDC7BE6C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				110873FF1E836A310067C225 /* PBXTargetDependency */,
+			);
+			name = "dreamup-appTests";
+			productName = "dreamup-appTests";
+			productReference = 110873FD1E836A310067C225 /* dreamup-appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		110874071E836A310067C225 /* dreamup-appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 110874171E836A310067C225 /* Build configuration list for PBXNativeTarget "dreamup-appUITests" */;
+			buildPhases = (
+				00288634EA76DD4FE1CE1170 /* [CP] Check Pods Manifest.lock */,
+				110874041E836A310067C225 /* Sources */,
+				110874051E836A310067C225 /* Frameworks */,
+				110874061E836A310067C225 /* Resources */,
+				84057B517E0D1D70E89086DD /* [CP] Embed Pods Frameworks */,
+				117CCF33402D9621651BAD85 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1108740A1E836A310067C225 /* PBXTargetDependency */,
+			);
+			name = "dreamup-appUITests";
+			productName = "dreamup-appUITests";
+			productReference = 110874081E836A310067C225 /* dreamup-appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		110873E11E836A310067C225 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Razgaitis, Paul";
+				TargetAttributes = {
+					110873E81E836A310067C225 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = J8MZA8BZNS;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InterAppAudio = {
+								enabled = 1;
+							};
+							com.apple.WAC = {
+								enabled = 1;
+							};
+						};
+					};
+					110873FC1E836A310067C225 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = J8MZA8BZNS;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 110873E81E836A310067C225;
+					};
+					110874071E836A310067C225 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = J8MZA8BZNS;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 110873E81E836A310067C225;
+					};
+				};
+			};
+			buildConfigurationList = 110873E41E836A310067C225 /* Build configuration list for PBXProject "dreamup-app" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 110873E01E836A310067C225;
+			productRefGroup = 110873EA1E836A310067C225 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				110873E81E836A310067C225 /* dreamup-app */,
+				110873FC1E836A310067C225 /* dreamup-appTests */,
+				110874071E836A310067C225 /* dreamup-appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		110873E71E836A310067C225 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				110873F71E836A310067C225 /* LaunchScreen.storyboard in Resources */,
+				118F5FA31E88511C00E36F90 /* GoogleService-Info.plist in Resources */,
+				110873F41E836A310067C225 /* Assets.xcassets in Resources */,
+				11B640ED1E89555600971DF0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		110873FB1E836A310067C225 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		110874061E836A310067C225 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00288634EA76DD4FE1CE1170 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		00E8AB0A7D9E6DD2CDC7BE6C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dreamup-appTests/Pods-dreamup-appTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		117CCF33402D9621651BAD85 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dreamup-appUITests/Pods-dreamup-appUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40E28AD74ADD1ABA955C2D1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5043877FB3881F178669199C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dreamup-appTests/Pods-dreamup-appTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84057B517E0D1D70E89086DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dreamup-appUITests/Pods-dreamup-appUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC3509EA8186AC7B33E60EAD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dreamup-app/Pods-dreamup-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD1A8D902E28D9702F9EB2BE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dreamup-app/Pods-dreamup-app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E71A1660A2FE24EDB15ADD6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		110873E51E836A310067C225 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				118F5FA11E884E0200E36F90 /* SendAudioTableViewController.swift in Sources */,
+				119B5B171E8987710020A567 /* FriendCell.swift in Sources */,
+				118F5F991E881AB900E36F90 /* AudioRecorderVC.swift in Sources */,
+				110873EF1E836A310067C225 /* ViewController.swift in Sources */,
+				11B640EF1E897F9C00971DF0 /* User.swift in Sources */,
+				110873ED1E836A310067C225 /* AppDelegate.swift in Sources */,
+				119B5B191E8987C00020A567 /* SelectedIndicator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		110873F91E836A310067C225 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				110874021E836A310067C225 /* dreamup_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		110874041E836A310067C225 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1108740D1E836A310067C225 /* dreamup_appUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		110873FF1E836A310067C225 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 110873E81E836A310067C225 /* dreamup-app */;
+			targetProxy = 110873FE1E836A310067C225 /* PBXContainerItemProxy */;
+		};
+		1108740A1E836A310067C225 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 110873E81E836A310067C225 /* dreamup-app */;
+			targetProxy = 110874091E836A310067C225 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		110873F51E836A310067C225 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				110873F61E836A310067C225 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1108740F1E836A310067C225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		110874101E836A310067C225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		110874121E836A310067C225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34870BFC215893E711FCDBA3 /* Pods-dreamup-app.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "dreamup-app/dreamup-app.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = J8MZA8BZNS;
+				INFOPLIST_FILE = "dreamup-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulrazgaitis.dreamup-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		110874131E836A310067C225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3E4090C7D26F036E6EDF699 /* Pods-dreamup-app.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "dreamup-app/dreamup-app.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = J8MZA8BZNS;
+				INFOPLIST_FILE = "dreamup-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulrazgaitis.dreamup-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		110874151E836A310067C225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 796BFE40210D4F6ACF6957A8 /* Pods-dreamup-appTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = J8MZA8BZNS;
+				INFOPLIST_FILE = "dreamup-appTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulrazgaitis.dreamup-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dreamup-app.app/dreamup-app";
+			};
+			name = Debug;
+		};
+		110874161E836A310067C225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C66488E3367999B5EC4709D1 /* Pods-dreamup-appTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = J8MZA8BZNS;
+				INFOPLIST_FILE = "dreamup-appTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulrazgaitis.dreamup-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dreamup-app.app/dreamup-app";
+			};
+			name = Release;
+		};
+		110874181E836A310067C225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37518DB0B0B1205AE8ED9AC2 /* Pods-dreamup-appUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = J8MZA8BZNS;
+				INFOPLIST_FILE = "dreamup-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulrazgaitis.dreamup-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "dreamup-app";
+			};
+			name = Debug;
+		};
+		110874191E836A310067C225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB8B83F7F75D8A7B4F83EF09 /* Pods-dreamup-appUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = J8MZA8BZNS;
+				INFOPLIST_FILE = "dreamup-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulrazgaitis.dreamup-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "dreamup-app";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		110873E41E836A310067C225 /* Build configuration list for PBXProject "dreamup-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1108740F1E836A310067C225 /* Debug */,
+				110874101E836A310067C225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		110874111E836A310067C225 /* Build configuration list for PBXNativeTarget "dreamup-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				110874121E836A310067C225 /* Debug */,
+				110874131E836A310067C225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		110874141E836A310067C225 /* Build configuration list for PBXNativeTarget "dreamup-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				110874151E836A310067C225 /* Debug */,
+				110874161E836A310067C225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		110874171E836A310067C225 /* Build configuration list for PBXNativeTarget "dreamup-appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				110874181E836A310067C225 /* Debug */,
+				110874191E836A310067C225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 110873E11E836A310067C225 /* Project object */;
+}
