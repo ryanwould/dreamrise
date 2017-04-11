@@ -54,6 +54,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SnapKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftDate.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>lottie-ios.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,11 +72,6 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1009AEE4DEBE3AE84246D3DFDD9AB6C5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>107A9565F9DF88517DFD3E28C05B2B96</key>
 		<dict>
 			<key>primary</key>
@@ -82,17 +87,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>430DC6E633D2D68F57F0B8C7CAF814EC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>44CAD6CE523055ED339E87154473A254</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5EA361912DFF9EB6C4624D7DA3C26DC8</key>
+		<key>681BE6E3D02A43F9BA63777AC435C8FD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>681BE6E3D02A43F9BA63777AC435C8FD</key>
+		<key>7B682625BDE8C106E9E1DF778C6D330F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8209741152F21750A5BE5BB2E288193E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -108,6 +123,11 @@
 			<true/>
 		</dict>
 		<key>BEF7E6E85DB5CDE5D7A18F4F2EB8494B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E92C8B5EC91F48A08D9A0F5486F9A624</key>
 		<dict>
 			<key>primary</key>
 			<true/>

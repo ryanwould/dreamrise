@@ -11,6 +11,7 @@ import AVFoundation
 import FirebaseStorage
 import Firebase
 import FirebaseDatabase
+import SnapKit
 
 class AudioRecorderVC: UINavigationController {
     
@@ -28,9 +29,11 @@ class AudioRecorderVC: UINavigationController {
     var filename: String?
     var ref: FIRDatabaseReference!
     
+   
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         //***********************
         // MARK: - Firebase
@@ -134,6 +137,7 @@ class AudioRecorderVC: UINavigationController {
         recordButton.isHidden = true
     }
     
+    
     //******************************************
     // MARK: - SEGUE
     //******************************************
@@ -154,6 +158,7 @@ class AudioRecorderVC: UINavigationController {
             let file = getDocumentsDirectory().appendingPathComponent("\(filename!).m4a")
             print("FILE URL..?  \(file.absoluteURL)")
             vc.audioFileUrl = file
+            vc.audioFileName = filename
         }
         
     }

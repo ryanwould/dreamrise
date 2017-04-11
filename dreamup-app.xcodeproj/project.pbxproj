@@ -13,6 +13,9 @@
 		110873F71E836A310067C225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110873F51E836A310067C225 /* LaunchScreen.storyboard */; };
 		110874021E836A310067C225 /* dreamup_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110874011E836A310067C225 /* dreamup_appTests.swift */; };
 		1108740D1E836A310067C225 /* dreamup_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1108740C1E836A310067C225 /* dreamup_appUITests.swift */; };
+		11224D6B1E90740D00F6894B /* RecipientBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11224D6A1E90740D00F6894B /* RecipientBarView.swift */; };
+		11224D6D1E90743000F6894B /* RecipientBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11224D6C1E90743000F6894B /* RecipientBarView.xib */; };
+		11224D6F1E91851100F6894B /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11224D6E1E91851100F6894B /* ColorPalette.swift */; };
 		118F5F991E881AB900E36F90 /* AudioRecorderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118F5F981E881AB900E36F90 /* AudioRecorderVC.swift */; };
 		118F5FA11E884E0200E36F90 /* SendAudioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118F5FA01E884E0200E36F90 /* SendAudioTableViewController.swift */; };
 		118F5FA31E88511C00E36F90 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 118F5FA21E88511C00E36F90 /* GoogleService-Info.plist */; };
@@ -57,6 +60,9 @@
 		110874081E836A310067C225 /* dreamup-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dreamup-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1108740C1E836A310067C225 /* dreamup_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dreamup_appUITests.swift; sourceTree = "<group>"; };
 		1108740E1E836A310067C225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11224D6A1E90740D00F6894B /* RecipientBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipientBarView.swift; sourceTree = "<group>"; };
+		11224D6C1E90743000F6894B /* RecipientBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecipientBarView.xib; sourceTree = "<group>"; };
+		11224D6E1E91851100F6894B /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		118F5F981E881AB900E36F90 /* AudioRecorderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioRecorderVC.swift; sourceTree = "<group>"; };
 		118F5FA01E884E0200E36F90 /* SendAudioTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendAudioTableViewController.swift; sourceTree = "<group>"; };
 		118F5FA21E88511C00E36F90 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -134,10 +140,13 @@
 			isa = PBXGroup;
 			children = (
 				119B5B181E8987C00020A567 /* SelectedIndicator.swift */,
+				11224D6A1E90740D00F6894B /* RecipientBarView.swift */,
+				11224D6C1E90743000F6894B /* RecipientBarView.xib */,
 				118F5FA61E88538C00E36F90 /* dreamup-app.entitlements */,
 				11B640EC1E89555600971DF0 /* Main.storyboard */,
 				118F5FA01E884E0200E36F90 /* SendAudioTableViewController.swift */,
 				119B5B161E8987710020A567 /* FriendCell.swift */,
+				11224D6E1E91851100F6894B /* ColorPalette.swift */,
 				11B640EE1E897F9C00971DF0 /* User.swift */,
 				118F5FA21E88511C00E36F90 /* GoogleService-Info.plist */,
 				110873EC1E836A310067C225 /* AppDelegate.swift */,
@@ -322,6 +331,7 @@
 			files = (
 				110873F71E836A310067C225 /* LaunchScreen.storyboard in Resources */,
 				118F5FA31E88511C00E36F90 /* GoogleService-Info.plist in Resources */,
+				11224D6D1E90743000F6894B /* RecipientBarView.xib in Resources */,
 				110873F41E836A310067C225 /* Assets.xcassets in Resources */,
 				11B640ED1E89555600971DF0 /* Main.storyboard in Resources */,
 			);
@@ -488,8 +498,10 @@
 			files = (
 				118F5FA11E884E0200E36F90 /* SendAudioTableViewController.swift in Sources */,
 				119B5B171E8987710020A567 /* FriendCell.swift in Sources */,
+				11224D6F1E91851100F6894B /* ColorPalette.swift in Sources */,
 				118F5F991E881AB900E36F90 /* AudioRecorderVC.swift in Sources */,
 				110873EF1E836A310067C225 /* ViewController.swift in Sources */,
+				11224D6B1E90740D00F6894B /* RecipientBarView.swift in Sources */,
 				11B640EF1E897F9C00971DF0 /* User.swift in Sources */,
 				110873ED1E836A310067C225 /* AppDelegate.swift in Sources */,
 				119B5B191E8987C00020A567 /* SelectedIndicator.swift in Sources */,

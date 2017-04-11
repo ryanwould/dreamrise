@@ -98,6 +98,8 @@ PODS:
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
+  - SnapKit (3.2.0)
+  - SwiftDate (4.0.13)
   - TwitterCore (2.8.0):
     - Fabric
   - TwitterKit (2.8.0):
@@ -110,6 +112,8 @@ DEPENDENCIES:
   - Firebase/Storage
   - FirebaseUI
   - lottie-ios
+  - SnapKit (~> 3.2.0)
+  - SwiftDate
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
@@ -133,9 +137,11 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 6f8d8b28b7e345549ac471071608170b31cb4977
   lottie-ios: 8564a52e01a29c180ded076cb059aae8ec378cf1
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SwiftDate: 8ec416bb1b5129d1f35e8efaed720421f41d42df
   TwitterCore: e959987be23c767004d29eb7fab8d85d8585a2e5
   TwitterKit: f7b0a1adcb800f6446ff0ef70164797376522ff3
 
-PODFILE CHECKSUM: a92e5b37fce2f341605ac049e3b54e7e4316893e
+PODFILE CHECKSUM: 90ca34b309f2c27e65a0fc767532357f35919553
 
 COCOAPODS: 1.2.0

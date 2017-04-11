@@ -9,84 +9,76 @@
 import UIKit
 import Firebase
 import FirebaseDatabaseUI
+import SnapKit
 
 class SendAudioTableViewController: UITableViewController {
    
+    // Audio file
     var audioFileUrl: URL?
-    var friends = [User]()
-    var ref: FIRDatabaseReference!
+    var audioFileName: String?
+    
+    // Friends
+    var friends = [String: String]()
+    var selectedFriends = [String: String]()
+    
+    // Firebase references
+    var usersRef: FIRDatabaseReference!
+    var voiceMemosRef: FIRDatabaseReference!
     var storageRef: FIRStorageReference!
     fileprivate var _refHandle: FIRDatabaseHandle?
     var dataSource: FUITableViewDataSource?
     
+    var recipientsBar: RecipientBarView?
+    var recipientsBarIsShowing: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Got to sendaudiotableviewcontroller \(audioFileUrl)")
-        ref = FIRDatabase.database().reference().child("users")
         
-//        ref.observe(.value, with: { snapshot in
-//            print("SNAP HERE: \(snapshot)")
-//        })
-        
-//        ref.observeSingleEvent(of: .value, with: { (snapshot) in
-//            // Get user value
-//            let value = snapshot.value as? NSDictionary
-//            print("VALUE: \(value)")
-//            
-//            // ...
-//        }) { (error) in
-//            print(error.localizedDescription)
-//        }
+        //setup firebase
+        createStorageRef()
+        createDatabaseRefs()
         
         tableView.register(FriendCell.self, forCellReuseIdentifier: "Friend Cell")
         
         tableView.dataSource = dataSource
         
-        print("\nDATASOURCE: \(dataSource)")
-        self.dataSource = self.tableView.bind(to: self.ref.child("8b10bZJWEjRQEDTf74mB4nPhyJG2/friends/"), populateCell: { (tableView, indexPath, snapshot) in
-            let value = snapshot.value as? NSDictionary
-            let key = snapshot.key || ""
-            print("SNAPSHOT: \(key)")
+        //TODO GET CURRENT USER ID
+        
+        self.dataSource = self.tableView.bind(to: self.usersRef.child("8b10bZJWEjRQEDTf74mB4nPhyJG2/friends/"), populateCell: { (tableView, indexPath, snapshot) in
+            let value = snapshot.value
+            let key = snapshot.key
+            let cell = tableView.dequeueReusableCell(withIdentifier: "friendCell") as! FriendCell
             
-            
-            
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Friend Cell")
-            
-            return cell!
-        })
-        
-        print("\nDATASOURCE: \(dataSource)")
-        
-        
-        
-        
-        //configureDatabase()
-        //configureStorage()
-        
-    
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    }
-    
-    func configureDatabase() {
-        ref = FIRDatabase.database().reference()
-        //listen for new firends
-        // TODO: Swap out user id
-        _refHandle = self.ref.child("users/8b10bZJWEjRQEDTf74mB4nPhyJG2/friends").observe(.childAdded, with: { [weak self] (snapshot) -> Void in
-            guard let strongSelf = self else {return}
-            print("SNAPSHOT: \(snapshot)")
-            // var user = User(uid: snapshot.id, name: <#T##String#>, email: <#T##String#>, username: <#T##String#>)
-            // strongSelf.friends.append(snapshot)
-            strongSelf.tableView.insertRows(at: [IndexPath(row: strongSelf.friends.count-1, section: 0)], with: .automatic)
+            self.usersRef.child("\(key)").observe(.value, with: { (snap) in
+                let key = snap.key as! String
+                let user = snap.value as? [String: Any]
+                
+                let name = user?["name"] as? String
+                
+                if let name = name {
+                    cell.name.text = name
+                    cell.userId = key
+                    
+                    self.friends[key] = name
+                    print("FRIENDS? -> \(self.friends[key])")
+                }
+            })
+            return cell
         })
     }
     
-    func configureStorage() {
-        storageRef = FIRStorage.storage().reference()
+    // ***********************
+    // MARK: - FIREBASE SETUP
+    // ***********************
+    
+    func createStorageRef(){
+        let storage = FIRStorage.storage()
+        self.storageRef = storage.reference()
+    }
+    
+    func createDatabaseRefs() {
+        usersRef = FIRDatabase.database().reference().child("users")
+        voiceMemosRef = FIRDatabase.database().reference().child("voice_memos")
     }
     
     override func didReceiveMemoryWarning() {
@@ -94,94 +86,144 @@ class SendAudioTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // ***********************
     // MARK: - Table view data source
+    // ***********************
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return friends.count
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let key = self.dataSource?.items[indexPath.row].key
+        print("SELECTED: \(indexPath.row)")
+        print(key!)
+        print("FRIEND: \(self.friends[key!])")
+        
+        let selectedCell = tableView.cellForRow(at: indexPath) as! FriendCell
+        
+        selectedCell.toggleStatus()
+        
+        //add to selected Friends, or remove if present
+        let keyExists = self.selectedFriends[key!] != nil
+        
+        if keyExists {
+            self.selectedFriends.removeValue(forKey: key!)
+        } else {
+            self.selectedFriends[key!] = self.friends[key!]
+            selectedCell.active = true
+        }
+        
+        print(self.selectedFriends.description)
+        
+        print(self.selectedFriends.count)
+        
+        if self.selectedFriends.count > 0 && !recipientsBarIsShowing {
+            showRecipientsBar()
+        }
+        
+        if self.selectedFriends.count == 0 && recipientsBarIsShowing {
+            hideRecipientsBar()
+        }
+        
+        guard self.recipientsBar != nil else { return }
+        self.recipientsBar?.recipients.text = self.selectedFriends.description
     }
     
-    /*
-    
-     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Friend Cell") as! FriendCell
-        //unpack friend from Firebase Data Snapshot
+    func showRecipientsBar(){
+        self.recipientsBarIsShowing = true
         
-        let friendSnapshot: FIRDataSnapshot! = self.friends[indexPath.row]
-        guard let friend = friendSnapshot.value as? 
-        /* switch self.friends.count {
-        case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Empty Cell")
-            return cell!
-        default:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Friend Cell", for: indexPath) as! FriendCell
-            cell.indicator = SelectedIndicator(selected: false)
-            cell.name.text = friends[indexPath.row].name
-            return cell
-        }
-        */
-     }
- */
-    
-    func getFriends() {
-        print("calling getFriends")
-        ref.queryOrdered(byChild: "friends").observe(.childAdded, with: { (snapshot) in
-            print(snapshot.value ?? "snapshot blank")
+        let superview = self.navigationController?.view
+        self.recipientsBar = RecipientBarView.instanceFromNib()
+        self.recipientsBar?.parentView = self
+        
+        guard superview != nil, recipientsBar != nil else { print("something is nil"); return }
+        
+        let scrollview = self.recipientsBar?.scrollview
+        self.recipientsBar?.scrollview.contentSize = CGSize(width: 100.0, height: 100.0)
+        
+        
+        superview!.addSubview(recipientsBar!)
+        recipientsBar!.backgroundColor = Colors().blue
+        recipientsBar!.snp.makeConstraints({ (make) -> Void in
+            make.width.equalToSuperview()
+            make.bottom.equalTo((superview!.snp.bottom))
         })
     }
     
-    func getQuery() -> FIRDatabaseQuery {
-        return (ref?.child("8b10bZJWEjRQEDTf74mB4nPhyJG2/friends/"))!
+    func sendAudio() {
+        print("sending audio")
+        print(self.selectedFriends.description)
         
+        //*********************
+        // Upload file
+        //*********************
+        
+        // File located on disk
+        if let audioFileUrl = audioFileUrl, let audioFileName = audioFileName {
+            
+            let audioRef = storageRef.child("voice_memos/\(audioFileName)")
+            
+            let uploadTask = audioRef.putFile(audioFileUrl, metadata: nil) { metadata, error in
+                if let error = error {
+                    // Uh-oh, an error occurred!
+                    print("ERROR! \(error)")
+                } else {
+                    // Metadata contains file metadata such as size, content-type, and download URL.
+                    let downloadURL = metadata!.downloadURL()
+                    print("DOWNLOAD URL: \(downloadURL)")
+                    
+                    
+                    //***********************************
+                    // SEND FILE TO SELECTED RECIPIENTS
+                    //**********************************
+                    
+                    // TODO: Move to background
+                    guard downloadURL != nil else { return }
+                    self.shareVoiceMemo(downloadURL: "\(downloadURL!)")
+                }
+            }
+        }
     }
     
-    /*
-     // Override to support conditional editing of the table view.
-     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the specified item to be editable.
-     return true
-     }
-     */
+    func shareVoiceMemo(downloadURL: String){
+        
+        for friend in self.selectedFriends {
+            let key = voiceMemosRef.child("\(friend.key)").childByAutoId().key
+            let voiceMemo: [String: Any] = [
+                "download_url": downloadURL,
+                "expires_at": String(Date().timeIntervalSince1970 + (24 * 60 * 60)),
+                "sent_at": String(Date().timeIntervalSince1970),
+                "listened_at": "never",
+                "play_count": 0,
+                "saved": 0,
+                "sender": "CURRENT_USER_ID",
+                ]
+            self.voiceMemosRef.child("\(friend.key)/\(key)").setValue(voiceMemo)
+            print("writing to voice_memos/\(friend.key)/\(key)/")
+        }
+        
+        self.dismiss(animated: true, completion: nil)
+    }
     
-    /*
-     // Override to support editing the table view.
-     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-     if editingStyle == .delete {
-     // Delete the row from the data source
-     tableView.deleteRows(at: [indexPath], with: .fade)
-     } else if editingStyle == .insert {
-     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-     }
-     }
-     */
+    func hideRecipientsBar(){
+        self.recipientsBarIsShowing = false
+        let superview = self.navigationController?.view
+        
+        guard superview != nil, recipientsBar != nil else { print("something is nil"); return }
+        
+        superview!.addSubview(recipientsBar!)
+        recipientsBar?.removeFromSuperview()
+    }
     
-    /*
-     // Override to support rearranging the table view.
-     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-     
-     }
-     */
-    
-    /*
-     // Override to support conditional rearranging of the table view.
-     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the item to be re-orderable.
-     return true
-     }
-     */
-    
-    /*
      // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
     
 }
