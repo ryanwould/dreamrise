@@ -30,6 +30,14 @@ class SendAudioTableViewController: UITableViewController {
     
     var recipientsBar: RecipientBarView?
     var recipientsBarIsShowing: Bool = false
+
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        print("VIEW WILL DISAPPEAR")
+        if recipientsBarIsShowing {
+            hideRecipientsBar()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,6 +74,8 @@ class SendAudioTableViewController: UITableViewController {
             return cell
         })
     }
+    
+    
     
     // ***********************
     // MARK: - FIREBASE SETUP
@@ -144,12 +154,11 @@ class SendAudioTableViewController: UITableViewController {
         let scrollview = self.recipientsBar?.scrollview
         self.recipientsBar?.scrollview.contentSize = CGSize(width: 100.0, height: 100.0)
         
-        
         superview!.addSubview(recipientsBar!)
         recipientsBar!.backgroundColor = Colors().blue
         recipientsBar!.snp.makeConstraints({ (make) -> Void in
             make.width.equalToSuperview()
-            make.bottom.equalTo((superview!.snp.bottom))
+            make.bottom.equalTo((superview!.snp.bottom)).offset(-49)
         })
     }
     
@@ -204,15 +213,21 @@ class SendAudioTableViewController: UITableViewController {
             self.voiceMemosRef.child("\(friend.key)/\(key)").setValue(voiceMemo)
             print("writing to voice_memos/\(friend.key)/\(key)/")
         }
-        
-        self.dismiss(animated: true, completion: nil)
+        self.recipientsBar?.recipients.text = ""
+        self.hideRecipientsBar()
+        self.unwindToMenu()
     }
+    
+    
     
     func hideRecipientsBar(){
         self.recipientsBarIsShowing = false
         let superview = self.navigationController?.view
         
-        guard superview != nil, recipientsBar != nil else { print("something is nil"); return }
+        guard superview != nil, recipientsBar != nil else {
+            print("something is nil");
+            return
+        }
         
         superview!.addSubview(recipientsBar!)
         recipientsBar?.removeFromSuperview()
@@ -220,10 +235,21 @@ class SendAudioTableViewController: UITableViewController {
     
      // MARK: - Navigation
     
+    func unwindToMenu(){
+        self.performSegue(withIdentifier: "unwindToMenu", sender: self)
+    }
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        let dest = segue.destination
+        if let nav = dest.navigationController as? AudioRecorderVC {
+            nav.resetRecordingView()
+            nav.loadRecordingUI()
+        }
+        print("DESTINATION: \(dest)")
+        
     }
     
 }

@@ -20,6 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // configure Firebase
         FIRApp.configure()
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().barTintColor = UIColor.black
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UIApplication.shared.statusBarStyle = .lightContent
+        
+        UITabBar.appearance().isTranslucent = false
+        UITabBar.appearance().barTintColor = UIColor(red: 26/255, green: 26/255, blue: 26/255, alpha: 1.0)
+        UITabBar.appearance().tintColor = UIColor.white
         return true
     }
 

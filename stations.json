@@ -1,0 +1,5297 @@
+{
+    "station":
+    [
+     {
+     "name": "Sub Pop Radio",
+     "streamURL": "http://djboyradio.streamguys1.com/sub-pop-records.mp3",
+     "imageURL": "station-sub.png",
+     "desc": "Midsized Record Label",
+     "longDesc": "Sub Pop is a record label founded in 1986 by Bruce Pavitt. In   1988, Sub Pop Records LLC was formed by Bruce Pavitt and Jonathan Poneman in Seattle, Washington. Sub Pop achieved fame in the late 1980s for first   signing Nirvana, Soundgarden, Mudhoney and many other bands from the Seattle alternative rock scene."
+     },
+     {
+     "name": "Sounds of the 80s",
+     "streamURL": "http://tuneinads.moodmedia.com/streams/tunein_sounds_of_the_80s_with_ads.mp3",
+     "imageURL": "station-80s",
+     "desc": "Totally Rad",
+     "longDesc": "80s Baby! The '80s is not about nostalgia; it is about a decade of people, decisions and inventions that changed our future, told from the perspective of unknowing history makers who lived these iconic moments."
+     },
+     {
+     "name": "Classic Rock",
+     "streamURL": "http://rfcmedia.streamguys1.com/classicrock.mp3",
+     "imageURL": "station-classicrock",
+     "desc": "Classic Rock Hits",
+     "longDesc": "Classic rock is a radio format which developed from the album-oriented rock (AOR) format in the early 1980s. In the United States, the classic rock format features music ranging generally from the late 1960s to the late 1980s, primarily focusing on commercially successful hard rock popularized in the 1970s. The radio format became increasingly popular with the baby boomer demographic by the end of the 1990s."
+     },
+     {
+     "name": "Radio 1190",
+     "streamURL": "http://wkqq-fm.akacast.akamaistream.net/7/630/34116/v1/auth.akacast.akamaistream.net/wkqq-fm",
+     "imageURL": "",
+     "desc": "KVCU - Boulder, CO",
+     "longDesc": "Radio 1190 is the bomb."
+     },
+     {
+     "name": "Radio Radio Weezer",
+     "streamURL": "http://weezer.akacast.akamaistream.net/7/871/61097/v1/auth.akacast.akamaistream.net/weezer",
+     "imageURL": "",
+     "desc": "Weez in charge now",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio iheartradio Live",
+     "streamURL": "http://stripped.akacast.akamaistream.net/7/378/73706/v1/auth.akacast.akamaistream.net/stripped",
+     "imageURL": "",
+     "desc": "Your favorite artists perform live",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Eagles Radio",
+     "streamURL": "http://eagles.akacast.akamaistream.net/7/228/73708/v1/auth.akacast.akamaistream.net/eagles",
+     "imageURL": "",
+     "desc": "Our stories. Our friends. Our favorite music.",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Bollywood & Beyond",
+     "streamURL": "http://ibol-fl.akacast.akamaistream.net/7/302/83440/v1/auth.akacast.akamaistream.net/ibol-fl",
+     "imageURL": "",
+     "desc": "India's Hottest Hit Mix!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio CBGB Radio",
+     "streamURL": "http://icbg-fl.akacast.akamaistream.net/7/847/84267/v1/auth.akacast.akamaistream.net/icbg-fl",
+     "imageURL": "",
+     "desc": "The Home of Underground Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Christina Aguilera Radio",
+     "streamURL": "http://christinaaguilera.akacast.akamaistream.net/7/436/61091/v1/auth.akacast.akamaistream.net/christinaaguilera",
+     "imageURL": "",
+     "desc": "My stories. My favorite music.",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio All My Jams",
+     "streamURL": "http://allmyjams.akacast.akamaistream.net/7/425/73700/v1/auth.akacast.akamaistream.net/allmyjams",
+     "imageURL": "",
+     "desc": "Today's R&B and The Best Old School",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio NEW! Discover & Uncover",
+     "streamURL": "http://discoveranduncover.akacast.akamaistream.net/7/303/61094/v1/auth.akacast.akamaistream.net/discoveranduncover",
+     "imageURL": "",
+     "desc": "Emerging artists. Emerging music.",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio The Kidd Kraddick Channel",
+     "streamURL": "http://kiddkraddick.akacast.akamaistream.net/7/998/19887/v1/auth.akacast.akamaistream.net/kiddkraddick",
+     "imageURL": "",
+     "desc": "#1 In The Nation and On-Demand",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio White House Brief",
+     "streamURL": "http://whitehousebrief.akacast.akamaistream.net/7/353/61093/v1/auth.akacast.akamaistream.net/whitehousebrief",
+     "imageURL": "",
+     "desc": "All Things Politics",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Lex & Terry",
+     "streamURL": "http://lexandterry.akacast.akamaistream.net/7/782/61090/v1/auth.akacast.akamaistream.net/lexandterry",
+     "imageURL": "",
+     "desc": "Morning Radio Network",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio The MJ Morning Show",
+     "streamURL": "http://mjmorningshow.akacast.akamaistream.net/7/520/61089/v1/auth.akacast.akamaistream.net/mjmorningshow",
+     "imageURL": "",
+     "desc": "www.MJMorningShow.com",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio AT40 with Ryan Seacrest",
+     "streamURL": "http://americantop40.akacast.akamaistream.net/7/785/58084/v1/auth.akacast.akamaistream.net/americantop40",
+     "imageURL": "",
+     "desc": "American Top 40",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Big Classic Hits",
+     "streamURL": "http://bigclassichits.akacast.akamaistream.net/7/921/61098/v1/auth.akacast.akamaistream.net/bigclassichits",
+     "imageURL": "",
+     "desc": "Feel Good Songs of the 70's & 80's!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Cool Oldies",
+     "streamURL": "http://coololdies.akacast.akamaistream.net/7/257/61099/v1/auth.akacast.akamaistream.net/coololdies",
+     "imageURL": "",
+     "desc": "Sing Along Songs of 60's & 70's!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Country Road",
+     "streamURL": "http://countryroad.akacast.akamaistream.net/7/644/61081/v1/auth.akacast.akamaistream.net/countryroad",
+     "imageURL": "",
+     "desc": "Real Songs About Real Life",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Dream Radio",
+     "streamURL": "http://idre-fl.akacast.akamaistream.net/7/685/89373/v1/auth.akacast.akamaistream.net/idre-fl",
+     "imageURL": "",
+     "desc": "Your Favorite Songs Never Get Old",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio erockster",
+     "streamURL": "http://erockster.akacast.akamaistream.net/7/149/48652/v1/auth.akacast.akamaistream.net/erockster",
+     "imageURL": "",
+     "desc": "discover indie, classic, dance & hip-hop",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Foggy Mountain",
+     "streamURL": "http://foggymountain.akacast.akamaistream.net/7/532/61096/v1/auth.akacast.akamaistream.net/foggymountain",
+     "imageURL": "",
+     "desc": "Real, Genuine, Authentic, Classic Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio FOX Sports Radio",
+     "streamURL": "http://prn-foxsports-ic-pri.akacast.akamaistream.net/7/205/5833/v1/auth.akacast.akamaistream.net/prn_foxsports_ic_pri",
+     "imageURL": "",
+     "desc": "Intense, In Depth, Interactive",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Christmas In July",
+     "streamURL": "http://ievt-fl.akacast.akamaistream.net/7/741/84268/v1/auth.akacast.akamaistream.net/ievt-fl",
+     "imageURL": "",
+     "desc": "Santa plays DJ in the summertime",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Hit Nation",
+     "streamURL": "http://hitnation.akacast.akamaistream.net/7/299/61095/v1/auth.akacast.akamaistream.net/hitnation",
+     "imageURL": "",
+     "desc": "All of Today's Biggest Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio La Bomba",
+     "streamURL": "http://labomba.akacast.akamaistream.net/7/535/49404/v1/auth.akacast.akamaistream.net/labomba",
+     "imageURL": "",
+     "desc": "Best of Salsa, Merengue, and Cumbia",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Megadeth Radio",
+     "streamURL": "http://megadeth.akacast.akamaistream.net/7/372/78276/v1/auth.akacast.akamaistream.net/megadeth",
+     "imageURL": "",
+     "desc": "Predictably Unpredictable",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio MIA",
+     "streamURL": "http://mia.akacast.akamaistream.net/7/418/73701/v1/auth.akacast.akamaistream.net/mia",
+     "imageURL": "",
+     "desc": "Mas Variedad Musical",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio The Nashville Channel",
+     "streamURL": "http://prn-nash-ic-pri.akacast.akamaistream.net/7/86/79928/v1/auth.akacast.akamaistream.net/prn_nash_ic_pri",
+     "imageURL": "",
+     "desc": "The Best Damn Country....Period!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio New Country",
+     "streamURL": "http://newcountry.akacast.akamaistream.net/7/230/49376/v1/auth.akacast.akamaistream.net/newcountry",
+     "imageURL": "",
+     "desc": "Tomorrow's country hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Classica",
+     "streamURL": "http://icla-fl.akacast.akamaistream.net/7/936/83441/v1/auth.akacast.akamaistream.net/icla-fl",
+     "imageURL": "",
+     "desc": "All Classical Music - All The Time",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Pride Radio",
+     "streamURL": "http://pride.akacast.akamaistream.net/7/866/49413/v1/auth.akacast.akamaistream.net/pride",
+     "imageURL": "",
+     "desc": "Your Life. Your Music.",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Real Oldies",
+     "streamURL": "http://realoldies.akacast.akamaistream.net/7/150/49385/v1/auth.akacast.akamaistream.net/realoldies",
+     "imageURL": "",
+     "desc": "Rock and Roll's Greatest Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Rhythmix",
+     "streamURL": "http://irac-fl.akacast.akamaistream.net/7/994/83447/v1/auth.akacast.akamaistream.net/irac-fl",
+     "imageURL": "",
+     "desc": "Move To The Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Rock Nation",
+     "streamURL": "http://rocknation.akacast.akamaistream.net/7/573/73696/v1/auth.akacast.akamaistream.net/rocknation",
+     "imageURL": "",
+     "desc": "Look Ma!Rock Music!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Slow Jams",
+     "streamURL": "http://slowjams.akacast.akamaistream.net/7/899/49406/v1/auth.akacast.akamaistream.net/slowjams",
+     "imageURL": "",
+     "desc": "Smooth blend of the best R&B love songs",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Smooth Jazz",
+     "streamURL": "http://smoothjazz.akacast.akamaistream.net/7/418/49381/v1/auth.akacast.akamaistream.net/smoothjazz",
+     "imageURL": "",
+     "desc": "The Smoothest Place on the Planet",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Soft Rock",
+     "streamURL": "http://softrock.akacast.akamaistream.net/7/72/61080/v1/auth.akacast.akamaistream.net/softrock",
+     "imageURL": "",
+     "desc": "Best Variety from Yesterday & Today",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Spin Cycle",
+     "streamURL": "http://ispi-fl.akacast.akamaistream.net/7/277/94966/v1/auth.akacast.akamaistream.net/ispi-fl",
+     "imageURL": "",
+     "desc": "Mixing and Remixing The Hits 24/7",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio The Alternative Project",
+     "streamURL": "http://alternativeproject.akacast.akamaistream.net/7/275/73697/v1/auth.akacast.akamaistream.net/alternativeproject",
+     "imageURL": "",
+     "desc": "Ear holes wanted!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio The Beat",
+     "streamURL": "http://thebeat.akacast.akamaistream.net/7/808/73699/v1/auth.akacast.akamaistream.net/thebeat",
+     "imageURL": "",
+     "desc": "Hip Hop, R&B and Back in the Day Joints",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio The Classic Rock Channel",
+     "streamURL": "http://theclassicrockchannel.akacast.akamaistream.net/7/124/73698/v1/auth.akacast.akamaistream.net/theclassicrockchannel",
+     "imageURL": "",
+     "desc": "The Best Classic Rock Ever Made",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Today's Mix",
+     "streamURL": "http://todaysmix.akacast.akamaistream.net/7/97/61092/v1/auth.akacast.akamaistream.net/todaysmix",
+     "imageURL": "",
+     "desc": "80's, 90's, Now",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WiLD",
+     "streamURL": "http://irch-fl.akacast.akamaistream.net/7/636/83446/v1/auth.akacast.akamaistream.net/irch-fl",
+     "imageURL": "",
+     "desc": "Today's Hottest Party Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 100.1 WKQQ",
+     "streamURL": "http://wkqq-fm.akacast.akamaistream.net/7/630/34116/v1/auth.akacast.akamaistream.net/wkqq-fm",
+     "imageURL": "",
+     "desc": "The Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 100.3 Cat Country",
+     "streamURL": "http://ksnr-fm.akacast.akamaistream.net/7/588/27989/v1/auth.akacast.akamaistream.net/ksnr-fm",
+     "imageURL": "",
+     "desc": "The Forks Best Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 100.3 THE BUS",
+     "streamURL": "http://kdrb-fm.akacast.akamaistream.net/7/845/31306/v1/auth.akacast.akamaistream.net/kdrb-fm",
+     "imageURL": "",
+     "desc": "We Play Everything",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 100.3 The Sound",
+     "streamURL": "http://wsdd-fm.akacast.akamaistream.net/7/108/19944/v1/auth.akacast.akamaistream.net/wsdd-fm",
+     "imageURL": "",
+     "desc": "Modern Music for St. Louis",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 100.3 The Edge",
+     "streamURL": "http://kdje-fm.akacast.akamaistream.net/7/420/19760/v1/auth.akacast.akamaistream.net/kdje-fm",
+     "imageURL": "",
+     "desc": "New Rock And The Corey And Jay Show",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 100.3 The New Buzz",
+     "streamURL": "http://wvbz-fm.akacast.akamaistream.net/7/10/20000/v1/auth.akacast.akamaistream.net/wvbz-fm",
+     "imageURL": "",
+     "desc": "Live Life to the Loudest",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 100.3 The Peak",
+     "streamURL": "http://kpek-fm.akacast.akamaistream.net/7/86/19963/v1/auth.akacast.akamaistream.net/kpek-fm",
+     "imageURL": "",
+     "desc": "80's, 90's & NOW",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 100.3 The River",
+     "streamURL": "http://wqrv-fm.akacast.akamaistream.net/7/575/30791/v1/auth.akacast.akamaistream.net/wqrv-fm",
+     "imageURL": "",
+     "desc": "All The Songs You Love To Sing Along With",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 100.3 WHEB",
+     "streamURL": "http://wheb-fm.akacast.akamaistream.net/7/700/19956/v1/auth.akacast.akamaistream.net/wheb-fm",
+     "imageURL": "",
+     "desc": "The Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 100.3 WNIC",
+     "streamURL": "http://wnic-fm.akacast.akamaistream.net/7/281/19927/v1/auth.akacast.akamaistream.net/wnic-fm",
+     "imageURL": "",
+     "desc": "Detroit's Variety Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Louisville's Gen X Radio 100.5",
+     "streamURL": "http://wlgx-fm.akacast.akamaistream.net/7/691/23675/v1/auth.akacast.akamaistream.net/wlgx-fm",
+     "imageURL": "",
+     "desc": "Grunge, Hip Hop, Hair Bands and more...",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 100.5 The Drive",
+     "streamURL": "http://wdvi-fm.akacast.akamaistream.net/7/111/20816/v1/auth.akacast.akamaistream.net/wdvi-fm",
+     "imageURL": "",
+     "desc": "Rochester's WDVI. Listen.Different.",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 100.5 the FOX",
+     "streamURL": "http://kbfx-fm.akacast.akamaistream.net/7/450/31706/v1/auth.akacast.akamaistream.net/kbfx-fm",
+     "imageURL": "",
+     "desc": "The Classic Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 100.5 The Wolf",
+     "streamURL": "http://kswf-fm.akacast.akamaistream.net/7/699/19942/v1/auth.akacast.akamaistream.net/kswf-fm",
+     "imageURL": "",
+     "desc": "More Fresh Country Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 100.5 WKEE",
+     "streamURL": "http://wkee-fm.akacast.akamaistream.net/7/536/20143/v1/auth.akacast.akamaistream.net/wkee-fm",
+     "imageURL": "",
+     "desc": "Today's Best Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 100.7 KOLT FM",
+     "streamURL": "http://kolz-fm.akacast.akamaistream.net/7/437/22233/v1/auth.akacast.akamaistream.net/kolz-fm",
+     "imageURL": "",
+     "desc": "Cheyenne's Wide Open Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 100.7 The River",
+     "streamURL": "http://wrva-fm.akacast.akamaistream.net/7/170/25766/v1/auth.akacast.akamaistream.net/wrva-fm",
+     "imageURL": "",
+     "desc": "All About The Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 100.7 WFLA",
+     "streamURL": "http://wfla-fm.akacast.akamaistream.net/7/799/20801/v1/auth.akacast.akamaistream.net/wfla-fm",
+     "imageURL": "",
+     "desc": "Tallahassee's Talk Radio",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 100.7 WMMS - The Buzzard",
+     "streamURL": "http://wmms-fm.akacast.akamaistream.net/7/920/20015/v1/auth.akacast.akamaistream.net/wmms-fm",
+     "imageURL": "",
+     "desc": "Cleveland's Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 100.9 WRNX",
+     "streamURL": "http://wrnx-fm.akacast.akamaistream.net/7/621/33390/v1/auth.akacast.akamaistream.net/wrnx-fm",
+     "imageURL": "",
+     "desc": "The Valley's Quality Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1000 KTOK",
+     "streamURL": "http://ktok-am.akacast.akamaistream.net/7/815/20040/v1/auth.akacast.akamaistream.net/ktok-am",
+     "imageURL": "",
+     "desc": "News Radio 1000 KTOK Depend On It!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 101-3 The Fox Rocks!",
+     "streamURL": "http://wbfx-fm.akacast.akamaistream.net/7/537/19929/v1/auth.akacast.akamaistream.net/wbfx-fm",
+     "imageURL": "",
+     "desc": "Bob & Tom and Classic Rock!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 101.1 WNOE",
+     "streamURL": "http://wnoe-fm.akacast.akamaistream.net/7/626/27993/v1/auth.akacast.akamaistream.net/wnoe-fm",
+     "imageURL": "",
+     "desc": "New Orleans' Country Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 101.3 KDWB",
+     "streamURL": "http://kdwb-fm.akacast.akamaistream.net/7/731/19935/v1/auth.akacast.akamaistream.net/kdwb-fm",
+     "imageURL": "",
+     "desc": "The Twin Cities' Hit Music Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 101.3 KGOT",
+     "streamURL": "http://kgot-fm.akacast.akamaistream.net/7/449/31707/v1/auth.akacast.akamaistream.net/kgot-fm",
+     "imageURL": "",
+     "desc": "All the Hits...One Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 101.5 KGB",
+     "streamURL": "http://kgb-fm.akacast.akamaistream.net/7/682/19784/v1/auth.akacast.akamaistream.net/kgb-fm",
+     "imageURL": "",
+     "desc": "San Diego's Classic Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 101.5 La Preciosa",
+     "streamURL": "http://kizs-fm.akacast.akamaistream.net/7/132/20044/v1/auth.akacast.akamaistream.net/kizs-fm",
+     "imageURL": "",
+     "desc": "Toda tu musica preciosa",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 101.5 The River",
+     "streamURL": "http://wrvf-fm.akacast.akamaistream.net/7/988/20029/v1/auth.akacast.akamaistream.net/wrvf-fm",
+     "imageURL": "",
+     "desc": "Today's Soft Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 101.5 WIBA-FM",
+     "streamURL": "http://wiba-fm.akacast.akamaistream.net/7/884/36598/v1/auth.akacast.akamaistream.net/wiba-fm",
+     "imageURL": "",
+     "desc": "Madison's Home of Classic Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 101.5 WYNK",
+     "streamURL": "http://wynk-fm.akacast.akamaistream.net/7/754/19910/v1/auth.akacast.akamaistream.net/wynk-fm",
+     "imageURL": "",
+     "desc": "Today's Hot Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 101.9 The Twister",
+     "streamURL": "http://ktst-fm.akacast.akamaistream.net/7/84/20041/v1/auth.akacast.akamaistream.net/ktst-fm",
+     "imageURL": "",
+     "desc": "Today's New Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1011 The Beat JAMZ",
+     "streamURL": "http://wubt-fm.akacast.akamaistream.net/7/837/23243/v1/auth.akacast.akamaistream.net/wubt-fm",
+     "imageURL": "",
+     "desc": "Nashville's #1 for Hip-Hop and R&B",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 101one WJRR",
+     "streamURL": "http://wjrr-fm.akacast.akamaistream.net/7/207/19853/v1/auth.akacast.akamaistream.net/wjrr-fm",
+     "imageURL": "",
+     "desc": "The Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 102-5 KNIX",
+     "streamURL": "http://knix-fm.akacast.akamaistream.net/7/587/19754/v1/auth.akacast.akamaistream.net/knix-fm",
+     "imageURL": "",
+     "desc": "Everything Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 102-5 The Bear",
+     "streamURL": "http://kbrq-fm.akacast.akamaistream.net/7/993/20110/v1/auth.akacast.akamaistream.net/kbrq-fm",
+     "imageURL": "",
+     "desc": "Waco's Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 102.1 The Edge",
+     "streamURL": "http://kdge-fm.akacast.akamaistream.net/7/259/20088/v1/auth.akacast.akamaistream.net/kdge-fm",
+     "imageURL": "",
+     "desc": "Alternative Rock. 102.1 The Edge",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 102.1 The X",
+     "streamURL": "http://wrxl-fm.akacast.akamaistream.net/7/958/20123/v1/auth.akacast.akamaistream.net/wrxl-fm",
+     "imageURL": "",
+     "desc": "Richmond's Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 102.1 WDRM",
+     "streamURL": "http://wdrm-fm.akacast.akamaistream.net/7/374/30684/v1/auth.akacast.akamaistream.net/wdrm-fm",
+     "imageURL": "",
+     "desc": "Continuous Country Favorites",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 102.3 Sunny FM",
+     "streamURL": "http://wvor-fm.akacast.akamaistream.net/7/269/27460/v1/auth.akacast.akamaistream.net/wvor-fm",
+     "imageURL": "",
+     "desc": "Music Variety and Home of Delilah",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 102.3 WSUS",
+     "streamURL": "http://wsus-fm.akacast.akamaistream.net/7/321/19960/v1/auth.akacast.akamaistream.net/wsus-fm",
+     "imageURL": "",
+     "desc": "Variety at its Best",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 102.5 KDON & KDON.COM",
+     "streamURL": "http://kdon-fm.akacast.akamaistream.net/7/106/31530/v1/auth.akacast.akamaistream.net/kdon-fm",
+     "imageURL": "",
+     "desc": "The Hottest Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 102.5 KIAK FM",
+     "streamURL": "http://kiak-fm.akacast.akamaistream.net/7/22/43845/v1/auth.akacast.akamaistream.net/kiak-fm",
+     "imageURL": "",
+     "desc": "Alaska's Best Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 102.5 The Fox",
+     "streamURL": "http://kmfx-fm.akacast.akamaistream.net/7/783/73703/v1/auth.akacast.akamaistream.net/kmfx-fm",
+     "imageURL": "",
+     "desc": "Rochester's Choice For New Country!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 102.5 WDVE Rocks",
+     "streamURL": "http://wdve-fm.akacast.akamaistream.net/7/364/20061/v1/auth.akacast.akamaistream.net/wdve-fm",
+     "imageURL": "",
+     "desc": "Home of the Pittsburgh Steelers",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 102.5 WFMF",
+     "streamURL": "http://wfmf-fm.akacast.akamaistream.net/7/94/19907/v1/auth.akacast.akamaistream.net/wfmf-fm",
+     "imageURL": "",
+     "desc": "Today's HIT Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 102.7 Jack-FM",
+     "streamURL": "http://wqsr-fm.akacast.akamaistream.net/7/501/69408/v1/auth.akacast.akamaistream.net/wqsr-fm",
+     "imageURL": "",
+     "desc": "We Play Whatever Baltimore Wants",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 102.7 KIIS-FM",
+     "streamURL": "http://kiis-fm.akacast.akamaistream.net/7/572/19773/v1/auth.akacast.akamaistream.net/kiis-fm",
+     "imageURL": "",
+     "desc": "L.A.'s #1 Hit Music Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 102.7 KISS FM",
+     "streamURL": "http://wksb-fm.akacast.akamaistream.net/7/249/29792/v1/auth.akacast.akamaistream.net/wksb-fm",
+     "imageURL": "",
+     "desc": "Big Hits - Big Fun",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 103-7 Kiss FM",
+     "streamURL": "http://wkxj-fm.akacast.akamaistream.net/7/302/52421/v1/auth.akacast.akamaistream.net/wkxj-fm",
+     "imageURL": "",
+     "desc": "Chattanooga's Hit Music Now",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 103-7 WLLR",
+     "streamURL": "http://wllr-fm.akacast.akamaistream.net/7/321/31702/v1/auth.akacast.akamaistream.net/wllr-fm",
+     "imageURL": "",
+     "desc": "Number ONE Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 103.1 Mia",
+     "streamURL": "http://kvjm-fm.akacast.akamaistream.net/7/546/25974/v1/auth.akacast.akamaistream.net/kvjm-fm",
+     "imageURL": "",
+     "desc": "Mas Variedad, Mas Musica",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 103.1 WNDH",
+     "streamURL": "http://wndh-fm.akacast.akamaistream.net/7/203/32164/v1/auth.akacast.akamaistream.net/wndh-fm",
+     "imageURL": "",
+     "desc": "The ONE",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 103.3 WTCR",
+     "streamURL": "http://wtcr-fm.akacast.akamaistream.net/7/846/20145/v1/auth.akacast.akamaistream.net/wtcr-fm",
+     "imageURL": "",
+     "desc": "Good Times & Great Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 103.5 KISS FM",
+     "streamURL": "http://wksc-fm.akacast.akamaistream.net/7/140/19891/v1/auth.akacast.akamaistream.net/wksc-fm",
+     "imageURL": "",
+     "desc": "Chicago",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 103.5 KTU",
+     "streamURL": "http://wktu-fm.akacast.akamaistream.net/7/110/19973/v1/auth.akacast.akamaistream.net/wktu-fm",
+     "imageURL": "",
+     "desc": "The Beat of New York",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 103.5 Super X",
+     "streamURL": "http://wmib-fm.akacast.akamaistream.net/7/636/19850/v1/auth.akacast.akamaistream.net/wmib-fm",
+     "imageURL": "",
+     "desc": "Mi Musica 80s, 90s y hoy",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 103.5 The Fox",
+     "streamURL": "http://krfx-fm.akacast.akamaistream.net/7/521/19815/v1/auth.akacast.akamaistream.net/krfx-fm",
+     "imageURL": "",
+     "desc": "Colorado's Classic Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 103.7 fm WQOL",
+     "streamURL": "http://wqol-fm.akacast.akamaistream.net/7/770/31315/v1/auth.akacast.akamaistream.net/wqol-fm",
+     "imageURL": "",
+     "desc": "The Songs You Love To Sing Along With!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 103.7 KRZR",
+     "streamURL": "http://krzr-fm.akacast.akamaistream.net/7/27/19768/v1/auth.akacast.akamaistream.net/krzr-fm",
+     "imageURL": "",
+     "desc": "Fresno's Only Real Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 103.7 The Band",
+     "streamURL": "http://kksf-fm.akacast.akamaistream.net/7/712/19797/v1/auth.akacast.akamaistream.net/kksf-fm",
+     "imageURL": "",
+     "desc": "Enjoy Responsibly",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 103.7 WCKY",
+     "streamURL": "http://wcky-fm.akacast.akamaistream.net/7/57/20025/v1/auth.akacast.akamaistream.net/wcky-fm",
+     "imageURL": "",
+     "desc": "Your Choice For Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 103.7 WNNJ",
+     "streamURL": "http://wnnj-fm.akacast.akamaistream.net/7/605/19959/v1/auth.akacast.akamaistream.net/wnnj-fm",
+     "imageURL": "",
+     "desc": "The Tri-State's Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1031 KCDA",
+     "streamURL": "http://kcda-fm.akacast.akamaistream.net/7/255/29885/v1/auth.akacast.akamaistream.net/kcda-fm",
+     "imageURL": "",
+     "desc": "Familiar new favorites!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 104-5 WSNX",
+     "streamURL": "http://wsnx-fm.akacast.akamaistream.net/7/535/19932/v1/auth.akacast.akamaistream.net/wsnx-fm",
+     "imageURL": "",
+     "desc": "West Michigan's Party Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 104-7 WIOT",
+     "streamURL": "http://wiot-fm.akacast.akamaistream.net/7/290/20028/v1/auth.akacast.akamaistream.net/wiot-fm",
+     "imageURL": "",
+     "desc": "37 Years of Rock!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 104-1, The Brew",
+     "streamURL": "http://kyrk-fm.akacast.akamaistream.net/7/26/27992/v1/auth.akacast.akamaistream.net/kyrk-fm",
+     "imageURL": "",
+     "desc": "The Next Generation of Classic Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 104.1 The Edge",
+     "streamURL": "http://kteg-fm.akacast.akamaistream.net/7/14/19965/v1/auth.akacast.akamaistream.net/kteg-fm",
+     "imageURL": "",
+     "desc": "New Rock Revolution",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 104.1 WTQR",
+     "streamURL": "http://wtqr-fm.akacast.akamaistream.net/7/686/19999/v1/auth.akacast.akamaistream.net/wtqr-fm",
+     "imageURL": "",
+     "desc": "The Jeff Roper Morning Show",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 104.3 Country KCY",
+     "streamURL": "http://wkcy-fm.akacast.akamaistream.net/7/309/33403/v1/auth.akacast.akamaistream.net/wkcy-fm",
+     "imageURL": "",
+     "desc": "Valley's Country Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 104.3 MYfm",
+     "streamURL": "http://kbig-fm.akacast.akamaistream.net/7/244/19770/v1/auth.akacast.akamaistream.net/kbig-fm",
+     "imageURL": "",
+     "desc": "ALL YOUR FAVORITE SONGS",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 104.3 WBBQ",
+     "streamURL": "http://wbbq-fm.akacast.akamaistream.net/7/835/25768/v1/auth.akacast.akamaistream.net/wbbq-fm",
+     "imageURL": "",
+     "desc": "The BEST Variety of Yesterday & Today",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 104.5 The Cat",
+     "streamURL": "http://wlkt-fm.akacast.akamaistream.net/7/110/37054/v1/auth.akacast.akamaistream.net/wlkt-fm",
+     "imageURL": "",
+     "desc": "The Hit Music Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 104.7 The Edge",
+     "streamURL": "http://kked-fm.akacast.akamaistream.net/7/330/33405/v1/auth.akacast.akamaistream.net/kked-fm",
+     "imageURL": "",
+     "desc": "Alaska's New Rock Leader",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 104.7 THE MIX",
+     "streamURL": "http://kkys-fm.akacast.akamaistream.net/7/17/21748/v1/auth.akacast.akamaistream.net/kkys-fm",
+     "imageURL": "",
+     "desc": "More Music More Variety",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 104.7 WTUE Rocks",
+     "streamURL": "http://wtue-fm.akacast.akamaistream.net/7/28/20023/v1/auth.akacast.akamaistream.net/wtue-fm",
+     "imageURL": "",
+     "desc": "Dayton's Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1040 WHO",
+     "streamURL": "http://who-am.akacast.akamaistream.net/7/926/21125/v1/auth.akacast.akamaistream.net/who-am",
+     "imageURL": "",
+     "desc": "News Radio 1040, WHO",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 105-9 The Brew",
+     "streamURL": "http://kfbw-fm.akacast.akamaistream.net/7/418/20053/v1/auth.akacast.akamaistream.net/kfbw-fm",
+     "imageURL": "",
+     "desc": "ROCKS!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 105.1 Channel Q",
+     "streamURL": "http://kccq-fm.akacast.akamaistream.net/7/373/26510/v1/auth.akacast.akamaistream.net/kccq-fm",
+     "imageURL": "",
+     "desc": "The New Rock Revolution",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 105.1 The Wolf",
+     "streamURL": "http://kmjx-fm.akacast.akamaistream.net/7/892/19762/v1/auth.akacast.akamaistream.net/kmjx-fm",
+     "imageURL": "",
+     "desc": "Your Home For All Things Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 105.5 The Beat",
+     "streamURL": "http://wbtt-fm.akacast.akamaistream.net/7/530/19830/v1/auth.akacast.akamaistream.net/wbtt-fm",
+     "imageURL": "",
+     "desc": "Southwest Florida's Party Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 105.7 The BULL",
+     "streamURL": "http://wzom-fm.akacast.akamaistream.net/7/911/32784/v1/auth.akacast.akamaistream.net/wzom-fm",
+     "imageURL": "",
+     "desc": "Northwest Ohio's Better Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 105.9 KGBX",
+     "streamURL": "http://kgbx-fm.akacast.akamaistream.net/7/237/19941/v1/auth.akacast.akamaistream.net/kgbx-fm",
+     "imageURL": "",
+     "desc": "Today's Lite Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 105.9 The Buzz",
+     "streamURL": "http://wtzb-fm.akacast.akamaistream.net/7/209/19865/v1/auth.akacast.akamaistream.net/wtzb-fm",
+     "imageURL": "",
+     "desc": "Today's New Rock Alternative",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 105.9 The X",
+     "streamURL": "http://wxdx-fm.akacast.akamaistream.net/7/746/20065/v1/auth.akacast.akamaistream.net/wxdx-fm",
+     "imageURL": "",
+     "desc": "Home of the Pittsburgh Penguins",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1059 The Rock",
+     "streamURL": "http://wnrq-fm.akacast.akamaistream.net/7/375/31312/v1/auth.akacast.akamaistream.net/wnrq-fm",
+     "imageURL": "",
+     "desc": "Nashville's Classic Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 106 KMEL",
+     "streamURL": "http://kmel-fm.akacast.akamaistream.net/7/918/19798/v1/auth.akacast.akamaistream.net/kmel-fm",
+     "imageURL": "",
+     "desc": "Hip Hop and R&B",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 106.1 KISS FM",
+     "streamURL": "http://kbks-fm.akacast.akamaistream.net/7/540/69395/v1/auth.akacast.akamaistream.net/kbks-fm",
+     "imageURL": "",
+     "desc": "Today's HOTTEST Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 106.1 KISS FM",
+     "streamURL": "http://khks-fm.akacast.akamaistream.net/7/517/20091/v1/auth.akacast.akamaistream.net/khks-fm",
+     "imageURL": "",
+     "desc": "DFW's Hit Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 106.1 KRAB",
+     "streamURL": "http://krab-fm.akacast.akamaistream.net/7/754/32792/v1/auth.akacast.akamaistream.net/krab-fm",
+     "imageURL": "",
+     "desc": "Bakersfield's New Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Rush Radio 106.1 WRDU",
+     "streamURL": "http://wrdu-fm.akacast.akamaistream.net/7/735/25767/v1/auth.akacast.akamaistream.net/wrdu-fm",
+     "imageURL": "",
+     "desc": "News/Talk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 106.1 STEVE FM",
+     "streamURL": "http://wsff-fm.akacast.akamaistream.net/7/942/28752/v1/auth.akacast.akamaistream.net/wsff-fm",
+     "imageURL": "",
+     "desc": "We Play Everything",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 106.1 WTAK",
+     "streamURL": "http://wtak-fm.akacast.akamaistream.net/7/645/30685/v1/auth.akacast.akamaistream.net/wtak-fm",
+     "imageURL": "",
+     "desc": "Classic Rock 106.1 WTAK",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 106.5 CTQ",
+     "streamURL": "http://wctq-fm.akacast.akamaistream.net/7/795/19860/v1/auth.akacast.akamaistream.net/wctq-fm",
+     "imageURL": "",
+     "desc": "Sarasota & Bradenton's Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 106.5 The Beat",
+     "streamURL": "http://wbtj-fm.akacast.akamaistream.net/7/3/22057/v1/auth.akacast.akamaistream.net/wbtj-fm",
+     "imageURL": "",
+     "desc": "Richmond's #1 for Hip Hop and R&B",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio BIG 106.5",
+     "streamURL": "http://wdsj-fm.akacast.akamaistream.net/7/257/20020/v1/auth.akacast.akamaistream.net/wdsj-fm",
+     "imageURL": "",
+     "desc": "Dayton's Greatest Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 106.5 The END",
+     "streamURL": "http://wend-fm.akacast.akamaistream.net/7/195/19992/v1/auth.akacast.akamaistream.net/wend-fm",
+     "imageURL": "",
+     "desc": "Charlotte's Alternative",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 106.7 KBPI",
+     "streamURL": "http://kbpi-fm.akacast.akamaistream.net/7/535/19810/v1/auth.akacast.akamaistream.net/kbpi-fm",
+     "imageURL": "",
+     "desc": "Rocks The Rockies",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 106.7 Kiss-FM",
+     "streamURL": "http://wkgs-fm.akacast.akamaistream.net/7/731/20817/v1/auth.akacast.akamaistream.net/wkgs-fm",
+     "imageURL": "",
+     "desc": "Elvis Duran mornings & All the hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 106.7 Lite fm",
+     "streamURL": "http://wltw-fm.akacast.akamaistream.net/7/291/19974/v1/auth.akacast.akamaistream.net/wltw-fm",
+     "imageURL": "",
+     "desc": "New York's Best Variety",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 106.7 The Beat",
+     "streamURL": "http://wdtw-fm.akacast.akamaistream.net/7/108/19923/v1/auth.akacast.akamaistream.net/wdtw-fm",
+     "imageURL": "",
+     "desc": "The Beat of Detroit",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 107 MUS The Moose",
+     "streamURL": "http://wmus-fm.akacast.akamaistream.net/7/975/24595/v1/auth.akacast.akamaistream.net/wmus-fm",
+     "imageURL": "",
+     "desc": "Today's Country and the Legends",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 107-3 The Fox Rocks",
+     "streamURL": "http://klfx-fm.akacast.akamaistream.net/7/289/20102/v1/auth.akacast.akamaistream.net/klfx-fm",
+     "imageURL": "",
+     "desc": "The Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 107-5 WGCI",
+     "streamURL": "http://wgci-fm.akacast.akamaistream.net/7/145/19889/v1/auth.akacast.akamaistream.net/wgci-fm",
+     "imageURL": "",
+     "desc": "Chicago's Hip Hop and R&B",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 107.1 KISS FM",
+     "streamURL": "http://ksft-fm.akacast.akamaistream.net/7/205/23124/v1/auth.akacast.akamaistream.net/ksft-fm",
+     "imageURL": "",
+     "desc": "All The Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 107.1 WERZ",
+     "streamURL": "http://werz-fm.akacast.akamaistream.net/7/704/26903/v1/auth.akacast.akamaistream.net/werz-fm",
+     "imageURL": "",
+     "desc": "Hits of the 80's 90's and Today",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 107.9 KDZA",
+     "streamURL": "http://kdza-fm.akacast.akamaistream.net/7/926/24930/v1/auth.akacast.akamaistream.net/kdza-fm",
+     "imageURL": "",
+     "desc": "Rocks The Rockies",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 107.9 The Bear",
+     "streamURL": "http://kpaw-fm.akacast.akamaistream.net/7/488/20992/v1/auth.akacast.akamaistream.net/kpaw-fm",
+     "imageURL": "",
+     "desc": "Northern Colorado's Classic Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 107.9 WSRZ",
+     "streamURL": "http://wsrz-fm.akacast.akamaistream.net/7/238/19864/v1/auth.akacast.akamaistream.net/wsrz-fm",
+     "imageURL": "",
+     "desc": "The Suncoast's Greatest Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1070 WDIA",
+     "streamURL": "http://wdia-am.akacast.akamaistream.net/7/444/20074/v1/auth.akacast.akamaistream.net/wdia-am",
+     "imageURL": "",
+     "desc": "Memphis' Best Talk & Best Songs, Too",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1073 The Brew",
+     "streamURL": "http://kthr-fm.akacast.akamaistream.net/7/364/19902/v1/auth.akacast.akamaistream.net/kthr-fm",
+     "imageURL": "",
+     "desc": "Real. Fun. Rock.",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1075 The River Nashville",
+     "streamURL": "http://wrvw-fm.akacast.akamaistream.net/7/831/31313/v1/auth.akacast.akamaistream.net/wrvw-fm",
+     "imageURL": "",
+     "desc": "All The Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 108 WYYD",
+     "streamURL": "http://wyyd-fm.akacast.akamaistream.net/7/788/26902/v1/auth.akacast.akamaistream.net/wyyd-fm",
+     "imageURL": "",
+     "desc": "Virginia's Best Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1130 WISN",
+     "streamURL": "http://wisn-am.akacast.akamaistream.net/7/23/20150/v1/auth.akacast.akamaistream.net/wisn-am",
+     "imageURL": "",
+     "desc": "Milwaukee's News/Talk Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1140 WRVA",
+     "streamURL": "http://wrva-am.akacast.akamaistream.net/7/765/20121/v1/auth.akacast.akamaistream.net/wrva-am",
+     "imageURL": "",
+     "desc": "Richmond's News/Talk Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1150 WIMA",
+     "streamURL": "http://wima-am.akacast.akamaistream.net/7/632/26512/v1/auth.akacast.akamaistream.net/wima-am",
+     "imageURL": "",
+     "desc": "Lima's News Talk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1150 WJBO",
+     "streamURL": "http://wjbo-am.akacast.akamaistream.net/7/695/19908/v1/auth.akacast.akamaistream.net/wjbo-am",
+     "imageURL": "",
+     "desc": "Baton Rouge Talk Radio",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1180 WHAM",
+     "streamURL": "http://wham-am.akacast.akamaistream.net/7/202/20814/v1/auth.akacast.akamaistream.net/wham-am",
+     "imageURL": "",
+     "desc": "Rochester's News Radio",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1230 am WBZT",
+     "streamURL": "http://wbzt-am.akacast.akamaistream.net/7/335/19874/v1/auth.akacast.akamaistream.net/wbzt-am",
+     "imageURL": "",
+     "desc": "Health, Wealth & Lifestyles Talk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1230 WCWA",
+     "streamURL": "http://wcwa-am.akacast.akamaistream.net/7/450/37066/v1/auth.akacast.akamaistream.net/wcwa-am",
+     "imageURL": "",
+     "desc": "Fox Sports Radio 1230 WCWA",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1230 WSOK",
+     "streamURL": "http://wsok-am.akacast.akamaistream.net/7/323/26229/v1/auth.akacast.akamaistream.net/wsok-am",
+     "imageURL": "",
+     "desc": "Savannah's Gospel 1230 WSOK",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1240 & 1350 WMMB",
+     "streamURL": "http://wmmb-am.akacast.akamaistream.net/7/824/19843/v1/auth.akacast.akamaistream.net/wmmb-am",
+     "imageURL": "",
+     "desc": "Where the Space Coast talks",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1250 WHNZ",
+     "streamURL": "http://whnz-am.akacast.akamaistream.net/7/113/19870/v1/auth.akacast.akamaistream.net/whnz-am",
+     "imageURL": "",
+     "desc": "Impact Radio",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1260 WNDE",
+     "streamURL": "http://wnde-am.akacast.akamaistream.net/7/500/21576/v1/auth.akacast.akamaistream.net/wnde-am",
+     "imageURL": "",
+     "desc": "Sports Radio",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1270 The Team",
+     "streamURL": "http://wnls-am.akacast.akamaistream.net/7/38/20802/v1/auth.akacast.akamaistream.net/wnls-am",
+     "imageURL": "",
+     "desc": "Tallahassee's Sports Leader",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1280 WHTK & FM 107.3",
+     "streamURL": "http://whtk-am.akacast.akamaistream.net/7/28/20815/v1/auth.akacast.akamaistream.net/whtk-am",
+     "imageURL": "",
+     "desc": "Rochester's Sports Talk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1280 WIBB",
+     "streamURL": "http://wibb-am.akacast.akamaistream.net/7/509/32795/v1/auth.akacast.akamaistream.net/wibb-am",
+     "imageURL": "",
+     "desc": "The Talk of Macon",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1290 The Ticket",
+     "streamURL": "http://wwtx-am.akacast.akamaistream.net/7/390/19829/v1/auth.akacast.akamaistream.net/wwtx-am",
+     "imageURL": "",
+     "desc": "Delaware's ALL Sports Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1340 WNCO-AM",
+     "streamURL": "http://wnco-am.akacast.akamaistream.net/7/276/83450/v1/auth.akacast.akamaistream.net/wnco-am",
+     "imageURL": "",
+     "desc": "Mid-Ohio's Talk Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1340-Fox Sports",
+     "streamURL": "http://kebc-am.akacast.akamaistream.net/7/135/31806/v1/auth.akacast.akamaistream.net/kebc-am",
+     "imageURL": "",
+     "desc": "Home of Rome and Patrick",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1460 KXNO",
+     "streamURL": "http://kxno-am.akacast.akamaistream.net/7/889/21126/v1/auth.akacast.akamaistream.net/kxno-am",
+     "imageURL": "",
+     "desc": "Des Moines' Sports Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1370 WSPD",
+     "streamURL": "http://wspd-am.akacast.akamaistream.net/7/836/20030/v1/auth.akacast.akamaistream.net/wspd-am",
+     "imageURL": "",
+     "desc": "Where Toledo Comes To Talk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1390 WNIO",
+     "streamURL": "http://wnio-am.akacast.akamaistream.net/7/79/31307/v1/auth.akacast.akamaistream.net/wnio-am",
+     "imageURL": "",
+     "desc": "America's Best Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1430 the BUZZ",
+     "streamURL": "http://ktbz-am.akacast.akamaistream.net/7/675/20048/v1/auth.akacast.akamaistream.net/ktbz-am",
+     "imageURL": "",
+     "desc": "Tulsa's Sports Authority",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1450 WILM",
+     "streamURL": "http://wilm-am.akacast.akamaistream.net/7/922/19827/v1/auth.akacast.akamaistream.net/wilm-am",
+     "imageURL": "",
+     "desc": "Delaware's News Now",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1460 KION",
+     "streamURL": "http://kion-am.akacast.akamaistream.net/7/375/83449/v1/auth.akacast.akamaistream.net/kion-am",
+     "imageURL": "",
+     "desc": "News Talk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 540 WFLA",
+     "streamURL": "http://wflf-am.akacast.akamaistream.net/7/116/19852/v1/auth.akacast.akamaistream.net/wflf-am",
+     "imageURL": "",
+     "desc": "Orlando's RIGHT Talk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1470 KWSL",
+     "streamURL": "http://kwsl-am.akacast.akamaistream.net/7/321/78271/v1/auth.akacast.akamaistream.net/kwsl-am",
+     "imageURL": "",
+     "desc": "Super Hits Of The 60's & 70's",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 55KRC",
+     "streamURL": "http://wkrc-am.akacast.akamaistream.net/7/95/20007/v1/auth.akacast.akamaistream.net/wkrc-am",
+     "imageURL": "",
+     "desc": "Cincinnati's Place For Talk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 105.7 KNRS",
+     "streamURL": "http://knrs-fm.akacast.akamaistream.net/7/838/20118/v1/auth.akacast.akamaistream.net/knrs-fm",
+     "imageURL": "",
+     "desc": "Family Values Talk Radio",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 600 KCOL",
+     "streamURL": "http://kcol-am.akacast.akamaistream.net/7/490/19817/v1/auth.akacast.akamaistream.net/kcol-am",
+     "imageURL": "",
+     "desc": "Fox News and Talk Radio",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 600 WMT",
+     "streamURL": "http://wmt-am.akacast.akamaistream.net/7/654/27991/v1/auth.akacast.akamaistream.net/wmt-am",
+     "imageURL": "",
+     "desc": "News TalkHawkeye Sports",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 610 WTVN",
+     "streamURL": "http://wtvn-am.akacast.akamaistream.net/7/391/20018/v1/auth.akacast.akamaistream.net/wtvn-am",
+     "imageURL": "",
+     "desc": "Columbus' News/Talk Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 620 KMNS",
+     "streamURL": "http://kmns-am.akacast.akamaistream.net/7/337/25969/v1/auth.akacast.akamaistream.net/kmns-am",
+     "imageURL": "",
+     "desc": "Fox Sports Radio",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 620 WDAE",
+     "streamURL": "http://wdae-am.akacast.akamaistream.net/7/282/19867/v1/auth.akacast.akamaistream.net/wdae-am",
+     "imageURL": "",
+     "desc": "The Sports Animal",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 630 KHOW",
+     "streamURL": "http://khow-am.akacast.akamaistream.net/7/798/19812/v1/auth.akacast.akamaistream.net/khow-am",
+     "imageURL": "",
+     "desc": "Denver's Talk Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 640 WGST - Atlanta",
+     "streamURL": "http://wgst-am.akacast.akamaistream.net/7/752/19883/v1/auth.akacast.akamaistream.net/wgst-am",
+     "imageURL": "",
+     "desc": "Atlanta. Talk. Radio. Rush Limbaugh",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 640 WHLO",
+     "streamURL": "http://whlo-am.akacast.akamaistream.net/7/431/37062/v1/auth.akacast.akamaistream.net/whlo-am",
+     "imageURL": "",
+     "desc": "Akron/Canton's News & Talk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 700WLW",
+     "streamURL": "http://wlw-am.akacast.akamaistream.net/7/212/20008/v1/auth.akacast.akamaistream.net/wlw-am",
+     "imageURL": "",
+     "desc": "Cincinnati-The Big One",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Sportstalk 790",
+     "streamURL": "http://kbme-am.akacast.akamaistream.net/7/403/20093/v1/auth.akacast.akamaistream.net/kbme-am",
+     "imageURL": "",
+     "desc": "Houston's best sports talk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 710AM",
+     "streamURL": "http://wntm-am.akacast.akamaistream.net/7/465/19748/v1/auth.akacast.akamaistream.net/wntm-am",
+     "imageURL": "",
+     "desc": "News Radio 710",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 740 The Game",
+     "streamURL": "http://wygm-am.akacast.akamaistream.net/7/681/19855/v1/auth.akacast.akamaistream.net/wygm-am",
+     "imageURL": "",
+     "desc": "Play Hard",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 800/1230 WBHP",
+     "streamURL": "http://wbhp-am.akacast.akamaistream.net/7/923/26508/v1/auth.akacast.akamaistream.net/wbhp-am",
+     "imageURL": "",
+     "desc": "The Valley's Big Talker",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 84WHAS",
+     "streamURL": "http://whas-am.akacast.akamaistream.net/7/545/19905/v1/auth.akacast.akamaistream.net/whas-am",
+     "imageURL": "",
+     "desc": "Kentuckiana's News Radio 84",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 880 The Revolution",
+     "streamURL": "http://wpek-am.akacast.akamaistream.net/7/154/19988/v1/auth.akacast.akamaistream.net/wpek-am",
+     "imageURL": "",
+     "desc": "Asheville's Progressive Talk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 92-5 KISS FM",
+     "streamURL": "http://wvks-fm.akacast.akamaistream.net/7/368/20031/v1/auth.akacast.akamaistream.net/wvks-fm",
+     "imageURL": "",
+     "desc": "Toledo's Hit Music Channel",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 92-5 WPAP Panama City",
+     "streamURL": "http://wpap-fm.akacast.akamaistream.net/7/8/31528/v1/auth.akacast.akamaistream.net/wpap-fm",
+     "imageURL": "",
+     "desc": "Panama City's Country Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 92.1 LITE FM",
+     "streamURL": "http://wrnq-fm.akacast.akamaistream.net/7/819/19976/v1/auth.akacast.akamaistream.net/wrnq-fm",
+     "imageURL": "",
+     "desc": "Hudson Valley's Official at Work Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 92.1 The Beat",
+     "streamURL": "http://ktbt-fm.akacast.akamaistream.net/7/825/20047/v1/auth.akacast.akamaistream.net/ktbt-fm",
+     "imageURL": "",
+     "desc": "92.1 The Beat",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 92.1 THE WAVE",
+     "streamURL": "http://wlbw-fm.akacast.akamaistream.net/7/357/32170/v1/auth.akacast.akamaistream.net/wlbw-fm",
+     "imageURL": "",
+     "desc": "Delmarva's Greatest Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 92.5 FM, The Beat",
+     "streamURL": "http://wqyz-fm.akacast.akamaistream.net/7/444/29788/v1/auth.akacast.akamaistream.net/wqyz-fm",
+     "imageURL": "",
+     "desc": "#1 For R&B and Old School",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 92.5 WESC",
+     "streamURL": "http://wesc-fm.akacast.akamaistream.net/7/345/20068/v1/auth.akacast.akamaistream.net/wesc-fm",
+     "imageURL": "",
+     "desc": "Carolina's Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 92.7 KTOM",
+     "streamURL": "http://ktom-fm.akacast.akamaistream.net/7/658/31705/v1/auth.akacast.akamaistream.net/ktom-fm",
+     "imageURL": "",
+     "desc": "Salinas' Only Real Country Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 92.9 The Mountain",
+     "streamURL": "http://kwmt-fm.akacast.akamaistream.net/7/690/22817/v1/auth.akacast.akamaistream.net/kwmt-fm",
+     "imageURL": "",
+     "desc": "Adult Album Alternative",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 92.9 TOM-FM",
+     "streamURL": "http://wrdx-fm.akacast.akamaistream.net/7/423/58071/v1/auth.akacast.akamaistream.net/wrdx-fm",
+     "imageURL": "",
+     "desc": "Playing Whatever We Want!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 92.9 Y93",
+     "streamURL": "http://kyyy-fm.akacast.akamaistream.net/7/50/94970/v1/auth.akacast.akamaistream.net/kyyy-fm",
+     "imageURL": "",
+     "desc": "Bismarck-Mandan's at-work station!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 920 WHJJ",
+     "streamURL": "http://whjj-am.akacast.akamaistream.net/7/32/32786/v1/auth.akacast.akamaistream.net/whjj-am",
+     "imageURL": "",
+     "desc": "Rhode Island?s Talk Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 93-9 Kiss-FM",
+     "streamURL": "http://wksl-fm.akacast.akamaistream.net/7/977/21327/v1/auth.akacast.akamaistream.net/wksl-fm",
+     "imageURL": "",
+     "desc": "Feel Good Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 93-9 MIA",
+     "streamURL": "http://wlve-fm.akacast.akamaistream.net/7/780/19848/v1/auth.akacast.akamaistream.net/wlve-fm",
+     "imageURL": "",
+     "desc": "Move to the music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 93.1 The Fox",
+     "streamURL": "http://wtfx-fm.akacast.akamaistream.net/7/380/21366/v1/auth.akacast.akamaistream.net/wtfx-fm",
+     "imageURL": "",
+     "desc": "The Fox Rocks",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 93.1 The Party",
+     "streamURL": "http://kplv-fm.akacast.akamaistream.net/7/773/20807/v1/auth.akacast.akamaistream.net/kplv-fm",
+     "imageURL": "",
+     "desc": "The Music That Moves You!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 93-3 FLZ",
+     "streamURL": "http://wflz-fm.akacast.akamaistream.net/7/865/19869/v1/auth.akacast.akamaistream.net/wflz-fm",
+     "imageURL": "",
+     "desc": "Hit Music | Txt 97720",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 93.3 The Beat Jamz",
+     "streamURL": "http://wjbt-fm.akacast.akamaistream.net/7/80/19836/v1/auth.akacast.akamaistream.net/wjbt-fm",
+     "imageURL": "",
+     "desc": "Representin' Hip Hop and R&BFlava",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 93.3 The Eagle",
+     "streamURL": "http://kigl-fm.akacast.akamaistream.net/7/131/36595/v1/auth.akacast.akamaistream.net/kigl-fm",
+     "imageURL": "",
+     "desc": "Classic Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Hot Mix 101.9",
+     "streamURL": "http://kmxf-fm.akacast.akamaistream.net/7/697/36593/v1/auth.akacast.akamaistream.net/kmxf-fm",
+     "imageURL": "",
+     "desc": "Northwest Arkansas' Hit Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Soft Rock 93-3",
+     "streamURL": "http://wlzt-fm.akacast.akamaistream.net/7/331/29785/v1/auth.akacast.akamaistream.net/wlzt-fm",
+     "imageURL": "",
+     "desc": "SoftRock933.com",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 93.3 WNCD",
+     "streamURL": "http://wncd-fm.akacast.akamaistream.net/7/759/31308/v1/auth.akacast.akamaistream.net/wncd-fm",
+     "imageURL": "",
+     "desc": "The Wolf Rocks",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 93.5 101.7 Sunny FM",
+     "streamURL": "http://wsnv-fm.akacast.akamaistream.net/7/539/26507/v1/auth.akacast.akamaistream.net/wsnv-fm",
+     "imageURL": "",
+     "desc": "Greatest Hits Of The 60s 70s & 80s",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 93.7 Jack-FM/Sacramento",
+     "streamURL": "http://kqjk-fm.akacast.akamaistream.net/7/662/69404/v1/auth.akacast.akamaistream.net/kqjk-fm",
+     "imageURL": "",
+     "desc": "Playing What We Want",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 93.7 KISS FM",
+     "streamURL": "http://wazr-fm.akacast.akamaistream.net/7/489/23216/v1/auth.akacast.akamaistream.net/wazr-fm",
+     "imageURL": "",
+     "desc": "Valley's Hit Music Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 93.7 The Arrow",
+     "streamURL": "http://kkrw-fm.akacast.akamaistream.net/7/148/20095/v1/auth.akacast.akamaistream.net/kkrw-fm",
+     "imageURL": "",
+     "desc": "Houston's Classic Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 93.9 Lite fm",
+     "streamURL": "http://wlit-fm.akacast.akamaistream.net/7/342/19892/v1/auth.akacast.akamaistream.net/wlit-fm",
+     "imageURL": "",
+     "desc": "Chicago's Best Variety",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 930 THE FOX",
+     "streamURL": "http://wfxj-am.akacast.akamaistream.net/7/747/19835/v1/auth.akacast.akamaistream.net/wfxj-am",
+     "imageURL": "",
+     "desc": "Jacksonville's Sports Leader",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 94 HJY",
+     "streamURL": "http://whjy-fm.akacast.akamaistream.net/7/174/20066/v1/auth.akacast.akamaistream.net/whjy-fm",
+     "imageURL": "",
+     "desc": "The Home of Rock & Roll",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 94 Rock",
+     "streamURL": "http://kzrr-fm.akacast.akamaistream.net/7/732/19966/v1/auth.akacast.akamaistream.net/kzrr-fm",
+     "imageURL": "",
+     "desc": "New Mexico's Real Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 94-1 THE BEAT",
+     "streamURL": "http://wqbt-fm.akacast.akamaistream.net/7/747/26226/v1/auth.akacast.akamaistream.net/wqbt-fm",
+     "imageURL": "",
+     "desc": "Savannah's #1 For Hip Hop and R&B",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 94.1 KODJ",
+     "streamURL": "http://kodj-fm.akacast.akamaistream.net/7/192/20116/v1/auth.akacast.akamaistream.net/kodj-fm",
+     "imageURL": "",
+     "desc": "Harmon & Breakfast Club In The AM",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 94.1 ZBQ",
+     "streamURL": "http://wzbq-fm.akacast.akamaistream.net/7/837/31810/v1/auth.akacast.akamaistream.net/wzbq-fm",
+     "imageURL": "",
+     "desc": "94.1 ZBQ",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 94.3 FM WZZR",
+     "streamURL": "http://wzzr-fm.akacast.akamaistream.net/7/473/19880/v1/auth.akacast.akamaistream.net/wzzr-fm",
+     "imageURL": "",
+     "desc": "The Love Doctors",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 94.3 WSC",
+     "streamURL": "http://wscc-fm.akacast.akamaistream.net/7/492/31805/v1/auth.akacast.akamaistream.net/wscc-fm",
+     "imageURL": "",
+     "desc": "Charleston's news, talk and weather",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 94.5 3WS!",
+     "streamURL": "http://wwsw-fm.akacast.akamaistream.net/7/417/20064/v1/auth.akacast.akamaistream.net/wwsw-fm",
+     "imageURL": "",
+     "desc": "Classic Hits! Sing-along!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 94.5 The Buzz",
+     "streamURL": "http://ktbz-fm.akacast.akamaistream.net/7/370/20099/v1/auth.akacast.akamaistream.net/ktbz-fm",
+     "imageURL": "",
+     "desc": "Houston's New Rock Alternative",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 94.7 The Brew",
+     "streamURL": "http://kbru-fm.akacast.akamaistream.net/7/521/20038/v1/auth.akacast.akamaistream.net/kbru-fm",
+     "imageURL": "",
+     "desc": "The Next Generation of Classic Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 94.7 WDSD",
+     "streamURL": "http://wdsd-fm.akacast.akamaistream.net/7/365/19826/v1/auth.akacast.akamaistream.net/wdsd-fm",
+     "imageURL": "",
+     "desc": "Delaware's Continuous Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 940 WINZ",
+     "streamURL": "http://winz-am.akacast.akamaistream.net/7/63/19846/v1/auth.akacast.akamaistream.net/winz-am",
+     "imageURL": "",
+     "desc": "The Sports Animal",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 94.9 TNT",
+     "streamURL": "http://wtnt-fm.akacast.akamaistream.net/7/135/20798/v1/auth.akacast.akamaistream.net/wtnt-fm",
+     "imageURL": "",
+     "desc": "Tallahassee's Best Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 94.9 TOM-FM",
+     "streamURL": "http://khkn-fm.akacast.akamaistream.net/7/792/19761/v1/auth.akacast.akamaistream.net/khkn-fm",
+     "imageURL": "",
+     "desc": "We Play It ALL!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 95 KSJ",
+     "streamURL": "http://wksj-fm.akacast.akamaistream.net/7/555/32166/v1/auth.akacast.akamaistream.net/wksj-fm",
+     "imageURL": "",
+     "desc": "Mobile's Best Country!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 95-7 Kiss Country",
+     "streamURL": "http://kksy-fm.akacast.akamaistream.net/7/749/43849/v1/auth.akacast.akamaistream.net/kksy-fm",
+     "imageURL": "",
+     "desc": "Iowa's New Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 95.1    WZZO",
+     "streamURL": "http://wzzo-fm.akacast.akamaistream.net/7/746/25976/v1/auth.akacast.akamaistream.net/wzzo-fm",
+     "imageURL": "",
+     "desc": "Lehigh valleys rock station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 95.1 The Fox",
+     "streamURL": "http://wfxf-fm.akacast.akamaistream.net/7/4/20818/v1/auth.akacast.akamaistream.net/wfxf-fm",
+     "imageURL": "",
+     "desc": "Brother Wease Show & 70s/80s Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 95.3 OLZ",
+     "streamURL": "http://wolz-fm.akacast.akamaistream.net/7/431/19832/v1/auth.akacast.akamaistream.net/wolz-fm",
+     "imageURL": "",
+     "desc": "Southwest Florida's Greatest Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 95.5 Hallelujah FM",
+     "streamURL": "http://whlh-fm.akacast.akamaistream.net/7/669/23517/v1/auth.akacast.akamaistream.net/whlh-fm",
+     "imageURL": "",
+     "desc": "Today's Urban Gospel Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 95.5 KWNR",
+     "streamURL": "http://kwnr-fm.akacast.akamaistream.net/7/361/20809/v1/auth.akacast.akamaistream.net/kwnr-fm",
+     "imageURL": "",
+     "desc": "Vegas Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 95.5 KYOT",
+     "streamURL": "http://kyot-fm.akacast.akamaistream.net/7/265/19756/v1/auth.akacast.akamaistream.net/kyot-fm",
+     "imageURL": "",
+     "desc": "Smooth Jazz from the Coyote",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 95.7",
+     "streamURL": "http://kptt-fm.akacast.akamaistream.net/7/488/19811/v1/auth.akacast.akamaistream.net/kptt-fm",
+     "imageURL": "",
+     "desc": "The Party",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 95.7 Hallelujah FM",
+     "streamURL": "http://whal-fm.akacast.akamaistream.net/7/210/20076/v1/auth.akacast.akamaistream.net/whal-fm",
+     "imageURL": "",
+     "desc": "Memphis' Inspiration Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 95.7 KISS-FM",
+     "streamURL": "http://wvkf-fm.akacast.akamaistream.net/7/804/69403/v1/auth.akacast.akamaistream.net/wvkf-fm",
+     "imageURL": "",
+     "desc": "Wheeling's Hit Music Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 95.7 KJR FM",
+     "streamURL": "http://kjr-fm.akacast.akamaistream.net/7/542/20136/v1/auth.akacast.akamaistream.net/kjr-fm",
+     "imageURL": "",
+     "desc": "Classic Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 95.7 QMF",
+     "streamURL": "http://wqmf-fm.akacast.akamaistream.net/7/634/34738/v1/auth.akacast.akamaistream.net/wqmf-fm",
+     "imageURL": "",
+     "desc": "Bob & Tom And Classic Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 95.7 The Beat",
+     "streamURL": "http://wbtp-fm.akacast.akamaistream.net/7/383/19866/v1/auth.akacast.akamaistream.net/wbtp-fm",
+     "imageURL": "",
+     "desc": "Hip Hop and R&B",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 95.9 KISS-FM",
+     "streamURL": "http://wakz-fm.akacast.akamaistream.net/7/468/31309/v1/auth.akacast.akamaistream.net/wakz-fm",
+     "imageURL": "",
+     "desc": "Youngstown's Hit Music Channel",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 950 KJR",
+     "streamURL": "http://kjr-am.akacast.akamaistream.net/7/89/20135/v1/auth.akacast.akamaistream.net/kjr-am",
+     "imageURL": "",
+     "desc": "Seattle's Local Sports Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 95.9 The Sports Animal",
+     "streamURL": "http://wosc-fm.akacast.akamaistream.net/7/320/32172/v1/auth.akacast.akamaistream.net/wosc-fm",
+     "imageURL": "",
+     "desc": "All Sports, All The Time",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 96-1 The Brew",
+     "streamURL": "http://kqbw-fm.akacast.akamaistream.net/7/182/19953/v1/auth.akacast.akamaistream.net/kqbw-fm",
+     "imageURL": "",
+     "desc": "Omaha's Rock Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 96.1 Kiss",
+     "streamURL": "http://wkst-fm.akacast.akamaistream.net/7/284/20062/v1/auth.akacast.akamaistream.net/wkst-fm",
+     "imageURL": "",
+     "desc": "Pittsburgh's Hit Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 96.1 KISS FM",
+     "streamURL": "http://ksme-fm.akacast.akamaistream.net/7/612/21127/v1/auth.akacast.akamaistream.net/ksme-fm",
+     "imageURL": "",
+     "desc": "Colorado's #1 Hit Music Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 96.1 KISS-FM",
+     "streamURL": "http://wpkf-fm.akacast.akamaistream.net/7/95/20813/v1/auth.akacast.akamaistream.net/wpkf-fm",
+     "imageURL": "",
+     "desc": "Poughkeepsie's Hottest Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 96.1 KXY",
+     "streamURL": "http://kxxy-fm.akacast.akamaistream.net/7/741/20042/v1/auth.akacast.akamaistream.net/kxxy-fm",
+     "imageURL": "",
+     "desc": "Oklahoma City's Only Classic Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 96.1 MIX 96",
+     "streamURL": "http://kmxg-fm.akacast.akamaistream.net/7/290/45298/v1/auth.akacast.akamaistream.net/kmxg-fm",
+     "imageURL": "",
+     "desc": "Today's Hits and Yesterday's Favorites",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 96.1 The Beat",
+     "streamURL": "http://wibt-fm.akacast.akamaistream.net/7/475/19993/v1/auth.akacast.akamaistream.net/wibt-fm",
+     "imageURL": "",
+     "desc": "Charlotte's Party Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 96.1 The Beat",
+     "streamURL": "http://kibt-fm.akacast.akamaistream.net/7/182/19806/v1/auth.akacast.akamaistream.net/kibt-fm",
+     "imageURL": "",
+     "desc": "The Springs' Party Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 96.1 The Fox",
+     "streamURL": "http://kqht-fm.akacast.akamaistream.net/7/692/27464/v1/auth.akacast.akamaistream.net/kqht-fm",
+     "imageURL": "",
+     "desc": "Your Station for the Classics",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 96.1 The River",
+     "streamURL": "http://krve-fm.akacast.akamaistream.net/7/346/19906/v1/auth.akacast.akamaistream.net/krve-fm",
+     "imageURL": "",
+     "desc": "Variety from 80s 90s and today",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 96.1 The Rocket",
+     "streamURL": "http://wrkh-fm.akacast.akamaistream.net/7/390/33391/v1/auth.akacast.akamaistream.net/wrkh-fm",
+     "imageURL": "",
+     "desc": "The Gulf Coast Home of Classic Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 96.1 WSRS",
+     "streamURL": "http://wsrs-fm.akacast.akamaistream.net/7/76/22607/v1/auth.akacast.akamaistream.net/wsrs-fm",
+     "imageURL": "",
+     "desc": "The Best Variety",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 96.3 Kiss-FM",
+     "streamURL": "http://wksp-fm.akacast.akamaistream.net/7/603/25771/v1/auth.akacast.akamaistream.net/wksp-fm",
+     "imageURL": "",
+     "desc": "Today's R&B and Old School",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 96.3 WJIZ",
+     "streamURL": "http://wjiz-fm.akacast.akamaistream.net/7/167/32790/v1/auth.akacast.akamaistream.net/wjiz-fm",
+     "imageURL": "",
+     "desc": "#1 for Hip Hop and R&B",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 96.3 WROV",
+     "streamURL": "http://wrov-fm.akacast.akamaistream.net/7/666/26506/v1/auth.akacast.akamaistream.net/wrov-fm",
+     "imageURL": "",
+     "desc": "The Rock Of Virginia",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 96.5 KISS FM",
+     "streamURL": "http://waks-fm.akacast.akamaistream.net/7/857/20012/v1/auth.akacast.akamaistream.net/waks-fm",
+     "imageURL": "",
+     "desc": "Cleveland's Hit Music Channel",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 96.7 KISS FM",
+     "streamURL": "http://khfi-fm.akacast.akamaistream.net/7/700/20083/v1/auth.akacast.akamaistream.net/khfi-fm",
+     "imageURL": "",
+     "desc": "Austin's Hit Music Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 96.7 The Legend",
+     "streamURL": "http://wwlg-fm.akacast.akamaistream.net/7/634/31704/v1/auth.akacast.akamaistream.net/wwlg-fm",
+     "imageURL": "",
+     "desc": "Country Legends",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 96.9 The Kat",
+     "streamURL": "http://wkkt-fm.akacast.akamaistream.net/7/850/19994/v1/auth.akacast.akamaistream.net/wkkt-fm",
+     "imageURL": "",
+     "desc": "Charlotte's Best Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 960 AM The Light",
+     "streamURL": "http://wjyz-am.akacast.akamaistream.net/7/512/34113/v1/auth.akacast.akamaistream.net/wjyz-am",
+     "imageURL": "",
+     "desc": "Albany's Inspirational Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 960 WELI",
+     "streamURL": "http://weli-am.akacast.akamaistream.net/7/84/19824/v1/auth.akacast.akamaistream.net/weli-am",
+     "imageURL": "",
+     "desc": "New Haven's New/Talk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 97-3 KISSFM",
+     "streamURL": "http://waev-fm.akacast.akamaistream.net/7/117/26227/v1/auth.akacast.akamaistream.net/waev-fm",
+     "imageURL": "",
+     "desc": "Savannah's Only Hit Music Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 97-5 KMOD",
+     "streamURL": "http://kmod-fm.akacast.akamaistream.net/7/305/20045/v1/auth.akacast.akamaistream.net/kmod-fm",
+     "imageURL": "",
+     "desc": "Tulsa's Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 97-5 WCOS",
+     "streamURL": "http://wcos-fm.akacast.akamaistream.net/7/664/21877/v1/auth.akacast.akamaistream.net/wcos-fm",
+     "imageURL": "",
+     "desc": "South Carolina's Country Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 97.1 WASH-FM",
+     "streamURL": "http://wash-fm.akacast.akamaistream.net/7/668/20125/v1/auth.akacast.akamaistream.net/wash-fm",
+     "imageURL": "",
+     "desc": "DC's Best Variety of Yesterday & Today.",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 97.1 ZHT",
+     "streamURL": "http://kzht-fm.akacast.akamaistream.net/7/261/20119/v1/auth.akacast.akamaistream.net/kzht-fm",
+     "imageURL": "",
+     "desc": "The AM Zoo with Frankie & Dangerboy",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 97.3 KBCO",
+     "streamURL": "http://kbco-fm.akacast.akamaistream.net/7/983/19809/v1/auth.akacast.akamaistream.net/kbco-fm",
+     "imageURL": "",
+     "desc": "World Class Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 97-3 Radio Now",
+     "streamURL": "http://wqbw-fm.akacast.akamaistream.net/7/935/20149/v1/auth.akacast.akamaistream.net/wqbw-fm",
+     "imageURL": "",
+     "desc": "Milwaukee's Hit Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 97.5 FM",
+     "streamURL": "http://kwtx-fm.akacast.akamaistream.net/7/861/20111/v1/auth.akacast.akamaistream.net/kwtx-fm",
+     "imageURL": "",
+     "desc": "Today's Hit Music 97.5FM",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 97.5 WAMZ",
+     "streamURL": "http://wamz-fm.akacast.akamaistream.net/7/218/23683/v1/auth.akacast.akamaistream.net/wamz-fm",
+     "imageURL": "",
+     "desc": "Kentuckiana's Best Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 97.7 KTPI",
+     "streamURL": "http://ktpi-fm.akacast.akamaistream.net/7/728/21750/v1/auth.akacast.akamaistream.net/ktpi-fm",
+     "imageURL": "",
+     "desc": "The Antelope Valley's Best Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 97.9 KISS FM",
+     "streamURL": "http://wfks-fm.akacast.akamaistream.net/7/886/19834/v1/auth.akacast.akamaistream.net/wfks-fm",
+     "imageURL": "",
+     "desc": "Ur, Music, Ur Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 97.9 WIBB",
+     "streamURL": "http://wibb-fm.akacast.akamaistream.net/7/535/32797/v1/auth.akacast.akamaistream.net/wibb-fm",
+     "imageURL": "",
+     "desc": "#1 for Hip Hop & R&B",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 970 WFLA",
+     "streamURL": "http://wfla-am.akacast.akamaistream.net/7/242/19868/v1/auth.akacast.akamaistream.net/wfla-am",
+     "imageURL": "",
+     "desc": "Fox Newsradio",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 98 ROCK",
+     "streamURL": "http://wacl-fm.akacast.akamaistream.net/7/689/33402/v1/auth.akacast.akamaistream.net/wacl-fm",
+     "imageURL": "",
+     "desc": "Valley's Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 98 Rock",
+     "streamURL": "http://wxtb-fm.akacast.akamaistream.net/7/662/19873/v1/auth.akacast.akamaistream.net/wxtb-fm",
+     "imageURL": "",
+     "desc": "Tampa Bay's Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 98 TXT",
+     "streamURL": "http://wtxt-fm.akacast.akamaistream.net/7/477/31809/v1/auth.akacast.akamaistream.net/wtxt-fm",
+     "imageURL": "",
+     "desc": "98 TXT",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 98-1 L.N.D.",
+     "streamURL": "http://wlnd-fm.akacast.akamaistream.net/7/389/37061/v1/auth.akacast.akamaistream.net/wlnd-fm",
+     "imageURL": "",
+     "desc": "Your Life, Your Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 98-3 the Beat",
+     "streamURL": "http://wbfa-fm.akacast.akamaistream.net/7/820/41601/v1/auth.akacast.akamaistream.net/wbfa-fm",
+     "imageURL": "",
+     "desc": "Columbus' #1 for Hip Hop and R&B",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 98.1 KISS FM",
+     "streamURL": "http://kisq-fm.akacast.akamaistream.net/7/826/19796/v1/auth.akacast.akamaistream.net/kisq-fm",
+     "imageURL": "",
+     "desc": "Old School and Today's R&B",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 98.1 The Bull",
+     "streamURL": "http://wbul-fm.akacast.akamaistream.net/7/818/22348/v1/auth.akacast.akamaistream.net/wbul-fm",
+     "imageURL": "",
+     "desc": "Better Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 98.3 KISS-FM",
+     "streamURL": "http://wksi-fm.akacast.akamaistream.net/7/331/33397/v1/auth.akacast.akamaistream.net/wksi-fm",
+     "imageURL": "",
+     "desc": "Playing All The Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 98.3 WTRY",
+     "streamURL": "http://wtry-fm.akacast.akamaistream.net/7/549/20811/v1/auth.akacast.akamaistream.net/wtry-fm",
+     "imageURL": "",
+     "desc": "My Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 98.5 KFOX",
+     "streamURL": "http://kufx-fm.akacast.akamaistream.net/7/992/19804/v1/auth.akacast.akamaistream.net/kufx-fm",
+     "imageURL": "",
+     "desc": "KUFX - Classic Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 98.5 The Fox",
+     "streamURL": "http://kdfo-fm.akacast.akamaistream.net/7/60/32793/v1/auth.akacast.akamaistream.net/kdfo-fm",
+     "imageURL": "",
+     "desc": "Bakersfield's Best Classic Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 98.5 WYLD - New Orleans",
+     "streamURL": "http://wyld-fm.akacast.akamaistream.net/7/520/26505/v1/auth.akacast.akamaistream.net/wyld-fm",
+     "imageURL": "",
+     "desc": "Today's R&B & Back in the Day Jams",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 98.7fm",
+     "streamURL": "http://kysr-fm.akacast.akamaistream.net/7/410/19778/v1/auth.akacast.akamaistream.net/kysr-fm",
+     "imageURL": "",
+     "desc": "Today's alternative music.",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 98.7 COUNTRY WOVK",
+     "streamURL": "http://wovk-fm.akacast.akamaistream.net/7/697/69402/v1/auth.akacast.akamaistream.net/wovk-fm",
+     "imageURL": "",
+     "desc": "The Valley's Country Leader",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 98.7 The River",
+     "streamURL": "http://wykz-fm.akacast.akamaistream.net/7/450/23512/v1/auth.akacast.akamaistream.net/wykz-fm",
+     "imageURL": "",
+     "desc": "The Lite Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 98.9 Kiss FM",
+     "streamURL": "http://wzkf-fm.akacast.akamaistream.net/7/680/34739/v1/auth.akacast.akamaistream.net/wzkf-fm",
+     "imageURL": "",
+     "desc": "All The Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 989 KKZX",
+     "streamURL": "http://kkzx-fm.akacast.akamaistream.net/7/796/29883/v1/auth.akacast.akamaistream.net/kkzx-fm",
+     "imageURL": "",
+     "desc": "THE Classic Rock Station.",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 99-3 KISS FM",
+     "streamURL": "http://whkf-fm.akacast.akamaistream.net/7/11/27990/v1/auth.akacast.akamaistream.net/whkf-fm",
+     "imageURL": "",
+     "desc": "Harrisburg's Hit Music Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 99.1 KGGI",
+     "streamURL": "http://kggi-fm.akacast.akamaistream.net/7/965/19779/v1/auth.akacast.akamaistream.net/kggi-fm",
+     "imageURL": "",
+     "desc": "The I.E.'s Hottest Music!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 99.3 The FOX",
+     "streamURL": "http://wfqx-fm.akacast.akamaistream.net/7/165/37063/v1/auth.akacast.akamaistream.net/wfqx-fm",
+     "imageURL": "",
+     "desc": "The FOX ROCKS",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 99.5 THE FOX",
+     "streamURL": "http://knfx-fm.akacast.akamaistream.net/7/720/22419/v1/auth.akacast.akamaistream.net/knfx-fm",
+     "imageURL": "",
+     "desc": "The Classic Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 99.5 WGAR",
+     "streamURL": "http://wgar-fm.akacast.akamaistream.net/7/320/20013/v1/auth.akacast.akamaistream.net/wgar-fm",
+     "imageURL": "",
+     "desc": "Cleveland's Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 99.5 WMAG",
+     "streamURL": "http://wmag-fm.akacast.akamaistream.net/7/555/19998/v1/auth.akacast.akamaistream.net/wmag-fm",
+     "imageURL": "",
+     "desc": "NC's Best Variety Of Yesterday & Today",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 99.7 The Fox",
+     "streamURL": "http://wrfx-fm.akacast.akamaistream.net/7/755/19996/v1/auth.akacast.akamaistream.net/wrfx-fm",
+     "imageURL": "",
+     "desc": "Charlotte's Best Classic Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 99.7 The Lake",
+     "streamURL": "http://koga-fm.akacast.akamaistream.net/7/590/19952/v1/auth.akacast.akamaistream.net/koga-fm",
+     "imageURL": "",
+     "desc": "Classic Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 99.9 KEZ",
+     "streamURL": "http://kesz-fm.akacast.akamaistream.net/7/911/19750/v1/auth.akacast.akamaistream.net/kesz-fm",
+     "imageURL": "",
+     "desc": "Beth and Friends",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 993 THE BEAT",
+     "streamURL": "http://webz-fm.akacast.akamaistream.net/7/35/36599/v1/auth.akacast.akamaistream.net/webz-fm",
+     "imageURL": "",
+     "desc": "Panama City's Hip Hop & R&B",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio AGGIE 96",
+     "streamURL": "http://kagg-fm.akacast.akamaistream.net/7/738/20087/v1/auth.akacast.akamaistream.net/kagg-fm",
+     "imageURL": "",
+     "desc": "Continuous Country Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Akron's 98.1 WKDD",
+     "streamURL": "http://wkdd-fm.akacast.akamaistream.net/7/642/25599/v1/auth.akacast.akamaistream.net/wkdd-fm",
+     "imageURL": "",
+     "desc": "Today's Best Music!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Alice 96.7",
+     "streamURL": "http://kalz-fm.akacast.akamaistream.net/7/703/19765/v1/auth.akacast.akamaistream.net/kalz-fm",
+     "imageURL": "",
+     "desc": "90s, 2K and Today",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Alice @ 95.5",
+     "streamURL": "http://ktoz-fm.akacast.akamaistream.net/7/878/20805/v1/auth.akacast.akamaistream.net/ktoz-fm",
+     "imageURL": "",
+     "desc": "Today's Hits and the 80's & 90's",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio All The Hits, 104-7 WNOK",
+     "streamURL": "http://wnok-fm.akacast.akamaistream.net/7/80/21242/v1/auth.akacast.akamaistream.net/wnok-fm",
+     "imageURL": "",
+     "desc": "Columbia's Hit Music Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 100.1 The Beat",
+     "streamURL": "http://wxbt-fm.akacast.akamaistream.net/7/892/21573/v1/auth.akacast.akamaistream.net/wxbt-fm",
+     "imageURL": "",
+     "desc": "Columbia's R&B and Hip Hop",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio AM 1300 The Zone",
+     "streamURL": "http://kvet-am.akacast.akamaistream.net/7/366/20085/v1/auth.akacast.akamaistream.net/kvet-am",
+     "imageURL": "",
+     "desc": "The Longhorn Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio AM 1360 KFIV",
+     "streamURL": "http://kfiv-am.akacast.akamaistream.net/7/496/31710/v1/auth.akacast.akamaistream.net/kfiv-am",
+     "imageURL": "",
+     "desc": "What Matters Now",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio AM 1450 and 1320 The Dove",
+     "streamURL": "http://wddv-am.akacast.akamaistream.net/7/199/19861/v1/auth.akacast.akamaistream.net/wddv-am",
+     "imageURL": "",
+     "desc": "Songs You Know And Love",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio AM 560 KLVI",
+     "streamURL": "http://klvi-am.akacast.akamaistream.net/7/913/22622/v1/auth.akacast.akamaistream.net/klvi-am",
+     "imageURL": "",
+     "desc": "News Talk 560 KLVI",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio AM 600 KOGO",
+     "streamURL": "http://kogo-am.akacast.akamaistream.net/7/250/19789/v1/auth.akacast.akamaistream.net/kogo-am",
+     "imageURL": "",
+     "desc": "San Diego's News & Talk Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio AM 620 KPOJ",
+     "streamURL": "http://kpoj-am.akacast.akamaistream.net/7/164/20052/v1/auth.akacast.akamaistream.net/kpoj-am",
+     "imageURL": "",
+     "desc": "Portland's Progressive Talk Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio AM1230 KOY",
+     "streamURL": "http://koy-am.akacast.akamaistream.net/7/516/19755/v1/auth.akacast.akamaistream.net/koy-am",
+     "imageURL": "",
+     "desc": "America's Best Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio AM760",
+     "streamURL": "http://kkzn-am.akacast.akamaistream.net/7/807/19813/v1/auth.akacast.akamaistream.net/kkzn-am",
+     "imageURL": "",
+     "desc": "Colorado's Progressive Talk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio AM920 The Wolf",
+     "streamURL": "http://woky-am.akacast.akamaistream.net/7/939/21439/v1/auth.akacast.akamaistream.net/woky-am",
+     "imageURL": "",
+     "desc": "Milwaukee's Classic Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio AMen 940 New Orleans",
+     "streamURL": "http://wyld-am.akacast.akamaistream.net/7/858/27994/v1/auth.akacast.akamaistream.net/wyld-am",
+     "imageURL": "",
+     "desc": "WYLD for Jesus!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Atlanta's Project 9-6-1",
+     "streamURL": "http://wkls-fm.akacast.akamaistream.net/7/379/19884/v1/auth.akacast.akamaistream.net/wkls-fm",
+     "imageURL": "",
+     "desc": "Live Loud, Play Hard",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio B-93",
+     "streamURL": "http://wbct-fm.akacast.akamaistream.net/7/876/19928/v1/auth.akacast.akamaistream.net/wbct-fm",
+     "imageURL": "",
+     "desc": "Michigan's Country Music Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio B-98",
+     "streamURL": "http://kzbb-fm.akacast.akamaistream.net/7/316/25177/v1/auth.akacast.akamaistream.net/kzbb-fm",
+     "imageURL": "",
+     "desc": "80's 90's and Today",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio B-98 FM",
+     "streamURL": "http://krbb-fm.akacast.akamaistream.net/7/111/19901/v1/auth.akacast.akamaistream.net/krbb-fm",
+     "imageURL": "",
+     "desc": "Best Variety of Yesterday and Today",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio B101 - WWBB",
+     "streamURL": "http://wwbb-fm.akacast.akamaistream.net/7/960/32785/v1/auth.akacast.akamaistream.net/wwbb-fm",
+     "imageURL": "",
+     "desc": "Classic Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio B104",
+     "streamURL": "http://waeb-fm.akacast.akamaistream.net/7/333/25975/v1/auth.akacast.akamaistream.net/waeb-fm",
+     "imageURL": "",
+     "desc": "Todays hit music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio B104.7",
+     "streamURL": "http://wbbs-fm.akacast.akamaistream.net/7/449/19978/v1/auth.akacast.akamaistream.net/wbbs-fm",
+     "imageURL": "",
+     "desc": "Best Country, Familiar Favorites",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio B92.9",
+     "streamURL": "http://koso-fm.akacast.akamaistream.net/7/954/31800/v1/auth.akacast.akamaistream.net/koso-fm",
+     "imageURL": "",
+     "desc": "Your Hit Alternative",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio B95",
+     "streamURL": "http://wqrb-fm.akacast.akamaistream.net/7/202/24926/v1/auth.akacast.akamaistream.net/wqrb-fm",
+     "imageURL": "",
+     "desc": "Hot Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio B95",
+     "streamURL": "http://kbos-fm.akacast.akamaistream.net/7/764/19766/v1/auth.akacast.akamaistream.net/kbos-fm",
+     "imageURL": "",
+     "desc": "Hip Hop and R 'n' B",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio B97.1",
+     "streamURL": "http://wbvb-fm.akacast.akamaistream.net/7/57/20142/v1/auth.akacast.akamaistream.net/wbvb-fm",
+     "imageURL": "",
+     "desc": "Tri-State's Greatest Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Better Country",
+     "streamURL": "http://wdxb-fm.akacast.akamaistream.net/7/337/31813/v1/auth.akacast.akamaistream.net/wdxb-fm",
+     "imageURL": "",
+     "desc": "102 Five The Bull",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio BIG 100.3",
+     "streamURL": "http://wbig-fm.akacast.akamaistream.net/7/467/20126/v1/auth.akacast.akamaistream.net/wbig-fm",
+     "imageURL": "",
+     "desc": "DC's Classic Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Big 105.9",
+     "streamURL": "http://wbgg-fm.akacast.akamaistream.net/7/317/19844/v1/auth.akacast.akamaistream.net/wbgg-fm",
+     "imageURL": "",
+     "desc": "Miami's Classic Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio BIG 106.1",
+     "streamURL": "http://wbbg-fm.akacast.akamaistream.net/7/699/20033/v1/auth.akacast.akamaistream.net/wbbg-fm",
+     "imageURL": "",
+     "desc": "Youngstown-Warren's Greatest Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio BIG 95 KBGO",
+     "streamURL": "http://kbgo-fm.akacast.akamaistream.net/7/725/20109/v1/auth.akacast.akamaistream.net/kbgo-fm",
+     "imageURL": "",
+     "desc": "Biggest Hits 60'S, 70'S, & 80'S",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Big Country 102.7",
+     "streamURL": "http://khge-fm.akacast.akamaistream.net/7/416/19767/v1/auth.akacast.akamaistream.net/khge-fm",
+     "imageURL": "",
+     "desc": "Big Songs Big Stars",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Big Country 97.9",
+     "streamURL": "http://kxbg-fm.akacast.akamaistream.net/7/833/20993/v1/auth.akacast.akamaistream.net/kxbg-fm",
+     "imageURL": "",
+     "desc": "The Most Country for Colorado",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Big Dog 106",
+     "streamURL": "http://kioc-fm.akacast.akamaistream.net/7/684/22967/v1/auth.akacast.akamaistream.net/kioc-fm",
+     "imageURL": "",
+     "desc": "The Rock of Southeast Texas",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Big Dog 95.9",
+     "streamURL": "http://kkbd-fm.akacast.akamaistream.net/7/216/25178/v1/auth.akacast.akamaistream.net/kkbd-fm",
+     "imageURL": "",
+     "desc": "Fort Smith's Classic Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Bobby Bones Show Channel",
+     "streamURL": "http://bobbybones.akacast.akamaistream.net/7/604/78274/v1/auth.akacast.akamaistream.net/bobbybones",
+     "imageURL": "",
+     "desc": "www.BobbyBones.com",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio BILL 95 FM",
+     "streamURL": "http://wbyl-fm.akacast.akamaistream.net/7/511/29791/v1/auth.akacast.akamaistream.net/wbyl-fm",
+     "imageURL": "",
+     "desc": "Central PA's New Country Fun",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Bill Cunningham \"Channel   Willie\"",
+     "streamURL": "http://ibil-fl.akacast.akamaistream.net/7/657/89382/v1/auth.akacast.akamaistream.net/ibil-fl",
+     "imageURL": "",
+     "desc": "Radio's Great American-On Demand",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Bob 94-9",
+     "streamURL": "http://wrbt-fm.akacast.akamaistream.net/7/682/32494/v1/auth.akacast.akamaistream.net/wrbt-fm",
+     "imageURL": "",
+     "desc": "Harrisburg's Country Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Buckeye Country",
+     "streamURL": "http://wmrn-fm.akacast.akamaistream.net/7/393/48657/v1/auth.akacast.akamaistream.net/wmrn-fm",
+     "imageURL": "",
+     "desc": "Today's Hot New Country!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio C101",
+     "streamURL": "http://kncn-fm.akacast.akamaistream.net/7/46/32492/v1/auth.akacast.akamaistream.net/kncn-fm",
+     "imageURL": "",
+     "desc": "C101 Rocks!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio CAPITAL 106.3",
+     "streamURL": "http://kptl-fm.akacast.akamaistream.net/7/281/30796/v1/auth.akacast.akamaistream.net/kptl-fm",
+     "imageURL": "",
+     "desc": "Quality Music From Then And Now",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Z104.3",
+     "streamURL": "http://wzft-fm.akacast.akamaistream.net/7/393/19914/v1/auth.akacast.akamaistream.net/wzft-fm",
+     "imageURL": "",
+     "desc": "All The Hits for Baltimore!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Cat Country 107.1",
+     "streamURL": "http://wckt-fm.akacast.akamaistream.net/7/47/19831/v1/auth.akacast.akamaistream.net/wckt-fm",
+     "imageURL": "",
+     "desc": "SWFL's Country Station!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Channel 92.3 KSJO",
+     "streamURL": "http://ksjo-fm.akacast.akamaistream.net/7/238/19803/v1/auth.akacast.akamaistream.net/ksjo-fm",
+     "imageURL": "",
+     "desc": "The Bay Area's Alternative Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Channel 93.3",
+     "streamURL": "http://ktcl-fm.akacast.akamaistream.net/7/594/19816/v1/auth.akacast.akamaistream.net/ktcl-fm",
+     "imageURL": "",
+     "desc": "Colorado's Modern Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Channel 933",
+     "streamURL": "http://khts-fm.akacast.akamaistream.net/7/362/19785/v1/auth.akacast.akamaistream.net/khts-fm",
+     "imageURL": "",
+     "desc": "San Diego's HIT Music Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Channel 945",
+     "streamURL": "http://wdkf-fm.akacast.akamaistream.net/7/585/20019/v1/auth.akacast.akamaistream.net/wdkf-fm",
+     "imageURL": "",
+     "desc": "Dayton's Hit Music Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Channel 955",
+     "streamURL": "http://wkqi-fm.akacast.akamaistream.net/7/92/19925/v1/auth.akacast.akamaistream.net/wkqi-fm",
+     "imageURL": "",
+     "desc": "Detroit's Hit Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Channel 963",
+     "streamURL": "http://kzch-fm.akacast.akamaistream.net/7/130/19903/v1/auth.akacast.akamaistream.net/kzch-fm",
+     "imageURL": "",
+     "desc": "All the Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Cities 97",
+     "streamURL": "http://ktcz-fm.akacast.akamaistream.net/7/724/19940/v1/auth.akacast.akamaistream.net/ktcz-fm",
+     "imageURL": "",
+     "desc": "Mpls/St.Paul-Adult Album Alternative",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Classic 93.1/Sacramento",
+     "streamURL": "http://khlx-fm.akacast.akamaistream.net/7/589/73702/v1/auth.akacast.akamaistream.net/khlx-fm",
+     "imageURL": "",
+     "desc": "Classic hits of the 70s and 80s",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Classic Rock 92.1",
+     "streamURL": "http://wmeq-fm.akacast.akamaistream.net/7/913/24925/v1/auth.akacast.akamaistream.net/wmeq-fm",
+     "imageURL": "",
+     "desc": "The Valley's Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Coast 93.3",
+     "streamURL": "http://wsne-fm.akacast.akamaistream.net/7/677/21326/v1/auth.akacast.akamaistream.net/wsne-fm",
+     "imageURL": "",
+     "desc": "New England's Best Variety",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio COOL 101 point 3",
+     "streamURL": "http://kuul-fm.akacast.akamaistream.net/7/634/45299/v1/auth.akacast.akamaistream.net/kuul-fm",
+     "imageURL": "",
+     "desc": "SuperHits: Best of the 60s and 70s",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Cool 1450",
+     "streamURL": "http://kwfm-am.akacast.akamaistream.net/7/781/33395/v1/auth.akacast.akamaistream.net/kwfm-am",
+     "imageURL": "",
+     "desc": "Sing along songs of the 60's and 70's",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Cool 92.5",
+     "streamURL": "http://kcol-fm.akacast.akamaistream.net/7/493/22966/v1/auth.akacast.akamaistream.net/kcol-fm",
+     "imageURL": "",
+     "desc": "Classic Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 102.1 K102",
+     "streamURL": "http://keey-fm.akacast.akamaistream.net/7/8/19936/v1/auth.akacast.akamaistream.net/keey-fm",
+     "imageURL": "",
+     "desc": "Minnesota's Country Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Country 107.3 WRWD",
+     "streamURL": "http://wrwd-fm.akacast.akamaistream.net/7/166/19977/v1/auth.akacast.akamaistream.net/wrwd-fm",
+     "imageURL": "",
+     "desc": "The Hudson Valley's Country Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Country 1130 KBMR",
+     "streamURL": "http://kbmr-am.akacast.akamaistream.net/7/824/94971/v1/auth.akacast.akamaistream.net/kbmr-am",
+     "imageURL": "",
+     "desc": "Bismarck-Mandan's Original Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Country 92.5",
+     "streamURL": "http://wwyz-fm.akacast.akamaistream.net/7/884/19822/v1/auth.akacast.akamaistream.net/wwyz-fm",
+     "imageURL": "",
+     "desc": "Connecticut Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio DC101",
+     "streamURL": "http://wwdc-fm.akacast.akamaistream.net/7/634/20131/v1/auth.akacast.akamaistream.net/wwdc-fm",
+     "imageURL": "",
+     "desc": "DC's Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Eagle 105-7",
+     "streamURL": "http://wekl-fm.akacast.akamaistream.net/7/768/25770/v1/auth.akacast.akamaistream.net/wekl-fm",
+     "imageURL": "",
+     "desc": "Augusta's Classic Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio EAGLE 107.5",
+     "streamURL": "http://wegw-fm.akacast.akamaistream.net/7/137/69400/v1/auth.akacast.akamaistream.net/wegw-fm",
+     "imageURL": "",
+     "desc": "Wheeling's Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio El Patron 105.3",
+     "streamURL": "http://wbzy-fm.akacast.akamaistream.net/7/410/19882/v1/auth.akacast.akamaistream.net/wbzy-fm",
+     "imageURL": "",
+     "desc": "Patrones de la Ma&ntilde;ana",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Elliot In The Morning",
+     "streamURL": "http://elliotinthemorning.akacast.akamaistream.net/7/839/78277/v1/auth.akacast.akamaistream.net/elliotinthemorning",
+     "imageURL": "",
+     "desc": "Smell My Face...Anytime - Anyplace",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio FM 106.1",
+     "streamURL": "http://wmil-fm.akacast.akamaistream.net/7/588/20151/v1/auth.akacast.akamaistream.net/wmil-fm",
+     "imageURL": "",
+     "desc": "Mikwaukee's Country Favorites",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio FM 98 WJLB",
+     "streamURL": "http://wjlb-fm.akacast.akamaistream.net/7/640/19924/v1/auth.akacast.akamaistream.net/wjlb-fm",
+     "imageURL": "",
+     "desc": "Detroit's Hip Hop and R&B",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio FM NewsTalk 104.7",
+     "streamURL": "http://wpgb-fm.akacast.akamaistream.net/7/564/20063/v1/auth.akacast.akamaistream.net/wpgb-fm",
+     "imageURL": "",
+     "desc": "Pittsburgh's Next Gen NewsTalk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio FM100 KTEX",
+     "streamURL": "http://ktex-fm.akacast.akamaistream.net/7/859/20659/v1/auth.akacast.akamaistream.net/ktex-fm",
+     "imageURL": "",
+     "desc": "South Texas Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio FM97 WLAN",
+     "streamURL": "http://wlan-fm.akacast.akamaistream.net/7/523/31314/v1/auth.akacast.akamaistream.net/wlan-fm",
+     "imageURL": "",
+     "desc": "Lancaster's Hit Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio FOX 970 AM",
+     "streamURL": "http://wbgg-am.akacast.akamaistream.net/7/655/20060/v1/auth.akacast.akamaistream.net/wbgg-am",
+     "imageURL": "",
+     "desc": "Pittsburgh's Sports Talk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Fox Sports",
+     "streamURL": "http://wtcr-am.akacast.akamaistream.net/7/869/25888/v1/auth.akacast.akamaistream.net/wtcr-am",
+     "imageURL": "",
+     "desc": "Tri-States Fox Sports 1230 & 1420",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Fox Sports 1670",
+     "streamURL": "http://wfsm-am.akacast.akamaistream.net/7/198/33387/v1/auth.akacast.akamaistream.net/wfsm-am",
+     "imageURL": "",
+     "desc": "Middle GA's only 24/7 Sports Talk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Fox Sports 610",
+     "streamURL": "http://kavl-am.akacast.akamaistream.net/7/245/27988/v1/auth.akacast.akamaistream.net/kavl-am",
+     "imageURL": "",
+     "desc": "SoCal's Sports Monster",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Fox Sports Radio 970",
+     "streamURL": "http://khty-am.akacast.akamaistream.net/7/31/69396/v1/auth.akacast.akamaistream.net/khty-am",
+     "imageURL": "",
+     "desc": "All Sports, All Day, Every Day",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Freedom 570",
+     "streamURL": "http://kacp-am.akacast.akamaistream.net/7/555/83443/v1/auth.akacast.akamaistream.net/kacp-am",
+     "imageURL": "",
+     "desc": "Utah's Voice of Freedom",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio FROGGY 99.9",
+     "streamURL": "http://wwfg-fm.akacast.akamaistream.net/7/838/32168/v1/auth.akacast.akamaistream.net/wwfg-fm",
+     "imageURL": "",
+     "desc": "All Time Favorites & Best Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio FSR 1460",
+     "streamURL": "http://whal-am.akacast.akamaistream.net/7/922/35471/v1/auth.akacast.akamaistream.net/whal-am",
+     "imageURL": "",
+     "desc": "Fox Sports Radio 1460",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Funky Monkey 1049",
+     "streamURL": "http://kfnk-fm.akacast.akamaistream.net/7/740/20134/v1/auth.akacast.akamaistream.net/kfnk-fm",
+     "imageURL": "",
+     "desc": "Rock & Hockey",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio G105",
+     "streamURL": "http://wdcg-fm.akacast.akamaistream.net/7/499/25765/v1/auth.akacast.akamaistream.net/wdcg-fm",
+     "imageURL": "",
+     "desc": "The Hit Music Channel",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Grand Rapids Talk",
+     "streamURL": "http://wtkg-am.akacast.akamaistream.net/7/327/19933/v1/auth.akacast.akamaistream.net/wtkg-am",
+     "imageURL": "",
+     "desc": "Dave Ramsey, Glenn Beck",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio GREEN 960",
+     "streamURL": "http://kkgn-am.akacast.akamaistream.net/7/94/19800/v1/auth.akacast.akamaistream.net/kkgn-am",
+     "imageURL": "",
+     "desc": "Progressive Talk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Groovin 1580",
+     "streamURL": "http://wgvn-am.akacast.akamaistream.net/7/225/52419/v1/auth.akacast.akamaistream.net/wgvn-am",
+     "imageURL": "",
+     "desc": "Old School Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Hallelujah 1340 AM",
+     "streamURL": "http://wsgf-am.akacast.akamaistream.net/7/330/25769/v1/auth.akacast.akamaistream.net/wsgf-am",
+     "imageURL": "",
+     "desc": "Southern Gospel in the CSRA",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Heaven600",
+     "streamURL": "http://wcao-am.akacast.akamaistream.net/7/810/19912/v1/auth.akacast.akamaistream.net/wcao-am",
+     "imageURL": "",
+     "desc": "The Good News Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio HOT 107.9",
+     "streamURL": "http://wwht-fm.akacast.akamaistream.net/7/879/19983/v1/auth.akacast.akamaistream.net/wwht-fm",
+     "imageURL": "",
+     "desc": "Today's Hit Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Hot 92.3",
+     "streamURL": "http://khht-fm.akacast.akamaistream.net/7/159/19772/v1/auth.akacast.akamaistream.net/khht-fm",
+     "imageURL": "",
+     "desc": "Old School and R&B",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Hot 98.3",
+     "streamURL": "http://koht-fm.akacast.akamaistream.net/7/480/29510/v1/auth.akacast.akamaistream.net/koht-fm",
+     "imageURL": "",
+     "desc": "Hip Hop & R&B",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio HOT 99.5",
+     "streamURL": "http://wiht-fm.akacast.akamaistream.net/7/183/20127/v1/auth.akacast.akamaistream.net/wiht-fm",
+     "imageURL": "",
+     "desc": "DC's HOTTEST Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Inspiration 1390",
+     "streamURL": "http://wgrb-am.akacast.akamaistream.net/7/356/19890/v1/auth.akacast.akamaistream.net/wgrb-am",
+     "imageURL": "",
+     "desc": "Music of Power and Praise",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio ISLAND 98.5",
+     "streamURL": "http://kdnn-fm.akacast.akamaistream.net/7/568/21438/v1/auth.akacast.akamaistream.net/kdnn-fm",
+     "imageURL": "",
+     "desc": "Hawaiian Style & Reggae",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio JAM'N 94.5",
+     "streamURL": "http://wjmn-fm.akacast.akamaistream.net/7/135/19915/v1/auth.akacast.akamaistream.net/wjmn-fm",
+     "imageURL": "",
+     "desc": "Boston's #1 For Hip Hop and R&B",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Jammin JJS",
+     "streamURL": "http://wjjs-fm.akacast.akamaistream.net/7/751/28753/v1/auth.akacast.akamaistream.net/wjjs-fm",
+     "imageURL": "",
+     "desc": "Today's Hottest Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio K-Lite 106.3",
+     "streamURL": "http://kkli-fm.akacast.akamaistream.net/7/66/19807/v1/auth.akacast.akamaistream.net/kkli-fm",
+     "imageURL": "",
+     "desc": "Today's Best Variety",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio K-MAG 99.1",
+     "streamURL": "http://kmag-fm.akacast.akamaistream.net/7/465/25176/v1/auth.akacast.akamaistream.net/kmag-fm",
+     "imageURL": "",
+     "desc": "Continuous Hit Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 105.9 The River",
+     "streamURL": "http://kfmk-fm.akacast.akamaistream.net/7/706/20082/v1/auth.akacast.akamaistream.net/kfmk-fm",
+     "imageURL": "",
+     "desc": "Austin's Family Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio K-OCEAN 105",
+     "streamURL": "http://kocn-fm.akacast.akamaistream.net/7/553/43848/v1/auth.akacast.akamaistream.net/kocn-fm",
+     "imageURL": "",
+     "desc": "Old School That Makes You Feel Good",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio K-Talk - KTLK-FM",
+     "streamURL": "http://ktlk-fm.akacast.akamaistream.net/7/11/19938/v1/auth.akacast.akamaistream.net/ktlk-fm",
+     "imageURL": "",
+     "desc": "Twin Cities' News & Talk Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio K103",
+     "streamURL": "http://kkcw-fm.akacast.akamaistream.net/7/587/20050/v1/auth.akacast.akamaistream.net/kkcw-fm",
+     "imageURL": "",
+     "desc": "Portland's Soft Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio K97 FM",
+     "streamURL": "http://whrk-fm.akacast.akamaistream.net/7/136/20077/v1/auth.akacast.akamaistream.net/whrk-fm",
+     "imageURL": "",
+     "desc": "Memphis' #1 for Hip-Hop and R&B",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio K99",
+     "streamURL": "http://krys-fm.akacast.akamaistream.net/7/83/32493/v1/auth.akacast.akamaistream.net/krys-fm",
+     "imageURL": "",
+     "desc": "South Texas Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio K99.1",
+     "streamURL": "http://wknn-fm.akacast.akamaistream.net/7/529/29323/v1/auth.akacast.akamaistream.net/wknn-fm",
+     "imageURL": "",
+     "desc": "Today's Best Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KASE 101",
+     "streamURL": "http://kase-fm.akacast.akamaistream.net/7/105/20081/v1/auth.akacast.akamaistream.net/kase-fm",
+     "imageURL": "",
+     "desc": "Today's Country & Your All Time Favorites",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Kat 103.7",
+     "streamURL": "http://kxkt-fm.akacast.akamaistream.net/7/845/29503/v1/auth.akacast.akamaistream.net/kxkt-fm",
+     "imageURL": "",
+     "desc": "Nebraska's Country Superstation",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Hallelujah 1600",
+     "streamURL": "http://katz-am.akacast.akamaistream.net/7/840/19943/v1/auth.akacast.akamaistream.net/katz-am",
+     "imageURL": "",
+     "desc": "Gospel Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KFAN Sports Radio AM 1130",
+     "streamURL": "http://kfan-am.akacast.akamaistream.net/7/488/19937/v1/auth.akacast.akamaistream.net/kfan-am",
+     "imageURL": "",
+     "desc": "Minneapolis - The Sports Leader",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KFI",
+     "streamURL": "http://kfi-am.akacast.akamaistream.net/7/121/19771/v1/auth.akacast.akamaistream.net/kfi-am",
+     "imageURL": "",
+     "desc": "Los Angeles More Stimulating Talk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KFYI",
+     "streamURL": "http://kfyi-am.akacast.akamaistream.net/7/648/19751/v1/auth.akacast.akamaistream.net/kfyi-am",
+     "imageURL": "",
+     "desc": "Phoenix's #1 Newstalk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KIKI",
+     "streamURL": "http://kiki-fm.akacast.akamaistream.net/7/549/20803/v1/auth.akacast.akamaistream.net/kiki-fm",
+     "imageURL": "",
+     "desc": "HOT 93-9 in Honolulu",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Kiss 107",
+     "streamURL": "http://wkfs-fm.akacast.akamaistream.net/7/802/20006/v1/auth.akacast.akamaistream.net/wkfs-fm",
+     "imageURL": "",
+     "desc": "Hit Music I txt 38828",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KISS 108",
+     "streamURL": "http://wxks-fm.akacast.akamaistream.net/7/844/19917/v1/auth.akacast.akamaistream.net/wxks-fm",
+     "imageURL": "",
+     "desc": "Boston's #1 Hit Music Station!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KISS 95.1 Melbourne/Cocoa Beach",
+     "streamURL": "http://wbvd-fm.akacast.akamaistream.net/7/182/19841/v1/auth.akacast.akamaistream.net/wbvd-fm",
+     "imageURL": "",
+     "desc": "Life's a party: turn it up!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Kiss 95.3",
+     "streamURL": "http://wskx-fm.akacast.akamaistream.net/7/117/31699/v1/auth.akacast.akamaistream.net/wskx-fm",
+     "imageURL": "",
+     "desc": "The Seacoast's Hit Music Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KISS 95.7",
+     "streamURL": "http://wkss-fm.akacast.akamaistream.net/7/692/19819/v1/auth.akacast.akamaistream.net/wkss-fm",
+     "imageURL": "",
+     "desc": "All the Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KISS FM Phoenix",
+     "streamURL": "http://kzzp-fm.akacast.akamaistream.net/7/877/19757/v1/auth.akacast.akamaistream.net/kzzp-fm",
+     "imageURL": "",
+     "desc": "Johnjay & Rich and All the Hits!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KJ103",
+     "streamURL": "http://kjyo-fm.akacast.akamaistream.net/7/968/20039/v1/auth.akacast.akamaistream.net/kjyo-fm",
+     "imageURL": "",
+     "desc": "All Of Today's Best Music Now!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KJ97",
+     "streamURL": "http://kaja-fm.akacast.akamaistream.net/7/609/20103/v1/auth.akacast.akamaistream.net/kaja-fm",
+     "imageURL": "",
+     "desc": "San Antonio's Country Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KLAC",
+     "streamURL": "http://klac-am.akacast.akamaistream.net/7/304/19774/v1/auth.akacast.akamaistream.net/klac-am",
+     "imageURL": "",
+     "desc": "Fox Sports Radio",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Rewind 103-3",
+     "streamURL": "http://klou-fm.akacast.akamaistream.net/7/959/19945/v1/auth.akacast.akamaistream.net/klou-fm",
+     "imageURL": "",
+     "desc": "70s & 80s Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KOOL 105.5 fm",
+     "streamURL": "http://woll-fm.akacast.akamaistream.net/7/642/19878/v1/auth.akacast.akamaistream.net/woll-fm",
+     "imageURL": "",
+     "desc": "Songs You Love To Sing Along With",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Kool 108",
+     "streamURL": "http://kqql-fm.akacast.akamaistream.net/7/643/19939/v1/auth.akacast.akamaistream.net/kqql-fm",
+     "imageURL": "",
+     "desc": "Big Hits from the 60's & 70's",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KOST 103.5",
+     "streamURL": "http://kost-fm.akacast.akamaistream.net/7/103/19775/v1/auth.akacast.akamaistream.net/kost-fm",
+     "imageURL": "",
+     "desc": "Soft Rock with Less Talk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KQXT",
+     "streamURL": "http://kqxt-fm.akacast.akamaistream.net/7/11/20104/v1/auth.akacast.akamaistream.net/kqxt-fm",
+     "imageURL": "",
+     "desc": "Family First",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 92-5 The Patriot",
+     "streamURL": "http://krpt-fm.akacast.akamaistream.net/7/880/20105/v1/auth.akacast.akamaistream.net/krpt-fm",
+     "imageURL": "",
+     "desc": "SA's Conservative FM Talk Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KRQ",
+     "streamURL": "http://krqq-fm.akacast.akamaistream.net/7/824/23883/v1/auth.akacast.akamaistream.net/krqq-fm",
+     "imageURL": "",
+     "desc": "Today's Best Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 93-7 The Bull",
+     "streamURL": "http://ksd-fm.akacast.akamaistream.net/7/151/19947/v1/auth.akacast.akamaistream.net/ksd-fm",
+     "imageURL": "",
+     "desc": "New Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KSSK",
+     "streamURL": "http://kssk-fm.akacast.akamaistream.net/7/883/24594/v1/auth.akacast.akamaistream.net/kssk-fm",
+     "imageURL": "",
+     "desc": "Hawaii's #1 Radio Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KTKR",
+     "streamURL": "http://ktkr-am.akacast.akamaistream.net/7/255/20107/v1/auth.akacast.akamaistream.net/ktkr-am",
+     "imageURL": "",
+     "desc": "San Antonio's Sports Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KTLK AM 1150",
+     "streamURL": "http://ktlk-am.akacast.akamaistream.net/7/830/19776/v1/auth.akacast.akamaistream.net/ktlk-am",
+     "imageURL": "",
+     "desc": "The voice of reason",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KUBE 93",
+     "streamURL": "http://kube-fm.akacast.akamaistream.net/7/581/20138/v1/auth.akacast.akamaistream.net/kube-fm",
+     "imageURL": "",
+     "desc": "KUBE 93 Play's Hits & Hip Hop",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KVET 98.1 FM",
+     "streamURL": "http://kvet-fm.akacast.akamaistream.net/7/772/20086/v1/auth.akacast.akamaistream.net/kvet-fm",
+     "imageURL": "",
+     "desc": "The Genuine Austin Original",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WiLD 107.5",
+     "streamURL": "http://kxjm-fm.akacast.akamaistream.net/7/331/69406/v1/auth.akacast.akamaistream.net/kxjm-fm",
+     "imageURL": "",
+     "desc": "Portland's Party Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KZEP",
+     "streamURL": "http://kzep-fm.akacast.akamaistream.net/7/142/52426/v1/auth.akacast.akamaistream.net/kzep-fm",
+     "imageURL": "",
+     "desc": "San Antonio's #1 Classic Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Lite 102.9",
+     "streamURL": "http://wlyt-fm.akacast.akamaistream.net/7/464/19995/v1/auth.akacast.akamaistream.net/wlyt-fm",
+     "imageURL": "",
+     "desc": "Never Too Old. Never Too Soft",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Lite 98",
+     "streamURL": "http://wtvr-fm.akacast.akamaistream.net/7/904/20124/v1/auth.akacast.akamaistream.net/wtvr-fm",
+     "imageURL": "",
+     "desc": "Today's Lite98",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 99.9 Kiss Country",
+     "streamURL": "http://wksf-fm.akacast.akamaistream.net/7/5/19987/v1/auth.akacast.akamaistream.net/wksf-fm",
+     "imageURL": "",
+     "desc": "Today's Hit Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 99.9 LITE FM",
+     "streamURL": "http://wlqt-fm.akacast.akamaistream.net/7/76/20021/v1/auth.akacast.akamaistream.net/wlqt-fm",
+     "imageURL": "",
+     "desc": "Dayton's LITE Rock Favorites",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio DreX in the Morning",
+     "streamURL": "http://idrx-fl.akacast.akamaistream.net/7/394/83448/v1/auth.akacast.akamaistream.net/idrx-fl",
+     "imageURL": "",
+     "desc": "103.5 KISS FM",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KG95",
+     "streamURL": "http://kgli-fm.akacast.akamaistream.net/7/186/25968/v1/auth.akacast.akamaistream.net/kgli-fm",
+     "imageURL": "",
+     "desc": "Your Variety Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio AM 1400 The Peak",
+     "streamURL": "http://wmxf-am.akacast.akamaistream.net/7/30/23142/v1/auth.akacast.akamaistream.net/wmxf-am",
+     "imageURL": "",
+     "desc": "Waynesville's Hometown Radio Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio B100 Albany, GA",
+     "streamURL": "http://wobb-fm.akacast.akamaistream.net/7/592/32789/v1/auth.akacast.akamaistream.net/wobb-fm",
+     "imageURL": "",
+     "desc": "Continuous Country Favorites",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Big I 107-9",
+     "streamURL": "http://kbqi-fm.akacast.akamaistream.net/7/347/19962/v1/auth.akacast.akamaistream.net/kbqi-fm",
+     "imageURL": "",
+     "desc": "New Mexico's Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Classic Country 104.7",
+     "streamURL": "http://kabq-fm.akacast.akamaistream.net/7/699/19961/v1/auth.akacast.akamaistream.net/kabq-fm",
+     "imageURL": "",
+     "desc": "Albuquerque's Classic Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Fox Sports 1350",
+     "streamURL": "http://warf-am.akacast.akamaistream.net/7/222/29880/v1/auth.akacast.akamaistream.net/warf-am",
+     "imageURL": "",
+     "desc": "Akron's All Sports Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio FOX Sports 980",
+     "streamURL": "http://wofx-am.akacast.akamaistream.net/7/931/20810/v1/auth.akacast.akamaistream.net/wofx-am",
+     "imageURL": "",
+     "desc": "Capital Region's Sports Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KC101.3",
+     "streamURL": "http://wkci-fm.akacast.akamaistream.net/7/209/19825/v1/auth.akacast.akamaistream.net/wkci-fm",
+     "imageURL": "",
+     "desc": "Connecticut's Hit Music Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Key-Z 96.9 93.5",
+     "streamURL": "http://wkez-fm.akacast.akamaistream.net/7/674/32794/v1/auth.akacast.akamaistream.net/wkez-fm",
+     "imageURL": "",
+     "desc": "It's Just Good Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KASH Country 107.5",
+     "streamURL": "http://kash-fm.akacast.akamaistream.net/7/517/31532/v1/auth.akacast.akamaistream.net/kash-fm",
+     "imageURL": "",
+     "desc": "Alaska's Country Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KGB FM 925",
+     "streamURL": "http://wkgb-fm.akacast.akamaistream.net/7/144/30794/v1/auth.akacast.akamaistream.net/wkgb-fm",
+     "imageURL": "",
+     "desc": "Binghamton's Rock Station KGB-FM",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KGOR",
+     "streamURL": "http://kgor-fm.akacast.akamaistream.net/7/284/34105/v1/auth.akacast.akamaistream.net/kgor-fm",
+     "imageURL": "",
+     "desc": "Superhits 99.9 KGOR",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Hot Kiss 106.3",
+     "streamURL": "http://khkz-fm.akacast.akamaistream.net/7/441/20662/v1/auth.akacast.akamaistream.net/khkz-fm",
+     "imageURL": "",
+     "desc": "All the Hits!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KHVH 830 AM",
+     "streamURL": "http://khvh-am.akacast.akamaistream.net/7/62/89380/v1/auth.akacast.akamaistream.net/khvh-am",
+     "imageURL": "",
+     "desc": "News Radio Honolulu",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Kicker 95.1",
+     "streamURL": "http://kykr-fm.akacast.akamaistream.net/7/933/22702/v1/auth.akacast.akamaistream.net/kykr-fm",
+     "imageURL": "",
+     "desc": "Today's Best and Most Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KIIX AM 1410",
+     "streamURL": "http://kiix-am.akacast.akamaistream.net/7/790/20994/v1/auth.akacast.akamaistream.net/kiix-am",
+     "imageURL": "",
+     "desc": "America's Best Music!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Kiss 98.1 Albany, GA",
+     "streamURL": "http://wmrz-fm.akacast.akamaistream.net/7/599/32791/v1/auth.akacast.akamaistream.net/wmrz-fm",
+     "imageURL": "",
+     "desc": "Today's R&B and Jammin' Old School",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KISS 105.5",
+     "streamURL": "http://wdkz-fm.akacast.akamaistream.net/7/561/32171/v1/auth.akacast.akamaistream.net/wdkz-fm",
+     "imageURL": "",
+     "desc": "Today's Hit Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KISS 107 FM",
+     "streamURL": "http://kkdm-fm.akacast.akamaistream.net/7/989/31305/v1/auth.akacast.akamaistream.net/kkdm-fm",
+     "imageURL": "",
+     "desc": "All The Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Lite Mix 99",
+     "streamURL": "http://wmxc-fm.akacast.akamaistream.net/7/431/23273/v1/auth.akacast.akamaistream.net/wmxc-fm",
+     "imageURL": "",
+     "desc": "Lite Mix Means Variety",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Lone Star 92.5",
+     "streamURL": "http://kzps-fm.akacast.akamaistream.net/7/775/20092/v1/auth.akacast.akamaistream.net/kzps-fm",
+     "imageURL": "",
+     "desc": "Classic Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Magic 107.7",
+     "streamURL": "http://wmgf-fm.akacast.akamaistream.net/7/210/19854/v1/auth.akacast.akamaistream.net/wmgf-fm",
+     "imageURL": "",
+     "desc": "The Best Variety",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KIX 96",
+     "streamURL": "http://kixz-fm.akacast.akamaistream.net/7/523/29886/v1/auth.akacast.akamaistream.net/kixz-fm",
+     "imageURL": "",
+     "desc": "Better Country.",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Kissin' 102.1",
+     "streamURL": "http://kzsn-fm.akacast.akamaistream.net/7/159/19904/v1/auth.akacast.akamaistream.net/kzsn-fm",
+     "imageURL": "",
+     "desc": "Today's Best Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Kix 104",
+     "streamURL": "http://kkix-fm.akacast.akamaistream.net/7/649/36596/v1/auth.akacast.akamaistream.net/kkix-fm",
+     "imageURL": "",
+     "desc": "Good Times Great Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KIX Country 92.9",
+     "streamURL": "http://wikx-fm.akacast.akamaistream.net/7/114/73710/v1/auth.akacast.akamaistream.net/wikx-fm",
+     "imageURL": "",
+     "desc": "New Country, Legends & Superstars!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KIX 97.9",
+     "streamURL": "http://wpkx-fm.akacast.akamaistream.net/7/879/19919/v1/auth.akacast.akamaistream.net/wpkx-fm",
+     "imageURL": "",
+     "desc": "Springfield's Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KJ108",
+     "streamURL": "http://kjkj-fm.akacast.akamaistream.net/7/556/69399/v1/auth.akacast.akamaistream.net/kjkj-fm",
+     "imageURL": "",
+     "desc": "The Rock Original",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KMCX 106.5",
+     "streamURL": "http://kmcx-fm.akacast.akamaistream.net/7/687/19950/v1/auth.akacast.akamaistream.net/kmcx-fm",
+     "imageURL": "",
+     "desc": "Today's Hot Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KMYT",
+     "streamURL": "http://kmyt-fm.akacast.akamaistream.net/7/977/20796/v1/auth.akacast.akamaistream.net/kmyt-fm",
+     "imageURL": "",
+     "desc": "Temecula's Smooth Jazz",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KOGA",
+     "streamURL": "http://koga-am.akacast.akamaistream.net/7/924/19951/v1/auth.akacast.akamaistream.net/koga-am",
+     "imageURL": "",
+     "desc": "Information and great music!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 1055 The X",
+     "streamURL": "http://kqxx-fm.akacast.akamaistream.net/7/118/20661/v1/auth.akacast.akamaistream.net/kqxx-fm",
+     "imageURL": "",
+     "desc": "Classic Rock!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KPHT 95.5",
+     "streamURL": "http://kpht-fm.akacast.akamaistream.net/7/939/21436/v1/auth.akacast.akamaistream.net/kpht-fm",
+     "imageURL": "",
+     "desc": "Pueblo's Greatest Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KQ94.5",
+     "streamURL": "http://kqdy-fm.akacast.akamaistream.net/7/296/94969/v1/auth.akacast.akamaistream.net/kqdy-fm",
+     "imageURL": "",
+     "desc": "Sid & AmyJo, and New Country & Fun!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KSAB Tejano 99.9",
+     "streamURL": "http://ksab-fm.akacast.akamaistream.net/7/628/45297/v1/auth.akacast.akamaistream.net/ksab-fm",
+     "imageURL": "",
+     "desc": "Tejano and Proud!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio KSSN 96",
+     "streamURL": "http://kssn-fm.akacast.akamaistream.net/7/901/19764/v1/auth.akacast.akamaistream.net/kssn-fm",
+     "imageURL": "",
+     "desc": "Arkansas' Radio Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Kissin' 102.1",
+     "streamURL": "http://kzsn-fm.akacast.akamaistream.net/7/159/19904/v1/auth.akacast.akamaistream.net/kzsn-fm",
+     "imageURL": "",
+     "desc": "Today's Best Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio La Preciosa 100.7 y 100.9",
+     "streamURL": "http://kprc-fm.akacast.akamaistream.net/7/492/60821/v1/auth.akacast.akamaistream.net/kprc-fm",
+     "imageURL": "",
+     "desc": "La Preciosa Salinas - Monterrey",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio La Preciosa 105.3",
+     "streamURL": "http://kbfp-fm.akacast.akamaistream.net/7/369/52427/v1/auth.akacast.akamaistream.net/kbfp-fm",
+     "imageURL": "",
+     "desc": "La Preciosa 105.3",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio La Preciosa 92.9",
+     "streamURL": "http://kfso-fm.akacast.akamaistream.net/7/572/35476/v1/auth.akacast.akamaistream.net/kfso-fm",
+     "imageURL": "",
+     "desc": "La Preciosa Fresno Visalia",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Laser 101.7",
+     "streamURL": "http://krch-fm.akacast.akamaistream.net/7/294/73704/v1/auth.akacast.akamaistream.net/krch-fm",
+     "imageURL": "",
+     "desc": "Real Classic Rock For Rochester!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WGEX-FM 97.3",
+     "streamURL": "http://wgex-fm.akacast.akamaistream.net/7/594/19881/v1/auth.akacast.akamaistream.net/wgex-fm",
+     "imageURL": "",
+     "desc": "Generation X Radio",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 92.1 My FM",
+     "streamURL": "http://wltq-fm.akacast.akamaistream.net/7/636/19862/v1/auth.akacast.akamaistream.net/wltq-fm",
+     "imageURL": "",
+     "desc": "My Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Lite Rock 99.3",
+     "streamURL": "http://wlrq-fm.akacast.akamaistream.net/7/621/19842/v1/auth.akacast.akamaistream.net/wlrq-fm",
+     "imageURL": "",
+     "desc": "Brevard's best music variety",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Lite Rock KISS 98 POINT ONE",
+     "streamURL": "http://kisc-fm.akacast.akamaistream.net/7/273/29884/v1/auth.akacast.akamaistream.net/kisc-fm",
+     "imageURL": "",
+     "desc": "Lite Rock Favorites.",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio LOVE 101.1",
+     "streamURL": "http://wlvh-fm.akacast.akamaistream.net/7/726/26228/v1/auth.akacast.akamaistream.net/wlvh-fm",
+     "imageURL": "",
+     "desc": "Today's R&B and Best Old School",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Magic 101",
+     "streamURL": "http://wagh-fm.akacast.akamaistream.net/7/952/26905/v1/auth.akacast.akamaistream.net/wagh-fm",
+     "imageURL": "",
+     "desc": "Grown folks Radio",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Magic 101.1",
+     "streamURL": "http://kakq-fm.akacast.akamaistream.net/7/688/33404/v1/auth.akacast.akamaistream.net/kakq-fm",
+     "imageURL": "",
+     "desc": "Best of the 90s and Now",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Magic 107.9",
+     "streamURL": "http://keza-fm.akacast.akamaistream.net/7/218/36594/v1/auth.akacast.akamaistream.net/keza-fm",
+     "imageURL": "",
+     "desc": "Best of Yesterday and Today",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Magic 1340",
+     "streamURL": "http://ktpi-am.akacast.akamaistream.net/7/391/22237/v1/auth.akacast.akamaistream.net/ktpi-am",
+     "imageURL": "",
+     "desc": "Music and Memories",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Magic 93.7",
+     "streamURL": "http://wmjy-fm.akacast.akamaistream.net/7/295/29511/v1/auth.akacast.akamaistream.net/wmjy-fm",
+     "imageURL": "",
+     "desc": "The Best Variety",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio MAGIC 98.9",
+     "streamURL": "http://kymg-fm.akacast.akamaistream.net/7/950/31803/v1/auth.akacast.akamaistream.net/kymg-fm",
+     "imageURL": "",
+     "desc": "The Best Variety of Yesterday and Today",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Magic 98.1",
+     "streamURL": "http://wmgp-fm.akacast.akamaistream.net/7/755/45302/v1/auth.akacast.akamaistream.net/wmgp-fm",
+     "imageURL": "",
+     "desc": "Songs You Love To Sing Along With",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Magic 98.9",
+     "streamURL": "http://wsby-fm.akacast.akamaistream.net/7/983/32169/v1/auth.akacast.akamaistream.net/wsby-fm",
+     "imageURL": "",
+     "desc": "Steve Harvey & The Best R&B",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Majic 104.9",
+     "streamURL": "http://kmjm-fm.akacast.akamaistream.net/7/842/19946/v1/auth.akacast.akamaistream.net/kmjm-fm",
+     "imageURL": "",
+     "desc": "St. Louis' Jams & Old School",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Majic 105.7",
+     "streamURL": "http://wmji-fm.akacast.akamaistream.net/7/348/20014/v1/auth.akacast.akamaistream.net/wmji-fm",
+     "imageURL": "",
+     "desc": "Cleveland's Greatest Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio MEGA 100",
+     "streamURL": "http://kqod-fm.akacast.akamaistream.net/7/852/31801/v1/auth.akacast.akamaistream.net/kqod-fm",
+     "imageURL": "",
+     "desc": "R&B and Dance Music Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio MEGA 94.9",
+     "streamURL": "http://wmge-fm.akacast.akamaistream.net/7/766/19849/v1/auth.akacast.akamaistream.net/wmge-fm",
+     "imageURL": "",
+     "desc": "Es Musica",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Mega 95.5",
+     "streamURL": "http://wnua-fm.akacast.akamaistream.net/7/511/19893/v1/auth.akacast.akamaistream.net/wnua-fm",
+     "imageURL": "",
+     "desc": "Todos Los Exitos",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Mia 92.1 fm",
+     "streamURL": "http://wrlx-fm.akacast.akamaistream.net/7/800/19879/v1/auth.akacast.akamaistream.net/wrlx-fm",
+     "imageURL": "",
+     "desc": "El Sonido Latino De Palm Beach",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Mia 97.1",
+     "streamURL": "http://ktzr-fm.akacast.akamaistream.net/7/722/27468/v1/auth.akacast.akamaistream.net/ktzr-fm",
+     "imageURL": "",
+     "desc": "El Mejor Pop y \"El Genio\" Lucas",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio MISS 103",
+     "streamURL": "http://wmsi-fm.akacast.akamaistream.net/7/819/23514/v1/auth.akacast.akamaistream.net/wmsi-fm",
+     "imageURL": "",
+     "desc": "Today's Country & All Time Favorites",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Mix 100.7",
+     "streamURL": "http://wmtx-fm.akacast.akamaistream.net/7/137/19871/v1/auth.akacast.akamaistream.net/wmtx-fm",
+     "imageURL": "",
+     "desc": "Adult Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio MIX 102.9",
+     "streamURL": "http://kdmx-fm.akacast.akamaistream.net/7/203/20089/v1/auth.akacast.akamaistream.net/kdmx-fm",
+     "imageURL": "",
+     "desc": "DFW's Best Mix",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio MIX 103.3",
+     "streamURL": "http://wmlx-fm.akacast.akamaistream.net/7/850/23859/v1/auth.akacast.akamaistream.net/wmlx-fm",
+     "imageURL": "",
+     "desc": "More Variety",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Mix 104.5",
+     "streamURL": "http://kkmy-fm.akacast.akamaistream.net/7/185/24684/v1/auth.akacast.akamaistream.net/kkmy-fm",
+     "imageURL": "",
+     "desc": "Southeast Texas Best Music Mix",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Mix 106.5",
+     "streamURL": "http://wmvx-fm.akacast.akamaistream.net/7/837/20016/v1/auth.akacast.akamaistream.net/wmvx-fm",
+     "imageURL": "",
+     "desc": "Cleveland's Best Mix",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio MIX 107.7",
+     "streamURL": "http://wmmx-fm.akacast.akamaistream.net/7/533/20022/v1/auth.akacast.akamaistream.net/wmmx-fm",
+     "imageURL": "",
+     "desc": "Dayton's Variety Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Mix 92.3",
+     "streamURL": "http://wmxd-fm.akacast.akamaistream.net/7/309/19926/v1/auth.akacast.akamaistream.net/wmxd-fm",
+     "imageURL": "",
+     "desc": "Classic Soul and Today's R&B",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Mix 93-1",
+     "streamURL": "http://wsvo-fm.akacast.akamaistream.net/7/532/20822/v1/auth.akacast.akamaistream.net/wsvo-fm",
+     "imageURL": "",
+     "desc": "The Valley's At-Work Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio MIX 93.1",
+     "streamURL": "http://whyn-fm.akacast.akamaistream.net/7/546/19918/v1/auth.akacast.akamaistream.net/whyn-fm",
+     "imageURL": "",
+     "desc": "The Best Mix Of The 80s, 90s & Now",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Mix 94.5",
+     "streamURL": "http://wmxl-fm.akacast.akamaistream.net/7/563/40714/v1/auth.akacast.akamaistream.net/wmxl-fm",
+     "imageURL": "",
+     "desc": "More Music, More Variety",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Mix 96.1",
+     "streamURL": "http://kxxm-fm.akacast.akamaistream.net/7/672/20821/v1/auth.akacast.akamaistream.net/kxxm-fm",
+     "imageURL": "",
+     "desc": "San Antonio's Hit Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Mix 96.5",
+     "streamURL": "http://wmt-fm.akacast.akamaistream.net/7/699/31303/v1/auth.akacast.akamaistream.net/wmt-fm",
+     "imageURL": "",
+     "desc": "Iowa's Mix of 90's 2K & Today",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Mix 96.9",
+     "streamURL": "http://kmxp-fm.akacast.akamaistream.net/7/174/19753/v1/auth.akacast.akamaistream.net/kmxp-fm",
+     "imageURL": "",
+     "desc": "80s, 90s & Today",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Mojo in the Morning",
+     "streamURL": "http://mojoshow.akacast.akamaistream.net/7/176/78273/v1/auth.akacast.akamaistream.net/mojoshow",
+     "imageURL": "",
+     "desc": "Really bad morning radio",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Mix 98.1",
+     "streamURL": "http://wism-fm.akacast.akamaistream.net/7/132/24928/v1/auth.akacast.akamaistream.net/wism-fm",
+     "imageURL": "",
+     "desc": "Today's Best Mix",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Mix 98.1",
+     "streamURL": "http://wdfm-fm.akacast.akamaistream.net/7/476/29325/v1/auth.akacast.akamaistream.net/wdfm-fm",
+     "imageURL": "",
+     "desc": "Today's Variety",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio MIX 98.9",
+     "streamURL": "http://wmxy-fm.akacast.akamaistream.net/7/496/31310/v1/auth.akacast.akamaistream.net/wmxy-fm",
+     "imageURL": "",
+     "desc": "Means Variety",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Moose Country 106.7",
+     "streamURL": "http://watq-fm.akacast.akamaistream.net/7/421/24924/v1/auth.akacast.akamaistream.net/watq-fm",
+     "imageURL": "",
+     "desc": "Country Favorites",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio My 101.7",
+     "streamURL": "http://whof-fm.akacast.akamaistream.net/7/930/33393/v1/auth.akacast.akamaistream.net/whof-fm",
+     "imageURL": "",
+     "desc": "Songs to Sing Along With",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio My 102.5",
+     "streamURL": "http://wmyi-fm.akacast.akamaistream.net/7/932/20069/v1/auth.akacast.akamaistream.net/wmyi-fm",
+     "imageURL": "",
+     "desc": "The Carolina's Best Mix",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio My 106.1",
+     "streamURL": "http://wisx-fm.akacast.akamaistream.net/7/275/20057/v1/auth.akacast.akamaistream.net/wisx-fm",
+     "imageURL": "",
+     "desc": "Move To The Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio MY 107.1",
+     "streamURL": "http://wgmy-fm.akacast.akamaistream.net/7/507/20800/v1/auth.akacast.akamaistream.net/wgmy-fm",
+     "imageURL": "",
+     "desc": "Today's Mix",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 107.3",
+     "streamURL": "http://wrgv-fm.akacast.akamaistream.net/7/471/33401/v1/auth.akacast.akamaistream.net/wrgv-fm",
+     "imageURL": "",
+     "desc": "107.3 The Groove",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Oldies 95.7",
+     "streamURL": "http://writ-fm.akacast.akamaistream.net/7/129/21441/v1/auth.akacast.akamaistream.net/writ-fm",
+     "imageURL": "",
+     "desc": "Milwaukee's Only Oldies Station!!!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio My 99.5 FM",
+     "streamURL": "http://kjmy-fm.akacast.akamaistream.net/7/635/20114/v1/auth.akacast.akamaistream.net/kjmy-fm",
+     "imageURL": "",
+     "desc": "More Music. More Variety.",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio My 99.9",
+     "streamURL": "http://kvuu-fm.akacast.akamaistream.net/7/339/19808/v1/auth.akacast.akamaistream.net/kvuu-fm",
+     "imageURL": "",
+     "desc": "My Music and Johnjay and Rich",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio My925/Sacramento",
+     "streamURL": "http://kgby-fm.akacast.akamaistream.net/7/302/19781/v1/auth.akacast.akamaistream.net/kgby-fm",
+     "imageURL": "",
+     "desc": "My Music, My Life",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio New Country 95.7",
+     "streamURL": "http://kuss-fm.akacast.akamaistream.net/7/575/19790/v1/auth.akacast.akamaistream.net/kuss-fm",
+     "imageURL": "",
+     "desc": "San Diego's NEW Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio New Rock 103.9 THE X",
+     "streamURL": "http://wxeg-fm.akacast.akamaistream.net/7/291/20024/v1/auth.akacast.akamaistream.net/wxeg-fm",
+     "imageURL": "",
+     "desc": "Dayton's Alt-Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio News Radio 104.9 FM",
+     "streamURL": "http://wbuv-fm.akacast.akamaistream.net/7/810/29789/v1/auth.akacast.akamaistream.net/wbuv-fm",
+     "imageURL": "",
+     "desc": "Your Home For Rush",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio News Radio 1110 KFAB",
+     "streamURL": "http://kfab-am.akacast.akamaistream.net/7/375/19954/v1/auth.akacast.akamaistream.net/kfab-am",
+     "imageURL": "",
+     "desc": "Omaha's News, Weather and Traffic",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio News Radio 1290 WJNO",
+     "streamURL": "http://wjno-am.akacast.akamaistream.net/7/214/19875/v1/auth.akacast.akamaistream.net/wjno-am",
+     "imageURL": "",
+     "desc": "Beck, Rush, Hannity, Randi",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio News Radio 570 WSYR",
+     "streamURL": "http://wsyr-am.akacast.akamaistream.net/7/890/19981/v1/auth.akacast.akamaistream.net/wsyr-am",
+     "imageURL": "",
+     "desc": "News Radio 570 WSYR",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio News Radio 570 WWNC",
+     "streamURL": "http://wwnc-am.akacast.akamaistream.net/7/788/19991/v1/auth.akacast.akamaistream.net/wwnc-am",
+     "imageURL": "",
+     "desc": "The Talk of the Mountains",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio News Talk 1090",
+     "streamURL": "http://wkbz-am.akacast.akamaistream.net/7/883/23929/v1/auth.akacast.akamaistream.net/wkbz-am",
+     "imageURL": "",
+     "desc": "Talk of Muskegon",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio News Talk 1320",
+     "streamURL": "http://kwhn-am.akacast.akamaistream.net/7/750/60822/v1/auth.akacast.akamaistream.net/kwhn-am",
+     "imageURL": "",
+     "desc": "News Talk 1230",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio News Talk 580 & 94.9FM",
+     "streamURL": "http://wtag-am.akacast.akamaistream.net/7/614/27987/v1/auth.akacast.akamaistream.net/wtag-am",
+     "imageURL": "",
+     "desc": "Worcester's News and Talk Leader",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio News Talk 790 KNST",
+     "streamURL": "http://knst-am.akacast.akamaistream.net/7/157/33394/v1/auth.akacast.akamaistream.net/knst-am",
+     "imageURL": "",
+     "desc": "Rush, Glenn Beck & Sean Hannity",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio NewsRadio 1190 KEX",
+     "streamURL": "http://kex-am.akacast.akamaistream.net/7/737/20049/v1/auth.akacast.akamaistream.net/kex-am",
+     "imageURL": "",
+     "desc": "News, Traffic & Weather Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio NEWS TALK 790 WAEB",
+     "streamURL": "http://waeb-am.akacast.akamaistream.net/7/494/40718/v1/auth.akacast.akamaistream.net/waeb-am",
+     "imageURL": "",
+     "desc": "Lehigh valley's news talk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio News Talk 800 WVHU",
+     "streamURL": "http://wvhu-am.akacast.akamaistream.net/7/206/20146/v1/auth.akacast.akamaistream.net/wvhu-am",
+     "imageURL": "",
+     "desc": "Huntington's Talk Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio News Talk 96.7 The Wave",
+     "streamURL": "http://wqso-fm.akacast.akamaistream.net/7/540/31700/v1/auth.akacast.akamaistream.net/wqso-fm",
+     "imageURL": "",
+     "desc": "The Seacoast's News/Talk Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio News/Talk WKCY",
+     "streamURL": "http://wkcy-am.akacast.akamaistream.net/7/581/58074/v1/auth.akacast.akamaistream.net/wkcy-am",
+     "imageURL": "",
+     "desc": "The Talk Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio NEWSRADIO 1290 WTKS",
+     "streamURL": "http://wtks-am.akacast.akamaistream.net/7/642/26225/v1/auth.akacast.akamaistream.net/wtks-am",
+     "imageURL": "",
+     "desc": "Savannah's News Talk Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio NewsRadio 1510 WLAC",
+     "streamURL": "http://wlac-am.akacast.akamaistream.net/7/589/20079/v1/auth.akacast.akamaistream.net/wlac-am",
+     "imageURL": "",
+     "desc": "Nashville's Talk Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Newsradio 560 WVOC",
+     "streamURL": "http://wvoc-am.akacast.akamaistream.net/7/458/22417/v1/auth.akacast.akamaistream.net/wvoc-am",
+     "imageURL": "",
+     "desc": "News, Sports, Traffic & Weather",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio NewsRadio 600WREC",
+     "streamURL": "http://wrec-am.akacast.akamaistream.net/7/57/20078/v1/auth.akacast.akamaistream.net/wrec-am",
+     "imageURL": "",
+     "desc": "Memphis. Rush. Hannity. Tigers.",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Newsradio 610",
+     "streamURL": "http://wiod-am.akacast.akamaistream.net/7/664/19847/v1/auth.akacast.akamaistream.net/wiod-am",
+     "imageURL": "",
+     "desc": "So Fla's Only News & Talk Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio NewsRadio 630 WLAP",
+     "streamURL": "http://wlap-am.akacast.akamaistream.net/7/753/22349/v1/auth.akacast.akamaistream.net/wlap-am",
+     "imageURL": "",
+     "desc": "Home of the Kentucky Wildcats",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio NewsRadio 740",
+     "streamURL": "http://ktrh-am.akacast.akamaistream.net/7/975/20100/v1/auth.akacast.akamaistream.net/ktrh-am",
+     "imageURL": "",
+     "desc": "Houston's News, Weather and Traffic Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Newsradio 850 KOA",
+     "streamURL": "http://koa-am.akacast.akamaistream.net/7/916/19814/v1/auth.akacast.akamaistream.net/koa-am",
+     "imageURL": "",
+     "desc": "Denver-Broncos, Rockies & Buffs Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Newsradio WOOD 1300",
+     "streamURL": "http://wood-am.akacast.akamaistream.net/7/863/19930/v1/auth.akacast.akamaistream.net/wood-am",
+     "imageURL": "",
+     "desc": "West Michigan's News & Talk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio NEWSTALK 1230",
+     "streamURL": "http://kwtx-am.akacast.akamaistream.net/7/218/48656/v1/auth.akacast.akamaistream.net/kwtx-am",
+     "imageURL": "",
+     "desc": "The Talk of Waco",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio NEWSTALK 1470",
+     "streamURL": "http://wjdy-am.akacast.akamaistream.net/7/257/32174/v1/auth.akacast.akamaistream.net/wjdy-am",
+     "imageURL": "",
+     "desc": "NEWSTALK 1470",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio NewsTalk 1530 KFBK/Sacramento",
+     "streamURL": "http://kfbk-am.akacast.akamaistream.net/7/325/19780/v1/auth.akacast.akamaistream.net/kfbk-am",
+     "imageURL": "",
+     "desc": "Coverage You Can Count On",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio NewsTalk 570 WKBN",
+     "streamURL": "http://wkbn-am.akacast.akamaistream.net/7/915/27465/v1/auth.akacast.akamaistream.net/wkbn-am",
+     "imageURL": "",
+     "desc": "Voice of the Valley",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Oldies 106.7 FM",
+     "streamURL": "http://klth-fm.akacast.akamaistream.net/7/348/69405/v1/auth.akacast.akamaistream.net/klth-fm",
+     "imageURL": "",
+     "desc": "Portland's Only Oldies station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Oldies 93.9",
+     "streamURL": "http://kmxr-fm.akacast.akamaistream.net/7/657/45296/v1/auth.akacast.akamaistream.net/kmxr-fm",
+     "imageURL": "",
+     "desc": "The greatest hits of the 60s & 70s",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Peach 96.5",
+     "streamURL": "http://wpch-fm.akacast.akamaistream.net/7/100/32796/v1/auth.akacast.akamaistream.net/wpch-fm",
+     "imageURL": "",
+     "desc": "Songs You Love To Sing Along With",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Pittsburgh Penguins Radio",
+     "streamURL": "http://penguins.akacast.akamaistream.net/7/741/78275/v1/auth.akacast.akamaistream.net/penguins",
+     "imageURL": "",
+     "desc": "Pgh Penguins at 105-9 HD2",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Planet Radio 107.3",
+     "streamURL": "http://wpla-fm.akacast.akamaistream.net/7/108/19837/v1/auth.akacast.akamaistream.net/wpla-fm",
+     "imageURL": "",
+     "desc": "Jacksonville's New Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Power 102",
+     "streamURL": "http://kprr-fm.akacast.akamaistream.net/7/688/32498/v1/auth.akacast.akamaistream.net/kprr-fm",
+     "imageURL": "",
+     "desc": "#1 For Hip Hop and R&B",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Power 105.1",
+     "streamURL": "http://wwpr-fm.akacast.akamaistream.net/7/827/19975/v1/auth.akacast.akamaistream.net/wwpr-fm",
+     "imageURL": "",
+     "desc": "New York's Hip-Hop and R&B",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Power 106.9",
+     "streamURL": "http://wphr-fm.akacast.akamaistream.net/7/63/19980/v1/auth.akacast.akamaistream.net/wphr-fm",
+     "imageURL": "",
+     "desc": "Today's R&B and Old Skool",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Power 107",
+     "streamURL": "http://wprw-fm.akacast.akamaistream.net/7/863/25772/v1/auth.akacast.akamaistream.net/wprw-fm",
+     "imageURL": "",
+     "desc": "Blazin' Hip-Hop and R&B",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Power99",
+     "streamURL": "http://wusl-fm.akacast.akamaistream.net/7/832/20059/v1/auth.akacast.akamaistream.net/wusl-fm",
+     "imageURL": "",
+     "desc": "#1 for Hip-Hip and R&B!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Q Country 102.9",
+     "streamURL": "http://knbq-fm.akacast.akamaistream.net/7/338/20137/v1/auth.akacast.akamaistream.net/knbq-fm",
+     "imageURL": "",
+     "desc": "Q-Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Q-106.5",
+     "streamURL": "http://kcqq-fm.akacast.akamaistream.net/7/266/32163/v1/auth.akacast.akamaistream.net/kcqq-fm",
+     "imageURL": "",
+     "desc": "Quad Cities' Classic Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Q102",
+     "streamURL": "http://wusq-fm.akacast.akamaistream.net/7/602/36590/v1/auth.akacast.akamaistream.net/wusq-fm",
+     "imageURL": "",
+     "desc": "Shenandoah Country Q102",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Q102",
+     "streamURL": "http://wioq-fm.akacast.akamaistream.net/7/247/20056/v1/auth.akacast.akamaistream.net/wioq-fm",
+     "imageURL": "",
+     "desc": "All The Hits!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Q104.3",
+     "streamURL": "http://waxq-fm.akacast.akamaistream.net/7/575/19971/v1/auth.akacast.akamaistream.net/waxq-fm",
+     "imageURL": "",
+     "desc": "New York's Classic Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Q1045",
+     "streamURL": "http://wrfq-fm.akacast.akamaistream.net/7/777/31804/v1/auth.akacast.akamaistream.net/wrfq-fm",
+     "imageURL": "",
+     "desc": "Charleston's Classic Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Q105",
+     "streamURL": "http://wqhq-fm.akacast.akamaistream.net/7/60/32167/v1/auth.akacast.akamaistream.net/wqhq-fm",
+     "imageURL": "",
+     "desc": "The Best of the 80's, 90's and Today",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Q105.1",
+     "streamURL": "http://wqjq-fm.akacast.akamaistream.net/7/863/23516/v1/auth.akacast.akamaistream.net/wqjq-fm",
+     "imageURL": "",
+     "desc": "Greatest Hits 60's, 70's,& 80's",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Q106.3",
+     "streamURL": "http://wqbz-fm.akacast.akamaistream.net/7/772/33388/v1/auth.akacast.akamaistream.net/wqbz-fm",
+     "imageURL": "",
+     "desc": "The Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Q93 - New Orleans",
+     "streamURL": "http://wque-fm.akacast.akamaistream.net/7/306/26504/v1/auth.akacast.akamaistream.net/wque-fm",
+     "imageURL": "",
+     "desc": "Your Hip Hop and R&B Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Q94",
+     "streamURL": "http://wrvq-fm.akacast.akamaistream.net/7/886/20122/v1/auth.akacast.akamaistream.net/wrvq-fm",
+     "imageURL": "",
+     "desc": "The Hit Music Channel",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Q95",
+     "streamURL": "http://wfbq-fm.akacast.akamaistream.net/7/538/21574/v1/auth.akacast.akamaistream.net/wfbq-fm",
+     "imageURL": "",
+     "desc": "Indy's Classic Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio ESPN 96-1",
+     "streamURL": "http://wmax-fm.akacast.akamaistream.net/7/618/19934/v1/auth.akacast.akamaistream.net/wmax-fm",
+     "imageURL": "",
+     "desc": "West Michigan's Sports",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Radio1045",
+     "streamURL": "http://wrff-fm.akacast.akamaistream.net/7/321/20058/v1/auth.akacast.akamaistream.net/wrff-fm",
+     "imageURL": "",
+     "desc": "It's All About The Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Rock 101",
+     "streamURL": "http://wgir-fm.akacast.akamaistream.net/7/453/19955/v1/auth.akacast.akamaistream.net/wgir-fm",
+     "imageURL": "",
+     "desc": "NH'S Rock Radio",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Rock 101",
+     "streamURL": "http://ksss-fm.akacast.akamaistream.net/7/722/89385/v1/auth.akacast.akamaistream.net/ksss-fm",
+     "imageURL": "",
+     "desc": "Bismarck-Mandan's Classic Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Rock 103",
+     "streamURL": "http://wvrk-fm.akacast.akamaistream.net/7/187/30786/v1/auth.akacast.akamaistream.net/wvrk-fm",
+     "imageURL": "",
+     "desc": "Everything that Rocks",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Rock 104.9",
+     "streamURL": "http://wqns-fm.akacast.akamaistream.net/7/579/19990/v1/auth.akacast.akamaistream.net/wqns-fm",
+     "imageURL": "",
+     "desc": "Asheville's Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Rock 105",
+     "streamURL": "http://wrxr-fm.akacast.akamaistream.net/7/192/31536/v1/auth.akacast.akamaistream.net/wrxr-fm",
+     "imageURL": "",
+     "desc": "Chattanooga's Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio ROCK 105.3",
+     "streamURL": "http://kioz-fm.akacast.akamaistream.net/7/777/19786/v1/auth.akacast.akamaistream.net/kioz-fm",
+     "imageURL": "",
+     "desc": "San Diego's ROCK Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Rock 106.9",
+     "streamURL": "http://wrqk-fm.akacast.akamaistream.net/7/393/33392/v1/auth.akacast.akamaistream.net/wrqk-fm",
+     "imageURL": "",
+     "desc": "It Just Rocks!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio ROCK 96.7",
+     "streamURL": "http://kmrq-fm.akacast.akamaistream.net/7/524/31711/v1/auth.akacast.akamaistream.net/kmrq-fm",
+     "imageURL": "",
+     "desc": "The Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio ROCK103",
+     "streamURL": "http://wegr-fm.akacast.akamaistream.net/7/628/20075/v1/auth.akacast.akamaistream.net/wegr-fm",
+     "imageURL": "",
+     "desc": "Memphis' Classic Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Rooster 106",
+     "streamURL": "http://wsth-fm.akacast.akamaistream.net/7/327/31302/v1/auth.akacast.akamaistream.net/wsth-fm",
+     "imageURL": "",
+     "desc": "The Most Country, Guaranteed!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Rover's Morning Glory",
+     "streamURL": "http://rover.akacast.akamaistream.net/7/564/78266/v1/auth.akacast.akamaistream.net/rover",
+     "imageURL": "",
+     "desc": "Current events, pop culture, commentary",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Rumba 100.3",
+     "streamURL": "http://wrum-fm.akacast.akamaistream.net/7/737/19856/v1/auth.akacast.akamaistream.net/wrum-fm",
+     "imageURL": "",
+     "desc": "Orgullo Latino - Orlando, FL",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Rumba 1480",
+     "streamURL": "http://wuba-am.akacast.akamaistream.net/7/177/20054/v1/auth.akacast.akamaistream.net/wuba-am",
+     "imageURL": "",
+     "desc": "Orgullo Latino!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Rush Radio 1200 WXKS",
+     "streamURL": "http://wxks-am.akacast.akamaistream.net/7/983/19916/v1/auth.akacast.akamaistream.net/wxks-am",
+     "imageURL": "",
+     "desc": "Boston's Home For Rush Limbaugh",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Rush Radio 94.5",
+     "streamURL": "http://wpti-fm.akacast.akamaistream.net/7/12/19997/v1/auth.akacast.akamaistream.net/wpti-fm",
+     "imageURL": "",
+     "desc": "Rush, Beck, and Schnitt",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Rush Radio 99.5 WRNO",
+     "streamURL": "http://wrno-fm.akacast.akamaistream.net/7/125/26232/v1/auth.akacast.akamaistream.net/wrno-fm",
+     "imageURL": "",
+     "desc": "New Orleans' Talk Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Smooth Jazz 107.7",
+     "streamURL": "http://wjcd-fm.akacast.akamaistream.net/7/740/20120/v1/auth.akacast.akamaistream.net/wjcd-fm",
+     "imageURL": "",
+     "desc": "The Smoothest Place In Cyber Space!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Soft Rock 98.9",
+     "streamURL": "http://ksof-fm.akacast.akamaistream.net/7/913/19769/v1/auth.akacast.akamaistream.net/ksof-fm",
+     "imageURL": "",
+     "desc": "The Valley's Only Soft Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Sports Radio 1400 THE TEAM",
+     "streamURL": "http://wcos-am.akacast.akamaistream.net/7/402/20819/v1/auth.akacast.akamaistream.net/wcos-am",
+     "imageURL": "",
+     "desc": "Columbia's Live and Local Sports",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Sports Radio 620 WHEN",
+     "streamURL": "http://when-am.akacast.akamaistream.net/7/218/19979/v1/auth.akacast.akamaistream.net/when-am",
+     "imageURL": "",
+     "desc": "Syracuse's Sports Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Sportsradio 1400",
+     "streamURL": "http://wbiz-am.akacast.akamaistream.net/7/960/24923/v1/auth.akacast.akamaistream.net/wbiz-am",
+     "imageURL": "",
+     "desc": "The Valley's Sports Authority",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Sportsradio 620 The Score",
+     "streamURL": "http://wjdx-am.akacast.akamaistream.net/7/710/73709/v1/auth.akacast.akamaistream.net/wjdx-am",
+     "imageURL": "",
+     "desc": "All Sports NASCAR, MLB, NFL, SEC",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Sportsradio 910",
+     "streamURL": "http://wrnl-am.akacast.akamaistream.net/7/677/22058/v1/auth.akacast.akamaistream.net/wrnl-am",
+     "imageURL": "",
+     "desc": "Richmond's Home For Sportstalk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio SportsTalk 960",
+     "streamURL": "http://wtgm-am.akacast.akamaistream.net/7/464/32173/v1/auth.akacast.akamaistream.net/wtgm-am",
+     "imageURL": "",
+     "desc": "SportsTalk 960",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio STAR",
+     "streamURL": "http://kucd-fm.akacast.akamaistream.net/7/292/21876/v1/auth.akacast.akamaistream.net/kucd-fm",
+     "imageURL": "",
+     "desc": "Hawaii's New Music Alternative",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio STAR 101.3",
+     "streamURL": "http://kioi-fm.akacast.akamaistream.net/7/91/19795/v1/auth.akacast.akamaistream.net/kioi-fm",
+     "imageURL": "",
+     "desc": "my music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Star 104.3",
+     "streamURL": "http://wqnq-fm.akacast.akamaistream.net/7/805/19989/v1/auth.akacast.akamaistream.net/wqnq-fm",
+     "imageURL": "",
+     "desc": "Asheville's Hit Music Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Star 105 7 WMRV",
+     "streamURL": "http://wmrv-fm.akacast.akamaistream.net/7/255/30788/v1/auth.akacast.akamaistream.net/wmrv-fm",
+     "imageURL": "",
+     "desc": "Real Music Variety Star 105 7",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Star 108",
+     "streamURL": "http://wshz-fm.akacast.akamaistream.net/7/621/26906/v1/auth.akacast.akamaistream.net/wshz-fm",
+     "imageURL": "",
+     "desc": "The Lakeshore's Better Variety",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio STAR 93.3",
+     "streamURL": "http://wbwz-fm.akacast.akamaistream.net/7/771/26230/v1/auth.akacast.akamaistream.net/wbwz-fm",
+     "imageURL": "",
+     "desc": "The Hudson Valley's Best Variety",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Star 94.1",
+     "streamURL": "http://kmyi-fm.akacast.akamaistream.net/7/419/19788/v1/auth.akacast.akamaistream.net/kmyi-fm",
+     "imageURL": "",
+     "desc": "The Best Variety of the 80s, 90s and Now",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Star Country",
+     "streamURL": "http://wmad-fm.akacast.akamaistream.net/7/388/37057/v1/auth.akacast.akamaistream.net/wmad-fm",
+     "imageURL": "",
+     "desc": "Madison's Only REAL Country Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio STEVE-FM",
+     "streamURL": "http://wlty-fm.akacast.akamaistream.net/7/428/20820/v1/auth.akacast.akamaistream.net/wlty-fm",
+     "imageURL": "",
+     "desc": "Playing Whatever We Want",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Sun 103.1",
+     "streamURL": "http://wfkz-fm.akacast.akamaistream.net/7/443/25965/v1/auth.akacast.akamaistream.net/wfkz-fm",
+     "imageURL": "",
+     "desc": "Classic Rock for the Keys",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio SUN 99.5",
+     "streamURL": "http://wail-fm.akacast.akamaistream.net/7/852/25973/v1/auth.akacast.akamaistream.net/wail-fm",
+     "imageURL": "",
+     "desc": "Classic Rock for the Keys",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Sunny 100",
+     "streamURL": "http://wgsy-fm.akacast.akamaistream.net/7/117/29882/v1/auth.akacast.akamaistream.net/wgsy-fm",
+     "imageURL": "",
+     "desc": "A Better Variety",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio SUNNY 102.3",
+     "streamURL": "http://kjsn-fm.akacast.akamaistream.net/7/990/31709/v1/auth.akacast.akamaistream.net/kjsn-fm",
+     "imageURL": "",
+     "desc": "Today's Hits and Yesterday's Favorites",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Sunny 106.5",
+     "streamURL": "http://ksne-fm.akacast.akamaistream.net/7/558/20808/v1/auth.akacast.akamaistream.net/ksne-fm",
+     "imageURL": "",
+     "desc": "Best Variety of Yesterday and Today",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio SUNNY 98.5 Panama City",
+     "streamURL": "http://wfsy-fm.akacast.akamaistream.net/7/896/31527/v1/auth.akacast.akamaistream.net/wfsy-fm",
+     "imageURL": "",
+     "desc": "Best Variety of Yesterday & Today",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio SUNNY 99.1",
+     "streamURL": "http://koda-fm.akacast.akamaistream.net/7/597/20097/v1/auth.akacast.akamaistream.net/koda-fm",
+     "imageURL": "",
+     "desc": "Houston's Best Variety",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Sunny 99.9",
+     "streamURL": "http://ktsm-fm.akacast.akamaistream.net/7/639/32496/v1/auth.akacast.akamaistream.net/ktsm-fm",
+     "imageURL": "",
+     "desc": "Continuous Soft Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio T102",
+     "streamURL": "http://wimt-fm.akacast.akamaistream.net/7/702/24665/v1/auth.akacast.akamaistream.net/wimt-fm",
+     "imageURL": "",
+     "desc": "Your Home for Today's Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Talk 650 KSTE/Sacramento",
+     "streamURL": "http://kste-am.akacast.akamaistream.net/7/205/19783/v1/auth.akacast.akamaistream.net/kste-am",
+     "imageURL": "",
+     "desc": "Think For Yourself",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 910AM",
+     "streamURL": "http://knew-am.akacast.akamaistream.net/7/316/19799/v1/auth.akacast.akamaistream.net/knew-am",
+     "imageURL": "",
+     "desc": "More Stimulating Talk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Talk Radio",
+     "streamURL": "http://wact-am.akacast.akamaistream.net/7/458/27463/v1/auth.akacast.akamaistream.net/wact-am",
+     "imageURL": "",
+     "desc": "Talk Radio",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Talk Radio 105.9",
+     "streamURL": "http://wrtr-fm.akacast.akamaistream.net/7/853/69398/v1/auth.akacast.akamaistream.net/wrtr-fm",
+     "imageURL": "",
+     "desc": "Talk Radio 105.9",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Tejano 1600",
+     "streamURL": "http://kxew-am.akacast.akamaistream.net/7/644/33396/v1/auth.akacast.akamaistream.net/kxew-am",
+     "imageURL": "",
+     "desc": "Your Tejano Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio The 9-5-0",
+     "streamURL": "http://kprc-am.akacast.akamaistream.net/7/779/20098/v1/auth.akacast.akamaistream.net/kprc-am",
+     "imageURL": "",
+     "desc": "Radio Mojo",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio The Big 1070",
+     "streamURL": "http://wtso-am.akacast.akamaistream.net/7/488/37055/v1/auth.akacast.akamaistream.net/wtso-am",
+     "imageURL": "",
+     "desc": "Madison's Sports Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio The Big 98 WSIX",
+     "streamURL": "http://wsix-fm.akacast.akamaistream.net/7/957/20080/v1/auth.akacast.akamaistream.net/wsix-fm",
+     "imageURL": "",
+     "desc": "Nashville's Country Station!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio The Brew at 105.7",
+     "streamURL": "http://wbwr-fm.akacast.akamaistream.net/7/348/31708/v1/auth.akacast.akamaistream.net/wbwr-fm",
+     "imageURL": "",
+     "desc": "Classic Rock's Next Generation",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio The Dave Ryan Show",
+     "streamURL": "http://idav-fl.akacast.akamaistream.net/7/616/89374/v1/auth.akacast.akamaistream.net/idav-fl",
+     "imageURL": "",
+     "desc": "Now With Nearly 7 Listeners",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio The EAGLE",
+     "streamURL": "http://kegl-fm.akacast.akamaistream.net/7/379/20090/v1/auth.akacast.akamaistream.net/kegl-fm",
+     "imageURL": "",
+     "desc": "97.1 the EAGLE ROCKS",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio The Elvis Duran Channel",
+     "streamURL": "http://elvisduran.akacast.akamaistream.net/7/284/58082/v1/auth.akacast.akamaistream.net/elvisduran",
+     "imageURL": "",
+     "desc": "Your Favorite Show is Always On",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio The Gater 98.7 fm",
+     "streamURL": "http://wkgr-fm.akacast.akamaistream.net/7/903/19876/v1/auth.akacast.akamaistream.net/wkgr-fm",
+     "imageURL": "",
+     "desc": "The Palm Beaches' Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio The Johnjay and Rich Channel",
+     "streamURL": "http://johnjayandrich.akacast.akamaistream.net/7/836/69409/v1/auth.akacast.akamaistream.net/johnjayandrich",
+     "imageURL": "",
+     "desc": "Great Morning Radio on Demand",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio The Kane Show",
+     "streamURL": "http://ikan-fl.akacast.akamaistream.net/7/734/83445/v1/auth.akacast.akamaistream.net/ikan-fl",
+     "imageURL": "",
+     "desc": "World-Famous & On-Demand",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio The Mic 92.1",
+     "streamURL": "http://wxxm-fm.akacast.akamaistream.net/7/537/20148/v1/auth.akacast.akamaistream.net/wxxm-fm",
+     "imageURL": "",
+     "desc": "Madison's Progressive Talk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio The Mix 97.3 WKWK",
+     "streamURL": "http://wkwk-fm.akacast.akamaistream.net/7/60/69401/v1/auth.akacast.akamaistream.net/wkwk-fm",
+     "imageURL": "",
+     "desc": "Wheeling's Best Variety",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 105.7 NOW",
+     "streamURL": "http://wmks-fm.akacast.akamaistream.net/7/382/26509/v1/auth.akacast.akamaistream.net/wmks-fm",
+     "imageURL": "",
+     "desc": "The Triad's Home for Hit Music Now",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio The NEW 94.9 The Bull",
+     "streamURL": "http://wubl-fm.akacast.akamaistream.net/7/337/19885/v1/auth.akacast.akamaistream.net/wubl-fm",
+     "imageURL": "",
+     "desc": "The Most Country, Guaranteed!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Lite 95.1",
+     "streamURL": "http://klqt-fm.akacast.akamaistream.net/7/917/19964/v1/auth.akacast.akamaistream.net/klqt-fm",
+     "imageURL": "",
+     "desc": "Albuquerque's Lite Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio The Philips Phile",
+     "streamURL": "http://iphi-fl.akacast.akamaistream.net/7/650/89383/v1/auth.akacast.akamaistream.net/iphi-fl",
+     "imageURL": "",
+     "desc": "Real Radio 104.1 Orlando, FL",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio The River/97.3 WRVV",
+     "streamURL": "http://wrvv-fm.akacast.akamaistream.net/7/794/29881/v1/auth.akacast.akamaistream.net/wrvv-fm",
+     "imageURL": "",
+     "desc": "Real Rock and Roll Variety",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 102.3 The Beat",
+     "streamURL": "http://kpez-fm.akacast.akamaistream.net/7/825/20084/v1/auth.akacast.akamaistream.net/kpez-fm",
+     "imageURL": "",
+     "desc": "Austin's Hip Hop and R&B",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio The River 105.9",
+     "streamURL": "http://whcn-fm.akacast.akamaistream.net/7/450/19818/v1/auth.akacast.akamaistream.net/whcn-fm",
+     "imageURL": "",
+     "desc": "Music Variety for Adults",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio The Rod Ryan Show Channel",
+     "streamURL": "http://rodryan.akacast.akamaistream.net/7/934/78278/v1/auth.akacast.akamaistream.net/rodryan",
+     "imageURL": "",
+     "desc": "www.rodryan.thebuzz.com",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio The Score 1210",
+     "streamURL": "http://wskr-am.akacast.akamaistream.net/7/759/19909/v1/auth.akacast.akamaistream.net/wskr-am",
+     "imageURL": "",
+     "desc": "Sports & Talk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Thunder Country 100.3",
+     "streamURL": "http://wcth-fm.akacast.akamaistream.net/7/755/25966/v1/auth.akacast.akamaistream.net/wcth-fm",
+     "imageURL": "",
+     "desc": "The Best Variety",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio TK101",
+     "streamURL": "http://wtkx-fm.akacast.akamaistream.net/7/141/20658/v1/auth.akacast.akamaistream.net/wtkx-fm",
+     "imageURL": "",
+     "desc": "The Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio TOAD",
+     "streamURL": "http://ktdd-am.akacast.akamaistream.net/7/362/21437/v1/auth.akacast.akamaistream.net/ktdd-am",
+     "imageURL": "",
+     "desc": "Genuine Country Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Today's 106.5",
+     "streamURL": "http://kosy-fm.akacast.akamaistream.net/7/944/20117/v1/auth.akacast.akamaistream.net/kosy-fm",
+     "imageURL": "",
+     "desc": "Utah's Only Soft Music Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Total Rock 101.7",
+     "streamURL": "http://wmrr-fm.akacast.akamaistream.net/7/145/24596/v1/auth.akacast.akamaistream.net/wmrr-fm",
+     "imageURL": "",
+     "desc": "Muskegon's Classic Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Tulsa's Gen X Radio 106.1",
+     "streamURL": "http://ktgx-fm.akacast.akamaistream.net/7/731/20046/v1/auth.akacast.akamaistream.net/ktgx-fm",
+     "imageURL": "",
+     "desc": "Grunge, Hip Hop, Hair Bands, and More",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Twister 93.3",
+     "streamURL": "http://ktwi-fm.akacast.akamaistream.net/7/383/54125/v1/auth.akacast.akamaistream.net/ktwi-fm",
+     "imageURL": "",
+     "desc": "Omaha's New Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio U.S. 101",
+     "streamURL": "http://wusy-fm.akacast.akamaistream.net/7/496/31535/v1/auth.akacast.akamaistream.net/wusy-fm",
+     "imageURL": "",
+     "desc": "Chattanooga's Best Country & the Legends",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio US 103-5",
+     "streamURL": "http://wfus-fm.akacast.akamaistream.net/7/304/19872/v1/auth.akacast.akamaistream.net/wfus-fm",
+     "imageURL": "",
+     "desc": "Tampa Bay's Best Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio US97",
+     "streamURL": "http://kxus-fm.akacast.akamaistream.net/7/769/20806/v1/auth.akacast.akamaistream.net/kxus-fm",
+     "imageURL": "",
+     "desc": "The Rock of the Ozarks for 25 Years",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio V100.7",
+     "streamURL": "http://wkkv-fm.akacast.akamaistream.net/7/47/21440/v1/auth.akacast.akamaistream.net/wkkv-fm",
+     "imageURL": "",
+     "desc": "Milwaukee's Blazin Hip Hop & R&B",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio V101.1",
+     "streamURL": "http://kjms-fm.akacast.akamaistream.net/7/47/20072/v1/auth.akacast.akamaistream.net/kjms-fm",
+     "imageURL": "",
+     "desc": "Memphis' R&B and Jammin' Old School",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio V101.1/Sacamento",
+     "streamURL": "http://khyl-fm.akacast.akamaistream.net/7/837/19782/v1/auth.akacast.akamaistream.net/khyl-fm",
+     "imageURL": "",
+     "desc": "Your R&B & Old School Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio V101.5",
+     "streamURL": "http://wsol-fm.akacast.akamaistream.net/7/529/19840/v1/auth.akacast.akamaistream.net/wsol-fm",
+     "imageURL": "",
+     "desc": "Today's R&B and Jammin' Old School",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio V101.7",
+     "streamURL": "http://wrbv-fm.akacast.akamaistream.net/7/32/33386/v1/auth.akacast.akamaistream.net/wrbv-fm",
+     "imageURL": "",
+     "desc": "Today's R&B and Old School",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio V103",
+     "streamURL": "http://wvaz-fm.akacast.akamaistream.net/7/867/19895/v1/auth.akacast.akamaistream.net/wvaz-fm",
+     "imageURL": "",
+     "desc": "Today's R&B and Old School",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Atlanta's Groove 105.7",
+     "streamURL": "http://wwva-fm.akacast.akamaistream.net/7/835/19886/v1/auth.akacast.akamaistream.net/wwva-fm",
+     "imageURL": "",
+     "desc": "Get Into The Groove",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Variety 97.7 & 99.7",
+     "streamURL": "http://wvrt-fm.akacast.akamaistream.net/7/248/58076/v1/auth.akacast.akamaistream.net/wvrt-fm",
+     "imageURL": "",
+     "desc": "Today's Hit Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WACO 100",
+     "streamURL": "http://waco-fm.akacast.akamaistream.net/7/800/20112/v1/auth.akacast.akamaistream.net/waco-fm",
+     "imageURL": "",
+     "desc": "Texas' #1 Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WALK 97.5",
+     "streamURL": "http://walk-fm.akacast.akamaistream.net/7/236/19970/v1/auth.akacast.akamaistream.net/walk-fm",
+     "imageURL": "",
+     "desc": "Long Island's Best Variety",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Wave 92.7",
+     "streamURL": "http://wavw-fm.akacast.akamaistream.net/7/115/30787/v1/auth.akacast.akamaistream.net/wavw-fm",
+     "imageURL": "",
+     "desc": "Continuous Country Favorites",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WBBI Binghamton",
+     "streamURL": "http://wbbi-fm.akacast.akamaistream.net/7/618/30795/v1/auth.akacast.akamaistream.net/wbbi-fm",
+     "imageURL": "",
+     "desc": "Your Classic Rock 107 5 The Bear!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WCOL - Columbus",
+     "streamURL": "http://wcol-fm.akacast.akamaistream.net/7/631/25889/v1/auth.akacast.akamaistream.net/wcol-fm",
+     "imageURL": "",
+     "desc": "Continuous Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WDAK",
+     "streamURL": "http://wdak-am.akacast.akamaistream.net/7/30/30790/v1/auth.akacast.akamaistream.net/wdak-am",
+     "imageURL": "",
+     "desc": "NewsRadio 540",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WDAS-FM",
+     "streamURL": "http://wdas-fm.akacast.akamaistream.net/7/925/20055/v1/auth.akacast.akamaistream.net/wdas-fm",
+     "imageURL": "",
+     "desc": "Philly's Best R&B and Classic Soul",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WDFN",
+     "streamURL": "http://wdfn-am.akacast.akamaistream.net/7/449/19921/v1/auth.akacast.akamaistream.net/wdfn-am",
+     "imageURL": "",
+     "desc": "Detroit Sports Talk",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WEBN",
+     "streamURL": "http://webn-fm.akacast.akamaistream.net/7/438/20005/v1/auth.akacast.akamaistream.net/webn-fm",
+     "imageURL": "",
+     "desc": "The Lunatic Fringe of American FM",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WENE Binghamton",
+     "streamURL": "http://wene-am.akacast.akamaistream.net/7/146/37067/v1/auth.akacast.akamaistream.net/wene-am",
+     "imageURL": "",
+     "desc": "1430 The Team",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 105 Five WERC",
+     "streamURL": "http://werc-am.akacast.akamaistream.net/7/522/32161/v1/auth.akacast.akamaistream.net/werc-am",
+     "imageURL": "",
+     "desc": "Talk Radio",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio West Michigan's Star 105.7",
+     "streamURL": "http://wood-fm.akacast.akamaistream.net/7/875/19931/v1/auth.akacast.akamaistream.net/wood-fm",
+     "imageURL": "",
+     "desc": "Today's Hits/Yesterday's Favorites",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WEZL The Weasel",
+     "streamURL": "http://wezl-fm.akacast.akamaistream.net/7/498/22020/v1/auth.akacast.akamaistream.net/wezl-fm",
+     "imageURL": "",
+     "desc": "Charleston's Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WFRE",
+     "streamURL": "http://wfre-fm.akacast.akamaistream.net/7/114/21367/v1/auth.akacast.akamaistream.net/wfre-fm",
+     "imageURL": "",
+     "desc": "Free Country 99.9",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WGIR AM 610/930",
+     "streamURL": "http://wgir-am.akacast.akamaistream.net/7/59/30799/v1/auth.akacast.akamaistream.net/wgir-am",
+     "imageURL": "",
+     "desc": "New Hampshire's News Radio",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WGY Albany",
+     "streamURL": "http://wgy-am.akacast.akamaistream.net/7/697/21577/v1/auth.akacast.akamaistream.net/wgy-am",
+     "imageURL": "",
+     "desc": "News Talk 810 WGY",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WHP 580 AM",
+     "streamURL": "http://whp-am.akacast.akamaistream.net/7/22/52424/v1/auth.akacast.akamaistream.net/whp-am",
+     "imageURL": "",
+     "desc": "Harrisburg's Talk Radio Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WHRL Albany",
+     "streamURL": "http://whrl-fm.akacast.akamaistream.net/7/174/19968/v1/auth.akacast.akamaistream.net/whrl-fm",
+     "imageURL": "",
+     "desc": "Channel 103.1",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WHYN News/Talk 560",
+     "streamURL": "http://whyn-am.akacast.akamaistream.net/7/525/84269/v1/auth.akacast.akamaistream.net/whyn-am",
+     "imageURL": "",
+     "desc": "Springfield's News/Talk Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WIBA-AM",
+     "streamURL": "http://wiba-am.akacast.akamaistream.net/7/75/20147/v1/auth.akacast.akamaistream.net/wiba-am",
+     "imageURL": "",
+     "desc": "News/Talk 1310, WIBA!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Wild 104",
+     "streamURL": "http://kbfm-fm.akacast.akamaistream.net/7/627/20660/v1/auth.akacast.akamaistream.net/kbfm-fm",
+     "imageURL": "",
+     "desc": "The Valley's Party Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 93.9 KissFM",
+     "streamURL": "http://wbks-fm.akacast.akamaistream.net/7/372/23796/v1/auth.akacast.akamaistream.net/wbks-fm",
+     "imageURL": "",
+     "desc": "Lima's Hit Music Channel",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WILD 94.9",
+     "streamURL": "http://kyld-fm.akacast.akamaistream.net/7/46/19801/v1/auth.akacast.akamaistream.net/kyld-fm",
+     "imageURL": "",
+     "desc": "The Bay Area's Party Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WiLD 95.5 FM",
+     "streamURL": "http://wldi-fm.akacast.akamaistream.net/7/762/19877/v1/auth.akacast.akamaistream.net/wldi-fm",
+     "imageURL": "",
+     "desc": "Hit Music Now, WiLD Morning Show",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WINR Binghamton",
+     "streamURL": "http://winr-am.akacast.akamaistream.net/7/245/58079/v1/auth.akacast.akamaistream.net/winr-am",
+     "imageURL": "",
+     "desc": "AM 680 WINR",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WKKF Albany",
+     "streamURL": "http://wkkf-fm.akacast.akamaistream.net/7/928/20812/v1/auth.akacast.akamaistream.net/wkkf-fm",
+     "imageURL": "",
+     "desc": "102.3 Kiss FM All The Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WKUS-FM Norfolk, VA",
+     "streamURL": "http://wkus-fm.akacast.akamaistream.net/7/984/21641/v1/auth.akacast.akamaistream.net/wkus-fm",
+     "imageURL": "",
+     "desc": "KISS 105.3",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WMAN-AM 1400",
+     "streamURL": "http://wman-am.akacast.akamaistream.net/7/820/54128/v1/auth.akacast.akamaistream.net/wman-am",
+     "imageURL": "",
+     "desc": "Your News and Sports Authority",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Magic 96.5",
+     "streamURL": "http://wmjj-fm.akacast.akamaistream.net/7/260/31811/v1/auth.akacast.akamaistream.net/wmjj-fm",
+     "imageURL": "",
+     "desc": "WMJJ",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WMRN AM 1490",
+     "streamURL": "http://wmrn-am.akacast.akamaistream.net/7/352/20026/v1/auth.akacast.akamaistream.net/wmrn-am",
+     "imageURL": "",
+     "desc": "Hometown Radio",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WMXW Mix 103.3",
+     "streamURL": "http://wmxw-fm.akacast.akamaistream.net/7/836/30793/v1/auth.akacast.akamaistream.net/wmxw-fm",
+     "imageURL": "",
+     "desc": "Best Mix, Mix 103.3",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WMZQ",
+     "streamURL": "http://wmzq-fm.akacast.akamaistream.net/7/235/20128/v1/auth.akacast.akamaistream.net/wmzq-fm",
+     "imageURL": "",
+     "desc": "DC's Hometown Country Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WNCI Columbus, Ohio",
+     "streamURL": "http://wnci-fm.akacast.akamaistream.net/7/937/21807/v1/auth.akacast.akamaistream.net/wnci-fm",
+     "imageURL": "",
+     "desc": "All of Today's Best Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WOAI",
+     "streamURL": "http://woai-am.akacast.akamaistream.net/7/138/20108/v1/auth.akacast.akamaistream.net/woai-am",
+     "imageURL": "",
+     "desc": "San Antonio's News Radio",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WOC 1420",
+     "streamURL": "http://woc-am.akacast.akamaistream.net/7/945/31701/v1/auth.akacast.akamaistream.net/woc-am",
+     "imageURL": "",
+     "desc": "NewsTalk 1420, WOC",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WOW 92.7",
+     "streamURL": "http://weow-fm.akacast.akamaistream.net/7/420/25972/v1/auth.akacast.akamaistream.net/weow-fm",
+     "imageURL": "",
+     "desc": "Today's Hit Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WOWI-FM Norfolk, VA",
+     "streamURL": "http://wowi-fm.akacast.akamaistream.net/7/917/21640/v1/auth.akacast.akamaistream.net/wowi-fm",
+     "imageURL": "",
+     "desc": "103 JAMZ",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WPOC",
+     "streamURL": "http://wpoc-fm.akacast.akamaistream.net/7/846/19913/v1/auth.akacast.akamaistream.net/wpoc-fm",
+     "imageURL": "",
+     "desc": "Baltimore's Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WPYX Albany",
+     "streamURL": "http://wpyx-fm.akacast.akamaistream.net/7/850/21364/v1/auth.akacast.akamaistream.net/wpyx-fm",
+     "imageURL": "",
+     "desc": "PYX 106 Albany's Classic Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio 103 Seven",
+     "streamURL": "http://wqen-fm.akacast.akamaistream.net/7/895/31814/v1/auth.akacast.akamaistream.net/wqen-fm",
+     "imageURL": "",
+     "desc": "The Q",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WQIK",
+     "streamURL": "http://wqik-fm.akacast.akamaistream.net/7/72/19838/v1/auth.akacast.akamaistream.net/wqik-fm",
+     "imageURL": "",
+     "desc": "The New 99.1 WQIK",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WRVE Albany",
+     "streamURL": "http://wrve-fm.akacast.akamaistream.net/7/978/19967/v1/auth.akacast.akamaistream.net/wrve-fm",
+     "imageURL": "",
+     "desc": "99.5 The River",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Radio 106-7",
+     "streamURL": "http://wrxs-fm.akacast.akamaistream.net/7/335/41604/v1/auth.akacast.akamaistream.net/wrxs-fm",
+     "imageURL": "",
+     "desc": "Columbus' Modern Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WSSL 100.5",
+     "streamURL": "http://wssl-fm.akacast.akamaistream.net/7/736/20070/v1/auth.akacast.akamaistream.net/wssl-fm",
+     "imageURL": "",
+     "desc": "Today's Best Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WTAM 1100",
+     "streamURL": "http://wtam-am.akacast.akamaistream.net/7/635/20017/v1/auth.akacast.akamaistream.net/wtam-am",
+     "imageURL": "",
+     "desc": "Cleveland's Newsradio",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio WTKS Orlando",
+     "streamURL": "http://wtks-fm.akacast.akamaistream.net/7/744/19857/v1/auth.akacast.akamaistream.net/wtks-fm",
+     "imageURL": "",
+     "desc": "Real Radio 104.1",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio X101.5",
+     "streamURL": "http://wxsr-fm.akacast.akamaistream.net/7/390/20799/v1/auth.akacast.akamaistream.net/wxsr-fm",
+     "imageURL": "",
+     "desc": "Tallahassee's New Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio X103",
+     "streamURL": "http://wrzx-fm.akacast.akamaistream.net/7/660/21575/v1/auth.akacast.akamaistream.net/wrzx-fm",
+     "imageURL": "",
+     "desc": "Rocks",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio X1063",
+     "streamURL": "http://wamx-fm.akacast.akamaistream.net/7/279/20140/v1/auth.akacast.akamaistream.net/wamx-fm",
+     "imageURL": "",
+     "desc": "Tri-State's Number One Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio X107.5",
+     "streamURL": "http://wzrx-fm.akacast.akamaistream.net/7/616/25853/v1/auth.akacast.akamaistream.net/wzrx-fm",
+     "imageURL": "",
+     "desc": "The Rock Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio XL 106.7",
+     "streamURL": "http://wxxl-fm.akacast.akamaistream.net/7/844/19858/v1/auth.akacast.akamaistream.net/wxxl-fm",
+     "imageURL": "",
+     "desc": "Live Life.Love Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio XL93",
+     "streamURL": "http://kkxl-fm.akacast.akamaistream.net/7/529/28749/v1/auth.akacast.akamaistream.net/kkxl-fm",
+     "imageURL": "",
+     "desc": "The Forks #1 For Today's Best Music",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio XTRA Sports 1360",
+     "streamURL": "http://klsd-am.akacast.akamaistream.net/7/733/19787/v1/auth.akacast.akamaistream.net/klsd-am",
+     "imageURL": "",
+     "desc": "San Diego's Sports Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio XTRA Sports 910",
+     "streamURL": "http://kgme-am.akacast.akamaistream.net/7/159/19752/v1/auth.akacast.akamaistream.net/kgme-am",
+     "imageURL": "",
+     "desc": "The Valley's Sports Leader",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Y-100",
+     "streamURL": "http://whyi-fm.akacast.akamaistream.net/7/133/19845/v1/auth.akacast.akamaistream.net/whyi-fm",
+     "imageURL": "",
+     "desc": "South Florida's Hit Music Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Y102",
+     "streamURL": "http://wrfy-fm.akacast.akamaistream.net/7/113/29321/v1/auth.akacast.akamaistream.net/wrfy-fm",
+     "imageURL": "",
+     "desc": "Rock Hits",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Y1025",
+     "streamURL": "http://wxly-fm.akacast.akamaistream.net/7/682/20758/v1/auth.akacast.akamaistream.net/wxly-fm",
+     "imageURL": "",
+     "desc": "Charleston's at Work Variety",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Z100",
+     "streamURL": "http://whtz-fm.akacast.akamaistream.net/7/579/19972/v1/auth.akacast.akamaistream.net/whtz-fm",
+     "imageURL": "",
+     "desc": "New York's Hit Music Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Y94FM",
+     "streamURL": "http://wyyy-fm.akacast.akamaistream.net/7/759/19984/v1/auth.akacast.akamaistream.net/wyyy-fm",
+     "imageURL": "",
+     "desc": "More Favorites at Work",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Y96.3 KHEY",
+     "streamURL": "http://khey-fm.akacast.akamaistream.net/7/168/32497/v1/auth.akacast.akamaistream.net/khey-fm",
+     "imageURL": "",
+     "desc": "Today's Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Y96.9",
+     "streamURL": "http://kccy-fm.akacast.akamaistream.net/7/55/19805/v1/auth.akacast.akamaistream.net/kccy-fm",
+     "imageURL": "",
+     "desc": "Today's Best Country",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Z 92.3",
+     "streamURL": "http://kiiz-fm.akacast.akamaistream.net/7/888/20101/v1/auth.akacast.akamaistream.net/kiiz-fm",
+     "imageURL": "",
+     "desc": "#1 For Hip Hop and R&B",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Z-98",
+     "streamURL": "http://ksez-fm.akacast.akamaistream.net/7/28/25970/v1/auth.akacast.akamaistream.net/ksez-fm",
+     "imageURL": "",
+     "desc": "Sioux City's Best Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Z100",
+     "streamURL": "http://kkrz-fm.akacast.akamaistream.net/7/630/20051/v1/auth.akacast.akamaistream.net/kkrz-fm",
+     "imageURL": "",
+     "desc": "Portland's Hit Music Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Z100",
+     "streamURL": "http://wzjz-fm.akacast.akamaistream.net/7/445/19833/v1/auth.akacast.akamaistream.net/wzjz-fm",
+     "imageURL": "",
+     "desc": "Move to the Music!",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Z100",
+     "streamURL": "http://wbiz-fm.akacast.akamaistream.net/7/71/24927/v1/auth.akacast.akamaistream.net/wbiz-fm",
+     "imageURL": "",
+     "desc": "All The Hits... One Station",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Z104",
+     "streamURL": "http://wzee-fm.akacast.akamaistream.net/7/329/37056/v1/auth.akacast.akamaistream.net/wzee-fm",
+     "imageURL": "",
+     "desc": "The Hit Music Channel",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Z106.7",
+     "streamURL": "http://wstz-fm.akacast.akamaistream.net/7/804/23515/v1/auth.akacast.akamaistream.net/wstz-fm",
+     "imageURL": "",
+     "desc": "John Boy & Billy Classic Rock",
+     "longDesc": ""
+     },
+     {
+     "name": "Radio Z107-7",
+     "streamURL": "http://kslz-fm.akacast.akamaistream.net/7/176/19948/v1/auth.akacast.akamaistream.net/kslz-fm",
+     "imageURL": "",
+     "desc": "St. Louis' Hit Music & MJ Mornings",
+     "longDesc": ""
+     }
+     ]
+}

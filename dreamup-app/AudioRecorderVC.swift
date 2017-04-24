@@ -29,9 +29,6 @@ class AudioRecorderVC: UINavigationController {
     var filename: String?
     var ref: FIRDatabaseReference!
     
-   
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -160,7 +157,6 @@ class AudioRecorderVC: UINavigationController {
             vc.audioFileUrl = file
             vc.audioFileName = filename
         }
-        
     }
     
     //******************************************
@@ -207,19 +203,18 @@ class AudioRecorderVC: UINavigationController {
         print("tapped button")
         playButton.setTitle("Playing...", for: .normal)
         
-        do { //try to play through speakers
+        do {
+            //try to play through speakers
             try recordingSession.overrideOutputAudioPort(AVAudioSessionPortOverride.speaker)
         } catch {
             print("couldn't play through speakers")
         }
         
         if audioRecorder?.isRecording == false {
-            print("got here")
             recordButton.isEnabled = false
             
             do {
-                try audioPlayer = AVAudioPlayer(contentsOf:
-                    (audioRecorder?.url)!)
+                try audioPlayer = AVAudioPlayer(contentsOf: (audioRecorder?.url)!)
                 audioPlayer!.delegate = self
                 
                 audioPlayer!.prepareToPlay()
@@ -227,8 +222,6 @@ class AudioRecorderVC: UINavigationController {
             } catch let error as NSError {
                 print("audioPlayer error: \(error.localizedDescription)")
             }
-        } else {
-            print("isRecording = true")
         }
     }
     
