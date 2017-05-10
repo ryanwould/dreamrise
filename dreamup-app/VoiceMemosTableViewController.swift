@@ -9,102 +9,188 @@
 import UIKit
 import Firebase
 import FirebaseDatabaseUI
+import SideMenu
+import AVFoundation
+import NVActivityIndicatorView
 
 class VoiceMemosTableViewController: UITableViewController {
     
     @IBAction func unwindToMenu(segue: UIStoryboardSegue) {}
-    
-    var voiceMemosRef: FIRDatabaseReference!
-    var dataSource: FUITableViewDataSource?
+
+    var voiceMemos: [VoiceMemo]?
+    var audioPlayer: AVAudioPlayer!
+    var player: AVPlayer!
+    var tappedCell: VoiceMemoCell!
     
     //**************************************
     // MARK: - Firebase
     //**************************************
+    var usersRef: FIRDatabaseReference!
+    var voiceMemosRef: FIRDatabaseReference!
+    var dataSource: FUITableViewDataSource?
     
+    // Logged in User
+    var currentUser: FIRUser?
     
-    func createDatabaseRefs() {
-        voiceMemosRef = FIRDatabase.database().reference().child("voice_memos")
+    // *************************************
+    // Lifecycle methods
+    // *************************************
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.tableView.reloadData()
+        print("reloaded data")
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupUI()
         createDatabaseRefs()
-        
         tableView.register(FriendCell.self, forCellReuseIdentifier: "Friend Cell")
         
-        tableView.dataSource = dataSource
-        
-        //TODO GET CURRENT USER ID
-        self.dataSource = self.tableView.bind(to: self.voiceMemosRef.child("5WPAj4To3thiFPTgqtWilhGDnyT2/"), populateCell: { (tableView, indexPath, snapshot) in
-            let value = snapshot.value
+        dataSource = FUITableViewDataSource.init(query: getQuery(), populateCell: {(tableView, indexPath, snapshot) in
+            let value = snapshot.value as? [String: Any]
             let key = snapshot.key
             let cell = tableView.dequeueReusableCell(withIdentifier: "voice_memo_cell") as! VoiceMemoCell
-            print("KEY: \(key)")
-            print("KEY: \(value)")
+            cell.backgroundColor = UIColor.clear
             
-            if let value = value {
-                
+            let senderId = value?["sender"] as? String
+            
+            if let senderId = senderId {
+                self.usersRef.child("\(senderId)").observe(.value, with: { (snap) in
+                    let user = snap.value as? [String: Any]
+                    let name = user?["name"] as? String
+                    if let name = name {
+                        cell.senderName.text = name
+                    }
+                })
+            } else {
+                print("SENDER ID: \(senderId)")
             }
-            
-//            self.usersRef.child("\(key)").observe(.value, with: { (snap) in
-//                let key = snap.key as! String
-//                let user = snap.value as? [String: Any]
-//                
-//                let name = user?["name"] as? String
-//                
-//                if let name = name {
-//                    cell.name.text = name
-//                    cell.userId = key
-//                    
-//                    self.friends[key] = name
-//                    print("FRIENDS? -> \(self.friends[key])")
-//                }
-//            })
             return cell
+            
         })
-
+        
+        tableView.dataSource = dataSource
+        tableView.delegate = self
+        
+        dataSource?.bind(to: tableView)
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    // *************************************
+    // View Helpers
+    // *************************************
+    
+    func createDatabaseRefs() {
+        self.usersRef = FIRDatabase.database().reference().child("users")
+        self.currentUser = FIRAuth.auth()?.currentUser
+        
+        if let userId = currentUser?.uid {
+            self.voiceMemosRef = FIRDatabase.database().reference().child("voice_memos/\(userId)")
+        } else {
+            print("unable to set voiceMemosRef")
+        }
+    }
+    
+    func setupUI(){
+        self.tableView.backgroundColor = UIColor.black
+    }
+    
+    // *************************************
     // MARK: - Table view data source
+    // *************************************
+    
+    func getQuery() -> FIRDatabaseQuery {
+        return (voiceMemosRef)
+    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        if let count = self.voiceMemos?.count {
+            print("returning \(count)\n\n\n\n")
+            return count
+        } else {
+            print("returning 0")
+            return 0
+        }
     }
-
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        // stop other audio from playing
+        self.player = nil
+        
+        // voice memo value in Firebase 
+        // TODO: instantiate VoiceMemo class?
+        let value = dataSource?.items[indexPath.row].value as! [String: Any]
+        
+        // TODO: - Refactor
+        // - increase play count
+        let url: URL = URL(string: value["download_url"] as! String)!
+        self.tappedCell = tableView.cellForRow(at: indexPath) as! VoiceMemoCell
+        self.tappedCell.actionSubtext.text = "Playing..."
+        playAudio(url: url)
     }
-    */
+    
+    func playAudio(url: URL) {
+        let playerItem = AVPlayerItem(url: url)
+        
+        self.player = AVPlayer(playerItem:playerItem)
+        player!.volume = 1.0
+        player!.play()
+        
 
-    /*
+
+        //when player stalls
+        NotificationCenter.default.addObserver(self, selector: #selector(self.playerPlaybackStalled(note:)), name: NSNotification.Name.AVPlayerItemPlaybackStalled, object: nil)
+        
+        // Error log entry
+        NotificationCenter.default.addObserver(self, selector: #selector(self.playerErrorEntry(note:)), name: NSNotification.Name.AVPlayerItemNewErrorLogEntry, object: nil)
+        
+        //when player plays to end time
+        NotificationCenter.default.addObserver(self, selector: #selector(self.playerDidFinishPlaying(note:)), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: nil)
+        
+        //when player does not finish playing
+        NotificationCenter.default.addObserver(self, selector: #selector(self.playerDidNotFinishPlaying(note:)), name: NSNotification.Name.AVPlayerItemFailedToPlayToEndTime, object: nil)
+        
+    }
+    
+    func playerPlaybackStalled(note: NSNotification){
+        print("PLAYBACK STALLED: \(note)")
+    }
+    
+    func playerErrorEntry(note: NSNotification){
+        print("PLAYER ERROR ENTRY: \(note)")
+    }
+    
+    func playerDidNotFinishPlaying(note: NSNotification) {
+        self.tappedCell.actionSubtext.text = "Failed to play. Try again"
+    }
+    
+    func playerDidFinishPlaying(note: NSNotification) {
+        self.tappedCell.actionSubtext.text = "tap to listen"
+    }
+        
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-    */
 
     /*
     // Override to support editing the table view.

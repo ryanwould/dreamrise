@@ -74,6 +74,11 @@ class PlayQueueTVC: UITableViewController {
     
     @IBAction func startEditing(_ sender: UIBarButtonItem) {
         print("is editing")
+        let alarmQueue = defaults.getAlarmQueue()
+        guard alarmQueue != nil else  { return }
+        for item in alarmQueue! {
+            print(item)
+        }
         self.isEditing = !self.isEditing
     }
     

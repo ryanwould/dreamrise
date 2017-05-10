@@ -12,6 +12,9 @@ import FirebaseStorage
 import Firebase
 import FirebaseDatabase
 import SnapKit
+import SideMenu
+import NVActivityIndicatorView
+
 
 class AudioRecorderVC: UINavigationController {
     
@@ -28,6 +31,16 @@ class AudioRecorderVC: UINavigationController {
     var nextButton: UIButton!
     var filename: String?
     var ref: FIRDatabaseReference!
+    
+    // *************************************
+    // Recorder View
+    // *************************************
+    
+    var recorderView: RecorderView?
+    
+    // *************************************
+    // View LifeCycle Methods
+    // *************************************
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,7 +75,7 @@ class AudioRecorderVC: UINavigationController {
             recordingSession.requestRecordPermission() { [unowned self] allowed in
                 DispatchQueue.main.async {
                     if allowed {
-                        self.loadRecordingUI()
+                        self.prepareRecordingUI()
                     } else {
                         //failed to record
                         // TOOD: throw error asking for mic permissions
@@ -74,77 +87,68 @@ class AudioRecorderVC: UINavigationController {
             //failed to record
         }
     }
-   /*
-    override func viewDidAppear(_ animated: Bool) {
-        lottie.play()
-    }
-    
-    override func viewDidLayoutSubviews() {
-        lottie.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height * 0.3)
-        view.addSubview(lottie)
-    }
- */
     
     //**********************************
     // MARK: - Audio Setup
     //**********************************
     
     // load recording button
-    func loadRecordingUI(){
-        recordButton = UIButton(frame: CGRect(x: 0, y: 0, width: 75, height: 75))
-        recordButton.center.x = self.view.center.x - 125
-        recordButton.center.y = self.view.center.y + 225
-        recordButton.setImage(UIImage(named: "big-mic"), for: .normal)
-        recordButton.imageView?.tintColor = UIColor.red
-        recordButton.layer.cornerRadius = 0.5 * recordButton.layer.bounds.width
-        recordButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.title1)
-        recordButton.addTarget(self, action: #selector(recordTapped), for: .touchUpInside)
-        recordButton.layer.borderWidth = 4
-        recordButton.layer.borderColor = UIColor.red.cgColor
-        recordButton.backgroundColor = UIColor.white
-        view.addSubview(recordButton)
-    }
-    
-    func buttonStartRecording() {
-        recordButton.backgroundColor = UIColor.red
-        recordButton.imageView?.tintColor = UIColor.white
-    }
-    
-    func buttonDoneRecording() {
-        print("button done recording")
-        recordButton.backgroundColor = UIColor.clear
-        recordButton.imageView?.tintColor = UIColor.red
-    }
-    
-    func doneRecording() {
-        //show x
-        xButton = UIButton(frame: CGRect(x: 25, y: 50, width: 50, height: 50))
-        xButton.setImage(UIImage(named: "close"), for: .normal)
-        xButton.addTarget(self, action: #selector(resetRecordingView), for: .touchUpInside)
-        view.addSubview(xButton)
+    func prepareRecordingUI(){
         
-        //show send
-        nextButton = UIButton(frame: recordButton.frame)
-        nextButton.center.x = self.view.frame.maxX - 50
-        nextButton.setImage(UIImage(named: "forward"), for: .normal)
-        nextButton.addTarget(self, action: #selector(sendAudio), for: .touchUpInside)
-        view.addSubview(nextButton)
+        // make recorderView
+        self.recorderView = Bundle.main.loadNibNamed("RecorderView", owner: self, options: nil)?[0] as! RecorderView
+        self.recorderView?.parent = self
         
-        //remove recordButton
-        recordButton.isHidden = true
+        // set recorderView frame
+        let recorderViewFrame = CGRect(x: self.view.frame.minX,
+                                       y: self.view.frame.maxY - 75,
+                                       width: self.view.frame.width,
+                                       height: 200.0)
+        guard recorderView != nil else { return }
+        self.recorderView!.frame = recorderViewFrame
+        self.view.addSubview(self.recorderView!)
     }
     
+    func startRecordingUI() {
+        guard recorderView != nil else { return }
+        
+        // move recorderView up
+        moveRecorderView(position: 1)
+    }
+    
+    func finishRecordingUI() {
+        // set recorderView frame
+        guard recorderView != nil else { return }
+        
+        // move recorderView up
+        moveRecorderView(position: 2)
+    }
+    
+    //******************************************
+    // MARK: - Reset View
+    //******************************************
+    
+    func resetRecordingView(){
+        audioRecorder = nil
+        
+        // create recorderView.resetView()
+        self.recorderView!.resetView()
+        
+        // move recorder view back into place
+        moveRecorderView(position: 0)
+    }
     
     //******************************************
     // MARK: - SEGUE
     //******************************************
     
     func sendAudio(){
-        print("IN SEND AUDIO")
+        
+        // move recorderView off screen
+        moveRecorderView(position: 3)
+        
+        // segue to send audio View controller
         performSegue(withIdentifier: "sendAudio", sender: nil)
-        nextButton.isHidden = true
-        xButton.isHidden = true
-        playButton.isHidden = true
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -160,48 +164,48 @@ class AudioRecorderVC: UINavigationController {
     }
     
     //******************************************
-    // MARK: - Reset View
+    // MARK: - RECORDERVIEW UI
     //******************************************
     
-    func resetRecordingView(){
-        recordButton.isHidden = false
-        audioRecorder = nil
+    func moveRecorderView(position: Int) {
+        let screenHeight = self.view.bounds.height
+        switch position {
+        case 0:
+            print("moving to position 0 - TAP TO RECORD")
+            UIView.animate(withDuration: 0.25, animations: {
+                self.recorderView!.frame.origin.y = screenHeight - 75
+            })
+        case 1:
+            print("moving to position 1 - RECORDING")
+            UIView.animate(withDuration: 0.25, animations: {
+                self.recorderView!.frame.origin.y = screenHeight - 125
+            })
+        case 2:
+            print("moving to position 2 - DONE RECORDING")
+            UIView.animate(withDuration: 0.25, animations: {
+                self.recorderView!.frame.origin.y = screenHeight - 175
+            })
+        case 3:
+            print("moving to position 3 - OFF SCREEN")
+            UIView.animate(withDuration: 0.25, animations: {
+                self.recorderView!.frame.origin.y = screenHeight
+            })
+        default:
+            print("DEFAULT CASE")
+            UIView.animate(withDuration: 0.25, animations: {
+                self.recorderView!.frame.origin.y = screenHeight - 75
+            })
+        }
         
-        //hide other buttons
-        xButton.isHidden = true
-        nextButton.isHidden = true
-        playButton.isHidden = true
     }
     
-    func loadPlaybackUI(){
-        //playButton.frame = recordButton.frame
-        playButton = UIButton(frame: CGRect(x: 0, y: 0, width: 75, height: 75))
-        playButton.center.x = self.view.center.x
-        playButton.center.y = self.view.center.y + 225
-        playButton.setTitle("Tap to play", for: .normal)
-        playButton.setTitleColor(UIColor.blue, for: .normal)
-        playButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.title1)
-        playButton.addTarget(self, action: #selector(playAudio), for: .touchUpInside)
-        playButton.backgroundColor = UIColor.clear
-        playButton.layer.borderWidth = 10
-        playButton.layer.borderColor = UIColor.blue.cgColor
-        view.addSubview(playButton)
-    }
     
-    func animateButtonRepeated(){
-        UIView.animateKeyframes(withDuration: 1.0, delay: 0.0, options: [.repeat], animations: {
-            UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 1/2, animations: {
-                self.recordButton.transform = CGAffineTransform.identity.scaledBy(x: 1.25, y: 1.25)
-            })
-            UIView.addKeyframe(withRelativeStartTime: 1/2, relativeDuration: 1/2, animations: {
-                self.recordButton.transform = CGAffineTransform.identity.scaledBy(x: 0.8, y: 0.8)
-            })
-        }, completion: nil)
-    }
+    //******************************************
+    // MARK: - AUDIO METHODS
+    //******************************************
     
     func playAudio(_ sender: AnyObject) {
         print("tapped button")
-        playButton.setTitle("Playing...", for: .normal)
         
         do {
             //try to play through speakers
@@ -211,7 +215,6 @@ class AudioRecorderVC: UINavigationController {
         }
         
         if audioRecorder?.isRecording == false {
-            recordButton.isEnabled = false
             
             do {
                 try audioPlayer = AVAudioPlayer(contentsOf: (audioRecorder?.url)!)
@@ -231,7 +234,7 @@ class AudioRecorderVC: UINavigationController {
             return
         }
         
-        buttonStartRecording()
+        startRecordingUI()
         
         let audioFilename = getDocumentsDirectory().appendingPathComponent("\(filename!).m4a")
         
@@ -258,12 +261,11 @@ class AudioRecorderVC: UINavigationController {
     
     func finishRecording(success: Bool){
         audioRecorder.stop()
-        buttonDoneRecording()
         
         if success {
             //recordButton.setTitle("Tap to record", for: .normal)
             print("recorded successfully")
-            loadPlaybackUI()
+            finishRecordingUI()
         } else {
             //recordButton.setTitle("Tap to re-record", for: .normal)
             print("recording failed")
@@ -296,8 +298,6 @@ extension AudioRecorderVC: AVAudioRecorderDelegate {
         if !flag {
             finishRecording(success: false)
         }
-        //reset view
-        doneRecording()
     }
     
     func audioRecorderEncodeErrorDidOccur(_ recorder: AVAudioRecorder, error: Error?) {
@@ -307,9 +307,9 @@ extension AudioRecorderVC: AVAudioRecorderDelegate {
 
 extension AudioRecorderVC: AVAudioPlayerDelegate {
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-        playButton.setTitle("Tap to play", for: .normal)
-        print("did finish playing")
-        recordButton.isEnabled = true
+        if let recorderView = self.recorderView {
+            recorderView.stoppedPlaying()
+        }
     }
     
     func audioPlayerDecodeErrorDidOccur(_ player: AVAudioPlayer, error: Error?) {

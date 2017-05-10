@@ -13,17 +13,21 @@ import Firebase
 class HomeTabBarController: UITabBarController {
     
     var ref: FIRDatabaseReference!
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("in view did appear in HOMETABBARCONTROLLER")
+        if FIRAuth.auth()?.currentUser == nil {
+            self.performSegue(withIdentifier: "signIn", sender: nil)
+        } else {
+            print("\n\n\nUSER IS \(FIRAuth.auth()?.currentUser?.uid)\n\n\n")
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         ref = FIRDatabase.database().reference()
         
-        if FIRAuth.auth()?.currentUser == nil {
-            self.performSegue(withIdentifier: "signIn", sender: nil)
-        } else {
-            print("\n\n\nUSER IS \(FIRAuth.auth()?.currentUser?.uid)\n\n\n")
-        }
 
         // Do any additional setup after loading the view.
     }

@@ -24,21 +24,21 @@ class User: NSObject {
     }
 }
 
-class VoiceMemo: NSObject {
-    var uid: String
-    var downloadURL: String
-    var sender: String
-    var receivedDate: Date
-    var listened: Bool
-    var expirationDate: Date
-    
-    init(uid: String, downloadURL: String, sender: String, receivedDate: Date, listened: Bool, expirationDate: Date) {
-        self.uid = uid;
-        self.downloadURL = downloadURL;
-        self.sender = sender;
-        self.listened = listened;
-        self.receivedDate = receivedDate;
-        self.expirationDate = expirationDate;
-        super.init()
-    }
-}
+//class VoiceMemo: NSObject {
+//    var uid: String
+//    var downloadURL: String
+//    var sender: String
+//    var receivedDate: Date
+//    var listened: Bool
+//    var expirationDate: Date
+//    
+//    init(uid: String, downloadURL: String, sender: String, receivedDate: Date, listened: Bool, expirationDate: Date) {
+//        self.uid = uid;
+//        self.downloadURL = downloadURL;
+//        self.sender = sender;
+//        self.listened = listened;
+//        self.receivedDate = receivedDate;
+//        self.expirationDate = expirationDate;
+//        super.init()
+//    }
+//}

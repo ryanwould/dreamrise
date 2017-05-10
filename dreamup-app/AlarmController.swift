@@ -31,9 +31,6 @@ class AlarmController: UIViewController {
             ref = FIRDatabase.database().reference()
         }
         
-        
-        
-        
         // Do any additional setup after loading the view, typically from a nib.
         timePicker.datePickerMode = .time
         startAlarmButton.layer.cornerRadius = 0
@@ -63,6 +60,10 @@ class AlarmController: UIViewController {
     }
     
     // MARK: - Actions
+   
+    @IBAction func dismiss(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func pickerChanged(_ sender: UIDatePicker) {
         print(sender.date)

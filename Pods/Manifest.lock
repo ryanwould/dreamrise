@@ -95,10 +95,13 @@ PODS:
   - GTMSessionFetcher/Full (1.1.8):
     - GTMSessionFetcher/Core (= 1.1.8)
   - lottie-ios (1.0.2)
+  - NVActivityIndicatorView (3.5.2)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
+  - SideMenu (2.3.0)
   - SnapKit (3.2.0)
+  - Spring (1.0.3)
   - SwiftDate (4.0.13)
   - TwitterCore (2.8.0):
     - Fabric
@@ -112,8 +115,21 @@ DEPENDENCIES:
   - Firebase/Storage
   - FirebaseUI
   - lottie-ios
+  - NVActivityIndicatorView
+  - SideMenu
   - SnapKit (~> 3.2.0)
+  - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift3`)
   - SwiftDate
+
+EXTERNAL SOURCES:
+  Spring:
+    :branch: swift3
+    :git: https://github.com/MengTo/Spring.git
+
+CHECKOUT OPTIONS:
+  Spring:
+    :commit: 8201b5c93bd7ebdf4cd18160bcde1e6e88c2be64
+    :git: https://github.com/MengTo/Spring.git
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
@@ -136,12 +152,15 @@ SPEC CHECKSUMS:
   GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
   GTMSessionFetcher: 6f8d8b28b7e345549ac471071608170b31cb4977
   lottie-ios: 8564a52e01a29c180ded076cb059aae8ec378cf1
+  NVActivityIndicatorView: 8c10abd410a0657afd21aa853373e1a3cfc25e7f
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  SideMenu: 43d092cf615cf472f105c5b9867a21beff9fc269
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
   SwiftDate: 8ec416bb1b5129d1f35e8efaed720421f41d42df
   TwitterCore: e959987be23c767004d29eb7fab8d85d8585a2e5
   TwitterKit: f7b0a1adcb800f6446ff0ef70164797376522ff3
 
-PODFILE CHECKSUM: 90ca34b309f2c27e65a0fc767532357f35919553
+PODFILE CHECKSUM: 3a91f15b741de751a65a20491cc881844909d145
 
 COCOAPODS: 1.2.0

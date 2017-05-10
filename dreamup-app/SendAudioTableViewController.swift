@@ -12,6 +12,10 @@ import FirebaseDatabaseUI
 import SnapKit
 
 class SendAudioTableViewController: UITableViewController {
+    
+    // Logged in User
+    var currentUser: FIRUser?
+
    
     // Audio file
     var audioFileUrl: URL?
@@ -30,6 +34,8 @@ class SendAudioTableViewController: UITableViewController {
     
     var recipientsBar: RecipientBarView?
     var recipientsBarIsShowing: Bool = false
+    
+    var sendAudioFlag: Bool = false
 
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -37,10 +43,46 @@ class SendAudioTableViewController: UITableViewController {
         if recipientsBarIsShowing {
             hideRecipientsBar()
         }
+        
+        print("ARE WE SENDING AUDIO? \(self.sendAudioFlag)")
+
+        
+        if self.sendAudioFlag {
+            
+            // reset RecorderView to record again
+            let nav = self.navigationController as? AudioRecorderVC
+            if let vc = nav {
+                // move recorderView off screen
+                vc.moveRecorderView(position: 0)
+                vc.resetRecordingView()
+                self.sendAudioFlag = false
+            }
+            
+            
+        } else {
+            //BACK BUTTON & SEND AUDIO TRIGGERS THIS
+            print("NOT SENDING AUDIO")
+            
+            // show RecorderView again
+            let nav = self.navigationController as? AudioRecorderVC
+            if let vc = nav {
+                // move recorderView off screen
+                vc.moveRecorderView(position: 2)
+                self.sendAudioFlag = false
+            }
+        }
     }
+    
+    override func willMove(toParentViewController parent: UIViewController?) {
+        // parent is nil when sending audio && when using the back button
+        print("WILL MOVE TO PARENT (\(parent))")
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.backgroundColor = UIColor.black
+        self.currentUser = FIRAuth.auth()?.currentUser
         
         //setup firebase
         createStorageRef()
@@ -52,10 +94,16 @@ class SendAudioTableViewController: UITableViewController {
         
         //TODO GET CURRENT USER ID
         
-        self.dataSource = self.tableView.bind(to: self.usersRef.child("8b10bZJWEjRQEDTf74mB4nPhyJG2/friends/"), populateCell: { (tableView, indexPath, snapshot) in
+        let userId = currentUser?.uid
+        
+        guard userId != nil else { print("SendAudioTVC - USERID is nil"); return }
+        
+        self.dataSource = self.tableView.bind(to:
+            self.usersRef.child("\(userId!)/friends/"), populateCell: { (tableView, indexPath, snapshot) in
             let value = snapshot.value
             let key = snapshot.key
             let cell = tableView.dequeueReusableCell(withIdentifier: "friendCell") as! FriendCell
+            cell.backgroundColor = UIColor.clear
             
             self.usersRef.child("\(key)").observe(.value, with: { (snap) in
                 let key = snap.key as! String
@@ -127,8 +175,9 @@ class SendAudioTableViewController: UITableViewController {
         }
         
         print(self.selectedFriends.description)
-        
         print(self.selectedFriends.count)
+        
+        // decide whether to show recipients bar
         
         if self.selectedFriends.count > 0 && !recipientsBarIsShowing {
             showRecipientsBar()
@@ -213,6 +262,7 @@ class SendAudioTableViewController: UITableViewController {
             self.voiceMemosRef.child("\(friend.key)/\(key)").setValue(voiceMemo)
             print("writing to voice_memos/\(friend.key)/\(key)/")
         }
+        
         self.recipientsBar?.recipients.text = ""
         self.hideRecipientsBar()
         self.unwindToMenu()
@@ -233,9 +283,13 @@ class SendAudioTableViewController: UITableViewController {
         recipientsBar?.removeFromSuperview()
     }
     
-     // MARK: - Navigation
+    // ******************************************
+    // MARK: - Navigation
+    // ******************************************
     
     func unwindToMenu(){
+        // Sending Audio
+        self.sendAudioFlag = true
         self.performSegue(withIdentifier: "unwindToMenu", sender: self)
     }
     
@@ -246,7 +300,7 @@ class SendAudioTableViewController: UITableViewController {
         let dest = segue.destination
         if let nav = dest.navigationController as? AudioRecorderVC {
             nav.resetRecordingView()
-            nav.loadRecordingUI()
+            nav.prepareRecordingUI()
         }
         print("DESTINATION: \(dest)")
         

@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import AVFoundation
 
 class AlarmInProgress: UIViewController {
     
     @IBOutlet weak var alarmFireDateLabel: UILabel!
     var alarmFireTime: Date?
     let defaults = UserDefaultsManager()
+    var avQueuePlayer: AVQueuePlayer?
+    
+    
 
     @IBAction func didCancelAlarm(_ sender: Any) {
         // undo setup
@@ -31,9 +35,22 @@ class AlarmInProgress: UIViewController {
         print(alarmFireTime!)
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        //stop alarm
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // alarm queue
+        buildAlarmQueue()
+        
+        // set timer to start alarm at alarmFireTime
+        if alarmFireTime != nil {
+            let timeUntilAlarm = alarmFireTime?.timeIntervalSinceNow
+            print("INTERVAL: \(timeUntilAlarm)")
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -69,6 +86,51 @@ class AlarmInProgress: UIViewController {
         f.locale = Locale(identifier: localTimeZone)
         f.dateFormat = "h:mm a"
         alarmFireDateLabel.text = f.string(from: time)
+    }
+    
+    func buildAlarmQueue(){
+        let queue = defaults.getAlarmQueue()
+        print("\n\nALARM QUEUE:")
+        
+        var queueItems = [AVPlayerItem]()
+        
+        if let queue = queue {
+            print("queue - \(queue.count)")
+            for item in queue {
+                print("item in queue - \(item)")
+                let queueItem = defaults.getPlaySettingsForId(id: item) as? [String: Any]
+                let urlString = queueItem?["url"] as? String
+                
+                guard urlString != nil else {
+                    print("urlstring is nil")
+                    break
+                }
+                
+                let url = URL(string: urlString!)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+                
+                guard url != nil else {
+                    print("url is nil")
+                    break
+                }
+                
+                print("URL: \(url)")
+                
+                // Create asset to be played
+                let asset = AVAsset(url: url!)
+                
+                let assetKeys = [
+                    "playable",
+                    "hasProtectedContent"
+                ]
+                
+                // Create a new AVPlayerItem with the asset and an
+                // array of asset keys to be automatically loaded
+                let playerItem = AVPlayerItem(asset: asset, automaticallyLoadedAssetKeys: assetKeys)
+                
+                queueItems.append(playerItem)
+            }
+        }
+        self.avQueuePlayer = AVQueuePlayer.init(items: queueItems)
     }
     
 

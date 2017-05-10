@@ -32,7 +32,9 @@ class RadioStationSettingsViewController: UIViewController {
             print("title invalid")
             return
         }
-        defaults.createRadioAlarmItem(stationTitle: title, streamUrl: stream)
+        
+        let duration = Int(picker.countDownDuration)
+        defaults.createRadioAlarmItem(stationTitle: title, streamUrl: stream, duration: duration)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

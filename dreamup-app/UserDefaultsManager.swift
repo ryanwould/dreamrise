@@ -9,7 +9,8 @@
 import Foundation
 
 protocol UserDefaultsProtocol {
-    func createRadioAlarmItem(stationTitle: String, streamUrl: String)
+    
+    func createRadioAlarmItem(stationTitle: String, streamUrl: String, duration: Int)
     
     func getAlarmQueue() -> [String]?
     func setAlarmQueue(data: [String]) -> Void
@@ -42,15 +43,16 @@ class UserDefaultsManager: UserDefaultsProtocol {
     }
 
     //TODO: change to take a radio station object
-    func createRadioAlarmItem(stationTitle: String, streamUrl: String) {
+    func createRadioAlarmItem(stationTitle: String, streamUrl: String, duration: Int) {
         let id = String(Int(Date().timeIntervalSince1970))
         let settings: [String: Any] = [
-            "duration": "300",
+            "duration": duration,
             "stationTitle": stationTitle,
-            "streamUrl": streamUrl,
+            "url": streamUrl,
             "displayString": stationTitle,
-            "mediaType": "radio",
+            "mediaType": "RADIO",
         ]
+        
         //create play settings
         setPlaySettingsForId(id: id, settings: settings)
         
@@ -66,11 +68,11 @@ class UserDefaultsManager: UserDefaultsProtocol {
         }
         let settings: [String: Any] = [
             "duration": String(Int(podcast.duration)),
-            "episodeTitle": String(podcast.episodeTitle),
-            "podcastTitle": String(podcast.podcastTitle),
-            "assetUrl": String(describing: assetUrl),
-            "displayString": String(podcast.episodeTitle),
-            "mediaType": "podcast",
+            "episodeTitle": String(podcast.episodeTitle) ?? "Episode title not found",
+            "podcastTitle": String(podcast.podcastTitle) ?? "Podcast title not found",
+            "url": String(describing: assetUrl),
+            "displayString": String(podcast.episodeTitle) ?? "Episode title not found",
+            "mediaType": "PODCAST",
             ]
         //create play settings
         setPlaySettingsForId(id: id, settings: settings)

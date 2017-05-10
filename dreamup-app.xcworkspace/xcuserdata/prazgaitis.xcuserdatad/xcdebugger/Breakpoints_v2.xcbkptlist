@@ -6,15 +6,63 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dreamup-app/SendAudioTableViewController.swift"
+            timestampString = "516124047.213839"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dreamup_app.SendAudioTableViewController.viewDidLoad () -&gt; ()"
+                  moduleName = "dreamup-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/prazgaitis/Google%20Drive/client_work/ryan-wood/dreamup-app/dreamup-app/SendAudioTableViewController.swift"
+                  timestampString = "514866046.606862"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "1376">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dreamup_app.SendAudioTableViewController.(viewDidLoad () -&gt; ()).(closure #1)"
+                  moduleName = "dreamup-app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/prazgaitis/Google%20Drive/client_work/ryan-wood/dreamup-app/dreamup-app/SendAudioTableViewController.swift"
+                  timestampString = "514866046.61014"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "dreamup-app/VoiceMemoCell.swift"
-            timestampString = "514580231.694913"
+            timestampString = "515975564.426401"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25">
+            startingLineNumber = "32"
+            endingLineNumber = "32">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

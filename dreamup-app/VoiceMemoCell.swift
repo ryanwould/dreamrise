@@ -7,9 +7,16 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 class VoiceMemoCell: UITableViewCell {
 
+    @IBOutlet weak var senderName: UILabel!
+    @IBOutlet weak var actionSubtext: UILabel!
+    @IBOutlet weak var activityIndicator: UIView!
+    
+    var activityIndicatorView: NVActivityIndicatorView?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
