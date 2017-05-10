@@ -88,6 +88,10 @@ class AudioRecorderVC: UINavigationController {
         }
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        print("AUDIORECORDERVC will disappear")
+    }
+    
     //**********************************
     // MARK: - Audio Setup
     //**********************************

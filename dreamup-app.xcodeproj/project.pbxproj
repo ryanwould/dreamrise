@@ -50,6 +50,7 @@
 		119B5B171E8987710020A567 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B5B161E8987710020A567 /* FriendCell.swift */; };
 		119B5B191E8987C00020A567 /* SelectedIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B5B181E8987C00020A567 /* SelectedIndicator.swift */; };
 		11A7E6ED1EBE977E006E87DA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A7E6EC1EBE977E006E87DA /* MainViewController.swift */; };
+		11AE14251EC3918C00DDD7AE /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE14241EC3918C00DDD7AE /* SideMenuViewController.swift */; };
 		11B0E3E81EA06C1000399AA9 /* VoiceMemosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B0E3E71EA06C1000399AA9 /* VoiceMemosTableViewController.swift */; };
 		11B2EBDE1EB16BCB006A81B8 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2EBDD1EB16BCB006A81B8 /* SettingsTableViewController.swift */; };
 		11B640ED1E89555600971DF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11B640EC1E89555600971DF0 /* Main.storyboard */; };
@@ -128,6 +129,7 @@
 		119B5B161E8987710020A567 /* FriendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendCell.swift; path = "dreamup-app/FriendCell.swift"; sourceTree = "<group>"; };
 		119B5B181E8987C00020A567 /* SelectedIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedIndicator.swift; sourceTree = "<group>"; };
 		11A7E6EC1EBE977E006E87DA /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		11AE14241EC3918C00DDD7AE /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		11B0E3E71EA06C1000399AA9 /* VoiceMemosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceMemosTableViewController.swift; sourceTree = "<group>"; };
 		11B2EBDD1EB16BCB006A81B8 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		11B640EC1E89555600971DF0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 		11823ACA1EABE0480060DE68 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				11AE14241EC3918C00DDD7AE /* SideMenuViewController.swift */,
 				11A7E6EC1EBE977E006E87DA /* MainViewController.swift */,
 				11823AAF1EABDEC70060DE68 /* SigninVC.swift */,
 				11823ABA1EABDF220060DE68 /* AlarmSelectionTableView.swift */,
@@ -676,6 +679,7 @@
 				11823AB01EABDEC70060DE68 /* SigninVC.swift in Sources */,
 				11823ACE1EABE21B0060DE68 /* RadioPickerViewController.swift in Sources */,
 				1193F4FF1EC12F90002D6C7E /* RecorderView.swift in Sources */,
+				11AE14251EC3918C00DDD7AE /* SideMenuViewController.swift in Sources */,
 				11B640EF1E897F9C00971DF0 /* User.swift in Sources */,
 				11D064EC1EA3B5FD00F3F6E7 /* VoiceMemoCell.swift in Sources */,
 				11823AD11EABE22A0060DE68 /* PodcastConfirmStep.swift in Sources */,

@@ -851,7 +851,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Koh-LP-RbL">
-                                <rect key="frame" x="0.0" y="20" width="375" height="539"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="539"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="539" id="9tt-YX-OTY"/>
@@ -940,12 +940,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zJH-1N-MOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2376.8000000000002" y="-2267.3163418290856"/>
+            <point key="canvasLocation" x="2646" y="-2457"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="NmC-0t-OXQ">
             <objects>
-                <tableViewController id="0vb-yq-RQn" sceneMemberID="viewController">
+                <tableViewController id="0vb-yq-RQn" customClass="SideMenuViewController" customModule="dreamup_app" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="CTP-xl-XQW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -954,7 +954,7 @@
                         <sections>
                             <tableViewSection id="V9Z-kq-Ddr">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="iWW-zi-3wE">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="iWW-zi-3wE">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iWW-zi-3wE" id="ZSG-2I-ljg">
@@ -1138,6 +1138,9 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.0" green="0.21960784310000001" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="2jP-13-Afz" kind="presentation" identifier="SIGN_OUT" id="Khb-wZ-rv8"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1151,7 +1154,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="suM-o4-KOA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2804" y="-1344"/>
+            <point key="canvasLocation" x="4206" y="-2457"/>
         </scene>
         <!--Side Menu Navigation Controller-->
         <scene sceneID="7Ej-MY-Nwq">
@@ -1170,7 +1173,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zIa-FA-zVz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2804" y="-1344"/>
+            <point key="canvasLocation" x="3454" y="-2457"/>
         </scene>
         <!--Radio Station Settings View Controller-->
         <scene sceneID="KdM-yk-X1D">
@@ -1392,7 +1395,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="79g-uG-86Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2892" y="1717"/>
+            <point key="canvasLocation" x="-2863" y="1675"/>
         </scene>
         <!--Audio RecorderVC-->
         <scene sceneID="dIq-8q-MIR">
@@ -1411,7 +1414,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ptT-Xg-HWS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1415" y="-2506"/>
+            <point key="canvasLocation" x="1724" y="-2457"/>
         </scene>
         <!--Add an Alarm Phase-->
         <scene sceneID="vyj-P0-JWR">
@@ -1541,7 +1544,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9PI-eF-Ihi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5998" y="-1261"/>
+            <point key="canvasLocation" x="5926" y="-2434"/>
         </scene>
         <!--Podcasts-->
         <scene sceneID="fPR-IZ-yBw">
@@ -1556,7 +1559,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="107" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ewv-Ty-BCo">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PodcastCell" rowHeight="107" id="6Pu-JC-861" customClass="PodcastTableViewCell" customModule="dreamup_app" customModuleProvider="target">
@@ -1644,7 +1647,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NXC-ct-qs5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7126" y="-838"/>
+            <point key="canvasLocation" x="6878" y="-2068"/>
         </scene>
         <!--Alarm Order-->
         <scene sceneID="13W-6n-7In">
@@ -1730,7 +1733,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xm5-FH-ulI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5153" y="-1585"/>
+            <point key="canvasLocation" x="5153" y="-2433"/>
         </scene>
         <!--Radio Stations-->
         <scene sceneID="Lqw-Ts-5Hf">
@@ -1822,7 +1825,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qwr-zc-rGF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7126" y="-1585"/>
+            <point key="canvasLocation" x="6878" y="-2733"/>
         </scene>
         <!--Radio Station Settings View Controller-->
         <scene sceneID="1AP-9n-cPh">
@@ -1886,7 +1889,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tNL-Ko-uxc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="FGL-8L-UTc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="8025" y="-1585"/>
+            <point key="canvasLocation" x="7594" y="-2733"/>
         </scene>
         <!--Podcast Confirm Step-->
         <scene sceneID="Xab-Es-TqZ">
@@ -1950,7 +1953,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ZX-mj-7Sb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="4Ts-Hn-8ZR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="8025" y="-838"/>
+            <point key="canvasLocation" x="7593" y="-2069"/>
         </scene>
         <!--Alarm-->
         <scene sceneID="7og-3g-v1O">
@@ -2025,7 +2028,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zwM-7z-uWO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5153" y="-2646"/>
+            <point key="canvasLocation" x="5153" y="-3122"/>
         </scene>
         <!--Alarm In Progress-->
         <scene sceneID="IIP-zQ-Y05">
@@ -2088,7 +2091,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DfR-At-slB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5865" y="-2646"/>
+            <point key="canvasLocation" x="5927" y="-3123"/>
         </scene>
         <!--Send Audio Table View Controller-->
         <scene sceneID="BtF-xj-acd">
@@ -2153,7 +2156,101 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nlc-aR-nVs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="1AF-an-q3h" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2377" y="-2957"/>
+            <point key="canvasLocation" x="2646" y="-3304"/>
+        </scene>
+        <!--SigninVC-->
+        <scene sceneID="tcJ-f2-SRA">
+            <objects>
+                <viewController id="2jP-13-Afz" customClass="SigninVC" customModule="dreamup_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cQ5-MI-vMj"/>
+                        <viewControllerLayoutGuide type="bottom" id="w0L-Nu-1uG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UyE-CE-MVX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wny-4E-fnr">
+                                <rect key="frame" x="16" y="202" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MgY-ov-1qQ"/>
+                                </constraints>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vtU-rR-6zZ">
+                                <rect key="frame" x="16" y="268" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pXx-SY-vCQ"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QA1-0j-2z9">
+                                <rect key="frame" x="16" y="173" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAp-2D-drA">
+                                <rect key="frame" x="16" y="239" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHD-5a-n7k">
+                                <rect key="frame" x="166" y="77" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgy-au-hdh">
+                                <rect key="frame" x="16" y="318" width="343" height="51"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Sign in">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.91037326389999995" green="0.91037326389999995" blue="0.91037326389999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapSignIn:" destination="2jP-13-Afz" eventType="touchUpInside" id="toM-6I-OBZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wny-4E-fnr" firstAttribute="leading" secondItem="jAp-2D-drA" secondAttribute="leading" id="3ah-LJ-jo4"/>
+                            <constraint firstItem="wny-4E-fnr" firstAttribute="trailing" secondItem="UyE-CE-MVX" secondAttribute="trailingMargin" id="3kc-UO-POi"/>
+                            <constraint firstItem="QA1-0j-2z9" firstAttribute="leading" secondItem="UyE-CE-MVX" secondAttribute="leadingMargin" id="8Gd-Jb-PSB"/>
+                            <constraint firstItem="QA1-0j-2z9" firstAttribute="leading" secondItem="wny-4E-fnr" secondAttribute="leading" id="AYG-68-fMT"/>
+                            <constraint firstItem="jAp-2D-drA" firstAttribute="top" secondItem="wny-4E-fnr" secondAttribute="bottom" constant="7" id="EMQ-vJ-vVT"/>
+                            <constraint firstItem="Cgy-au-hdh" firstAttribute="top" secondItem="vtU-rR-6zZ" secondAttribute="bottom" constant="20" id="EUB-rY-ZWa"/>
+                            <constraint firstItem="rHD-5a-n7k" firstAttribute="top" secondItem="cQ5-MI-vMj" secondAttribute="bottom" constant="57" id="EUs-w3-Qoe"/>
+                            <constraint firstItem="wny-4E-fnr" firstAttribute="trailing" secondItem="vtU-rR-6zZ" secondAttribute="trailing" id="GxI-pA-gkF"/>
+                            <constraint firstItem="rHD-5a-n7k" firstAttribute="leading" secondItem="UyE-CE-MVX" secondAttribute="leading" constant="166" id="Hw4-9p-RYc"/>
+                            <constraint firstItem="vtU-rR-6zZ" firstAttribute="leading" secondItem="Cgy-au-hdh" secondAttribute="leading" id="Oy9-AL-p3N"/>
+                            <constraint firstItem="vtU-rR-6zZ" firstAttribute="top" secondItem="jAp-2D-drA" secondAttribute="bottom" constant="8" symbolic="YES" id="SjL-um-H1f"/>
+                            <constraint firstItem="w0L-Nu-1uG" firstAttribute="top" secondItem="Cgy-au-hdh" secondAttribute="bottom" constant="298" id="UCR-Qj-Ipo"/>
+                            <constraint firstItem="QA1-0j-2z9" firstAttribute="top" secondItem="cQ5-MI-vMj" secondAttribute="bottom" constant="153" id="Zhk-kZ-P9t"/>
+                            <constraint firstItem="jAp-2D-drA" firstAttribute="leading" secondItem="vtU-rR-6zZ" secondAttribute="leading" id="jif-TT-fsf"/>
+                            <constraint firstItem="wny-4E-fnr" firstAttribute="top" secondItem="QA1-0j-2z9" secondAttribute="bottom" constant="8" symbolic="YES" id="vmS-Ln-Dd7"/>
+                            <constraint firstItem="vtU-rR-6zZ" firstAttribute="trailing" secondItem="Cgy-au-hdh" secondAttribute="trailing" id="zl4-Fa-GrO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailField" destination="wny-4E-fnr" id="emS-K5-2eb"/>
+                        <outlet property="passwordField" destination="vtU-rR-6zZ" id="39d-3D-gA8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rfI-RX-1wh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5153" y="-1686"/>
         </scene>
     </scenes>
     <resources>
@@ -2171,6 +2268,6 @@
         <image name="settings-white" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rIL-Qf-Llg"/>
+        <segue reference="Ttt-mS-yUL"/>
     </inferredMetricsTieBreakers>
 </document>

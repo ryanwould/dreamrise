@@ -37,8 +37,11 @@ class VoiceMemosTableViewController: UITableViewController {
     // *************************************
     
     override func viewDidAppear(_ animated: Bool) {
-        self.tableView.reloadData()
         print("reloaded data")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+       print("VOICE MEMOS WILL DISAPPEAR")
     }
     
     override func viewDidLoad() {
