@@ -59,8 +59,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     func enterApp(){
-        let navigationController = AudioRecorderVC()
         let mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Home")
-        //present(vc, animated: true, completion: nil)
+        //let nav = UINavigationController(rootViewController: mainViewController)
+        //self.navigationController?.present(mainViewController, animated: true, completion: nil)
+        present(mainViewController, animated: true, completion: nil)
     }
 }

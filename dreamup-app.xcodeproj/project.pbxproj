@@ -57,6 +57,7 @@
 		11B640ED1E89555600971DF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11B640EC1E89555600971DF0 /* Main.storyboard */; };
 		11B640EF1E897F9C00971DF0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640EE1E897F9C00971DF0 /* User.swift */; };
 		11D064EC1EA3B5FD00F3F6E7 /* VoiceMemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D064EB1EA3B5FD00F3F6E7 /* VoiceMemoCell.swift */; };
+		11E5E69E1EC6331100376C60 /* FindFriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E5E69D1EC6331100376C60 /* FindFriendsTableViewController.swift */; };
 		392D741B9E27E35B0A6C69C4 /* Pods_dreamup_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C8F6A13933D0527C6A9D89 /* Pods_dreamup_appTests.framework */; };
 		680F2E042070A024DCE5AF25 /* Pods_dreamup_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3A17D21D4D982EC8BA4ACE /* Pods_dreamup_appUITests.framework */; };
 		C5CAA5D666591335EE466BB6 /* Pods_dreamup_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C87F990453838CD948451443 /* Pods_dreamup_app.framework */; };
@@ -137,6 +138,7 @@
 		11B640EC1E89555600971DF0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		11B640EE1E897F9C00971DF0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		11D064EB1EA3B5FD00F3F6E7 /* VoiceMemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VoiceMemoCell.swift; path = "dreamup-app/VoiceMemoCell.swift"; sourceTree = "<group>"; };
+		11E5E69D1EC6331100376C60 /* FindFriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindFriendsTableViewController.swift; sourceTree = "<group>"; };
 		34870BFC215893E711FCDBA3 /* Pods-dreamup-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dreamup-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dreamup-app/Pods-dreamup-app.debug.xcconfig"; sourceTree = "<group>"; };
 		37518DB0B0B1205AE8ED9AC2 /* Pods-dreamup-appUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dreamup-appUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dreamup-appUITests/Pods-dreamup-appUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		796BFE40210D4F6ACF6957A8 /* Pods-dreamup-appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dreamup-appTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dreamup-appTests/Pods-dreamup-appTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 		112D7EB11EC4B74D00EEE3ED /* VoiceMemoControllers */ = {
 			isa = PBXGroup;
 			children = (
+				11E5E69D1EC6331100376C60 /* FindFriendsTableViewController.swift */,
 				11A7E6EC1EBE977E006E87DA /* MainViewController.swift */,
 				118F5FA01E884E0200E36F90 /* SendAudioTableViewController.swift */,
 				118F5F981E881AB900E36F90 /* AudioRecorderVC.swift */,
@@ -721,6 +724,7 @@
 				11823AD11EABE22A0060DE68 /* PodcastConfirmStep.swift in Sources */,
 				11823AC31EABDF3E0060DE68 /* Podcast.swift in Sources */,
 				11B2EBDE1EB16BCB006A81B8 /* SettingsTableViewController.swift in Sources */,
+				11E5E69E1EC6331100376C60 /* FindFriendsTableViewController.swift in Sources */,
 				110873ED1E836A310067C225 /* AppDelegate.swift in Sources */,
 				119B5B191E8987C00020A567 /* SelectedIndicator.swift in Sources */,
 				112D7EAF1EC4B6F300EEE3ED /* SignUpViewController.swift in Sources */,
