@@ -10,7 +10,8 @@ import Foundation
 
 protocol UserDefaultsProtocol {
     
-    func createRadioAlarmItem(stationTitle: String, streamUrl: String, duration: Int)
+    func createRadioAlarmItem(stationTitle: String, streamUrl: String, duration: String)
+    func createPodcastAlarmItem(podcast: Podcast)
     
     func getAlarmQueue() -> [String]?
     func setAlarmQueue(data: [String]) -> Void
@@ -43,7 +44,7 @@ class UserDefaultsManager: UserDefaultsProtocol {
     }
 
     //TODO: change to take a radio station object
-    func createRadioAlarmItem(stationTitle: String, streamUrl: String, duration: Int) {
+    func createRadioAlarmItem(stationTitle: String, streamUrl: String, duration: String) {
         let id = String(Int(Date().timeIntervalSince1970))
         let settings: [String: Any] = [
             "duration": duration,

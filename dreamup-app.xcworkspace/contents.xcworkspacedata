@@ -2,13 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:SelectedIndicator.swift">
-   </FileRef>
-   <FileRef
       location = "group:Main.storyboard">
-   </FileRef>
-   <FileRef
-      location = "group:SendAudioTableViewController.swift">
    </FileRef>
    <FileRef
       location = "group:dreamup-app.xcodeproj">

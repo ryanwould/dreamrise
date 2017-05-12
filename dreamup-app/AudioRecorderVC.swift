@@ -45,6 +45,9 @@ class AudioRecorderVC: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationBar.barStyle = UIBarStyle.black
+        self.navigationBar.tintColor = UIColor.white
+        
         //***********************
         // MARK: - Firebase
         //***********************

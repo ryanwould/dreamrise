@@ -96,17 +96,66 @@ class MainViewController: UIViewController {
     // Lifecycle methods
     // *************************************
 
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    override func viewDidAppear(_ animated: Bool) {
         setupSideMenu()
         // Do any additional setup after loading the view.
         
-        setupUI()
-        createDatabaseRefs()
-        tableView.register(FriendCell.self, forCellReuseIdentifier: "Friend Cell")
+        createDatabaseRefs(callback: { () -> Void in
+            setDatasource()
+        })
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
         
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.tableView.backgroundColor = Colors().spaceCadet
+        tableView.snp.makeConstraints { (make) -> Void in
+            make.bottom.equalTo(self.view).offset(-75)
+        }
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    fileprivate func setupSideMenu() {
+        SideMenuManager.menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as? UISideMenuNavigationController
+        
+        // Enable gestures. The left and/or right menus must be set up above for these to work.
+        // Note that these continue to work on the Navigation Controller independent of the View Controller it displays!
+        SideMenuManager.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
+        SideMenuManager.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
+
+    }
+    
+    func createDatabaseRefs(callback: () -> Void) {
+        self.usersRef = FIRDatabase.database().reference().child("users")
+        self.currentUser = FIRAuth.auth()?.currentUser
+        
+        if let userId = currentUser?.uid {
+            self.voiceMemosRef = FIRDatabase.database().reference().child("voice_memos/\(userId)")
+            callback()
+        } else {
+            print("unable to set voiceMemosRef")
+        }
+    }
+    
+    // *************************************
+    // MARK: - Table view data source
+    // *************************************
+    
+    func getQuery() -> FIRDatabaseQuery {
+        return (voiceMemosRef)
+    }
+    
+    func setDatasource(){
+        self.tableView.reloadData();
+        
+        print("SETTING UP DATASOURCE")
         dataSource = FUITableViewDataSource.init(query: getQuery(), populateCell: {(tableView, indexPath, snapshot) in
             let value = snapshot.value as? [String: Any]
             let key = snapshot.key
@@ -129,78 +178,22 @@ class MainViewController: UIViewController {
             return cell
             
         })
-        
         tableView.dataSource = dataSource
         tableView.delegate = self
-        
         dataSource?.bind(to: tableView)
-
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    fileprivate func setupSideMenu() {
-        SideMenuManager.menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as? UISideMenuNavigationController
-        
-        // Enable gestures. The left and/or right menus must be set up above for these to work.
-        // Note that these continue to work on the Navigation Controller independent of the View Controller it displays!
-        SideMenuManager.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
-        SideMenuManager.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
-
-    }
-    
-    func createDatabaseRefs() {
-        self.usersRef = FIRDatabase.database().reference().child("users")
-        self.currentUser = FIRAuth.auth()?.currentUser
-        
-        if let userId = currentUser?.uid {
-            self.voiceMemosRef = FIRDatabase.database().reference().child("voice_memos/\(userId)")
-        } else {
-            print("unable to set voiceMemosRef")
-        }
-    }
-    
-    func setupUI(){
-        self.tableView.backgroundColor = UIColor.black
-    }
-    
-    // *************************************
-    // MARK: - Table view data source
-    // *************************************
-    
-    func getQuery() -> FIRDatabaseQuery {
-        return (voiceMemosRef)
+        tableView.register(FriendCell.self, forCellReuseIdentifier: "Friend Cell")
     }
     
     func playAudio(url: URL) {
         let playerItem = AVPlayerItem(url: url)
         
-        self.player = AVPlayer(playerItem:playerItem)
+        self.player = AVPlayer(playerItem: playerItem)
         player!.volume = 1.0
         player!.play()
         
         startAnimatingVoiceMemoCell()
         
         print("**** playback started - in theory ****")
-        
-//        var times = [NSValue]()
-//        
-//        let startTime = kCMTimeZero
-//        let endTime = playerItem.duration
-//        
-//        times.append(NSValue(time: startTime))
-//        times.append(NSValue(time: endTime))
-//        let mainQueue = DispatchQueue.main
-//        
-//        self.timeObserverToken = player!.addBoundaryTimeObserver(forTimes: times, queue: mainQueue) { [weak self] time in
-//            print("IN TIME OBSERVER \(time)")
-//        }
-        
-//        print(self.timeObserverToken.debugDescription)
-//        print(self.timeObserverToken.customMirror)
         
         //when player stalls
         NotificationCenter.default.addObserver(self, selector: #selector(self.playerPlaybackStalled(note:)), name: NSNotification.Name.AVPlayerItemPlaybackStalled, object: self.player.currentItem)

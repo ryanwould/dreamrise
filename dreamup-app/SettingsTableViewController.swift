@@ -90,18 +90,6 @@ class SettingsTableViewController: UITableViewController {
     }
     
     func signOut() {
-        print("pressed sign out")
-        do {
-            try FIRAuth.auth()?.signOut()
-        } catch {
-            print("caught error when signing out")
-        }
-        print("Current user: \(FIRAuth.auth()?.currentUser?.uid)")
         
-        if FIRAuth.auth()?.currentUser == nil {
-            print(tabBarController)
-            tabBarController?.performSegue(withIdentifier: "signIn", sender: nil)
-        }
     }
-
 }

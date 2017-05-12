@@ -8,6 +8,12 @@
 
 import UIKit
 import AVFoundation
+import Foundation
+
+struct AlarmQueueItem {
+    var playerItem: AVPlayerItem
+    var duration: Int
+}
 
 class AlarmInProgress: UIViewController {
     
@@ -15,6 +21,9 @@ class AlarmInProgress: UIViewController {
     var alarmFireTime: Date?
     let defaults = UserDefaultsManager()
     var avQueuePlayer: AVQueuePlayer?
+    var timer = Timer()
+    var alarmItems: [AlarmQueueItem]?
+    var player: AVPlayer!
     
     
 
@@ -37,6 +46,7 @@ class AlarmInProgress: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         //stop alarm
+        self.avQueuePlayer = nil
     }
     
     override func viewDidLoad() {
@@ -49,10 +59,59 @@ class AlarmInProgress: UIViewController {
         if alarmFireTime != nil {
             let timeUntilAlarm = alarmFireTime?.timeIntervalSinceNow
             print("INTERVAL: \(timeUntilAlarm)")
+        
             
+            self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.soundTheAlarm), userInfo: nil, repeats: false)
+            
+//            timer = Timer(fireAt: Date().addingTimeInterval(5.0),
+//                          interval: 0.0,
+//                          target: self,
+//                          selector: #selector(soundTheAlarm),
+//                          userInfo: nil, repeats: false)
         }
     }
-
+    
+    func soundTheAlarm(){
+        print("playing alarm")
+        do {
+            try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSessionPortOverride.speaker)
+        } catch _ {
+            print("error setting AVAudioSessionPortOverride")
+        }
+        
+        // ***********************
+        // USING AVPLAYER
+        // ***********************
+        
+        if let items = alarmItems {
+            
+            print("ITEMS: \(items.count)")
+            
+            for item in items {
+                self.player = AVPlayer(playerItem: item.playerItem)
+                print("PLAYER: \(self.player)")
+                let nsDuration = item.duration as NSValue
+                player.addBoundaryTimeObserver(forTimes: [nsDuration], queue: DispatchQueue.main, using: { Void in
+                    print("TIMES UP!")
+                })
+                player.volume = 1.0
+                player.play()
+            }
+        }
+        
+        // ***********************
+        // USING AVQUEUEPLAYER
+        // ***********************
+        
+        //        if let player = avQueuePlayer {
+        //            player.volume = 1.0
+        //            player.play()
+        //            print("current item: \(player.currentItem)")
+        //        } else {
+        //            print("player is nil")
+        //        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -88,60 +147,55 @@ class AlarmInProgress: UIViewController {
         alarmFireDateLabel.text = f.string(from: time)
     }
     
-    func buildAlarmQueue(){
+    func buildAlarmQueue() {
         let queue = defaults.getAlarmQueue()
         print("\n\nALARM QUEUE:")
         
-        var queueItems = [AVPlayerItem]()
+        avQueuePlayer = AVQueuePlayer()
+        alarmItems = []
         
         if let queue = queue {
             print("queue - \(queue.count)")
-            for item in queue {
-                print("item in queue - \(item)")
-                let queueItem = defaults.getPlaySettingsForId(id: item) as? [String: Any]
-                let urlString = queueItem?["url"] as? String
+            itemloop: for item in queue {
                 
-                guard urlString != nil else {
-                    print("urlstring is nil")
-                    break
+                let queueItem = defaults.getPlaySettingsForId(id: item)
+                print("CURRENT ITEM: - \(queueItem.debugDescription)")
+                
+                let urlString = queueItem["url"] as? String
+                let durationString = queueItem["duration"] as? String
+                
+                if let duration = durationString {
+                    if let intDuration = Int(duration) {
+                        
+                        //check urlstring
+                        guard urlString != nil else {
+                            print("urlstring is nil\n"); continue itemloop
+                        }
+                        
+                        let url = URL(string: urlString!)
+                        guard url != nil else { print("url is nil"); break }
+                        
+                        //create AVPlayerItem
+                        let playerItem = AVPlayerItem(url: url!)
+                        let alarmQueueItem = AlarmQueueItem(playerItem: playerItem, duration: intDuration)
+                        
+                        alarmItems?.append(alarmQueueItem)
+                        //avQueuePlayer?.insert(playerItem, after: nil)
+                    }
                 }
-                
-                let url = URL(string: urlString!)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
-                
-                guard url != nil else {
-                    print("url is nil")
-                    break
-                }
-                
-                print("URL: \(url)")
-                
-                // Create asset to be played
-                let asset = AVAsset(url: url!)
-                
-                let assetKeys = [
-                    "playable",
-                    "hasProtectedContent"
-                ]
-                
-                // Create a new AVPlayerItem with the asset and an
-                // array of asset keys to be automatically loaded
-                let playerItem = AVPlayerItem(asset: asset, automaticallyLoadedAssetKeys: assetKeys)
-                
-                queueItems.append(playerItem)
             }
         }
-        self.avQueuePlayer = AVQueuePlayer.init(items: queueItems)
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

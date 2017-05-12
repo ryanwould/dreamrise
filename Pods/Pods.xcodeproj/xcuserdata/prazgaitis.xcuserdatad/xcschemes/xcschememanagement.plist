@@ -19,6 +19,26 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FBSDKShareKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FacebookCore.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FacebookLogin.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FacebookShare.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>GTMOAuth2.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -87,27 +107,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>04DB9BF9B097C7873CAD1532FAE95993</key>
+		<key>00282261C5B661813603E0F6F992BE95</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0EA2BF58EAA342724D39FB047DD22BFA</key>
+		<key>02C4FBCA6B1179262023677659877136</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>107A9565F9DF88517DFD3E28C05B2B96</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>17BBAFD9B9B95A5B4BF628CEE421E45E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>203ECF48B093B3157706BB12C0FD7C5D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,7 +132,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3C9DC3A08DA193F735CA8F1CF72E409D</key>
+		<key>332F91393FB1DE033D370B4CEDDD5FCF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3BD72BF083D5C56AE66F16DAB6B42DCE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -137,12 +152,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>593E9479C06FB200807D11AB29EB50BD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5B5AC3C06B783F8674FDB4C0F900B56A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>681BE6E3D02A43F9BA63777AC435C8FD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>98E8A7B5EA3792CF2F6F1286F5C6CA2A</key>
+		<key>7335E9C9689F3B8A16F063A884748533</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8755EA866889460AAF8BE0DD6528AB14</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A7FEAA14E89971698ACA148F7F7202F2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -152,17 +187,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BC5000D645EEAF961C85907CDC796FE1</key>
+		<key>DDBCFDE490CDFDABF6F16A26F346932D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BEF7E6E85DB5CDE5D7A18F4F2EB8494B</key>
+		<key>E7A8EB2DE48611E51C472377F457070B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>EB4297B650FE8CA892F0C1FB248A60F8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ECE0E9215E9844629BEB7C7E55809F66</key>
 		<dict>
 			<key>primary</key>
 			<true/>

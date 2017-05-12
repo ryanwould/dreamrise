@@ -22,6 +22,11 @@ target 'dreamup-app' do
      :branch => 'swift3'
 
    pod 'SnapKit', '~> 3.2.0'
+
+   pod 'FacebookCore'
+   pod 'FacebookLogin'
+   pod 'FacebookShare'
+
    target 'dreamup-appTests' do
      inherit! :search_paths
      # Pods for testing
