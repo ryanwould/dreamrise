@@ -39,7 +39,7 @@ class SideMenuViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.black
+        self.view.backgroundColor = Colors().queenBlue
     }
 
     override func didReceiveMemoryWarning() {

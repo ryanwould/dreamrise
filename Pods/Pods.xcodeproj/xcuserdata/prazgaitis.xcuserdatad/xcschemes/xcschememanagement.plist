@@ -99,6 +99,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TextFieldEffects.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>lottie-ios.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -107,16 +112,6 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>00282261C5B661813603E0F6F992BE95</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>02C4FBCA6B1179262023677659877136</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>107A9565F9DF88517DFD3E28C05B2B96</key>
 		<dict>
 			<key>primary</key>
@@ -137,17 +132,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3BD72BF083D5C56AE66F16DAB6B42DCE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>3EDFE4052B5DE7D509935AC0774CB135</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>44CAD6CE523055ED339E87154473A254</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>488D2243ACDE9D58803F21C3134A1BED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4C57A74ED641689E605DCFF8A3ACF30E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5644E52D6FA4BD0586088EEA97F9E34C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -167,12 +172,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>6D91FD6333244A370EC0DDBA417D741E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>715AB7E50A36B5462ED8C7D4F9036D4F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>7335E9C9689F3B8A16F063A884748533</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8755EA866889460AAF8BE0DD6528AB14</key>
+		<key>7DADC49F7BE04709D53372DCCD59B632</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A66ABAAE6A64AF50F113501D82889A04</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -192,17 +212,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E7A8EB2DE48611E51C472377F457070B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>EB4297B650FE8CA892F0C1FB248A60F8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>ECE0E9215E9844629BEB7C7E55809F66</key>
 		<dict>
 			<key>primary</key>
 			<true/>

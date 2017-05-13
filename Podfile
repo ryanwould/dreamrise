@@ -26,6 +26,7 @@ target 'dreamup-app' do
    pod 'FacebookCore'
    pod 'FacebookLogin'
    pod 'FacebookShare'
+   pod 'TextFieldEffects'
 
    target 'dreamup-appTests' do
      inherit! :search_paths
