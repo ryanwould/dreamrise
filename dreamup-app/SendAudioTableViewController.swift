@@ -39,7 +39,6 @@ class SendAudioTableViewController: UITableViewController {
 
     
     override func viewWillDisappear(_ animated: Bool) {
-        print("VIEW WILL DISAPPEAR")
         if recipientsBarIsShowing {
             hideRecipientsBar()
         }
@@ -188,7 +187,8 @@ class SendAudioTableViewController: UITableViewController {
         }
         
         guard self.recipientsBar != nil else { return }
-        self.recipientsBar?.recipients.text = self.selectedFriends.description
+        let barText = selectedFriends.count == 1 ? "Send to \(selectedFriends.first!.value)" : "Send to \(selectedFriends.count) friends"
+        self.recipientsBar?.recipientsLabel.text = barText
     }
     
     func showRecipientsBar(){
@@ -200,14 +200,11 @@ class SendAudioTableViewController: UITableViewController {
         
         guard superview != nil, recipientsBar != nil else { print("something is nil"); return }
         
-        let scrollview = self.recipientsBar?.scrollview
-        self.recipientsBar?.scrollview.contentSize = CGSize(width: 100.0, height: 100.0)
-        
         superview!.addSubview(recipientsBar!)
         recipientsBar!.backgroundColor = Colors().blue
         recipientsBar!.snp.makeConstraints({ (make) -> Void in
             make.width.equalToSuperview()
-            make.bottom.equalTo((superview!.snp.bottom)).offset(-49)
+            make.bottom.equalTo((superview!.snp.bottom))
         })
     }
     
@@ -240,13 +237,28 @@ class SendAudioTableViewController: UITableViewController {
                     
                     // TODO: Move to background
                     guard downloadURL != nil else { return }
-                    self.shareVoiceMemo(downloadURL: "\(downloadURL!)")
+                    self.shareVoiceMemo(downloadURL: "\(downloadURL!)", callback: { Void in
+                        
+                        self.recipientsBar?.recipientsLabel.text = "Sent!"
+                        self.recipientsBar?.recipientsLabel.textColor = Colors().darkGreen
+                        self.recipientsBar?.backgroundColor = Colors().lightGreen
+                        self.recipientsBar?.alpha = 1.0
+                        self.recipientsBar?.animationView?.stopAnimating()
+                        
+                        let when = DispatchTime.now() + 1
+                        
+                        DispatchQueue.main.asyncAfter(deadline: when) {
+                            
+                            self.hideRecipientsBar()
+                            self.unwindToMenu()
+                        }
+                    })
                 }
             }
         }
     }
     
-    func shareVoiceMemo(downloadURL: String){
+    func shareVoiceMemo(downloadURL: String, callback: () -> Void){
         
         for friend in self.selectedFriends {
             let key = voiceMemosRef.child("\(friend.key)").childByAutoId().key
@@ -260,12 +272,9 @@ class SendAudioTableViewController: UITableViewController {
                 "sender": "CURRENT_USER_ID",
                 ]
             self.voiceMemosRef.child("\(friend.key)/\(key)").setValue(voiceMemo)
-            print("writing to voice_memos/\(friend.key)/\(key)/")
         }
         
-        self.recipientsBar?.recipients.text = ""
-        self.hideRecipientsBar()
-        self.unwindToMenu()
+        callback()
     }
     
     

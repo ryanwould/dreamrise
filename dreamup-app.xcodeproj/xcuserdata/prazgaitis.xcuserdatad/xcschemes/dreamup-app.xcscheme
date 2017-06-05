@@ -113,6 +113,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "dreamup-app"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

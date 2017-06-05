@@ -49,48 +49,48 @@ class MainViewController: UIViewController {
     var recorderAnimating = false
     @IBOutlet weak var recordingButton: UIButton!
     
-    @IBAction func recordButton(_ sender: Any) {
-        if self.recorderAnimating {
-            print("stopping recording")
-            stopAnimatingRecorderView()
-        } else {
-            print("starting recording")
-            startAnimatingRecorderView()
-        }
-    }
-    
-    func startAnimatingRecorderView(){
-        //self.recorderView.frame = CGRect(x: self.recorderView.frame.minX, y: self.recorderView.frame.minY, width: self.recorderView.frame.width, height: self.recorderView.frame.height + 100)
-        print("recorder height: \(self.recorderView.frame.height)")
-        
-        UIView.animate(withDuration: 1.0, animations: { Void in
-            self.recorderView.frame.origin.y = self.recorderView.frame.origin.y + 100
-            self.recorderView.layoutIfNeeded()
-        })
-        
-        
-        self.recorderAnimating = true
-        let frame = self.recordingIndicator!.frame
-        self.recorderAnimationView = NVActivityIndicatorView(frame: frame, type: NVActivityIndicatorType.ballClipRotatePulse)
-        self.recordingButton.setTitle("RECORDING", for: .normal)
-        
-        recorderView.addSubview(recorderAnimationView!)
-        recorderAnimationView?.startAnimating()
-    }
-    
-    func stopAnimatingRecorderView(){
-        //self.recorderView.frame = CGRect(x: self.recorderView.frame.minX, y: self.recorderView.frame.minY, width: self.recorderView.frame.width, height: self.recorderView.frame.height - 100)
-        print("recorder height: \(self.recorderView.frame.height)")
-        
-        UIView.animate(withDuration: 1.0, animations: { Void in
-            self.recorderView.frame.origin.y = self.recorderView.frame.origin.y - 100
-            self.recorderView.layoutIfNeeded()
-        })
-        
-        recorderAnimationView?.stopAnimating()
-        self.recordingButton.setTitle("TAP TO RECORD", for: .normal)
-        self.recorderAnimating = false
-    }
+//    @IBAction func recordButton(_ sender: Any) {
+//        if self.recorderAnimating {
+//            print("stopping recording")
+//            stopAnimatingRecorderView()
+//        } else {
+//            print("starting recording")
+//            startAnimatingRecorderView()
+//        }
+//    }
+//    
+//    func startAnimatingRecorderView(){
+//        //self.recorderView.frame = CGRect(x: self.recorderView.frame.minX, y: self.recorderView.frame.minY, width: self.recorderView.frame.width, height: self.recorderView.frame.height + 100)
+//        print("recorder height: \(self.recorderView.frame.height)")
+//        
+//        UIView.animate(withDuration: 1.0, animations: { Void in
+//            self.recorderView.frame.origin.y = self.recorderView.frame.origin.y + 100
+//            self.recorderView.layoutIfNeeded()
+//        })
+//        
+//        
+//        self.recorderAnimating = true
+//        let frame = self.recordingIndicator!.frame
+//        self.recorderAnimationView = NVActivityIndicatorView(frame: frame, type: NVActivityIndicatorType.ballClipRotatePulse)
+//        self.recordingButton.setTitle("RECORDING", for: .normal)
+//        
+//        recorderView.addSubview(recorderAnimationView!)
+//        recorderAnimationView?.startAnimating()
+//    }
+//    
+//    func stopAnimatingRecorderView(){
+//        //self.recorderView.frame = CGRect(x: self.recorderView.frame.minX, y: self.recorderView.frame.minY, width: self.recorderView.frame.width, height: self.recorderView.frame.height - 100)
+//        print("recorder height: \(self.recorderView.frame.height)")
+//        
+//        UIView.animate(withDuration: 1.0, animations: { Void in
+//            self.recorderView.frame.origin.y = self.recorderView.frame.origin.y - 100
+//            self.recorderView.layoutIfNeeded()
+//        })
+//        
+//        recorderAnimationView?.stopAnimating()
+//        self.recordingButton.setTitle("TAP TO RECORD", for: .normal)
+//        self.recorderAnimating = false
+//    }
 
     // *************************************
     // Lifecycle methods
@@ -160,7 +160,7 @@ class MainViewController: UIViewController {
             let value = snapshot.value as? [String: Any]
             let key = snapshot.key
             let cell = tableView.dequeueReusableCell(withIdentifier: "voice_memo_cell") as! VoiceMemoCell
-            cell.backgroundColor = UIColor.clear
+            cell.backgroundColor = Colors().spaceCadet
             
             let senderId = value?["sender"] as? String
             

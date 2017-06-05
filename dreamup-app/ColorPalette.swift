@@ -21,5 +21,10 @@ class Colors {
     let queenBlue = UIColor(red: 69/255, green: 123/255, blue: 157/255, alpha: 1.0)
     
     let spaceCadet = UIColor(red: 29/255, green: 52/255, blue: 87/255, alpha: 1.0)
+    
+    let tealGreen = UIColor(red: 43/255, green: 173/255, blue: 151/255, alpha: 1.0)
+    
+    let darkGreen = UIColor(red: 12/255, green: 89/255, blue: 22/255, alpha: 1.0)
+    let lightGreen = UIColor(red: 67/255, green: 219/255, blue: 120/255, alpha: 1.0)
 }
  

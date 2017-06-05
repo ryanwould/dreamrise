@@ -15,57 +15,50 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oG9-lH-tel">
-                    <rect key="frame" x="0.0" y="0.0" width="324" height="100"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send to 3 friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtE-jK-yeY">
+                    <rect key="frame" x="16" y="20" width="176" height="52"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="23"/>
+                    <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iqz-J4-Lpa">
+                    <rect key="frame" x="316" y="20" width="43" height="52"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiL-He-46K">
-                            <rect key="frame" x="0.0" y="31" width="859" height="38"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="859" id="Jgj-5y-KGe"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6e0-D5-Nyo">
+                            <rect key="frame" x="0.0" y="0.0" width="43" height="52"/>
+                            <state key="normal" image="forward-1">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="sendButton:" destination="k8b-wQ-84s" eventType="touchUpInside" id="HKK-4C-A3l"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="ZiL-He-46K" firstAttribute="top" secondItem="oG9-lH-tel" secondAttribute="top" constant="31" id="9Xn-4i-Ksv"/>
-                        <constraint firstAttribute="bottom" secondItem="ZiL-He-46K" secondAttribute="bottom" constant="31" id="Zfd-fX-xnO"/>
-                        <constraint firstItem="ZiL-He-46K" firstAttribute="centerY" secondItem="oG9-lH-tel" secondAttribute="centerY" id="pwZ-e5-gi6"/>
-                        <constraint firstItem="ZiL-He-46K" firstAttribute="leading" secondItem="oG9-lH-tel" secondAttribute="leading" id="xgY-MW-Wdt"/>
-                        <constraint firstAttribute="trailing" secondItem="ZiL-He-46K" secondAttribute="trailing" constant="-554" id="ycC-nt-Ru2"/>
+                        <constraint firstItem="6e0-D5-Nyo" firstAttribute="top" secondItem="Iqz-J4-Lpa" secondAttribute="top" id="22A-wj-7Hs"/>
+                        <constraint firstAttribute="trailing" secondItem="6e0-D5-Nyo" secondAttribute="trailing" id="7cj-hh-FoL"/>
+                        <constraint firstAttribute="bottom" secondItem="6e0-D5-Nyo" secondAttribute="bottom" id="8lL-oF-Xjy"/>
+                        <constraint firstItem="6e0-D5-Nyo" firstAttribute="leading" secondItem="Iqz-J4-Lpa" secondAttribute="leading" id="ymZ-Ph-nhH"/>
                     </constraints>
-                </scrollView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6e0-D5-Nyo">
-                    <rect key="frame" x="332" y="20" width="43" height="52"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="43" id="wKT-Cq-O6H"/>
-                    </constraints>
-                    <state key="normal" image="forward-1">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="sendButton:" destination="k8b-wQ-84s" eventType="touchUpInside" id="HKK-4C-A3l"/>
-                    </connections>
-                </button>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="oG9-lH-tel" firstAttribute="top" secondItem="k8b-wQ-84s" secondAttribute="top" id="Cxe-za-E2S"/>
-                <constraint firstItem="6e0-D5-Nyo" firstAttribute="top" secondItem="k8b-wQ-84s" secondAttribute="top" constant="20" id="a44-M7-l3k"/>
-                <constraint firstItem="6e0-D5-Nyo" firstAttribute="leading" secondItem="oG9-lH-tel" secondAttribute="trailing" constant="8" symbolic="YES" id="f6m-JM-1ul"/>
-                <constraint firstAttribute="bottom" secondItem="oG9-lH-tel" secondAttribute="bottom" id="jK7-JJ-dPF"/>
-                <constraint firstItem="oG9-lH-tel" firstAttribute="leading" secondItem="k8b-wQ-84s" secondAttribute="leading" id="qwp-O0-rbp"/>
-                <constraint firstAttribute="trailing" secondItem="6e0-D5-Nyo" secondAttribute="trailing" id="sJL-rg-Wxg"/>
-                <constraint firstAttribute="bottom" secondItem="6e0-D5-Nyo" secondAttribute="bottom" constant="28" id="usp-zq-DPB"/>
+                <constraint firstItem="wtE-jK-yeY" firstAttribute="top" secondItem="k8b-wQ-84s" secondAttribute="top" constant="20" id="EbP-J4-NWk"/>
+                <constraint firstItem="wtE-jK-yeY" firstAttribute="top" secondItem="Iqz-J4-Lpa" secondAttribute="top" id="LYh-m1-LMv"/>
+                <constraint firstItem="wtE-jK-yeY" firstAttribute="leading" secondItem="k8b-wQ-84s" secondAttribute="leading" constant="16" id="XSw-ki-l5D"/>
+                <constraint firstAttribute="bottom" secondItem="wtE-jK-yeY" secondAttribute="bottom" constant="28" id="ZDC-Sd-goW"/>
+                <constraint firstItem="wtE-jK-yeY" firstAttribute="bottom" secondItem="Iqz-J4-Lpa" secondAttribute="bottom" id="bgx-yE-dM4"/>
+                <constraint firstItem="Iqz-J4-Lpa" firstAttribute="leading" secondItem="k8b-wQ-84s" secondAttribute="leading" constant="316" id="ffM-Gd-DAT"/>
+                <constraint firstAttribute="trailing" secondItem="Iqz-J4-Lpa" secondAttribute="trailing" constant="16" id="uqK-IE-e6e"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="recipients" destination="ZiL-He-46K" id="2zP-XY-Qz2"/>
-                <outlet property="scrollview" destination="oG9-lH-tel" id="yAU-U0-BXk"/>
+                <outlet property="animationPlaceholder" destination="Iqz-J4-Lpa" id="Jyu-jc-moy"/>
+                <outlet property="recipientsLabel" destination="wtE-jK-yeY" id="iCO-fM-G0T"/>
                 <outlet property="sendButton" destination="6e0-D5-Nyo" id="WWP-ry-lTt"/>
             </connections>
             <point key="canvasLocation" x="111.5" y="48"/>

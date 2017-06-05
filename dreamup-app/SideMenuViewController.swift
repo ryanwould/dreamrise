@@ -66,13 +66,15 @@ class SideMenuViewController: UITableViewController {
         case 5:
             print("MENU - INVITE FRIENDS")
         case 6:
-            print("MENU - SETTINGS")
-        case 7:
             print("MENU - SIGN OUT")
             signOut()
         default:
             print("MENU - UNDEFINED")
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = Colors().queenBlue
     }
     
     func signOut() {

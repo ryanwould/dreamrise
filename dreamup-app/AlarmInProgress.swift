@@ -61,7 +61,7 @@ class AlarmInProgress: UIViewController {
             print("INTERVAL: \(timeUntilAlarm)")
         
             
-            self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.soundTheAlarm), userInfo: nil, repeats: false)
+            self.timer = Timer.scheduledTimer(timeInterval: timeUntilAlarm!, target: self, selector: #selector(self.soundTheAlarm), userInfo: nil, repeats: false)
             
 //            timer = Timer(fireAt: Date().addingTimeInterval(5.0),
 //                          interval: 0.0,

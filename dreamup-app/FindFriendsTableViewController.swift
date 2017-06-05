@@ -27,6 +27,8 @@ class FindFriendsTableViewController: UITableViewController, UISearchResultsUpda
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = Colors().spaceCadet
+        self.navigationController?.navigationBar.tintColor = UIColor.white
         let currentUser = FIRAuth.auth()?.currentUser
         guard currentUser != nil else { print("current user nil"); return }
         self.currentUserId = currentUser!.uid
@@ -107,6 +109,8 @@ class FindFriendsTableViewController: UITableViewController, UISearchResultsUpda
         
         cell.textLabel?.text = user?["name"] as? String
         cell.detailTextLabel?.text = user?["username"] as? String
+        
+        cell.backgroundColor = Colors().spaceCadet
 
         return cell
     }

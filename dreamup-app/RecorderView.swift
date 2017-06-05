@@ -24,13 +24,15 @@ class RecorderView: UIView {
     var timer = Timer()
     var seconds = 0
 
-    var recordingIndicator: NVActivityIndicatorView?
-    var playingAudioIndicator: NVActivityIndicatorView?
+    var animationView: NVActivityIndicatorView?
+    @IBOutlet weak var animationPlaceholder: UIView!
     
-    @IBOutlet weak var recordingPlaceholder: UIView!
-    @IBOutlet weak var playingPlaceholder: UIView!
+    // Buttons
     
+    @IBOutlet weak var sendButton: UIButton!
+    @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var tapToRecordButton: UIButton!
+    
     @IBOutlet weak var recordingTimeLabel: UILabel!
     
     // MARK: - Actions
@@ -71,12 +73,13 @@ class RecorderView: UIView {
         self.tapToRecordButton.setTitle("PLAY AUDIO", for: .normal)
         self.tapToRecordButton.isEnabled = true
         
-        self.playingAudioIndicator?.stopAnimating()
+        self.animationView?.stopAnimating()
     }
     
     @IBAction func recordButtonTapped(_ sender: Any) {
         switch self.status {
         case .notStarted:
+            
             // start recording
             self.status = recordingStatus.inProgress
             
@@ -85,12 +88,17 @@ class RecorderView: UIView {
             
             // set button text
             self.tapToRecordButton.setTitle("RECORDING", for: .normal)
+            self.tapToRecordButton.setImage(UIImage(named: "stop-filled"), for: .normal)
             
             // make recording indicator
-            let animation = NVActivityIndicatorView(frame: recordingPlaceholder.frame, type: NVActivityIndicatorType.ballClipRotatePulse)
+            let animation = NVActivityIndicatorView(frame: animationPlaceholder.frame, type: NVActivityIndicatorType.ballClipRotatePulse)
             animation.startAnimating()
             self.addSubview(animation)
-            self.recordingIndicator = animation
+            self.animationView = animation
+            
+            // hide cancel and send buttons
+            self.cancelButton.isHidden = true
+            self.sendButton.isHidden = true
             
             // start recording in parent view
             parent?.startRecording()
@@ -103,30 +111,37 @@ class RecorderView: UIView {
             self.timer.invalidate()
             
             //stop animation
-            if let inidcator = self.recordingIndicator {
+            if let inidcator = self.animationView {
                 inidcator.stopAnimating()
             }
             
-            // set button text
-            self.tapToRecordButton.setTitle("PLAY AUDIO", for: .normal)
-            
             // stop recording successfully in parent view
             parent?.finishRecording(success: true)
+            
+            
+            // set button text
+            self.tapToRecordButton.setTitle("PLAY AUDIO", for: .normal)
+            self.tapToRecordButton.setImage(UIImage(named: "play-filled"), for: .normal)
+            
+            // show send and cancel buttons
+            self.cancelButton.isHidden = false
+            self.sendButton.isHidden = false
+            
             
         case .finished:
             // play recorded audio
             parent?.playAudio(self)
             
             // make playback indicator
-            let animation = NVActivityIndicatorView(frame: self.playingPlaceholder.frame, type: NVActivityIndicatorType.audioEqualizer)
+            let animation = NVActivityIndicatorView(frame: self.animationPlaceholder.frame, type: NVActivityIndicatorType.audioEqualizer)
             animation.startAnimating()
             self.addSubview(animation)
-            self.playingAudioIndicator = animation
+            self.animationView = animation
             
             
             self.tapToRecordButton.setTitle("PLAYING", for: .normal)
+            self.tapToRecordButton.setImage(nil, for: .normal)
             self.tapToRecordButton.isEnabled = false
-            
             
         }
         
