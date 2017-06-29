@@ -60,12 +60,6 @@ class SideMenuViewController: UITableViewController {
         case 2:
             print("MENU - ALARM ORDER")
         case 3:
-            print("MENU - VOICE MEMOS")
-        case 4:
-            print("MENU - SEARCH PEOPLE")
-        case 5:
-            print("MENU - INVITE FRIENDS")
-        case 6:
             print("MENU - SIGN OUT")
             signOut()
         default:
