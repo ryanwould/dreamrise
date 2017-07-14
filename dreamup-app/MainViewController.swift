@@ -9,7 +9,6 @@
 import UIKit
 import Firebase
 import FirebaseDatabaseUI
-import SideMenu
 import AVFoundation
 import NVActivityIndicatorView
 import SnapKit
@@ -43,7 +42,6 @@ class MainViewController: UIViewController {
     // Recorder View
     // *************************************
     
-    @IBOutlet weak var recorderView: UIView!
     @IBOutlet weak var recordingIndicator: UIView!
     var recorderAnimationView: NVActivityIndicatorView?
     var recorderAnimating = false
@@ -97,7 +95,6 @@ class MainViewController: UIViewController {
     // *************************************
 
     override func viewDidAppear(_ animated: Bool) {
-        setupSideMenu()
         // Do any additional setup after loading the view.
         
         createDatabaseRefs(callback: { () -> Void in
@@ -120,16 +117,6 @@ class MainViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    fileprivate func setupSideMenu() {
-        SideMenuManager.menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as? UISideMenuNavigationController
-        
-        // Enable gestures. The left and/or right menus must be set up above for these to work.
-        // Note that these continue to work on the Navigation Controller independent of the View Controller it displays!
-        SideMenuManager.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
-        SideMenuManager.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
-
     }
     
     func createDatabaseRefs(callback: () -> Void) {

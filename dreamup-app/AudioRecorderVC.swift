@@ -12,7 +12,6 @@ import FirebaseStorage
 import Firebase
 import FirebaseDatabase
 import SnapKit
-import SideMenu
 import NVActivityIndicatorView
 
 

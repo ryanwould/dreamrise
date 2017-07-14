@@ -13,20 +13,18 @@ target 'dreamup-app' do
    pod 'Firebase/Database'
    pod 'Firebase/Storage'
    pod 'FirebaseUI'
-   pod 'lottie-ios'
    pod 'SwiftDate'
-   pod 'SideMenu'
    pod 'NVActivityIndicatorView'
-   pod 'Spring',
-     :git => 'https://github.com/MengTo/Spring.git',
-     :branch => 'swift3'
 
    pod 'SnapKit', '~> 3.2.0'
+
 
    pod 'FacebookCore'
    pod 'FacebookLogin'
    pod 'FacebookShare'
    pod 'TextFieldEffects'
+   pod 'SideMenu'
+   pod 'MarqueeLabel/Swift'
 
    target 'dreamup-appTests' do
      inherit! :search_paths

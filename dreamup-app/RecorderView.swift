@@ -53,7 +53,7 @@ class RecorderView: UIView {
     }
     
     func labelFromSeconds(seconds: Int) -> String {
-        var (h,m,s) = secondsToHoursMinutesSeconds(seconds: seconds)
+        let (h,m,s) = secondsToHoursMinutesSeconds(seconds: seconds)
         print("\(String(format: "%02d", h)):\(String(format: "%02d", m)):\(String(format: "%02d", s))")
         
         return "\(String(format: "%02d", h)):\(String(format: "%02d", m)):\(String(format: "%02d", s))"

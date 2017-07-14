@@ -14,7 +14,7 @@ class PlayQueueTVC: UITableViewController {
     @IBOutlet var tableview: UITableView!
     let defaults = UserDefaultsManager()
     
-    @IBAction func unwindToAlarmQueue(segue: UIStoryboardSegue) {}
+    @IBAction func unwindToPlayQueue(segue: UIStoryboardSegue) {}
         
     override func viewDidLoad() {
         super.viewDidLoad()

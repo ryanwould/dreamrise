@@ -33,6 +33,7 @@ class AlarmController: UIViewController {
         
         // Do any additional setup after loading the view, typically from a nib.
         timePicker.datePickerMode = .time
+        timePicker.minuteInterval = 5
         startAlarmButton.layer.cornerRadius = 0
         startAlarmButton.layer.borderWidth = 3
         startAlarmButton.layer.borderColor = UIColor.white.cgColor
@@ -51,6 +52,7 @@ class AlarmController: UIViewController {
         if segue.identifier == "settingAlarm" {
             let destinationVC = segue.destination as! AlarmInProgress
             destinationVC.alarmFireTime = timePicker.date
+            print("SETTING ALARM FIRE TIME TO: \(timePicker.date.description)")
         }
     }
 
@@ -61,6 +63,26 @@ class AlarmController: UIViewController {
     
     // MARK: - Actions
    
+    @IBAction func startAlarm(_ sender: Any) {
+        // exit if nothing in queue
+        let defaults = UserDefaultsManager()
+        let alarmQueue = defaults.getAlarmQueue()
+        
+        print(alarmQueue)
+        
+        if (alarmQueue == nil || alarmQueue?.count == 0) {
+            let alert = UIAlertController(title: "You don't have any alarms set!",
+                                          message: "You can add a few in the Alarm Queue tab below",
+                                          preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default) { action in
+                // perhaps use action.title here
+                print("exiting")
+            })
+            self.present(alert, animated: true)
+        } else {
+            self.performSegue(withIdentifier: "settingAlarm", sender: nil)
+        }
+    }
     @IBAction func dismiss(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }

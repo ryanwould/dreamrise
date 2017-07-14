@@ -51,6 +51,16 @@ class PodcastTableViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func addToAlarmQueue(podcast: Podcast?) {
+        let defaults = UserDefaultsManager()
+        
+        guard let podcast = podcast else {
+            print("something wrong with podcast")
+            return
+        }
+        defaults.createPodcastAlarmItem(podcast: podcast)
+    }
+    
     //*************************************************************
     // MARK: - Load Podcast Data
     //*************************************************************
@@ -98,13 +108,13 @@ class PodcastTableViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        let cell = sender as! PodcastTableViewCell
+//        let cell = sender as! PodcastTableViewCell
         
-        if segue.identifier == "toSettings" {
-            if let nextVC = segue.destination as? PodcastConfirmStep {
-                nextVC.podcast = cell.podcast
-            }
-        }
+//        if segue.identifier == "toSettings" {
+//            if let nextVC = segue.destination as? PodcastConfirmStep {
+//                nextVC.podcast = cell.podcast
+//            }
+//        }
     }
     
     //*************************************************************
@@ -212,7 +222,10 @@ extension PodcastTableViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        let podcast = podcasts[indexPath.row]
+        addToAlarmQueue(podcast: podcast)
         tableView.deselectRow(at: indexPath, animated: true)
+        self.performSegue(withIdentifier: "unwindToPlayQueue", sender: self)
     }
 }
 

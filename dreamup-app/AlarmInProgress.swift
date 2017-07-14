@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 import Foundation
+import MediaPlayer
 
 struct AlarmQueueItem {
     var playerItem: AVPlayerItem
@@ -22,15 +23,58 @@ class AlarmInProgress: UIViewController {
     let defaults = UserDefaultsManager()
     var avQueuePlayer: AVQueuePlayer?
     var timer = Timer()
-    var alarmItems: [AlarmQueueItem]?
+    var alarmItems: [AVPlayerItem]?
+    var podcastTitles: [String]?
+    var currentItemIndex = 0
     var player: AVPlayer!
     
+    // MARK: - OUTLETS
+    @IBOutlet weak var btnPlay: UIButton!
+    @IBOutlet weak var btnPrevious: UIButton!
+    @IBOutlet weak var btnNext: UIButton!
+    @IBOutlet weak var podcastTitleLabel: UILabel!
     
-
+    // MARK: - ACTIONS
+    
     @IBAction func didCancelAlarm(_ sender: Any) {
         // undo setup
         undoViewSetup()
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func actPlayPause(_ sender: Any) {
+        guard avQueuePlayer != nil else { return }
+        
+        if (avQueuePlayer!.isPlaying) {
+            avQueuePlayer!.pause()
+            btnPlay.setTitle("play", for: .normal)
+        } else {
+            btnPlay.setTitle("pause", for: .normal)
+            avQueuePlayer!.play()
+        }
+    }
+    
+    @IBAction func actNext(_ sender: Any) {
+        
+        guard avQueuePlayer != nil else { return }
+        let itemsLeft = avQueuePlayer!.items().count
+        if (itemsLeft > 0) {
+            
+            print("ITEMS LEFT IN QUEUE: \(itemsLeft)")
+            avQueuePlayer!.advanceToNextItem()
+            print("ITEMS LEFT IN QUEUE: \(itemsLeft)")
+            
+            //increment current item index
+            currentItemIndex += 1
+            podcastTitleLabel.text = podcastTitles?[currentItemIndex]
+        } else {
+            print("no items!")
+            currentItemIndex = 0
+            
+            //close the alarm window
+            undoViewSetup()
+            dismiss(animated: true, completion: nil)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -58,58 +102,66 @@ class AlarmInProgress: UIViewController {
         // set timer to start alarm at alarmFireTime
         if alarmFireTime != nil {
             let timeUntilAlarm = alarmFireTime?.timeIntervalSinceNow
-            print("INTERVAL: \(timeUntilAlarm)")
-        
-            
             self.timer = Timer.scheduledTimer(timeInterval: timeUntilAlarm!, target: self, selector: #selector(self.soundTheAlarm), userInfo: nil, repeats: false)
-            
-//            timer = Timer(fireAt: Date().addingTimeInterval(5.0),
-//                          interval: 0.0,
-//                          target: self,
-//                          selector: #selector(soundTheAlarm),
-//                          userInfo: nil, repeats: false)
         }
+    }
+    
+    func styleButtons() {
+        let buttons = [btnPlay, btnNext]
+        
+        for btn in buttons {
+            btn!.layer.cornerRadius = 0
+            btn!.layer.borderWidth = 3
+            btn!.layer.borderColor = UIColor.white.cgColor
+        }
+    }
+    
+    func showAudioButtons(){
+        styleButtons()
+        btnPlay.isHidden = false
+        btnNext.isHidden = false
+        
+        // labels
+        podcastTitleLabel.isHidden = false
+        podcastTitleLabel.text = podcastTitles?[0]
+    }
+    
+    func hideAudioButtons(){
+        btnPlay.isHidden = true
+        btnNext.isHidden = true
+        
+        //labels
+        podcastTitleLabel.isHidden = true
     }
     
     func soundTheAlarm(){
         print("playing alarm")
-        do {
-            try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSessionPortOverride.speaker)
-        } catch _ {
-            print("error setting AVAudioSessionPortOverride")
-        }
+//        do {
+//            try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSessionPortOverride.speaker)
+//        } catch _ {
+//            print("error setting AVAudioSessionPortOverride")
+//        }
         
-        // ***********************
-        // USING AVPLAYER
-        // ***********************
-        
-        if let items = alarmItems {
-            
-            print("ITEMS: \(items.count)")
-            
-            for item in items {
-                self.player = AVPlayer(playerItem: item.playerItem)
-                print("PLAYER: \(self.player)")
-                let nsDuration = item.duration as NSValue
-                player.addBoundaryTimeObserver(forTimes: [nsDuration], queue: DispatchQueue.main, using: { Void in
-                    print("TIMES UP!")
-                })
-                player.volume = 1.0
-                player.play()
-            }
-        }
+        //show audio control buttons
+        showAudioButtons()
         
         // ***********************
         // USING AVQUEUEPLAYER
         // ***********************
         
-        //        if let player = avQueuePlayer {
-        //            player.volume = 1.0
-        //            player.play()
-        //            print("current item: \(player.currentItem)")
-        //        } else {
-        //            print("player is nil")
-        //        }
+        if let player = avQueuePlayer {
+            player.volume = 1.0
+            player.play()
+            
+            print("current item: \(player.currentItem)")
+            let currentItem = player.currentItem
+            
+            if let currentItem = currentItem {
+                podcastTitleLabel.text = podcastTitles?[0]
+            }
+        } else {
+            print("player is nil")
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -119,6 +171,8 @@ class AlarmInProgress: UIViewController {
     
     func setupView(){
         self.view.backgroundColor = Colors().darkBlue
+        
+        hideAudioButtons()
         
         // Hide the status bar
         UIApplication.shared.isStatusBarHidden = true
@@ -151,15 +205,15 @@ class AlarmInProgress: UIViewController {
         let queue = defaults.getAlarmQueue()
         print("\n\nALARM QUEUE:")
         
-        avQueuePlayer = AVQueuePlayer()
         alarmItems = []
+        podcastTitles = []
         
         if let queue = queue {
             print("queue - \(queue.count)")
             itemloop: for item in queue {
                 
                 let queueItem = defaults.getPlaySettingsForId(id: item)
-                print("CURRENT ITEM: - \(queueItem.debugDescription)")
+                print("CURRENT ITEM: - \( queueItem["displayString"])")
                 
                 let urlString = queueItem["url"] as? String
                 let durationString = queueItem["duration"] as? String
@@ -177,16 +231,20 @@ class AlarmInProgress: UIViewController {
                         
                         //create AVPlayerItem
                         let playerItem = AVPlayerItem(url: url!)
-                        let alarmQueueItem = AlarmQueueItem(playerItem: playerItem, duration: intDuration)
                         
-                        alarmItems?.append(alarmQueueItem)
+                        alarmItems?.append(playerItem)
+                        podcastTitles?.append(queueItem["displayString"] as? String ?? "Podcast")
                         //avQueuePlayer?.insert(playerItem, after: nil)
                     }
                 }
             }
         }
+        // init AVQueuePlayer
+        if let alarmItems = alarmItems {
+            avQueuePlayer = AVQueuePlayer.init(items: alarmItems)
+            print("initialized queue player with \(alarmItems.count)")
+        }
     }
-    
     
     /*
      // MARK: - Navigation
@@ -197,5 +255,17 @@ class AlarmInProgress: UIViewController {
      // Pass the selected object to the new view controller.
      }
      */
+    
+}
+
+extension AVPlayer {
+    
+    var isPlaying: Bool {
+        if (self.rate != 0 && self.error == nil) {
+            return true
+        } else {
+            return false
+        }
+    }
     
 }

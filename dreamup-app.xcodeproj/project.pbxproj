@@ -13,7 +13,6 @@
 		110874021E836A310067C225 /* dreamup_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110874011E836A310067C225 /* dreamup_appTests.swift */; };
 		1108740D1E836A310067C225 /* dreamup_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1108740C1E836A310067C225 /* dreamup_appUITests.swift */; };
 		11224D6B1E90740D00F6894B /* RecipientBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11224D6A1E90740D00F6894B /* RecipientBarView.swift */; };
-		11224D6D1E90743000F6894B /* RecipientBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11224D6C1E90743000F6894B /* RecipientBarView.xib */; };
 		11224D6F1E91851100F6894B /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11224D6E1E91851100F6894B /* ColorPalette.swift */; };
 		112D7EAD1EC4B6BF00EEE3ED /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D7EAC1EC4B6BF00EEE3ED /* ResetPasswordViewController.swift */; };
 		112D7EAF1EC4B6F300EEE3ED /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D7EAE1EC4B6F300EEE3ED /* SignUpViewController.swift */; };
@@ -48,11 +47,9 @@
 		118F5FA51E88538C00E36F90 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118F5FA41E88538C00E36F90 /* AudioToolbox.framework */; };
 		118F5FA81E8856BE00E36F90 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118F5FA71E8856BE00E36F90 /* ExternalAccessory.framework */; };
 		1193F4FF1EC12F90002D6C7E /* RecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193F4FE1EC12F90002D6C7E /* RecorderView.swift */; };
-		1193F5011EC24959002D6C7E /* RecorderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1193F5001EC24959002D6C7E /* RecorderView.xib */; };
 		119B5B171E8987710020A567 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B5B161E8987710020A567 /* FriendCell.swift */; };
 		119B5B191E8987C00020A567 /* SelectedIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B5B181E8987C00020A567 /* SelectedIndicator.swift */; };
 		11A7E6ED1EBE977E006E87DA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A7E6EC1EBE977E006E87DA /* MainViewController.swift */; };
-		11AE14251EC3918C00DDD7AE /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE14241EC3918C00DDD7AE /* SideMenuViewController.swift */; };
 		11B2EBDE1EB16BCB006A81B8 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2EBDD1EB16BCB006A81B8 /* SettingsTableViewController.swift */; };
 		11B640ED1E89555600971DF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11B640EC1E89555600971DF0 /* Main.storyboard */; };
 		11B640EF1E897F9C00971DF0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640EE1E897F9C00971DF0 /* User.swift */; };
@@ -93,7 +90,6 @@
 		1108740C1E836A310067C225 /* dreamup_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dreamup_appUITests.swift; sourceTree = "<group>"; };
 		1108740E1E836A310067C225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11224D6A1E90740D00F6894B /* RecipientBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipientBarView.swift; sourceTree = "<group>"; };
-		11224D6C1E90743000F6894B /* RecipientBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecipientBarView.xib; sourceTree = "<group>"; };
 		11224D6E1E91851100F6894B /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPalette.swift; path = "dreamup-app/ColorPalette.swift"; sourceTree = "<group>"; };
 		112D7EAC1EC4B6BF00EEE3ED /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		112D7EAE1EC4B6F300EEE3ED /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -129,11 +125,9 @@
 		118F5FA61E88538C00E36F90 /* dreamup-app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "dreamup-app.entitlements"; path = "dreamup-app/dreamup-app.entitlements"; sourceTree = "<group>"; };
 		118F5FA71E8856BE00E36F90 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		1193F4FE1EC12F90002D6C7E /* RecorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecorderView.swift; sourceTree = "<group>"; };
-		1193F5001EC24959002D6C7E /* RecorderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RecorderView.xib; path = ../RecorderView.xib; sourceTree = "<group>"; };
 		119B5B161E8987710020A567 /* FriendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendCell.swift; path = "dreamup-app/FriendCell.swift"; sourceTree = "<group>"; };
 		119B5B181E8987C00020A567 /* SelectedIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedIndicator.swift; sourceTree = "<group>"; };
 		11A7E6EC1EBE977E006E87DA /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		11AE14241EC3918C00DDD7AE /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		11B2EBDD1EB16BCB006A81B8 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		11B640EC1E89555600971DF0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		11B640EE1E897F9C00971DF0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -276,8 +270,6 @@
 		112D7EB31EC4B7A400EEE3ED /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				11224D6C1E90743000F6894B /* RecipientBarView.xib */,
-				1193F5001EC24959002D6C7E /* RecorderView.xib */,
 				119B5B181E8987C00020A567 /* SelectedIndicator.swift */,
 				11224D6A1E90740D00F6894B /* RecipientBarView.swift */,
 				1193F4FE1EC12F90002D6C7E /* RecorderView.swift */,
@@ -352,7 +344,6 @@
 				112D7EB01EC4B73000EEE3ED /* Authentication */,
 				112D7EB21EC4B76900EEE3ED /* AlarmControllers */,
 				11B2EBDD1EB16BCB006A81B8 /* SettingsTableViewController.swift */,
-				11AE14241EC3918C00DDD7AE /* SideMenuViewController.swift */,
 				11601C261EAD374700D9FB43 /* HomeTabBarController.swift */,
 			);
 			name = ViewControllers;
@@ -524,8 +515,6 @@
 				11823AB51EABDEF90060DE68 /* NothingFoundCell.xib in Resources */,
 				118F5FA31E88511C00E36F90 /* GoogleService-Info.plist in Resources */,
 				11823AA81EABDE880060DE68 /* stations.json in Resources */,
-				1193F5011EC24959002D6C7E /* RecorderView.xib in Resources */,
-				11224D6D1E90743000F6894B /* RecipientBarView.xib in Resources */,
 				110873F41E836A310067C225 /* Assets.xcassets in Resources */,
 				11B640ED1E89555600971DF0 /* Main.storyboard in Resources */,
 			);
@@ -717,7 +706,6 @@
 				11823AB01EABDEC70060DE68 /* LoginViewController.swift in Sources */,
 				11823ACE1EABE21B0060DE68 /* RadioPickerViewController.swift in Sources */,
 				1193F4FF1EC12F90002D6C7E /* RecorderView.swift in Sources */,
-				11AE14251EC3918C00DDD7AE /* SideMenuViewController.swift in Sources */,
 				112D7EAD1EC4B6BF00EEE3ED /* ResetPasswordViewController.swift in Sources */,
 				11B640EF1E897F9C00971DF0 /* User.swift in Sources */,
 				11D064EC1EA3B5FD00F3F6E7 /* VoiceMemoCell.swift in Sources */,
