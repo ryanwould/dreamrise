@@ -30,6 +30,10 @@ platform :ios do
   desc "Submit a new Beta Build to Apple TestFlight"
   desc "This will also make sure the profile is up to date"
   lane :beta do
+
+  # Increment build number to current date
+    build_number = Time.new.strftime("%Y.%m.%d")
+    increment_build_number build_number: build_number
     # match(type: "appstore") # more information: https://codesigning.guide
     gym(scheme: "dreamup-app") # Build your app - more options available
     pilot
