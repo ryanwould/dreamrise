@@ -33,6 +33,7 @@ class AlarmInProgress: UIViewController {
     var podcastTitles: [String]?
     var currentItemIndex = 0
     var player: AVPlayer!
+    var queueCount: Int = 0
     
     // MARK: - OUTLETS
     @IBOutlet weak var btnPlay: UIButton!
@@ -61,8 +62,12 @@ class AlarmInProgress: UIViewController {
     
     @IBAction func actNext(_ sender: Any) {
         
+        // decrement Queue Count
+        self.queueCount -= 1
+        
         guard avQueuePlayer != nil else { return }
-        let itemsLeft = avQueuePlayer!.items().count
+        let itemsLeft = self.queueCount
+        
         if (itemsLeft > 0) {
             
             print("ITEMS LEFT IN QUEUE: \(itemsLeft)")
@@ -90,7 +95,6 @@ class AlarmInProgress: UIViewController {
         guard alarmFireTime != nil else {
             print("alarm not set"); return
         }
-        print(alarmFireTime!)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -107,12 +111,11 @@ class AlarmInProgress: UIViewController {
         // alarm queue
         buildAlarmQueue()
         
+        
         if alarmFireTime != nil {
-            
             self.timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: {(timer) in
                 self.checkTime()
             })
-            
         }
     }
     
@@ -177,11 +180,6 @@ class AlarmInProgress: UIViewController {
     
     func soundTheAlarm(){
         print("playing alarm")
-//        do {
-//            try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSessionPortOverride.speaker)
-//        } catch _ {
-//            print("error setting AVAudioSessionPortOverride")
-//        }
         
         //show audio control buttons
         showAudioButtons()
@@ -212,6 +210,18 @@ class AlarmInProgress: UIViewController {
     
     func setupView(){
         self.view.backgroundColor = Colors().darkBlue
+        
+        
+        // Set gradient
+        let gradient: CAGradientLayer = CAGradientLayer()
+        
+        gradient.colors = [Colors().darkBlue.cgColor, UIColor.black.cgColor]
+        gradient.locations = [0.05 , 0.95]
+        gradient.startPoint = CGPoint(x: 0.5, y: 0.0)
+        gradient.endPoint = CGPoint(x: 0.5, y: 1.0)
+        gradient.frame = CGRect(x: 0.0, y: 0.0, width: self.view.frame.size.width, height: self.view.frame.size.height)
+        
+        self.view.layer.insertSublayer(gradient, at: 0)
         
         hideAudioButtons()
         
@@ -277,7 +287,6 @@ class AlarmInProgress: UIViewController {
                         
                         alarmItems?.append(playerItem)
                         podcastTitles?.append(queueItem["displayString"] as? String ?? "Podcast")
-                        //avQueuePlayer?.insert(playerItem, after: nil)
                     }
                 }
             }
@@ -286,19 +295,11 @@ class AlarmInProgress: UIViewController {
         if let alarmItems = alarmItems {
             avQueuePlayer = AVQueuePlayer.init(items: alarmItems)
             print("initialized queue player with \(alarmItems.count)")
+            
+            // set Queue Count
+            self.queueCount = alarmItems.count
         }
     }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }
 
 extension AVPlayer {

@@ -51,9 +51,14 @@ class AlarmController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "settingAlarm" {
             let destinationVC = segue.destination as! AlarmInProgress
-            destinationVC.alarmFireTime = timePicker.date
-            print("SETTING ALARM FIRE TIME TO: \(timePicker.date.description)")
+            destinationVC.alarmFireTime = roundTimeToMinute(time: timePicker.date)
         }
+    }
+    
+    func roundTimeToMinute(time: Date) -> Date {
+        let timeInterval = floor(time.timeIntervalSinceReferenceDate / 60.0) * 60.0
+        let newDate = Date(timeIntervalSinceReferenceDate: timeInterval)
+        return newDate
     }
 
     override func didReceiveMemoryWarning() {
