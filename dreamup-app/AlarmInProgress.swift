@@ -211,17 +211,7 @@ class AlarmInProgress: UIViewController {
     func setupView(){
         self.view.backgroundColor = Colors().darkBlue
         
-        
-        // Set gradient
-        let gradient: CAGradientLayer = CAGradientLayer()
-        
-        gradient.colors = [Colors().darkBlue.cgColor, UIColor.black.cgColor]
-        gradient.locations = [0.05 , 0.95]
-        gradient.startPoint = CGPoint(x: 0.5, y: 0.0)
-        gradient.endPoint = CGPoint(x: 0.5, y: 1.0)
-        gradient.frame = CGRect(x: 0.0, y: 0.0, width: self.view.frame.size.width, height: self.view.frame.size.height)
-        
-        self.view.layer.insertSublayer(gradient, at: 0)
+        // setGradient()
         
         hideAudioButtons()
         
@@ -237,6 +227,20 @@ class AlarmInProgress: UIViewController {
         }
         alarmTimeLabel.text = formatAlarmTime(time: alarmFireTime!, seconds: false)
         currentTimeLabel.text = formatAlarmTime(time: currentTime, seconds: false)
+        
+    }
+    
+    func setGradient(){
+        // Set gradient
+        let gradient: CAGradientLayer = CAGradientLayer()
+        
+        gradient.colors = [Colors().darkBlue.cgColor, UIColor.black.cgColor]
+        gradient.locations = [0.05 , 0.95]
+        gradient.startPoint = CGPoint(x: 0.5, y: 0.0)
+        gradient.endPoint = CGPoint(x: 0.5, y: 1.0)
+        gradient.frame = CGRect(x: 0.0, y: 0.0, width: self.view.frame.size.width, height: self.view.frame.size.height)
+        
+        self.view.layer.insertSublayer(gradient, at: 0)
         
     }
     
