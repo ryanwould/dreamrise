@@ -1,5 +1,3 @@
-
-
 #Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
@@ -14,7 +12,6 @@ target 'dreamup-app' do
    pod 'Firebase/Storage'
    pod 'FirebaseUI'
    pod 'SwiftDate'
-   pod 'NVActivityIndicatorView'
 
    pod 'SnapKit', '~> 3.2.0'
 
@@ -23,7 +20,6 @@ target 'dreamup-app' do
    pod 'FacebookLogin'
    pod 'FacebookShare'
    pod 'TextFieldEffects'
-   pod 'SideMenu'
    pod 'MarqueeLabel/Swift'
 
    target 'dreamup-appTests' do

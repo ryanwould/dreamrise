@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +21,56 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome-bg" translatesAutoresizingMaskIntoConstraints="NO" id="b5S-Ye-4Rn">
+                                <rect key="frame" x="-3" y="-6" width="378" height="673"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="footer-bg" translatesAutoresizingMaskIntoConstraints="NO" id="qgQ-AI-QPy">
+                                <rect key="frame" x="-45" y="452" width="462" height="215"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DreamUp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unW-Sc-Rsm">
+                                <rect key="frame" x="99" y="316" width="176" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="isg-Db-s2x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-Alarm Clock-100" translatesAutoresizingMaskIntoConstraints="NO" id="mjS-Ac-4lO">
+                                <rect key="frame" x="136" y="208" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="5v7-Gx-a0a"/>
+                                    <constraint firstAttribute="height" constant="100" id="jaL-WA-1BB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b5S-Ye-4Rn" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-19" id="1NN-JU-IXC"/>
+                            <constraint firstItem="mjS-Ac-4lO" firstAttribute="centerX" secondItem="qgQ-AI-QPy" secondAttribute="centerX" id="7mo-MP-6XZ"/>
+                            <constraint firstAttribute="trailing" secondItem="b5S-Ye-4Rn" secondAttribute="trailing" id="9hb-6R-b5j"/>
+                            <constraint firstItem="b5S-Ye-4Rn" firstAttribute="centerX" secondItem="mjS-Ac-4lO" secondAttribute="centerX" id="AmT-5b-6vj"/>
+                            <constraint firstItem="unW-Sc-Rsm" firstAttribute="top" secondItem="mjS-Ac-4lO" secondAttribute="bottom" constant="8" symbolic="YES" id="DXm-vN-yor"/>
+                            <constraint firstItem="unW-Sc-Rsm" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="EjO-eT-pPm"/>
+                            <constraint firstItem="qgQ-AI-QPy" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-61" id="Rlb-Md-UJN"/>
+                            <constraint firstItem="mjS-Ac-4lO" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="188" id="VMy-42-HBe"/>
+                            <constraint firstItem="b5S-Ye-4Rn" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="dPP-JK-y6K"/>
+                            <constraint firstItem="b5S-Ye-4Rn" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-6" id="e3q-hV-7DW"/>
+                            <constraint firstItem="qgQ-AI-QPy" firstAttribute="top" secondItem="unW-Sc-Rsm" secondAttribute="bottom" constant="86" id="wFL-ZF-fxI"/>
+                            <constraint firstItem="qgQ-AI-QPy" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="xob-YU-hRU"/>
+                            <constraint firstItem="unW-Sc-Rsm" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="83" id="yEP-P8-G83"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="footer-bg" width="950" height="399"/>
+        <image name="icons8-Alarm Clock-100" width="50" height="50"/>
+        <image name="welcome-bg" width="950" height="650"/>
+    </resources>
 </document>

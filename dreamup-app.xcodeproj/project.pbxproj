@@ -12,7 +12,6 @@
 		110873F71E836A310067C225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110873F51E836A310067C225 /* LaunchScreen.storyboard */; };
 		110874021E836A310067C225 /* dreamup_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110874011E836A310067C225 /* dreamup_appTests.swift */; };
 		1108740D1E836A310067C225 /* dreamup_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1108740C1E836A310067C225 /* dreamup_appUITests.swift */; };
-		11224D6B1E90740D00F6894B /* RecipientBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11224D6A1E90740D00F6894B /* RecipientBarView.swift */; };
 		11224D6F1E91851100F6894B /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11224D6E1E91851100F6894B /* ColorPalette.swift */; };
 		112D7EAD1EC4B6BF00EEE3ED /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D7EAC1EC4B6BF00EEE3ED /* ResetPasswordViewController.swift */; };
 		112D7EAF1EC4B6F300EEE3ED /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D7EAE1EC4B6F300EEE3ED /* SignUpViewController.swift */; };
@@ -22,12 +21,10 @@
 		11601C271EAD374700D9FB43 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11601C261EAD374700D9FB43 /* HomeTabBarController.swift */; };
 		11823AA51EABDE560060DE68 /* AlarmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11823AA31EABDE560060DE68 /* AlarmController.swift */; };
 		11823AA61EABDE560060DE68 /* AlarmInProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11823AA41EABDE560060DE68 /* AlarmInProgress.swift */; };
-		11823AA81EABDE880060DE68 /* stations.json in Resources */ = {isa = PBXBuildFile; fileRef = 11823AA71EABDE880060DE68 /* stations.json */; };
 		11823AAC1EABDEA30060DE68 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11823AAA1EABDEA30060DE68 /* Settings.swift */; };
 		11823AB01EABDEC70060DE68 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11823AAF1EABDEC70060DE68 /* LoginViewController.swift */; };
 		11823AB51EABDEF90060DE68 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11823AB11EABDEF90060DE68 /* NothingFoundCell.xib */; };
 		11823AB61EABDEF90060DE68 /* PlayQueueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11823AB21EABDEF90060DE68 /* PlayQueueCell.swift */; };
-		11823AB71EABDEF90060DE68 /* RadioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11823AB31EABDEF90060DE68 /* RadioTableViewCell.swift */; };
 		11823AB81EABDEF90060DE68 /* PodcastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11823AB41EABDEF90060DE68 /* PodcastTableViewCell.swift */; };
 		11823ABB1EABDF220060DE68 /* AlarmSelectionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11823ABA1EABDF220060DE68 /* AlarmSelectionTableView.swift */; };
 		11823AC21EABDF3E0060DE68 /* RadioStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11823ABC1EABDF3E0060DE68 /* RadioStation.swift */; };
@@ -37,24 +34,14 @@
 		11823AC61EABDF3E0060DE68 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11823AC01EABDF3E0060DE68 /* UserDefaultsManager.swift */; };
 		11823AC71EABDF3E0060DE68 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11823AC11EABDF3E0060DE68 /* FirebaseManager.swift */; };
 		11823ACC1EABE20E0060DE68 /* PlayQueueTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11823ACB1EABE20E0060DE68 /* PlayQueueTVC.swift */; };
-		11823ACE1EABE21B0060DE68 /* RadioPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11823ACD1EABE21B0060DE68 /* RadioPickerViewController.swift */; };
 		11823AD11EABE22A0060DE68 /* PodcastConfirmStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11823ACF1EABE22A0060DE68 /* PodcastConfirmStep.swift */; };
 		11823AD21EABE22A0060DE68 /* PodcastTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11823AD01EABE22A0060DE68 /* PodcastTableViewController.swift */; };
-		11823AD41EABE2600060DE68 /* RadioStationSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11823AD31EABE2600060DE68 /* RadioStationSettingsViewController.swift */; };
-		118F5F991E881AB900E36F90 /* AudioRecorderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118F5F981E881AB900E36F90 /* AudioRecorderVC.swift */; };
-		118F5FA11E884E0200E36F90 /* SendAudioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118F5FA01E884E0200E36F90 /* SendAudioTableViewController.swift */; };
 		118F5FA31E88511C00E36F90 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 118F5FA21E88511C00E36F90 /* GoogleService-Info.plist */; };
 		118F5FA51E88538C00E36F90 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118F5FA41E88538C00E36F90 /* AudioToolbox.framework */; };
 		118F5FA81E8856BE00E36F90 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118F5FA71E8856BE00E36F90 /* ExternalAccessory.framework */; };
-		1193F4FF1EC12F90002D6C7E /* RecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193F4FE1EC12F90002D6C7E /* RecorderView.swift */; };
-		119B5B171E8987710020A567 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B5B161E8987710020A567 /* FriendCell.swift */; };
-		119B5B191E8987C00020A567 /* SelectedIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B5B181E8987C00020A567 /* SelectedIndicator.swift */; };
-		11A7E6ED1EBE977E006E87DA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A7E6EC1EBE977E006E87DA /* MainViewController.swift */; };
 		11B2EBDE1EB16BCB006A81B8 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2EBDD1EB16BCB006A81B8 /* SettingsTableViewController.swift */; };
 		11B640ED1E89555600971DF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11B640EC1E89555600971DF0 /* Main.storyboard */; };
 		11B640EF1E897F9C00971DF0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B640EE1E897F9C00971DF0 /* User.swift */; };
-		11D064EC1EA3B5FD00F3F6E7 /* VoiceMemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D064EB1EA3B5FD00F3F6E7 /* VoiceMemoCell.swift */; };
-		11E5E69E1EC6331100376C60 /* FindFriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E5E69D1EC6331100376C60 /* FindFriendsTableViewController.swift */; };
 		392D741B9E27E35B0A6C69C4 /* Pods_dreamup_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C8F6A13933D0527C6A9D89 /* Pods_dreamup_appTests.framework */; };
 		680F2E042070A024DCE5AF25 /* Pods_dreamup_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3A17D21D4D982EC8BA4ACE /* Pods_dreamup_appUITests.framework */; };
 		C5CAA5D666591335EE466BB6 /* Pods_dreamup_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C87F990453838CD948451443 /* Pods_dreamup_app.framework */; };
@@ -89,7 +76,6 @@
 		110874081E836A310067C225 /* dreamup-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dreamup-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1108740C1E836A310067C225 /* dreamup_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dreamup_appUITests.swift; sourceTree = "<group>"; };
 		1108740E1E836A310067C225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		11224D6A1E90740D00F6894B /* RecipientBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipientBarView.swift; sourceTree = "<group>"; };
 		11224D6E1E91851100F6894B /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPalette.swift; path = "dreamup-app/ColorPalette.swift"; sourceTree = "<group>"; };
 		112D7EAC1EC4B6BF00EEE3ED /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		112D7EAE1EC4B6F300EEE3ED /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -99,12 +85,10 @@
 		11601C261EAD374700D9FB43 /* HomeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		11823AA31EABDE560060DE68 /* AlarmController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmController.swift; sourceTree = "<group>"; };
 		11823AA41EABDE560060DE68 /* AlarmInProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmInProgress.swift; sourceTree = "<group>"; };
-		11823AA71EABDE880060DE68 /* stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stations.json; sourceTree = "<group>"; };
 		11823AAA1EABDEA30060DE68 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		11823AAF1EABDEC70060DE68 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		11823AB11EABDEF90060DE68 /* NothingFoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
 		11823AB21EABDEF90060DE68 /* PlayQueueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayQueueCell.swift; sourceTree = "<group>"; };
-		11823AB31EABDEF90060DE68 /* RadioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioTableViewCell.swift; sourceTree = "<group>"; };
 		11823AB41EABDEF90060DE68 /* PodcastTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastTableViewCell.swift; sourceTree = "<group>"; };
 		11823ABA1EABDF220060DE68 /* AlarmSelectionTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmSelectionTableView.swift; sourceTree = "<group>"; };
 		11823ABC1EABDF3E0060DE68 /* RadioStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioStation.swift; sourceTree = "<group>"; };
@@ -114,25 +98,15 @@
 		11823AC01EABDF3E0060DE68 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		11823AC11EABDF3E0060DE68 /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		11823ACB1EABE20E0060DE68 /* PlayQueueTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayQueueTVC.swift; sourceTree = "<group>"; };
-		11823ACD1EABE21B0060DE68 /* RadioPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioPickerViewController.swift; sourceTree = "<group>"; };
 		11823ACF1EABE22A0060DE68 /* PodcastConfirmStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastConfirmStep.swift; sourceTree = "<group>"; };
 		11823AD01EABE22A0060DE68 /* PodcastTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastTableViewController.swift; sourceTree = "<group>"; };
-		11823AD31EABE2600060DE68 /* RadioStationSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioStationSettingsViewController.swift; sourceTree = "<group>"; };
-		118F5F981E881AB900E36F90 /* AudioRecorderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioRecorderVC.swift; sourceTree = "<group>"; };
-		118F5FA01E884E0200E36F90 /* SendAudioTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendAudioTableViewController.swift; sourceTree = "<group>"; };
 		118F5FA21E88511C00E36F90 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "dreamup-app/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		118F5FA41E88538C00E36F90 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		118F5FA61E88538C00E36F90 /* dreamup-app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "dreamup-app.entitlements"; path = "dreamup-app/dreamup-app.entitlements"; sourceTree = "<group>"; };
 		118F5FA71E8856BE00E36F90 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
-		1193F4FE1EC12F90002D6C7E /* RecorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecorderView.swift; sourceTree = "<group>"; };
-		119B5B161E8987710020A567 /* FriendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendCell.swift; path = "dreamup-app/FriendCell.swift"; sourceTree = "<group>"; };
-		119B5B181E8987C00020A567 /* SelectedIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedIndicator.swift; sourceTree = "<group>"; };
-		11A7E6EC1EBE977E006E87DA /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		11B2EBDD1EB16BCB006A81B8 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		11B640EC1E89555600971DF0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		11B640EE1E897F9C00971DF0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		11D064EB1EA3B5FD00F3F6E7 /* VoiceMemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VoiceMemoCell.swift; path = "dreamup-app/VoiceMemoCell.swift"; sourceTree = "<group>"; };
-		11E5E69D1EC6331100376C60 /* FindFriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindFriendsTableViewController.swift; sourceTree = "<group>"; };
 		34870BFC215893E711FCDBA3 /* Pods-dreamup-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dreamup-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dreamup-app/Pods-dreamup-app.debug.xcconfig"; sourceTree = "<group>"; };
 		37518DB0B0B1205AE8ED9AC2 /* Pods-dreamup-appUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dreamup-appUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dreamup-appUITests/Pods-dreamup-appUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		796BFE40210D4F6ACF6957A8 /* Pods-dreamup-appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dreamup-appTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dreamup-appTests/Pods-dreamup-appTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -206,7 +180,6 @@
 				11823AA91EABDE8E0060DE68 /* Data */,
 				11823AC91EABE0070060DE68 /* Model */,
 				11823ACA1EABE0480060DE68 /* ViewControllers */,
-				112D7EB31EC4B7A400EEE3ED /* Views */,
 				11A7E6EE1EBEB876006E87DA /* Storyboards */,
 			);
 			path = "dreamup-app";
@@ -241,17 +214,6 @@
 			name = Authentication;
 			sourceTree = "<group>";
 		};
-		112D7EB11EC4B74D00EEE3ED /* VoiceMemoControllers */ = {
-			isa = PBXGroup;
-			children = (
-				11E5E69D1EC6331100376C60 /* FindFriendsTableViewController.swift */,
-				11A7E6EC1EBE977E006E87DA /* MainViewController.swift */,
-				118F5FA01E884E0200E36F90 /* SendAudioTableViewController.swift */,
-				118F5F981E881AB900E36F90 /* AudioRecorderVC.swift */,
-			);
-			name = VoiceMemoControllers;
-			sourceTree = "<group>";
-		};
 		112D7EB21EC4B76900EEE3ED /* AlarmControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,27 +222,14 @@
 				11823AA31EABDE560060DE68 /* AlarmController.swift */,
 				11823ACF1EABE22A0060DE68 /* PodcastConfirmStep.swift */,
 				11823AD01EABE22A0060DE68 /* PodcastTableViewController.swift */,
-				11823ACD1EABE21B0060DE68 /* RadioPickerViewController.swift */,
 				11823AA41EABDE560060DE68 /* AlarmInProgress.swift */,
-				11823AD31EABE2600060DE68 /* RadioStationSettingsViewController.swift */,
 			);
 			name = AlarmControllers;
-			sourceTree = "<group>";
-		};
-		112D7EB31EC4B7A400EEE3ED /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				119B5B181E8987C00020A567 /* SelectedIndicator.swift */,
-				11224D6A1E90740D00F6894B /* RecipientBarView.swift */,
-				1193F4FE1EC12F90002D6C7E /* RecorderView.swift */,
-			);
-			name = Views;
 			sourceTree = "<group>";
 		};
 		11823AA91EABDE8E0060DE68 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				11823AA71EABDE880060DE68 /* stations.json */,
 			);
 			name = Data;
 			path = ..;
@@ -306,9 +255,6 @@
 			children = (
 				11823AB11EABDEF90060DE68 /* NothingFoundCell.xib */,
 				11823AB21EABDEF90060DE68 /* PlayQueueCell.swift */,
-				11D064EB1EA3B5FD00F3F6E7 /* VoiceMemoCell.swift */,
-				119B5B161E8987710020A567 /* FriendCell.swift */,
-				11823AB31EABDEF90060DE68 /* RadioTableViewCell.swift */,
 				11823AB41EABDEF90060DE68 /* PodcastTableViewCell.swift */,
 			);
 			name = Cells;
@@ -340,7 +286,6 @@
 		11823ACA1EABE0480060DE68 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				112D7EB11EC4B74D00EEE3ED /* VoiceMemoControllers */,
 				112D7EB01EC4B73000EEE3ED /* Authentication */,
 				112D7EB21EC4B76900EEE3ED /* AlarmControllers */,
 				11B2EBDD1EB16BCB006A81B8 /* SettingsTableViewController.swift */,
@@ -514,7 +459,6 @@
 				110873F71E836A310067C225 /* LaunchScreen.storyboard in Resources */,
 				11823AB51EABDEF90060DE68 /* NothingFoundCell.xib in Resources */,
 				118F5FA31E88511C00E36F90 /* GoogleService-Info.plist in Resources */,
-				11823AA81EABDE880060DE68 /* stations.json in Resources */,
 				110873F41E836A310067C225 /* Assets.xcassets in Resources */,
 				11B640ED1E89555600971DF0 /* Main.storyboard in Resources */,
 			);
@@ -684,13 +628,9 @@
 				11823AC51EABDF3E0060DE68 /* DataManager.swift in Sources */,
 				11823ACC1EABE20E0060DE68 /* PlayQueueTVC.swift in Sources */,
 				11823AD21EABE22A0060DE68 /* PodcastTableViewController.swift in Sources */,
-				118F5FA11E884E0200E36F90 /* SendAudioTableViewController.swift in Sources */,
 				114A15081EBE614400520EDF /* VoiceMemo.swift in Sources */,
-				119B5B171E8987710020A567 /* FriendCell.swift in Sources */,
 				11224D6F1E91851100F6894B /* ColorPalette.swift in Sources */,
-				118F5F991E881AB900E36F90 /* AudioRecorderVC.swift in Sources */,
 				11823AB61EABDEF90060DE68 /* PlayQueueCell.swift in Sources */,
-				11823AD41EABE2600060DE68 /* RadioStationSettingsViewController.swift in Sources */,
 				11823AAC1EABDEA30060DE68 /* Settings.swift in Sources */,
 				112D7EB51EC4EBAE00EEE3ED /* CompleteSignupViewController.swift in Sources */,
 				11823AC41EABDF3E0060DE68 /* SwiftyJSON.swift in Sources */,
@@ -698,23 +638,15 @@
 				11823AC61EABDF3E0060DE68 /* UserDefaultsManager.swift in Sources */,
 				11823AA51EABDE560060DE68 /* AlarmController.swift in Sources */,
 				11823ABB1EABDF220060DE68 /* AlarmSelectionTableView.swift in Sources */,
-				11823AB71EABDEF90060DE68 /* RadioTableViewCell.swift in Sources */,
-				11A7E6ED1EBE977E006E87DA /* MainViewController.swift in Sources */,
 				11823AA61EABDE560060DE68 /* AlarmInProgress.swift in Sources */,
 				11601C271EAD374700D9FB43 /* HomeTabBarController.swift in Sources */,
-				11224D6B1E90740D00F6894B /* RecipientBarView.swift in Sources */,
 				11823AB01EABDEC70060DE68 /* LoginViewController.swift in Sources */,
-				11823ACE1EABE21B0060DE68 /* RadioPickerViewController.swift in Sources */,
-				1193F4FF1EC12F90002D6C7E /* RecorderView.swift in Sources */,
 				112D7EAD1EC4B6BF00EEE3ED /* ResetPasswordViewController.swift in Sources */,
 				11B640EF1E897F9C00971DF0 /* User.swift in Sources */,
-				11D064EC1EA3B5FD00F3F6E7 /* VoiceMemoCell.swift in Sources */,
 				11823AD11EABE22A0060DE68 /* PodcastConfirmStep.swift in Sources */,
 				11823AC31EABDF3E0060DE68 /* Podcast.swift in Sources */,
 				11B2EBDE1EB16BCB006A81B8 /* SettingsTableViewController.swift in Sources */,
-				11E5E69E1EC6331100376C60 /* FindFriendsTableViewController.swift in Sources */,
 				110873ED1E836A310067C225 /* AppDelegate.swift in Sources */,
-				119B5B191E8987C00020A567 /* SelectedIndicator.swift in Sources */,
 				112D7EAF1EC4B6F300EEE3ED /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -861,7 +793,7 @@
 				CODE_SIGN_ENTITLEMENTS = "dreamup-app/dreamup-app.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 2017.08.18;
 				DEVELOPMENT_TEAM = J8MZA8BZNS;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -886,7 +818,7 @@
 				CODE_SIGN_ENTITLEMENTS = "dreamup-app/dreamup-app.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 2017.08.18;
 				DEVELOPMENT_TEAM = J8MZA8BZNS;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
