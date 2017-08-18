@@ -18,9 +18,15 @@ struct AlarmQueueItem {
 
 class AlarmInProgress: UIViewController {
     
-    @IBOutlet weak var alarmFireDateLabel: UILabel!
+    // Time Labels
+    @IBOutlet weak var currentTimeLabel: UILabel!
+    @IBOutlet weak var alarmTimeLabel: UILabel!
+    
     var alarmFireTime: Date?
+    var currentTime = Date()
     let defaults = UserDefaultsManager()
+    
+    // Audio
     var avQueuePlayer: AVQueuePlayer?
     var timer = Timer()
     var alarmItems: [AVPlayerItem]?
@@ -30,7 +36,6 @@ class AlarmInProgress: UIViewController {
     
     // MARK: - OUTLETS
     @IBOutlet weak var btnPlay: UIButton!
-    @IBOutlet weak var btnPrevious: UIButton!
     @IBOutlet weak var btnNext: UIButton!
     @IBOutlet weak var podcastTitleLabel: UILabel!
     
@@ -91,18 +96,54 @@ class AlarmInProgress: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         //stop alarm
         self.avQueuePlayer = nil
+        self.alarmFireTime = nil
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("VIEW DID LOAD")
+        
         // alarm queue
         buildAlarmQueue()
         
-        // set timer to start alarm at alarmFireTime
         if alarmFireTime != nil {
-            let timeUntilAlarm = alarmFireTime?.timeIntervalSinceNow
-            self.timer = Timer.scheduledTimer(timeInterval: timeUntilAlarm!, target: self, selector: #selector(self.soundTheAlarm), userInfo: nil, repeats: false)
+            
+            self.timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: {(timer) in
+                self.checkTime()
+            })
+            
+        }
+    }
+    
+    // MARK: - Alarm
+    
+    func checkTime(){
+        
+        self.currentTime = Date()
+        
+        // update current time label
+        currentTimeLabel.text = formatAlarmTime(time: Date(), seconds: false)
+        
+        // sound the alarm! (if its time)
+        guard alarmFireTime != nil else {
+            print("alarmFireTime is nil");
+            print("canceling timer")
+            self.timer.invalidate()
+            return
+            
+        }
+        
+        print(
+            "\n\n---\n" +
+                "Current time: \(formatAlarmTime(time: currentTime, seconds: true))\n" +
+            "  Alarm time: \(formatAlarmTime(time: alarmFireTime!, seconds: true))\n"
+        )
+        
+        if Date() >= alarmFireTime! {
+            soundTheAlarm()
+            self.timer.invalidate()
+            print(timer)
         }
     }
     
@@ -184,7 +225,8 @@ class AlarmInProgress: UIViewController {
         guard alarmFireTime != nil else {
             return
         }
-        formatAlarmTime(time: alarmFireTime!)
+        alarmTimeLabel.text = formatAlarmTime(time: alarmFireTime!, seconds: false)
+        currentTimeLabel.text = formatAlarmTime(time: currentTime, seconds: false)
         
     }
     
@@ -193,12 +235,13 @@ class AlarmInProgress: UIViewController {
         UIApplication.shared.isIdleTimerDisabled = false
     }
     
-    func formatAlarmTime(time: Date) {
+    func formatAlarmTime(time: Date, seconds: Bool) -> String {
         let localTimeZone = TimeZone.current.identifier
         let f = DateFormatter()
         f.locale = Locale(identifier: localTimeZone)
-        f.dateFormat = "h:mm a"
-        alarmFireDateLabel.text = f.string(from: time)
+        
+        if seconds { f.dateFormat = "h:mm:ss a" } else { f.dateFormat = "h:mm a" }
+        return f.string(from: time)
     }
     
     func buildAlarmQueue() {

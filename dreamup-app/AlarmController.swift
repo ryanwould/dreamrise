@@ -33,7 +33,7 @@ class AlarmController: UIViewController {
         
         // Do any additional setup after loading the view, typically from a nib.
         timePicker.datePickerMode = .time
-        timePicker.minuteInterval = 5
+        timePicker.minuteInterval = 1
         startAlarmButton.layer.cornerRadius = 0
         startAlarmButton.layer.borderWidth = 3
         startAlarmButton.layer.borderColor = UIColor.white.cgColor

@@ -26,6 +26,8 @@ class HomeTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureView()
+        
         ref = FIRDatabase.database().reference()
         
 
@@ -36,6 +38,13 @@ class HomeTabBarController: UITabBarController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // MARK: - UI
+    
+    func configureView() {
+        self.tabBar.barTintColor = UIColor.darkGray
+    }
+    
     
 
     /*
