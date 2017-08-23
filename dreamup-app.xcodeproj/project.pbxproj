@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -153,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				110873EB1E836A310067C225 /* dreamup-app */,
+				11823ACA1EABE0480060DE68 /* Controller */,
 				110874001E836A310067C225 /* dreamup-appTests */,
 				1108740B1E836A310067C225 /* dreamup-appUITests */,
 				110873EA1E836A310067C225 /* Products */,
@@ -179,8 +180,7 @@
 				11823AAE1EABDEAB0060DE68 /* Supporting Files */,
 				11823AA91EABDE8E0060DE68 /* Data */,
 				11823AC91EABE0070060DE68 /* Model */,
-				11823ACA1EABE0480060DE68 /* ViewControllers */,
-				11A7E6EE1EBEB876006E87DA /* Storyboards */,
+				118EBFE41F4CF01C00ECC7EB /* View */,
 			);
 			path = "dreamup-app";
 			sourceTree = "<group>";
@@ -283,7 +283,7 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		11823ACA1EABE0480060DE68 /* ViewControllers */ = {
+		11823ACA1EABE0480060DE68 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				112D7EB01EC4B73000EEE3ED /* Authentication */,
@@ -291,7 +291,16 @@
 				11B2EBDD1EB16BCB006A81B8 /* SettingsTableViewController.swift */,
 				11601C261EAD374700D9FB43 /* HomeTabBarController.swift */,
 			);
-			name = ViewControllers;
+			name = Controller;
+			path = "dreamup-app";
+			sourceTree = "<group>";
+		};
+		118EBFE41F4CF01C00ECC7EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11A7E6EE1EBEB876006E87DA /* Storyboards */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		11A7E6EE1EBEB876006E87DA /* Storyboards */ = {
@@ -432,7 +441,7 @@
 				};
 			};
 			buildConfigurationList = 110873E41E836A310067C225 /* Build configuration list for PBXProject "dreamup-app" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -793,8 +802,9 @@
 				CODE_SIGN_ENTITLEMENTS = "dreamup-app/dreamup-app.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2017.08.18;
-				DEVELOPMENT_TEAM = J8MZA8BZNS;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2017.08.18.1;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -818,8 +828,9 @@
 				CODE_SIGN_ENTITLEMENTS = "dreamup-app/dreamup-app.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2017.08.18;
-				DEVELOPMENT_TEAM = J8MZA8BZNS;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2017.08.18.1;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -828,6 +839,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paulrazgaitis.dreamup-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

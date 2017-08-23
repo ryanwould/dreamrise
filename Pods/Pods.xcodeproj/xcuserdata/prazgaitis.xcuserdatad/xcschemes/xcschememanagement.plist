@@ -79,16 +79,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SnapKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>SwiftDate.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>TextFieldEffects.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -97,6 +87,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>043AA65EB57AA3776B5B015B6F4B287A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>107A9565F9DF88517DFD3E28C05B2B96</key>
 		<dict>
 			<key>primary</key>
@@ -122,16 +117,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>491CB2E2A2486E1914FA12A2FFFD9558</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>492A057BA91F78F0532B2BD2B445FC51</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>593E9479C06FB200807D11AB29EB50BD</key>
 		<dict>
 			<key>primary</key>
@@ -152,7 +137,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>894F39E1F2FE2BBB343498048BF2DE71</key>
+		<key>8CF68D78332DA56CAEC941E1DC7EC8D9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>91E3B873C2DE260346538E76EA376575</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -163,16 +153,6 @@
 			<true/>
 		</dict>
 		<key>B1C4AAFAF49036C7007633DAA3C806AD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B6A3538352DD2035FDD81A277FE7A843</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BA2510D4BAAAEE49353F83292BE40CF0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

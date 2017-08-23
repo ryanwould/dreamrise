@@ -32,6 +32,7 @@ class AlarmController: UIViewController {
         }
         
         // Do any additional setup after loading the view, typically from a nib.
+        
         timePicker.datePickerMode = .time
         timePicker.minuteInterval = 1
         startAlarmButton.layer.cornerRadius = 0
@@ -51,14 +52,11 @@ class AlarmController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "settingAlarm" {
             let destinationVC = segue.destination as! AlarmInProgress
-            destinationVC.alarmFireTime = roundTimeToMinute(time: timePicker.date)
+            
+            // get & set the alarm fire time
+            let alarmFireTime = buildAlarmTime(date: timePicker.date)
+            destinationVC.alarmFireTime = alarmFireTime
         }
-    }
-    
-    func roundTimeToMinute(time: Date) -> Date {
-        let timeInterval = floor(time.timeIntervalSinceReferenceDate / 60.0) * 60.0
-        let newDate = Date(timeIntervalSinceReferenceDate: timeInterval)
-        return newDate
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,6 +66,12 @@ class AlarmController: UIViewController {
     
     // MARK: - Actions
    
+    @IBOutlet weak var brightnessMeter: UISlider!
+    
+    @IBAction func brightnessChanged(_ sender: Any) {
+        UIScreen.main.brightness = CGFloat(brightnessMeter.value)
+    }
+    
     @IBAction func startAlarm(_ sender: Any) {
         // exit if nothing in queue
         let defaults = UserDefaultsManager()
@@ -94,6 +98,32 @@ class AlarmController: UIViewController {
     
     @IBAction func pickerChanged(_ sender: UIDatePicker) {
         print(sender.date)
+    }
+    
+    func roundTimeToMinute(time: Date) -> Date {
+        let timeInterval = floor(time.timeIntervalSinceReferenceDate / 60.0) * 60.0
+        let newDate = Date(timeIntervalSinceReferenceDate: timeInterval)
+        return newDate
+    }
+    
+    func ensureAlarmIsInFuture(alarmDate: Date) -> Date {
+        // if alarmDate is in the past
+        if alarmDate <= Date() {
+            // move actual alarm time to tomorrow
+            let newDate = NSCalendar.current.date(byAdding: .hour, value: 24, to: alarmDate)
+            print("changing date to tomorrow \(newDate?.debugDescription)")
+            return newDate!
+        }
+        return alarmDate
+    }
+    
+    func buildAlarmTime(date: Date) -> Date {
+        
+        // round time down to the nearest minute
+        var newDate = roundTimeToMinute(time: date)
+        
+        // ensure the alarm is in the future
+        return ensureAlarmIsInFuture(alarmDate: newDate)
     }
 }
 

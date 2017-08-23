@@ -125,7 +125,7 @@ class PodcastTableViewController: UIViewController {
         self.refreshControl = UIRefreshControl()
         self.refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
         self.refreshControl.backgroundColor = UIColor.black
-        self.refreshControl.tintColor = UIColor.white
+        //self.refreshControl.tintColor = UIColor.white
         self.refreshControl.addTarget(self, action: #selector(PodcastTableViewController.refresh), for: UIControlEvents.valueChanged)
         self.tableView.addSubview(refreshControl)
     }
@@ -147,7 +147,7 @@ class PodcastTableViewController: UIViewController {
             
             // Style the UISearchController
             searchController.searchBar.barTintColor = UIColor.clear
-            searchController.searchBar.tintColor = UIColor.white
+            //searchController.searchBar.tintColor = UIColor.white
             
             // Hide the UISearchController
             tableView.setContentOffset(CGPoint(x: 0.0, y: searchController.searchBar.frame.size.height), animated: false)
@@ -225,6 +225,14 @@ extension PodcastTableViewController: UITableViewDelegate {
         let podcast = podcasts[indexPath.row]
         addToAlarmQueue(podcast: podcast)
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let alertController = UIAlertController(title: "Added Podcast!", message: "\(podcast.episodeTitle) was added to your Alarm Queue", preferredStyle: .alert)
+        
+        let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alertController.addAction(defaultAction)
+        
+        present(alertController, animated: true, completion: nil)
+        
         self.performSegue(withIdentifier: "unwindToPlayQueue", sender: self)
     }
 }

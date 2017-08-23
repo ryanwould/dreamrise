@@ -29,7 +29,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="csX-0b-a4b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.1137254902" green="0.20392156859999999" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <sections>
                             <tableViewSection id="Rgj-Wd-LjF">
                                 <cells>
@@ -49,7 +49,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.1137254902" green="0.20392156859999999" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <segue destination="pDJ-u4-Dxk" kind="show" identifier="podcast" id="eud-wo-V2O">
                                                 <nil key="action"/>
@@ -88,7 +88,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="107" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ewv-Ty-BCo">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                                <color key="backgroundColor" red="0.1137254902" green="0.20392156859999999" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PodcastCell" rowHeight="107" id="6Pu-JC-861" customClass="PodcastTableViewCell" customModule="dreamup_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="107"/>
@@ -144,7 +144,7 @@
                                                 <constraint firstItem="aeX-Wr-jD4" firstAttribute="top" secondItem="Uk9-k3-rNd" secondAttribute="topMargin" id="yb1-fn-aDO"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.1137254902" green="0.20392156859999999" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="durationLabel" destination="gSn-1o-2at" id="YjA-n1-tCT"/>
                                             <outlet property="episodeTitle" destination="0mb-pN-u8e" id="Pya-Yh-xtF"/>
@@ -204,7 +204,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="87" sectionHeaderHeight="28" sectionFooterHeight="28" id="ONC-PT-LxV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.1137254902" green="0.20392156859999999" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="playQueueItemCell" rowHeight="87" id="uLR-v7-JPT" customClass="PlayQueueCell" customModule="dreamup_app" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="87"/>
@@ -248,7 +248,7 @@
                                         <constraint firstItem="2pl-lD-zqS" firstAttribute="top" secondItem="8IX-LA-9Bj" secondAttribute="bottom" constant="2" id="xYi-Kc-SmU"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.1137254902" green="0.20392156859999999" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="displayMediaTypeLabel" destination="2pl-lD-zqS" id="LuP-Zb-T2c"/>
                                     <outlet property="displayStringLabel" destination="8IX-LA-9Bj" id="dAg-I4-dxt"/>
@@ -312,7 +312,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFx-D9-PkZ">
                                 <rect key="frame" x="16" y="273" width="343" height="73"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="73" id="H48-oU-mmU"/>
+                                    <constraint firstAttribute="height" constant="73" id="5ax-xh-i8R"/>
                                 </constraints>
                                 <state key="normal" title="START ALARM">
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -322,27 +322,40 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="footer-bg" translatesAutoresizingMaskIntoConstraints="NO" id="s2f-NC-Xkx">
-                                <rect key="frame" x="0.0" y="467" width="375" height="200"/>
+                                <rect key="frame" x="0.0" y="418" width="375" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="WOf-Vm-ry0"/>
+                                    <constraint firstAttribute="height" constant="200" id="Nop-1S-J0h"/>
                                 </constraints>
                             </imageView>
+                            <slider opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="21b-l5-MqA">
+                                <rect key="frame" x="14" y="380" width="347" height="31"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="thumbTintColor" red="0.94901960780000005" green="0.23529411759999999" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="brightnessChanged:" destination="Lsa-zl-jNs" eventType="valueChanged" id="6Oq-an-H5q"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
-                            <constraint firstItem="FFx-D9-PkZ" firstAttribute="top" secondItem="cib-VY-M5K" secondAttribute="bottom" constant="29" id="07a-dE-ULM"/>
-                            <constraint firstAttribute="trailing" secondItem="cib-VY-M5K" secondAttribute="trailing" id="KIv-8R-zgb"/>
-                            <constraint firstItem="cib-VY-M5K" firstAttribute="leading" secondItem="s2f-NC-Xkx" secondAttribute="leading" id="KgW-uv-spI"/>
-                            <constraint firstItem="cib-VY-M5K" firstAttribute="leading" secondItem="Ym2-NR-DAn" secondAttribute="leading" id="Ndy-JE-lQm"/>
-                            <constraint firstItem="cib-VY-M5K" firstAttribute="trailing" secondItem="s2f-NC-Xkx" secondAttribute="trailing" id="cDc-Zt-UAH"/>
-                            <constraint firstItem="FFx-D9-PkZ" firstAttribute="leading" secondItem="Ym2-NR-DAn" secondAttribute="leadingMargin" id="fjM-aJ-i5a"/>
-                            <constraint firstItem="cib-VY-M5K" firstAttribute="centerX" secondItem="FFx-D9-PkZ" secondAttribute="centerX" id="i98-t3-dfk"/>
-                            <constraint firstItem="cib-VY-M5K" firstAttribute="top" secondItem="CVn-UM-s2A" secondAttribute="bottom" constant="8" symbolic="YES" id="tT4-RL-bk6"/>
-                            <constraint firstItem="s2f-NC-Xkx" firstAttribute="bottom" secondItem="dPv-8n-WtO" secondAttribute="top" constant="49" id="ti3-Cv-kpk"/>
+                            <constraint firstItem="FFx-D9-PkZ" firstAttribute="top" secondItem="cib-VY-M5K" secondAttribute="bottom" constant="29" id="2CR-jM-o6G"/>
+                            <constraint firstItem="21b-l5-MqA" firstAttribute="trailing" secondItem="FFx-D9-PkZ" secondAttribute="trailing" id="4wA-H7-6a7"/>
+                            <constraint firstItem="21b-l5-MqA" firstAttribute="centerX" secondItem="s2f-NC-Xkx" secondAttribute="centerX" id="6dU-kd-8z2"/>
+                            <constraint firstItem="s2f-NC-Xkx" firstAttribute="top" secondItem="21b-l5-MqA" secondAttribute="bottom" constant="8" symbolic="YES" id="7Uw-Ak-Bja"/>
+                            <constraint firstAttribute="bottom" secondItem="21b-l5-MqA" secondAttribute="bottom" constant="257" id="9D3-ud-FCh"/>
+                            <constraint firstItem="21b-l5-MqA" firstAttribute="leading" secondItem="FFx-D9-PkZ" secondAttribute="leading" id="Nh9-ic-rUP"/>
+                            <constraint firstAttribute="trailing" secondItem="cib-VY-M5K" secondAttribute="trailing" id="e7L-yI-wLy"/>
+                            <constraint firstItem="cib-VY-M5K" firstAttribute="trailing" secondItem="s2f-NC-Xkx" secondAttribute="trailing" id="iwc-aG-c07"/>
+                            <constraint firstItem="cib-VY-M5K" firstAttribute="leading" secondItem="Ym2-NR-DAn" secondAttribute="leading" id="kKe-EZ-13d"/>
+                            <constraint firstItem="cib-VY-M5K" firstAttribute="top" secondItem="CVn-UM-s2A" secondAttribute="bottom" constant="8" symbolic="YES" id="lcy-P0-dVz"/>
+                            <constraint firstItem="cib-VY-M5K" firstAttribute="leading" secondItem="s2f-NC-Xkx" secondAttribute="leading" id="oxY-zz-fQA"/>
+                            <constraint firstItem="FFx-D9-PkZ" firstAttribute="leading" secondItem="Ym2-NR-DAn" secondAttribute="leadingMargin" id="tvA-eG-2hc"/>
+                            <constraint firstItem="s2f-NC-Xkx" firstAttribute="bottom" secondItem="dPv-8n-WtO" secondAttribute="top" id="zZu-YW-Fb5"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Alarm" image="alarm" id="HmZ-3R-SFz"/>
                     <connections>
+                        <outlet property="brightnessMeter" destination="21b-l5-MqA" id="Gyg-XZ-q1O"/>
                         <outlet property="startAlarmButton" destination="FFx-D9-PkZ" id="Wq1-TG-WPC"/>
                         <outlet property="timePicker" destination="cib-VY-M5K" id="R3g-7Z-Py2"/>
                         <segue destination="aga-Ai-thC" kind="show" identifier="settingAlarm" id="hMo-E5-W1x"/>
@@ -426,7 +439,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="actPlayPause:" destination="aga-Ai-thC" eventType="touchUpInside" id="rJY-YQ-DA8"/>
+                                    <action selector="togglePlay:" destination="aga-Ai-thC" eventType="touchUpInside" id="hMC-T3-kkq"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moon-2" translatesAutoresizingMaskIntoConstraints="NO" id="reE-j8-YHi">
@@ -482,6 +495,7 @@
                         <outlet property="btnNext" destination="Bga-yI-H3g" id="TC8-wl-cR3"/>
                         <outlet property="btnPlay" destination="uWu-Z4-Ofl" id="vY5-dN-f8c"/>
                         <outlet property="currentTimeLabel" destination="M5e-4P-Zbs" id="0Kb-3F-6DP"/>
+                        <outlet property="moonImage" destination="reE-j8-YHi" id="TFp-aL-VYj"/>
                         <outlet property="podcastTitleLabel" destination="0Y1-3R-YoC" id="T8H-Db-9wM"/>
                     </connections>
                 </viewController>

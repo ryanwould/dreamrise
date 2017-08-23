@@ -11,10 +11,6 @@ target 'dreamup-app' do
    pod 'Firebase/Database'
    pod 'Firebase/Storage'
    pod 'FirebaseUI'
-   pod 'SwiftDate'
-
-   pod 'SnapKit', '~> 3.2.0'
-
 
    pod 'FacebookCore'
    pod 'FacebookLogin'

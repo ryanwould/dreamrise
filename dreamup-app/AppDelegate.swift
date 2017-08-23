@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // configure Firebase
         FIRApp.configure()
         UINavigationBar.appearance().isTranslucent = false
-        UINavigationBar.appearance().barTintColor = Colors().spaceCadet
+        UINavigationBar.appearance().barTintColor = UIColor.darkGray
         UINavigationBar.appearance().tintColor = UIColor.white
 
         return true

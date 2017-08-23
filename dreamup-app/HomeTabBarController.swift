@@ -15,49 +15,23 @@ class HomeTabBarController: UITabBarController {
     var ref: FIRDatabaseReference!
     
     override func viewDidAppear(_ animated: Bool) {
-        print("in view did appear in HOMETABBARCONTROLLER")
         if FIRAuth.auth()?.currentUser == nil {
             self.performSegue(withIdentifier: "signIn", sender: nil)
         } else {
-            print("\n\n\nUSER IS \(FIRAuth.auth()?.currentUser?.uid)\n\n\n")
+            print("Current User is: \(FIRAuth.auth()?.currentUser?.uid)\n======")
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         configureView()
-        
         ref = FIRDatabase.database().reference()
-        
-
-        // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     // MARK: - UI
     
     func configureView() {
-        //self.tabBar.barTintColor = UIColor.clear
         self.tabBar.backgroundImage = UIImage.imageWithColor(tintColor: UIColor.clear)
     }
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 extension UIImage {

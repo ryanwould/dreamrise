@@ -39,6 +39,7 @@ class AlarmInProgress: UIViewController {
     @IBOutlet weak var btnPlay: UIButton!
     @IBOutlet weak var btnNext: UIButton!
     @IBOutlet weak var podcastTitleLabel: UILabel!
+    @IBOutlet weak var moonImage: UIImageView!
     
     // MARK: - ACTIONS
     
@@ -48,7 +49,7 @@ class AlarmInProgress: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func actPlayPause(_ sender: Any) {
+    @IBAction func togglePlay(_ sender: Any) {
         guard avQueuePlayer != nil else { return }
         
         if (avQueuePlayer!.isPlaying) {
@@ -57,6 +58,25 @@ class AlarmInProgress: UIViewController {
         } else {
             btnPlay.setTitle("pause", for: .normal)
             avQueuePlayer!.play()
+        }
+    }
+    
+    
+    func pause(){
+        guard avQueuePlayer != nil else { return }
+        
+        if (avQueuePlayer!.isPlaying) {
+            avQueuePlayer!.pause()
+            btnPlay.setTitle("play", for: .normal)
+        }
+    }
+    
+    func play() {
+        guard avQueuePlayer != nil else { return }
+        
+        if (!avQueuePlayer!.isPlaying) {
+            avQueuePlayer!.play()
+            btnPlay.setTitle("pause", for: .normal)
         }
     }
     
@@ -106,11 +126,11 @@ class AlarmInProgress: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("VIEW DID LOAD")
+        //add observer to Audio Route (headphones unplugged, etc.
+        setupNotifications()
         
         // alarm queue
         buildAlarmQueue()
-        
         
         if alarmFireTime != nil {
             self.timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: {(timer) in
@@ -136,12 +156,11 @@ class AlarmInProgress: UIViewController {
             return
             
         }
-        
-        print(
-            "\n\n---\n" +
-                "Current time: \(formatAlarmTime(time: currentTime, seconds: true))\n" +
-            "  Alarm time: \(formatAlarmTime(time: alarmFireTime!, seconds: true))\n"
-        )
+//        print(
+//            "\n\n---\n" +
+//                "Current time: \(formatAlarmTime(time: currentTime, seconds: true))\n" +
+//            "  Alarm time: \(formatAlarmTime(time: alarmFireTime!, seconds: true))\n"
+//        )
         
         if Date() >= alarmFireTime! {
             soundTheAlarm()
@@ -178,6 +197,43 @@ class AlarmInProgress: UIViewController {
         podcastTitleLabel.isHidden = true
     }
     
+    // MARK: - NOTIFICATION CENTER
+    
+    func setupNotifications() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(handleRouteChange),
+                                               name: .AVAudioSessionRouteChange,
+                                               object: AVAudioSession.sharedInstance())
+    }
+    
+    func removeNotifications(){
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    func handleRouteChange(_ notification: Notification) {
+        guard let userInfo = notification.userInfo,
+            let reasonValue = userInfo[AVAudioSessionRouteChangeReasonKey] as? UInt,
+            let reason = AVAudioSessionRouteChangeReason(rawValue:reasonValue) else {
+                print("RETURNING")
+                return
+        }
+        switch reason {
+        case .newDeviceAvailable:
+            // Handle new device available.
+            // Play audio through new device
+            print("NEW DEVICE AVAILABLE")
+            play()
+        case .oldDeviceUnavailable:
+            // Handle old device removed.
+            //
+            print("OLD DEVICE REMOVED")
+            pause()
+        default: ()
+        }
+    }
+    
+    // MARK: - ALARM
+    
     func soundTheAlarm(){
         print("playing alarm")
         
@@ -191,6 +247,14 @@ class AlarmInProgress: UIViewController {
         if let player = avQueuePlayer {
             player.volume = 1.0
             player.play()
+            
+            do {
+                // Set to play through speakers even if phone is silent
+                try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+                try AVAudioSession.sharedInstance().setActive(true)
+            } catch let error as NSError {
+                print("There was an error: \(error)")
+            }
             
             print("current item: \(player.currentItem)")
             let currentItem = player.currentItem
@@ -209,10 +273,7 @@ class AlarmInProgress: UIViewController {
     }
     
     func setupView(){
-        self.view.backgroundColor = Colors().darkBlue
-        
-        // setGradient()
-        
+        // hide audio buttons
         hideAudioButtons()
         
         // Hide the status bar
@@ -227,7 +288,6 @@ class AlarmInProgress: UIViewController {
         }
         alarmTimeLabel.text = formatAlarmTime(time: alarmFireTime!, seconds: false)
         currentTimeLabel.text = formatAlarmTime(time: currentTime, seconds: false)
-        
     }
     
     func setGradient(){
@@ -247,6 +307,9 @@ class AlarmInProgress: UIViewController {
     func undoViewSetup(){
         UIApplication.shared.isStatusBarHidden = false
         UIApplication.shared.isIdleTimerDisabled = false
+        
+        //add observer to Audio Route (headphones unplugged, etc.
+        removeNotifications()
     }
     
     func formatAlarmTime(time: Date, seconds: Bool) -> String {
@@ -260,18 +323,14 @@ class AlarmInProgress: UIViewController {
     
     func buildAlarmQueue() {
         let queue = defaults.getAlarmQueue()
-        print("\n\nALARM QUEUE:")
         
         alarmItems = []
         podcastTitles = []
         
         if let queue = queue {
-            print("queue - \(queue.count)")
             itemloop: for item in queue {
                 
                 let queueItem = defaults.getPlaySettingsForId(id: item)
-                print("CURRENT ITEM: - \( queueItem["displayString"])")
-                
                 let urlString = queueItem["url"] as? String
                 let durationString = queueItem["duration"] as? String
                 
@@ -316,4 +375,17 @@ extension AVPlayer {
         }
     }
     
+}
+extension UIView {
+    func rotateImageNonstop(_ duration: CFTimeInterval = 10, completionDelegate: AnyObject? = nil) {
+        let rotateAnimation = CABasicAnimation(keyPath: "transform.rotation")
+        rotateAnimation.fromValue = 0.0
+        rotateAnimation.toValue = CGFloat(M_PI)
+        rotateAnimation.duration = duration
+        
+        if let delegate: AnyObject = completionDelegate {
+            rotateAnimation.delegate = delegate as! CAAnimationDelegate
+        }
+        self.layer.add(rotateAnimation, forKey: nil)
+    }
 }
