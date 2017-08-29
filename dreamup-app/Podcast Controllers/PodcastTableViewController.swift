@@ -26,15 +26,11 @@ class PodcastTableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Register 'Nothing Found' cell xib
-        let cellNib = UINib(nibName: "NothingFoundCell", bundle: nil)
-        tableView.register(cellNib, forCellReuseIdentifier: "NothingFound")
-        
         // Load data
         loadPodcasts()
         
         // setup TableView
-        tableView.backgroundColor = UIColor.clear
+        tableView.backgroundColor = UIColor.black
         tableView.backgroundView = nil
         tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         
@@ -51,15 +47,6 @@ class PodcastTableViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func addToAlarmQueue(podcast: Podcast?) {
-        let defaults = UserDefaultsManager()
-        
-        guard let podcast = podcast else {
-            print("something wrong with podcast")
-            return
-        }
-        defaults.createPodcastAlarmItem(podcast: podcast)
-    }
     
     //*************************************************************
     // MARK: - Load Podcast Data
@@ -72,6 +59,7 @@ class PodcastTableViewController: UIViewController {
             print("Found \(results.count) podcasts")
             
             for mediaItem in results {
+                print("Media Item:\n\(mediaItem.debugDescription)\n---")
                 let podcast = Podcast.parseMediaItem(mediaItem: mediaItem)
                 self.podcasts.append(podcast)
             }
@@ -81,8 +69,6 @@ class PodcastTableViewController: UIViewController {
                 self.tableView.reloadData()
                 self.view.setNeedsDisplay()
             })
-        } else {
-            print("loading error")
         }
     }
     
@@ -108,13 +94,17 @@ class PodcastTableViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-//        let cell = sender as! PodcastTableViewCell
+
         
-//        if segue.identifier == "toSettings" {
-//            if let nextVC = segue.destination as? PodcastConfirmStep {
-//                nextVC.podcast = cell.podcast
-//            }
-//        }
+        if segue.identifier == "podcast_detail" {
+            
+            let cell = sender as! PodcastTableViewCell
+            
+            if let detail = segue.destination as? PodcastDetailViewController {
+                detail.podcast = cell.podcast
+                cell.podcast?.debug()
+            }
+        }
     }
     
     //*************************************************************
@@ -141,7 +131,7 @@ class PodcastTableViewController: UIViewController {
             
             // Add UISearchController to tableView
             tableView.tableHeaderView = searchController?.searchBar
-            tableView.tableHeaderView?.backgroundColor = UIColor.clear
+            tableView.tableHeaderView?.backgroundColor = UIColor.black
             definesPresentationContext = true
             searchController.hidesNavigationBarDuringPresentation = false
             
@@ -158,7 +148,11 @@ class PodcastTableViewController: UIViewController {
         }
     }
 
-
+    @IBAction func goToPodcastsApp(_ sender: Any) {
+        if let url = URL(string: "https://itunes.apple.com/us/podcast"){
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
 }
 
 //***********************************
@@ -179,7 +173,8 @@ extension PodcastTableViewController: UITableViewDataSource {
             } else {
                 return podcasts.count
             }
-        }    }
+        }
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -188,11 +183,10 @@ extension PodcastTableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if podcasts.isEmpty {
             print("podcasts empty")
-            let cell = tableView.dequeueReusableCell(withIdentifier: "NothingFound", for: indexPath)
-            cell.backgroundColor = UIColor.clear
-            cell.selectionStyle = UITableViewCellSelectionStyle.none
+            let cell = tableView.dequeueReusableCell(withIdentifier: "NoPodcastsFoundCell")!
             return cell
         } else {
+            print("podcasts not empty")
             let cell = tableView.dequeueReusableCell(withIdentifier: "PodcastCell", for: indexPath) as! PodcastTableViewCell
             
             // Configure the cell...
@@ -214,29 +208,6 @@ extension PodcastTableViewController: UITableViewDataSource {
         }
     }
 }
-//*****************************************************************
-// MARK: - TableViewDelegate
-//*****************************************************************
-
-extension PodcastTableViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        let podcast = podcasts[indexPath.row]
-        addToAlarmQueue(podcast: podcast)
-        tableView.deselectRow(at: indexPath, animated: true)
-        
-        let alertController = UIAlertController(title: "Added Podcast!", message: "\(podcast.episodeTitle) was added to your Alarm Queue", preferredStyle: .alert)
-        
-        let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-        alertController.addAction(defaultAction)
-        
-        present(alertController, animated: true, completion: nil)
-        
-        self.performSegue(withIdentifier: "unwindToPlayQueue", sender: self)
-    }
-}
-
 
 //*****************************************************************
 // MARK: - UISearchControllerDelegate

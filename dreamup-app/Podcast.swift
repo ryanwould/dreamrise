@@ -17,14 +17,24 @@ class Podcast: NSObject {
     var duration: TimeInterval
     var image: MPMediaItemArtwork?
     var assetUrl: URL?
+    var podcastDescription: String
     
-    init(podcastTitle: String, episodeTitle: String, author: String, duration: TimeInterval, image: MPMediaItemArtwork?, assetUrl: URL?) {
+    init(podcastTitle: String,
+         episodeTitle: String,
+         author: String,
+         duration: TimeInterval,
+         image: MPMediaItemArtwork?,
+         assetUrl: URL?,
+         podcastDescription: String
+        )
+    {
         self.podcastTitle = podcastTitle
         self.episodeTitle = episodeTitle
         self.author = author
         self.duration = duration
         self.image = image
         self.assetUrl = assetUrl
+        self.podcastDescription = podcastDescription
     }
     
     class func parseMediaItem(mediaItem: MPMediaItem) -> (Podcast) {
@@ -34,9 +44,25 @@ class Podcast: NSObject {
         let duration = mediaItem.playbackDuration
         let image = mediaItem.artwork
         let assetUrl = mediaItem.assetURL
+        let podcastDescription = mediaItem.comments ?? ""
         
         
-        let podcast = Podcast(podcastTitle: podTitle, episodeTitle: epTitle, author: author, duration: duration, image: image, assetUrl: assetUrl)
+        let podcast = Podcast(podcastTitle: podTitle,
+                              episodeTitle: epTitle,
+                              author: author,
+                              duration: duration,
+                              image: image,
+                              assetUrl: assetUrl,
+                              podcastDescription: podcastDescription)
         return podcast
+    }
+    
+    func debug(){
+        print("---\nPodcast:\n\(self.episodeTitle)")
+        print("title:       \(self.podcastTitle)")
+        print("author:      \(self.author)")
+        print("duration:    \(self.duration)")
+        print("url:         \(self.assetUrl)")
+        print("description: \(self.podcastDescription)")
     }
 }

@@ -12,6 +12,7 @@
 		110873F71E836A310067C225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110873F51E836A310067C225 /* LaunchScreen.storyboard */; };
 		110874021E836A310067C225 /* dreamup_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110874011E836A310067C225 /* dreamup_appTests.swift */; };
 		1108740D1E836A310067C225 /* dreamup_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1108740C1E836A310067C225 /* dreamup_appUITests.swift */; };
+		1108B5881F5522AC00DE12FE /* PodcastDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1108B5871F5522AC00DE12FE /* PodcastDetailViewController.swift */; };
 		11224D6F1E91851100F6894B /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11224D6E1E91851100F6894B /* ColorPalette.swift */; };
 		112D7EAD1EC4B6BF00EEE3ED /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D7EAC1EC4B6BF00EEE3ED /* ResetPasswordViewController.swift */; };
 		112D7EAF1EC4B6F300EEE3ED /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D7EAE1EC4B6F300EEE3ED /* SignUpViewController.swift */; };
@@ -76,6 +77,7 @@
 		110874081E836A310067C225 /* dreamup-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dreamup-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1108740C1E836A310067C225 /* dreamup_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dreamup_appUITests.swift; sourceTree = "<group>"; };
 		1108740E1E836A310067C225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1108B5871F5522AC00DE12FE /* PodcastDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastDetailViewController.swift; sourceTree = "<group>"; };
 		11224D6E1E91851100F6894B /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPalette.swift; path = "dreamup-app/ColorPalette.swift"; sourceTree = "<group>"; };
 		112D7EAC1EC4B6BF00EEE3ED /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		112D7EAE1EC4B6F300EEE3ED /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -153,7 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				110873EB1E836A310067C225 /* dreamup-app */,
-				11823ACA1EABE0480060DE68 /* Controller */,
 				110874001E836A310067C225 /* dreamup-appTests */,
 				1108740B1E836A310067C225 /* dreamup-appUITests */,
 				110873EA1E836A310067C225 /* Products */,
@@ -175,6 +176,7 @@
 		110873EB1E836A310067C225 /* dreamup-app */ = {
 			isa = PBXGroup;
 			children = (
+				11823ACA1EABE0480060DE68 /* Controller */,
 				11823AC81EABDFF30060DE68 /* Networking */,
 				11823AB91EABDEFF0060DE68 /* Cells */,
 				11823AAE1EABDEAB0060DE68 /* Supporting Files */,
@@ -203,6 +205,16 @@
 			path = "dreamup-appUITests";
 			sourceTree = "<group>";
 		};
+		1108B5891F55236E00DE12FE /* Podcast Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				11823ACF1EABE22A0060DE68 /* PodcastConfirmStep.swift */,
+				11823AD01EABE22A0060DE68 /* PodcastTableViewController.swift */,
+				1108B5871F5522AC00DE12FE /* PodcastDetailViewController.swift */,
+			);
+			path = "Podcast Controllers";
+			sourceTree = "<group>";
+		};
 		112D7EB01EC4B73000EEE3ED /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,8 +232,6 @@
 				11823ABA1EABDF220060DE68 /* AlarmSelectionTableView.swift */,
 				11823ACB1EABE20E0060DE68 /* PlayQueueTVC.swift */,
 				11823AA31EABDE560060DE68 /* AlarmController.swift */,
-				11823ACF1EABE22A0060DE68 /* PodcastConfirmStep.swift */,
-				11823AD01EABE22A0060DE68 /* PodcastTableViewController.swift */,
 				11823AA41EABDE560060DE68 /* AlarmInProgress.swift */,
 			);
 			name = AlarmControllers;
@@ -286,13 +296,13 @@
 		11823ACA1EABE0480060DE68 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1108B5891F55236E00DE12FE /* Podcast Controllers */,
 				112D7EB01EC4B73000EEE3ED /* Authentication */,
 				112D7EB21EC4B76900EEE3ED /* AlarmControllers */,
 				11B2EBDD1EB16BCB006A81B8 /* SettingsTableViewController.swift */,
 				11601C261EAD374700D9FB43 /* HomeTabBarController.swift */,
 			);
 			name = Controller;
-			path = "dreamup-app";
 			sourceTree = "<group>";
 		};
 		118EBFE41F4CF01C00ECC7EB /* View */ = {
@@ -415,8 +425,7 @@
 				TargetAttributes = {
 					110873E81E836A310067C225 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = J8MZA8BZNS;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -431,14 +440,12 @@
 					};
 					110873FC1E836A310067C225 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = J8MZA8BZNS;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = 110873E81E836A310067C225;
 					};
 					110874071E836A310067C225 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = J8MZA8BZNS;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = 110873E81E836A310067C225;
 					};
 				};
@@ -649,6 +656,7 @@
 				11823AC21EABDF3E0060DE68 /* RadioStation.swift in Sources */,
 				11823AC61EABDF3E0060DE68 /* UserDefaultsManager.swift in Sources */,
 				11823AA51EABDE560060DE68 /* AlarmController.swift in Sources */,
+				1108B5881F5522AC00DE12FE /* PodcastDetailViewController.swift in Sources */,
 				11823ABB1EABDF220060DE68 /* AlarmSelectionTableView.swift in Sources */,
 				11823AA61EABDE560060DE68 /* AlarmInProgress.swift in Sources */,
 				11601C271EAD374700D9FB43 /* HomeTabBarController.swift in Sources */,
@@ -727,6 +735,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -776,6 +785,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -805,8 +815,8 @@
 				CODE_SIGN_ENTITLEMENTS = "dreamup-app/dreamup-app.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2017.08.18.1;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2017.08.29;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -831,8 +841,8 @@
 				CODE_SIGN_ENTITLEMENTS = "dreamup-app/dreamup-app.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2017.08.18.1;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2017.08.29;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -855,11 +865,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = J8MZA8BZNS;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "dreamup-appTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paulrazgaitis.dreamup-appTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dreamup-app.app/dreamup-app";
 			};
@@ -871,11 +884,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = J8MZA8BZNS;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "dreamup-appTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paulrazgaitis.dreamup-appTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dreamup-app.app/dreamup-app";
 			};
@@ -886,11 +902,14 @@
 			baseConfigurationReference = 37518DB0B0B1205AE8ED9AC2 /* Pods-dreamup-appUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = J8MZA8BZNS;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "dreamup-appUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paulrazgaitis.dreamup-appUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "dreamup-app";
 			};
@@ -901,11 +920,14 @@
 			baseConfigurationReference = AB8B83F7F75D8A7B4F83EF09 /* Pods-dreamup-appUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = J8MZA8BZNS;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "dreamup-appUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paulrazgaitis.dreamup-appUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "dreamup-app";
 			};
