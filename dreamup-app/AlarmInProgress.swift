@@ -89,16 +89,12 @@ class AlarmInProgress: UIViewController {
         let itemsLeft = self.queueCount
         
         if (itemsLeft > 0) {
-            
-            print("ITEMS LEFT IN QUEUE: \(itemsLeft)")
             avQueuePlayer!.advanceToNextItem()
-            print("ITEMS LEFT IN QUEUE: \(itemsLeft)")
             
             //increment current item index
             currentItemIndex += 1
             podcastTitleLabel.text = podcastTitles?[currentItemIndex]
         } else {
-            print("no items!")
             currentItemIndex = 0
             
             //close the alarm window
@@ -156,11 +152,6 @@ class AlarmInProgress: UIViewController {
             return
             
         }
-//        print(
-//            "\n\n---\n" +
-//                "Current time: \(formatAlarmTime(time: currentTime, seconds: true))\n" +
-//            "  Alarm time: \(formatAlarmTime(time: alarmFireTime!, seconds: true))\n"
-//        )
         
         if Date() >= alarmFireTime! {
             soundTheAlarm()
