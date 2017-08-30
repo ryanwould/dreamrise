@@ -60,8 +60,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     func enterApp(){
         let mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Home")
-        //let nav = UINavigationController(rootViewController: mainViewController)
-        //self.navigationController?.present(mainViewController, animated: true, completion: nil)
         present(mainViewController, animated: true, completion: nil)
     }
 }

@@ -63,7 +63,7 @@ class PlayQueueTVC: UITableViewController {
         cell.displayStringLabel?.text = displayString
         cell.displayMediaTypeLabel?.text = cellData["mediaType"] as? String
         cell.configureIcon()
-
+        cell.selectionStyle = .none
         return cell
     }
     
@@ -73,7 +73,6 @@ class PlayQueueTVC: UITableViewController {
     
     
     @IBAction func startEditing(_ sender: UIBarButtonItem) {
-        print("is editing")
         let alarmQueue = defaults.getAlarmQueue()
         guard alarmQueue != nil else  { return }
         for item in alarmQueue! {
@@ -83,8 +82,7 @@ class PlayQueueTVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
-        let action: UITableViewRowAction = UITableViewRowAction(style: UITableViewRowActionStyle.default, title: "testing", handler: {_,_ in 
-            print("in here maybe?")
+        let action: UITableViewRowAction = UITableViewRowAction(style: UITableViewRowActionStyle.default, title: "testing", handler: {_,_ in
         })
         action.backgroundColor = UIColor.blue
         return "Remove"
@@ -114,37 +112,10 @@ class PlayQueueTVC: UITableViewController {
         // Return false if you do not want the item to be re-orderable.
         return true
     }
-    
-    // ***********************************************
-    // MARK: - Navigation (Editing alarmqueue items)
-    // ***********************************************
-    
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let rowKey = data[indexPath.row][0]
-//        print(rowKey)
-//        initiateSegue(key: rowKey)
-//    }
-//    
-//    func initiateSegue(key: String) {
-//        print("performing segue to \(key)")
-//        self.performSegue(withIdentifier: key, sender: key)
-//    }
-//
-//    // In a storyboard-based application, you will often want to do a little preparation before navigation
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        // Get the new view controller using segue.destinationViewController.
-//        // Pass the selected object to the new view controller.
-//        print(sender ?? "sender")
-//    }
 }
 
-
 extension PlayQueueTVC: UIPopoverPresentationControllerDelegate {
-    
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
         return UIModalPresentationStyle.overCurrentContext
     }
-    
 }
-
-

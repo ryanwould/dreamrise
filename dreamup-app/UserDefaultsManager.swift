@@ -19,8 +19,6 @@ protocol UserDefaultsProtocol {
     func getPlaySettingsForId(id: String) -> [String: Any]
     func setPlaySettingsForId(id: String, settings: [String: Any]) -> Void
     func deletePlaySettingsForId(id: String) -> Void
-    
-    
     func setCurrentAlarm(time: NSDate) -> Void
 }
 
