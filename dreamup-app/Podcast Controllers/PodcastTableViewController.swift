@@ -164,9 +164,13 @@ extension PodcastTableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // The UISeachController is active
         if searchController.isActive {
-            return searchedPodcasts.count
-            
-            // The UISeachController is not active
+            if searchedPodcasts.count == 0 {
+                //return the "none found" cell
+                return 1
+            } else {
+                return searchedPodcasts.count
+            }
+        // The UISeachController is not active
         } else {
             if podcasts.count == 0 {
                 return 1
@@ -181,29 +185,15 @@ extension PodcastTableViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if podcasts.isEmpty {
-            print("podcasts empty")
+        let tableData = searchController.isActive ? searchedPodcasts : podcasts
+        
+        if tableData.isEmpty {
             let cell = tableView.dequeueReusableCell(withIdentifier: "NoPodcastsFoundCell")!
             return cell
         } else {
-            print("podcasts not empty")
-            let cell = tableView.dequeueReusableCell(withIdentifier: "PodcastCell", for: indexPath) as! PodcastTableViewCell
-            
-            // Configure the cell...
-            let podcast = podcasts[indexPath.row]
+            let podcast = tableData[indexPath.row]
+            let cell = tableView.dequeueReusableCell(withIdentifier: "PodcastCell",for: indexPath) as!PodcastTableViewCell
             cell.configurePodcastCell(podcast: podcast)
-            
-            // The UISeachController is active
-            if searchController.isActive {
-                let podcast = searchedPodcasts[indexPath.row]
-                cell.configurePodcastCell(podcast: podcast)
-                
-                // The UISeachController is not active
-            } else {
-                let podcast = podcasts[indexPath.row]
-                cell.configurePodcastCell(podcast: podcast)
-            }
-            
             return cell
         }
     }

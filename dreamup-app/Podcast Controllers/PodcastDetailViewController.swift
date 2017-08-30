@@ -21,7 +21,6 @@ class PodcastDetailViewController: UIViewController {
     @IBOutlet weak var authorLabel: UILabel!
     
     @IBOutlet weak var addButton: UIButton!
-    @IBOutlet weak var podcastDescription: UILabel!
     
     // MARK: Actions
     

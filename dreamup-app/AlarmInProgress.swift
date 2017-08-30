@@ -146,8 +146,6 @@ class AlarmInProgress: UIViewController {
         
         // sound the alarm! (if its time)
         guard alarmFireTime != nil else {
-            print("alarmFireTime is nil");
-            print("canceling timer")
             self.timer.invalidate()
             return
             
@@ -205,19 +203,16 @@ class AlarmInProgress: UIViewController {
         guard let userInfo = notification.userInfo,
             let reasonValue = userInfo[AVAudioSessionRouteChangeReasonKey] as? UInt,
             let reason = AVAudioSessionRouteChangeReason(rawValue:reasonValue) else {
-                print("RETURNING")
                 return
         }
         switch reason {
         case .newDeviceAvailable:
             // Handle new device available.
             // Play audio through new device
-            print("NEW DEVICE AVAILABLE")
             play()
         case .oldDeviceUnavailable:
             // Handle old device removed.
             //
-            print("OLD DEVICE REMOVED")
             pause()
         default: ()
         }
@@ -226,8 +221,6 @@ class AlarmInProgress: UIViewController {
     // MARK: - ALARM
     
     func soundTheAlarm(){
-        print("playing alarm")
-        
         //show audio control buttons
         showAudioButtons()
         
@@ -247,14 +240,11 @@ class AlarmInProgress: UIViewController {
                 print("There was an error: \(error)")
             }
             
-            print("current item: \(player.currentItem)")
             let currentItem = player.currentItem
             
             if let currentItem = currentItem {
                 podcastTitleLabel.text = podcastTitles?[0]
             }
-        } else {
-            print("player is nil")
         }
     }
     
@@ -348,35 +338,19 @@ class AlarmInProgress: UIViewController {
         // init AVQueuePlayer
         if let alarmItems = alarmItems {
             avQueuePlayer = AVQueuePlayer.init(items: alarmItems)
-            print("initialized queue player with \(alarmItems.count)")
-            
-            // set Queue Count
             self.queueCount = alarmItems.count
         }
     }
 }
 
+// MARK: AVPlayer Extension
+
 extension AVPlayer {
-    
     var isPlaying: Bool {
         if (self.rate != 0 && self.error == nil) {
             return true
         } else {
             return false
         }
-    }
-    
-}
-extension UIView {
-    func rotateImageNonstop(_ duration: CFTimeInterval = 10, completionDelegate: AnyObject? = nil) {
-        let rotateAnimation = CABasicAnimation(keyPath: "transform.rotation")
-        rotateAnimation.fromValue = 0.0
-        rotateAnimation.toValue = CGFloat(M_PI)
-        rotateAnimation.duration = duration
-        
-        if let delegate: AnyObject = completionDelegate {
-            rotateAnimation.delegate = delegate as! CAAnimationDelegate
-        }
-        self.layer.add(rotateAnimation, forKey: nil)
     }
 }

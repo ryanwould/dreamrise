@@ -24,14 +24,8 @@ class AlarmController: UIViewController {
         let current_user = FIRAuth.auth()?.currentUser
         
         if current_user != nil, current_user?.uid != nil {
-            print("CURRENT USER")
-            print("PROVIDER: \(current_user?.providerID)")
-            print("PROV DATA: \(current_user?.providerData)")
-            print("ID: \(current_user!.uid)")
             ref = FIRDatabase.database().reference()
         }
-        
-        // Do any additional setup after loading the view, typically from a nib.
         
         timePicker.datePickerMode = .time
         timePicker.minuteInterval = 1
@@ -42,8 +36,6 @@ class AlarmController: UIViewController {
         
         
     }
-    
-
     
     // *****************
     // MARK: - Segue
