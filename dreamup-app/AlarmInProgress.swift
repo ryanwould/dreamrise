@@ -113,6 +113,11 @@ class AlarmInProgress: UIViewController {
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        //check if device plugged in
+        checkBatteryStatus()
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         //stop alarm
         self.avQueuePlayer = nil
@@ -132,6 +137,29 @@ class AlarmInProgress: UIViewController {
             self.timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: {(timer) in
                 self.checkTime()
             })
+        }
+    }
+    
+    func checkBatteryStatus(){
+        let state = UIDevice.current.batteryState
+        if state == .charging {
+            print("State: charging")
+            let alert = UIAlertController(title: "Keep your device plugged in",
+                                          message: "Make sure to keep your device plugged in and the Dreamup App open", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default) { action in
+                // perhaps use action.title here
+                print("exiting")
+            })
+            self.present(alert, animated: true)
+        } else {
+            let alert = UIAlertController(title: "Please plug in your device!",
+                                          message: "To ensure that your alarm goes off, please keep the DreamUp App open and plug in your device.",
+                                          preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default) { action in
+                // perhaps use action.title here
+                print("exiting")
+            })
+            self.present(alert, animated: true)
         }
     }
     
