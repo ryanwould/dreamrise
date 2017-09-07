@@ -12,14 +12,12 @@ class AlarmSelectionTableView: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("loaded static table")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-
     //******************************************
     // MARK: - Navigation
     //******************************************

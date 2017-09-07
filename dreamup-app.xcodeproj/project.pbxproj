@@ -14,16 +14,12 @@
 		1108740D1E836A310067C225 /* dreamup_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1108740C1E836A310067C225 /* dreamup_appUITests.swift */; };
 		1108B5881F5522AC00DE12FE /* PodcastDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1108B5871F5522AC00DE12FE /* PodcastDetailViewController.swift */; };
 		11224D6F1E91851100F6894B /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11224D6E1E91851100F6894B /* ColorPalette.swift */; };
-		112D7EAD1EC4B6BF00EEE3ED /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D7EAC1EC4B6BF00EEE3ED /* ResetPasswordViewController.swift */; };
-		112D7EAF1EC4B6F300EEE3ED /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D7EAE1EC4B6F300EEE3ED /* SignUpViewController.swift */; };
-		112D7EB51EC4EBAE00EEE3ED /* CompleteSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D7EB41EC4EBAE00EEE3ED /* CompleteSignupViewController.swift */; };
 		112D7EB71EC4ED5F00EEE3ED /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112D7EB61EC4ED5F00EEE3ED /* FBSDKLoginKit.framework */; };
 		114A15081EBE614400520EDF /* VoiceMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114A15071EBE614400520EDF /* VoiceMemo.swift */; };
 		11601C271EAD374700D9FB43 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11601C261EAD374700D9FB43 /* HomeTabBarController.swift */; };
 		11823AA51EABDE560060DE68 /* AlarmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11823AA31EABDE560060DE68 /* AlarmController.swift */; };
 		11823AA61EABDE560060DE68 /* AlarmInProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11823AA41EABDE560060DE68 /* AlarmInProgress.swift */; };
 		11823AAC1EABDEA30060DE68 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11823AAA1EABDEA30060DE68 /* Settings.swift */; };
-		11823AB01EABDEC70060DE68 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11823AAF1EABDEC70060DE68 /* LoginViewController.swift */; };
 		11823AB61EABDEF90060DE68 /* PlayQueueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11823AB21EABDEF90060DE68 /* PlayQueueCell.swift */; };
 		11823AB81EABDEF90060DE68 /* PodcastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11823AB41EABDEF90060DE68 /* PodcastTableViewCell.swift */; };
 		11823ABB1EABDF220060DE68 /* AlarmSelectionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11823ABA1EABDF220060DE68 /* AlarmSelectionTableView.swift */; };
@@ -75,16 +71,12 @@
 		1108740E1E836A310067C225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1108B5871F5522AC00DE12FE /* PodcastDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastDetailViewController.swift; sourceTree = "<group>"; };
 		11224D6E1E91851100F6894B /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPalette.swift; path = "dreamup-app/ColorPalette.swift"; sourceTree = "<group>"; };
-		112D7EAC1EC4B6BF00EEE3ED /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
-		112D7EAE1EC4B6F300EEE3ED /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		112D7EB41EC4EBAE00EEE3ED /* CompleteSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteSignupViewController.swift; sourceTree = "<group>"; };
 		112D7EB61EC4ED5F00EEE3ED /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		114A15071EBE614400520EDF /* VoiceMemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceMemo.swift; sourceTree = "<group>"; };
 		11601C261EAD374700D9FB43 /* HomeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		11823AA31EABDE560060DE68 /* AlarmController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmController.swift; sourceTree = "<group>"; };
 		11823AA41EABDE560060DE68 /* AlarmInProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmInProgress.swift; sourceTree = "<group>"; };
 		11823AAA1EABDEA30060DE68 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		11823AAF1EABDEC70060DE68 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		11823AB21EABDEF90060DE68 /* PlayQueueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayQueueCell.swift; sourceTree = "<group>"; };
 		11823AB41EABDEF90060DE68 /* PodcastTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastTableViewCell.swift; sourceTree = "<group>"; };
 		11823ABA1EABDF220060DE68 /* AlarmSelectionTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmSelectionTableView.swift; sourceTree = "<group>"; };
@@ -206,17 +198,6 @@
 			path = "Podcast Controllers";
 			sourceTree = "<group>";
 		};
-		112D7EB01EC4B73000EEE3ED /* Authentication */ = {
-			isa = PBXGroup;
-			children = (
-				112D7EAE1EC4B6F300EEE3ED /* SignUpViewController.swift */,
-				112D7EB41EC4EBAE00EEE3ED /* CompleteSignupViewController.swift */,
-				11823AAF1EABDEC70060DE68 /* LoginViewController.swift */,
-				112D7EAC1EC4B6BF00EEE3ED /* ResetPasswordViewController.swift */,
-			);
-			name = Authentication;
-			sourceTree = "<group>";
-		};
 		112D7EB21EC4B76900EEE3ED /* AlarmControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,7 +267,6 @@
 			isa = PBXGroup;
 			children = (
 				1108B5891F55236E00DE12FE /* Podcast Controllers */,
-				112D7EB01EC4B73000EEE3ED /* Authentication */,
 				112D7EB21EC4B76900EEE3ED /* AlarmControllers */,
 				11E531B41F577F2A00FE0B26 /* Navigation */,
 			);
@@ -645,7 +625,6 @@
 				11224D6F1E91851100F6894B /* ColorPalette.swift in Sources */,
 				11823AB61EABDEF90060DE68 /* PlayQueueCell.swift in Sources */,
 				11823AAC1EABDEA30060DE68 /* Settings.swift in Sources */,
-				112D7EB51EC4EBAE00EEE3ED /* CompleteSignupViewController.swift in Sources */,
 				11823AC41EABDF3E0060DE68 /* SwiftyJSON.swift in Sources */,
 				11823AC21EABDF3E0060DE68 /* RadioStation.swift in Sources */,
 				11823AC61EABDF3E0060DE68 /* UserDefaultsManager.swift in Sources */,
@@ -654,12 +633,9 @@
 				11823ABB1EABDF220060DE68 /* AlarmSelectionTableView.swift in Sources */,
 				11823AA61EABDE560060DE68 /* AlarmInProgress.swift in Sources */,
 				11601C271EAD374700D9FB43 /* HomeTabBarController.swift in Sources */,
-				11823AB01EABDEC70060DE68 /* LoginViewController.swift in Sources */,
-				112D7EAD1EC4B6BF00EEE3ED /* ResetPasswordViewController.swift in Sources */,
 				11B640EF1E897F9C00971DF0 /* User.swift in Sources */,
 				11823AC31EABDF3E0060DE68 /* Podcast.swift in Sources */,
 				110873ED1E836A310067C225 /* AppDelegate.swift in Sources */,
-				112D7EAF1EC4B6F300EEE3ED /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

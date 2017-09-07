@@ -8,24 +8,14 @@
 
 import UIKit
 import MediaPlayer
-import Firebase
-
 
 class AlarmController: UIViewController {
 
     @IBOutlet weak var timePicker: UIDatePicker!
     @IBOutlet weak var startAlarmButton: UIButton!
-    var ref: FIRDatabaseReference!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let current_user = FIRAuth.auth()?.currentUser
-        
-        if current_user != nil, current_user?.uid != nil {
-            ref = FIRDatabase.database().reference()
-        }
         
         timePicker.datePickerMode = .time
         timePicker.minuteInterval = 1
@@ -33,8 +23,6 @@ class AlarmController: UIViewController {
         startAlarmButton.layer.borderWidth = 3
         startAlarmButton.layer.borderColor = UIColor.white.cgColor
         timePicker.setValue(UIColor.white, forKey: "textColor")
-        
-        
     }
     
     // *****************

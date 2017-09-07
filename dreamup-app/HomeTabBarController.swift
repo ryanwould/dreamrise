@@ -7,27 +7,13 @@
 //
 
 import UIKit
-import FirebaseDatabase
-import Firebase
 
 class HomeTabBarController: UITabBarController {
-    
-    var ref: FIRDatabaseReference!
-    
-    override func viewDidAppear(_ animated: Bool) {
-        if FIRAuth.auth()?.currentUser == nil {
-            self.performSegue(withIdentifier: "signIn", sender: nil)
-        } else {
-            print("Current User is: \(FIRAuth.auth()?.currentUser?.uid)\n======")
-        }
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
-        ref = FIRDatabase.database().reference()
     }
-    // MARK: - UI
     
     func configureView() {
         self.tabBar.backgroundImage = UIImage.imageWithColor(tintColor: UIColor.clear)
