@@ -17,15 +17,15 @@ struct AlarmQueueItem {
 }
 
 class AlarmInProgress: UIViewController {
-    
+
     // Time Labels
     @IBOutlet weak var currentTimeLabel: UILabel!
     @IBOutlet weak var alarmTimeLabel: UILabel!
-    
+
     var alarmFireTime: Date?
     var currentTime = Date()
     let defaults = UserDefaultsManager()
-    
+
     // Audio
     var avQueuePlayer: AVQueuePlayer?
     var timer = Timer()
@@ -34,24 +34,24 @@ class AlarmInProgress: UIViewController {
     var currentItemIndex = 0
     var player: AVPlayer!
     var queueCount: Int = 0
-    
+
     // MARK: - OUTLETS
     @IBOutlet weak var btnPlay: UIButton!
     @IBOutlet weak var btnNext: UIButton!
     @IBOutlet weak var podcastTitleLabel: UILabel!
     @IBOutlet weak var moonImage: UIImageView!
-    
+
     // MARK: - ACTIONS
-    
+
     @IBAction func didCancelAlarm(_ sender: Any) {
         // undo setup
         undoViewSetup()
         dismiss(animated: true, completion: nil)
     }
-    
+
     @IBAction func togglePlay(_ sender: Any) {
         guard avQueuePlayer != nil else { return }
-        
+
         if (avQueuePlayer!.isPlaying) {
             avQueuePlayer!.pause()
             btnPlay.setTitle("play", for: .normal)
@@ -60,92 +60,92 @@ class AlarmInProgress: UIViewController {
             avQueuePlayer!.play()
         }
     }
-    
-    
+
+
     func pause(){
         guard avQueuePlayer != nil else { return }
-        
+
         if (avQueuePlayer!.isPlaying) {
             avQueuePlayer!.pause()
             btnPlay.setTitle("play", for: .normal)
         }
     }
-    
+
     func play() {
         guard avQueuePlayer != nil else { return }
-        
+
         if (!avQueuePlayer!.isPlaying) {
             avQueuePlayer!.play()
             btnPlay.setTitle("pause", for: .normal)
         }
     }
-    
+
     @IBAction func actNext(_ sender: Any) {
-        
+
         // decrement Queue Count
         self.queueCount -= 1
-        
+
         guard avQueuePlayer != nil else { return }
         let itemsLeft = self.queueCount
-        
+
         if (itemsLeft > 0) {
             avQueuePlayer!.advanceToNextItem()
-            
+
             //increment current item index
             currentItemIndex += 1
             podcastTitleLabel.text = podcastTitles?[currentItemIndex]
         } else {
             currentItemIndex = 0
-            
+
             //close the alarm window
             undoViewSetup()
             dismiss(animated: true, completion: nil)
         }
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         // setup
         setupView()
-        
+
         //alarm
         guard alarmFireTime != nil else {
             print("alarm not set"); return
         }
     }
-    
+
     override func viewDidAppear(_ animated: Bool) {
         //check if device plugged in
         checkBatteryStatus()
     }
-    
+
     override func viewWillDisappear(_ animated: Bool) {
         //stop alarm
         self.avQueuePlayer = nil
         self.alarmFireTime = nil
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         //add observer to Audio Route (headphones unplugged, etc.
         setupNotifications()
-        
+
         // alarm queue
         buildAlarmQueue()
-        
+
         if alarmFireTime != nil {
             self.timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: {(timer) in
                 self.checkTime()
             })
         }
     }
-    
+
     func checkBatteryStatus(){
         let state = UIDevice.current.batteryState
         if state == .charging {
             print("State: charging")
             let alert = UIAlertController(title: "Keep your device plugged in",
-                                          message: "Make sure to keep your device plugged in and the Dreamup App open", preferredStyle: .alert)
+                                          message: "Make sure to keep your device plugged in and the DreamRise App open", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default) { action in
                 // perhaps use action.title here
                 print("exiting")
@@ -153,7 +153,7 @@ class AlarmInProgress: UIViewController {
             self.present(alert, animated: true)
         } else {
             let alert = UIAlertController(title: "Please plug in your device!",
-                                          message: "To ensure that your alarm goes off, please keep the DreamUp App open and plug in your device.",
+                                          message: "To ensure that your alarm goes off, please keep the DreamRise App open and plug in your device.",
                                           preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default) { action in
                 // perhaps use action.title here
@@ -162,71 +162,71 @@ class AlarmInProgress: UIViewController {
             self.present(alert, animated: true)
         }
     }
-    
+
     // MARK: - Alarm
-    
+
     func checkTime(){
-        
+
         self.currentTime = Date()
-        
+
         // update current time label
         currentTimeLabel.text = formatAlarmTime(time: Date(), seconds: false)
-        
+
         // sound the alarm! (if its time)
         guard alarmFireTime != nil else {
             self.timer.invalidate()
             return
-            
+
         }
-        
+
         if Date() >= alarmFireTime! {
             soundTheAlarm()
             self.timer.invalidate()
             print(timer)
         }
     }
-    
+
     func styleButtons() {
         let buttons = [btnPlay, btnNext]
-        
+
         for btn in buttons {
             btn!.layer.cornerRadius = 0
             btn!.layer.borderWidth = 3
             btn!.layer.borderColor = UIColor.white.cgColor
         }
     }
-    
+
     func showAudioButtons(){
         styleButtons()
         btnPlay.isHidden = false
         btnNext.isHidden = false
-        
+
         // labels
         podcastTitleLabel.isHidden = false
         podcastTitleLabel.text = podcastTitles?[0]
     }
-    
+
     func hideAudioButtons(){
         btnPlay.isHidden = true
         btnNext.isHidden = true
-        
+
         //labels
         podcastTitleLabel.isHidden = true
     }
-    
+
     // MARK: - NOTIFICATION CENTER
-    
+
     func setupNotifications() {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(handleRouteChange),
                                                name: .AVAudioSessionRouteChange,
                                                object: AVAudioSession.sharedInstance())
     }
-    
+
     func removeNotifications(){
         NotificationCenter.default.removeObserver(self)
     }
-    
+
     func handleRouteChange(_ notification: Notification) {
         guard let userInfo = notification.userInfo,
             let reasonValue = userInfo[AVAudioSessionRouteChangeReasonKey] as? UInt,
@@ -245,21 +245,21 @@ class AlarmInProgress: UIViewController {
         default: ()
         }
     }
-    
+
     // MARK: - ALARM
-    
+
     func soundTheAlarm(){
         //show audio control buttons
         showAudioButtons()
-        
+
         // ***********************
         // USING AVQUEUEPLAYER
         // ***********************
-        
+
         if let player = avQueuePlayer {
             player.volume = 1.0
             player.play()
-            
+
             do {
                 // Set to play through speakers even if phone is silent
                 try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
@@ -267,30 +267,30 @@ class AlarmInProgress: UIViewController {
             } catch let error as NSError {
                 print("There was an error: \(error)")
             }
-            
+
             let currentItem = player.currentItem
-            
+
             if let currentItem = currentItem {
                 podcastTitleLabel.text = podcastTitles?[0]
             }
         }
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     func setupView(){
         // hide audio buttons
         hideAudioButtons()
-        
+
         // Hide the status bar
         UIApplication.shared.isStatusBarHidden = true
-        
+
         // Disable screen going to sleep
         UIApplication.shared.isIdleTimerDisabled = true
-        
+
         // set alarm fire date label
         guard alarmFireTime != nil else {
             return
@@ -298,65 +298,65 @@ class AlarmInProgress: UIViewController {
         alarmTimeLabel.text = formatAlarmTime(time: alarmFireTime!, seconds: false)
         currentTimeLabel.text = formatAlarmTime(time: currentTime, seconds: false)
     }
-    
+
     func setGradient(){
         // Set gradient
         let gradient: CAGradientLayer = CAGradientLayer()
-        
+
         gradient.colors = [Colors().darkBlue.cgColor, UIColor.black.cgColor]
         gradient.locations = [0.05 , 0.95]
         gradient.startPoint = CGPoint(x: 0.5, y: 0.0)
         gradient.endPoint = CGPoint(x: 0.5, y: 1.0)
         gradient.frame = CGRect(x: 0.0, y: 0.0, width: self.view.frame.size.width, height: self.view.frame.size.height)
-        
+
         self.view.layer.insertSublayer(gradient, at: 0)
-        
+
     }
-    
+
     func undoViewSetup(){
         UIApplication.shared.isStatusBarHidden = false
         UIApplication.shared.isIdleTimerDisabled = false
-        
+
         //add observer to Audio Route (headphones unplugged, etc.
         removeNotifications()
     }
-    
+
     func formatAlarmTime(time: Date, seconds: Bool) -> String {
         let localTimeZone = TimeZone.current.identifier
         let f = DateFormatter()
         f.locale = Locale(identifier: localTimeZone)
-        
+
         if seconds { f.dateFormat = "h:mm:ss a" } else { f.dateFormat = "h:mm a" }
         return f.string(from: time)
     }
-    
+
     func buildAlarmQueue() {
         let queue = defaults.getAlarmQueue()
-        
+
         alarmItems = []
         podcastTitles = []
-        
+
         if let queue = queue {
             itemloop: for item in queue {
-                
+
                 let queueItem = defaults.getPlaySettingsForId(id: item)
                 let urlString = queueItem["url"] as? String
                 let durationString = queueItem["duration"] as? String
-                
+
                 if let duration = durationString {
                     if let intDuration = Int(duration) {
-                        
+
                         //check urlstring
                         guard urlString != nil else {
                             print("urlstring is nil\n"); continue itemloop
                         }
-                        
+
                         let url = URL(string: urlString!)
                         guard url != nil else { print("url is nil"); break }
-                        
+
                         //create AVPlayerItem
                         let playerItem = AVPlayerItem(url: url!)
-                        
+
                         alarmItems?.append(playerItem)
                         podcastTitles?.append(queueItem["displayString"] as? String ?? "Podcast")
                     }
